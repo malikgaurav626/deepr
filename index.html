@@ -1,0 +1,3411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <meta charSet="utf-8" />
+  <title>Pivex Finance</title>
+  <meta name="description"
+    content="Deep liquidity on the most secure and efficient lending platform is coming to Ethereum soon. Pivex Finance will provide decentralized and transparent lending markets to provide passive income." />
+  <meta property="og:image" content="assets/social-share.png" />
+  <meta property="twitter:image" content="assets/social-share.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pivex Finance" />
+  <meta property="og:description"
+    content="Deep liquidity on the most secure and efficient lending platform is coming to Ethereum soon. Pivex Finance will provide decentralized and transparent lending markets to provide passive income." />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Pivex Finance" />
+  <meta property="twitter:description"
+    content="Deep liquidity on the most secure and efficient lending platform is coming to Ethereum soon. Pivex Finance will provide decentralized and transparent lending markets to provide passive income." />
+  <link rel="apple-touch-icon" sizes="76x76" href="static/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png" />
+  <meta name="msapplication-TileImage" content="static/ms-icon-144x144.png" />
+  <meta name="next-head-count" content="16" />
+  <link rel="shortcut icon" href="static/favicon.ico" />
+  <link rel="preload" href="_next/static/css/483c1ffbc4bef7c4.css" as="style" />
+  <link rel="stylesheet" href="_next/static/css/483c1ffbc4bef7c4.css" data-n-g="" />
+  <link rel="preload" href="_next/static/css/751a323872d0d468.css" as="style" />
+  <link rel="stylesheet" href="_next/static/css/751a323872d0d468.css" data-n-p="" /><noscript data-n-css=""></noscript>
+  <script defer="" nomodule="" src="_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script>
+  <script src="_next/static/chunks/webpack-fc8a54dba915c2d3.js" defer=""></script>
+  <script src="_next/static/chunks/framework-38f22d267257f62d.js" defer=""></script>
+  <script src="_next/static/chunks/main-15acc49be2d244e2.js" defer=""></script>
+  <!-- <script src="_next/static/chunks/pages/_app-b4ca06658cc30241.js" defer=""></script> -->
+  <script src="_next/static/chunks/693-c442008cb95aa072.js" defer=""></script>
+  <script src="_next/static/chunks/pages/index-aa6e9b4485ae2123.js" defer=""></script>
+  <script src="_next/static/ynE4MCKD2JmR288LlNsBb/_buildManifest.js" defer=""></script>
+  <script src="_next/static/ynE4MCKD2JmR288LlNsBb/_ssgManifest.js" defer=""></script>
+  <script src="_next/static/ynE4MCKD2JmR288LlNsBb/_middlewareManifest.js" defer=""></script>
+  <link rel="stylesheet" href="/replace.css">
+</head>
+
+<body>
+  <script id="chakra-script">
+    !(function () {
+      try {
+        var a = function (c) {
+          var v = "(prefers-color-scheme: dark)",
+            h = window.matchMedia(v).matches ? "dark" : "light",
+            r = c === "system" ? h : c,
+            o = document.documentElement,
+            s = document.body,
+            l = "chakra-ui-light",
+            d = "chakra-ui-dark",
+            i = r === "dark";
+          return s.classList.add(i ? d : l), s.classList.remove(i ? l : d), o.style.colorScheme = r, o.dataset
+            .theme = r, r
+        },
+          n = a,
+          m = "dark",
+          e = "chakra-ui-color-mode",
+          t = localStorage.getItem(e);
+        t ? a(t) : localStorage.setItem(e, a(m))
+      } catch (a) { }
+    })();
+  </script>
+  <div id="__next">
+    <style data-emotion="css-global 1inye7i-#E6E6E8">
+      :host,
+      :root,
+      [data-theme] {
+        --chakra-ring-inset: var(--chakra-empty,
+            /*!*/
+            /*!*/
+          );
+        --chakra-ring-offset-width: 0px;
+        --chakra-ring-offset-color: #fff;
+        --chakra-ring-color: rgba(66, 153, 225, 0.6);
+        --chakra-ring-offset-shadow: 0 0 #0000;
+        --chakra-ring-shadow: 0 0 #0000;
+        --chakra-space-x-reverse: 0;
+        --chakra-space-y-reverse: 0;
+        --chakra-colors-transparent: transparent;
+        --chakra-colors-current: currentColor;
+        --chakra-colors-black: #000000;
+        --chakra-colors-white: #FFFFFF;
+        --chakra-colors-whiteAlpha-50: rgba(255, 255, 255, 0.04);
+        --chakra-colors-whiteAlpha-100: rgba(255, 255, 255, 0.06);
+        --chakra-colors-whiteAlpha-200: rgba(255, 255, 255, 0.08);
+        --chakra-colors-whiteAlpha-300: rgba(255, 255, 255, 0.16);
+        --chakra-colors-whiteAlpha-400: rgba(255, 255, 255, 0.24);
+        --chakra-colors-whiteAlpha-500: rgba(255, 255, 255, 0.36);
+        --chakra-colors-whiteAlpha-600: rgba(255, 255, 255, 0.48);
+        --chakra-colors-whiteAlpha-700: rgba(255, 255, 255, 0.64);
+        --chakra-colors-whiteAlpha-800: rgba(255, 255, 255, 0.80);
+        --chakra-colors-whiteAlpha-900: rgba(255, 255, 255, 0.92);
+        --chakra-colors-blackAlpha-50: rgba(0, 0, 0, 0.04);
+        --chakra-colors-blackAlpha-100: rgba(0, 0, 0, 0.06);
+        --chakra-colors-blackAlpha-200: rgba(0, 0, 0, 0.08);
+        --chakra-colors-blackAlpha-300: rgba(0, 0, 0, 0.16);
+        --chakra-colors-blackAlpha-400: rgba(0, 0, 0, 0.24);
+        --chakra-colors-blackAlpha-500: rgba(0, 0, 0, 0.36);
+        --chakra-colors-blackAlpha-600: rgba(0, 0, 0, 0.48);
+        --chakra-colors-blackAlpha-700: rgba(0, 0, 0, 0.64);
+        --chakra-colors-blackAlpha-800: rgba(0, 0, 0, 0.80);
+        --chakra-colors-blackAlpha-900: rgba(0, 0, 0, 0.92);
+        --chakra-colors-gray-50: #F7FAFC;
+        --chakra-colors-gray-100: #EDF2F7;
+        --chakra-colors-gray-200: #E2E8F0;
+        --chakra-colors-gray-300: #CBD5E0;
+        --chakra-colors-gray-400: #A0AEC0;
+        --chakra-colors-gray-500: #718096;
+        --chakra-colors-gray-600: #4A5568;
+        --chakra-colors-gray-700: #2D3748;
+        --chakra-colors-gray-800: #1A202C;
+        --chakra-colors-gray-900: #171923;
+        --chakra-colors-red-50: #FFF5F5;
+        --chakra-colors-red-100: #FED7D7;
+        --chakra-colors-red-200: #FEB2B2;
+        --chakra-colors-red-300: #FC8181;
+        --chakra-colors-red-400: #F56565;
+        --chakra-colors-red-500: #E53E3E;
+        --chakra-colors-red-600: #C53030;
+        --chakra-colors-red-700: #9B2C2C;
+        --chakra-colors-red-800: #822727;
+        --chakra-colors-red-900: #63171B;
+        --chakra-colors-orange-50: #FFFAF0;
+        --chakra-colors-orange-100: #FEEBC8;
+        --chakra-colors-orange-200: #FBD38D;
+        --chakra-colors-orange-300: #F6AD55;
+        --chakra-colors-orange-400: #ED8936;
+        --chakra-colors-orange-500: #DD6B20;
+        --chakra-colors-orange-600: #C05621;
+        --chakra-colors-orange-700: #9C4221;
+        --chakra-colors-orange-800: #7B341E;
+        --chakra-colors-orange-900: #652B19;
+        --chakra-colors-yellow-50: #FFFFF0;
+        --chakra-colors-yellow-100: #FEFCBF;
+        --chakra-colors-yellow-200: #FAF089;
+        --chakra-colors-yellow-300: #F6E05E;
+        --chakra-colors-yellow-400: #ECC94B;
+        --chakra-colors-yellow-500: #D69E2E;
+        --chakra-colors-yellow-600: #B7791F;
+        --chakra-colors-yellow-700: #975A16;
+        --chakra-colors-yellow-800: #744210;
+        --chakra-colors-yellow-900: #5F370E;
+        --chakra-colors-green-50: #F0FFF4;
+        --chakra-colors-green-100: #C6F6D5;
+        --chakra-colors-green-200: #9AE6B4;
+        --chakra-colors-green-300: #68D391;
+        --chakra-colors-green-400: #48BB78;
+        --chakra-colors-green-500: #38A169;
+        --chakra-colors-green-600: #2F855A;
+        --chakra-colors-green-700: #276749;
+        --chakra-colors-green-800: #22543D;
+        --chakra-colors-green-900: #1C4532;
+        --chakra-colors-teal-50: #E6FFFA;
+        --chakra-colors-teal-100: #B2F5EA;
+        --chakra-colors-teal-200: #81E6D9;
+        --chakra-colors-teal-300: #4FD1C5;
+        --chakra-colors-teal-400: #38B2AC;
+        --chakra-colors-teal-500: #319795;
+        --chakra-colors-teal-600: #2C7A7B;
+        --chakra-colors-teal-700: #285E61;
+        --chakra-colors-teal-800: #234E52;
+        --chakra-colors-teal-900: #1D4044;
+        --chakra-colors-blue-50: #ebf8ff;
+        --chakra-colors-blue-100: #bee3f8;
+        --chakra-colors-blue-200: #90cdf4;
+        --chakra-colors-blue-300: #63b3ed;
+        --chakra-colors-blue-400: #4299e1;
+        --chakra-colors-blue-500: #3182ce;
+        --chakra-colors-blue-600: #2b6cb0;
+        --chakra-colors-blue-700: #2c5282;
+        --chakra-colors-blue-800: #2a4365;
+        --chakra-colors-blue-900: #1A365D;
+        --chakra-colors-cyan-50: #EDFDFD;
+        --chakra-colors-cyan-100: #C4F1F9;
+        --chakra-colors-cyan-200: #9DECF9;
+        --chakra-colors-cyan-300: #76E4F7;
+        --chakra-colors-cyan-400: #0BC5EA;
+        --chakra-colors-cyan-500: #00B5D8;
+        --chakra-colors-cyan-600: #00A3C4;
+        --chakra-colors-cyan-700: #0987A0;
+        --chakra-colors-cyan-800: #086F83;
+        --chakra-colors-cyan-900: #065666;
+        --chakra-colors-purple-50: #FAF5FF;
+        --chakra-colors-purple-100: #E9D8FD;
+        --chakra-colors-purple-200: #D6BCFA;
+        --chakra-colors-purple-300: #B794F4;
+        --chakra-colors-purple-400: #9F7AEA;
+        --chakra-colors-purple-500: #805AD5;
+        --chakra-colors-purple-600: #6B46C1;
+        --chakra-colors-purple-700: #553C9A;
+        --chakra-colors-purple-800: #44337A;
+        --chakra-colors-purple-900: #322659;
+        --chakra-colors-pink-50: #FFF5F7;
+        --chakra-colors-pink-100: #FED7E2;
+        --chakra-colors-pink-200: #FBB6CE;
+        --chakra-colors-pink-300: #F687B3;
+        --chakra-colors-pink-400: #ED64A6;
+        --chakra-colors-pink-500: #D53F8C;
+        --chakra-colors-pink-600: #B83280;
+        --chakra-colors-pink-700: #97266D;
+        --chakra-colors-pink-800: #702459;
+        --chakra-colors-pink-900: #521B41;
+        --chakra-colors-linkedin-50: #E8F4F9;
+        --chakra-colors-linkedin-100: #CFEDFB;
+        --chakra-colors-linkedin-200: #9BDAF3;
+        --chakra-colors-linkedin-300: #68C7EC;
+        --chakra-colors-linkedin-400: #34B3E4;
+        --chakra-colors-linkedin-500: #00A0DC;
+        --chakra-colors-linkedin-600: #008CC9;
+        --chakra-colors-linkedin-700: #0077B5;
+        --chakra-colors-linkedin-800: #005E93;
+        --chakra-colors-linkedin-900: #004471;
+        --chakra-colors-facebook-50: #E8F4F9;
+        --chakra-colors-facebook-100: #D9DEE9;
+        --chakra-colors-facebook-200: #B7C2DA;
+        --chakra-colors-facebook-300: #6482C0;
+        --chakra-colors-facebook-400: #4267B2;
+        --chakra-colors-facebook-500: #385898;
+        --chakra-colors-facebook-600: #314E89;
+        --chakra-colors-facebook-700: #29487D;
+        --chakra-colors-facebook-800: #223B67;
+        --chakra-colors-facebook-900: #1E355B;
+        --chakra-colors-messenger-50: #D0E6FF;
+        --chakra-colors-messenger-100: #B9DAFF;
+        --chakra-colors-messenger-200: #A2CDFF;
+        --chakra-colors-messenger-300: #7AB8FF;
+        --chakra-colors-messenger-400: #2E90FF;
+        --chakra-colors-messenger-500: #0078FF;
+        --chakra-colors-messenger-600: #0063D1;
+        --chakra-colors-messenger-700: #0052AC;
+        --chakra-colors-messenger-800: #003C7E;
+        --chakra-colors-messenger-900: #002C5C;
+        --chakra-colors-whatsapp-50: #dffeec;
+        --chakra-colors-whatsapp-100: #b9f5d0;
+        --chakra-colors-whatsapp-200: #90edb3;
+        --chakra-colors-whatsapp-300: #65e495;
+        --chakra-colors-whatsapp-400: #3cdd78;
+        --chakra-colors-whatsapp-500: #22c35e;
+        --chakra-colors-whatsapp-600: #179848;
+        --chakra-colors-whatsapp-700: #0c6c33;
+        --chakra-colors-whatsapp-800: #01421c;
+        --chakra-colors-whatsapp-900: #001803;
+        --chakra-colors-twitter-50: #E5F4FD;
+        --chakra-colors-twitter-100: #C8E9FB;
+        --chakra-colors-twitter-200: #A8DCFA;
+        --chakra-colors-twitter-300: #83CDF7;
+        --chakra-colors-twitter-400: #57BBF5;
+        --chakra-colors-twitter-500: #1DA1F2;
+        --chakra-colors-twitter-600: #1A94DA;
+        --chakra-colors-twitter-700: #1681BF;
+        --chakra-colors-twitter-800: #136B9E;
+        --chakra-colors-twitter-900: #0D4D71;
+        --chakra-colors-telegram-50: #E3F2F9;
+        --chakra-colors-telegram-100: #C5E4F3;
+        --chakra-colors-telegram-200: #A2D4EC;
+        --chakra-colors-telegram-300: #7AC1E4;
+        --chakra-colors-telegram-400: #47A9DA;
+        --chakra-colors-telegram-500: #0088CC;
+        --chakra-colors-telegram-600: #007AB8;
+        --chakra-colors-telegram-700: #006BA1;
+        --chakra-colors-telegram-800: #005885;
+        --chakra-colors-telegram-900: #003F5E;
+        --chakra-colors-primary: #6153CC;
+        --chakra-colors-primaryGradient: linear-gradient(93.74deg, #6153CC 3.56%, #795EC1 97.35%);
+        --chakra-colors-secondary: #56E39F;
+        --chakra-colors-positiveMuted: rgba(134, 177, 156, 0.72);
+        --chakra-colors-negativeMuted: rgba(181, 123, 128, 0.72);
+        --chakra-colors-error: #E84855;
+        --chakra-colors-text-primary: rgba(255, 255, 255, 0.92);
+        --chakra-colors-text-secondary: rgba(255, 255, 255, 0.72);
+        --chakra-colors-text-tertiary: rgba(255, 255, 255, 0.48);
+        --chakra-colors-text-disabled: rgba(255, 255, 255, 0.32);
+        --chakra-colors-text-label: #E6E6E8;
+        --chakra-colors-text-warning: #F3C969;
+        --chakra-colors-stroke-divider: rgba(255, 255, 255, 0.08);
+        --chakra-colors-stroke-closeButtonHover: rgba(255, 255, 255, 0.92);
+        --chakra-colors-background-primary: #000517;
+        --chakra-colors-background-primaryGradient: linear-gradient(0deg, rgba(2, 6, 25, 1) 0%, rgba(0, 0, 17, 1) 100%);
+        --chakra-colors-background-hover: rgba(255, 255, 255, 0.04);
+        --chakra-colors-background-ctaDefault: linear(to-r, #795EC1, #6153CC);
+        --chakra-colors-background-highRisk: #E84855;
+        --chakra-colors-background-box: linear-gradient(118.15deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.02) 100%);
+        --chakra-colors-lighthouseHealth-initial-start: #55df9c;
+        --chakra-colors-lighthouseHealth-initial-end: #55df9c;
+        --chakra-colors-lighthouseHealth-highest-start: #56E39F;
+        --chakra-colors-lighthouseHealth-highest-end: #56E3B6;
+        --chakra-colors-lighthouseHealth-medium-start: #56E39F;
+        --chakra-colors-lighthouseHealth-medium-end: #56C9E3;
+        --chakra-colors-lighthouseHealth-low-start: #E37056;
+        --chakra-colors-lighthouseHealth-low-end: #C9E356;
+        --chakra-colors-lighthouseHealth-critical-start: #DF3E3E;
+        --chakra-colors-lighthouseHealth-critical-end: #DF3E3E;
+        --chakra-borders-none: 0;
+        --chakra-borders-1px: 1px solid;
+        --chakra-borders-2px: 2px solid;
+        --chakra-borders-4px: 4px solid;
+        --chakra-borders-8px: 8px solid;
+        --chakra-fonts-heading: Manrope, sans-serif;
+        --chakra-fonts-body: Manrope, sans-serif;
+        --chakra-fonts-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        --chakra-fontSizes-3xs: 0.45rem;
+        --chakra-fontSizes-2xs: 0.625rem;
+        --chakra-fontSizes-xs: 0.75rem;
+        --chakra-fontSizes-sm: 0.875rem;
+        --chakra-fontSizes-md: 1rem;
+        --chakra-fontSizes-lg: 1.125rem;
+        --chakra-fontSizes-xl: 1.25rem;
+        --chakra-fontSizes-2xl: 1.5rem;
+        --chakra-fontSizes-3xl: 1.875rem;
+        --chakra-fontSizes-4xl: 2.25rem;
+        --chakra-fontSizes-5xl: 3rem;
+        --chakra-fontSizes-6xl: 3.75rem;
+        --chakra-fontSizes-7xl: 4.5rem;
+        --chakra-fontSizes-8xl: 6rem;
+        --chakra-fontSizes-9xl: 8rem;
+        --chakra-fontWeights-hairline: 100;
+        --chakra-fontWeights-thin: 200;
+        --chakra-fontWeights-light: 300;
+        --chakra-fontWeights-normal: 400;
+        --chakra-fontWeights-medium: 500;
+        --chakra-fontWeights-semibold: 600;
+        --chakra-fontWeights-bold: 700;
+        --chakra-fontWeights-extrabold: 800;
+        --chakra-fontWeights-black: 900;
+        --chakra-letterSpacings-tighter: -0.05em;
+        --chakra-letterSpacings-tight: -0.025em;
+        --chakra-letterSpacings-normal: 0;
+        --chakra-letterSpacings-wide: 0.025em;
+        --chakra-letterSpacings-wider: 0.05em;
+        --chakra-letterSpacings-widest: 0.1em;
+        --chakra-lineHeights-3: .75rem;
+        --chakra-lineHeights-4: 1rem;
+        --chakra-lineHeights-5: 1.25rem;
+        --chakra-lineHeights-6: 1.5rem;
+        --chakra-lineHeights-7: 1.75rem;
+        --chakra-lineHeights-8: 2rem;
+        --chakra-lineHeights-9: 2.25rem;
+        --chakra-lineHeights-10: 2.5rem;
+        --chakra-lineHeights-normal: normal;
+        --chakra-lineHeights-none: 1;
+        --chakra-lineHeights-shorter: 1.25;
+        --chakra-lineHeights-short: 1.375;
+        --chakra-lineHeights-base: 1.5;
+        --chakra-lineHeights-tall: 1.625;
+        --chakra-lineHeights-taller: 2;
+        --chakra-radii-none: 0;
+        --chakra-radii-sm: 0.125rem;
+        --chakra-radii-base: 0.25rem;
+        --chakra-radii-md: 0.375rem;
+        --chakra-radii-lg: 0.5rem;
+        --chakra-radii-xl: 0.75rem;
+        --chakra-radii-2xl: 1rem;
+        --chakra-radii-3xl: 1.5rem;
+        --chakra-radii-full: 9999px;
+        --chakra-space-1: 0.25rem;
+        --chakra-space-2: 0.5rem;
+        --chakra-space-3: 0.75rem;
+        --chakra-space-4: 1rem;
+        --chakra-space-5: 1.25rem;
+        --chakra-space-6: 1.5rem;
+        --chakra-space-7: 1.75rem;
+        --chakra-space-8: 2rem;
+        --chakra-space-9: 2.25rem;
+        --chakra-space-10: 2.5rem;
+        --chakra-space-12: 3rem;
+        --chakra-space-14: 3.5rem;
+        --chakra-space-16: 4rem;
+        --chakra-space-20: 5rem;
+        --chakra-space-24: 6rem;
+        --chakra-space-28: 7rem;
+        --chakra-space-32: 8rem;
+        --chakra-space-36: 9rem;
+        --chakra-space-40: 10rem;
+        --chakra-space-44: 11rem;
+        --chakra-space-48: 12rem;
+        --chakra-space-52: 13rem;
+        --chakra-space-56: 14rem;
+        --chakra-space-60: 15rem;
+        --chakra-space-64: 16rem;
+        --chakra-space-72: 18rem;
+        --chakra-space-80: 20rem;
+        --chakra-space-96: 24rem;
+        --chakra-space-px: 1px;
+        --chakra-space-0-5: 0.125rem;
+        --chakra-space-1-5: 0.375rem;
+        --chakra-space-2-5: 0.625rem;
+        --chakra-space-3-5: 0.875rem;
+        --chakra-shadows-xs: 0 0 0 1px rgba(0, 0, 0, 0.05);
+        --chakra-shadows-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        --chakra-shadows-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        --chakra-shadows-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        --chakra-shadows-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        --chakra-shadows-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        --chakra-shadows-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        --chakra-shadows-outline: 0 0 0 3px rgba(66, 153, 225, 0.6);
+        --chakra-shadows-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+        --chakra-shadows-none: none;
+        --chakra-shadows-dark-lg: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 5px 10px, rgba(0, 0, 0, 0.4) 0px 15px 40px;
+        --chakra-sizes-1: 0.25rem;
+        --chakra-sizes-2: 0.5rem;
+        --chakra-sizes-3: 0.75rem;
+        --chakra-sizes-4: 1rem;
+        --chakra-sizes-5: 1.25rem;
+        --chakra-sizes-6: 1.5rem;
+        --chakra-sizes-7: 1.75rem;
+        --chakra-sizes-8: 2rem;
+        --chakra-sizes-9: 2.25rem;
+        --chakra-sizes-10: 2.5rem;
+        --chakra-sizes-12: 3rem;
+        --chakra-sizes-14: 3.5rem;
+        --chakra-sizes-16: 4rem;
+        --chakra-sizes-20: 5rem;
+        --chakra-sizes-24: 6rem;
+        --chakra-sizes-28: 7rem;
+        --chakra-sizes-32: 8rem;
+        --chakra-sizes-36: 9rem;
+        --chakra-sizes-40: 10rem;
+        --chakra-sizes-44: 11rem;
+        --chakra-sizes-48: 12rem;
+        --chakra-sizes-52: 13rem;
+        --chakra-sizes-56: 14rem;
+        --chakra-sizes-60: 15rem;
+        --chakra-sizes-64: 16rem;
+        --chakra-sizes-72: 18rem;
+        --chakra-sizes-80: 20rem;
+        --chakra-sizes-96: 24rem;
+        --chakra-sizes-px: 1px;
+        --chakra-sizes-0-5: 0.125rem;
+        --chakra-sizes-1-5: 0.375rem;
+        --chakra-sizes-2-5: 0.625rem;
+        --chakra-sizes-3-5: 0.875rem;
+        --chakra-sizes-max: max-content;
+        --chakra-sizes-min: min-content;
+        --chakra-sizes-full: 100%;
+        --chakra-sizes-3xs: 14rem;
+        --chakra-sizes-2xs: 16rem;
+        --chakra-sizes-xs: 20rem;
+        --chakra-sizes-sm: 24rem;
+        --chakra-sizes-md: 28rem;
+        --chakra-sizes-lg: 32rem;
+        --chakra-sizes-xl: 36rem;
+        --chakra-sizes-2xl: 42rem;
+        --chakra-sizes-3xl: 48rem;
+        --chakra-sizes-4xl: 56rem;
+        --chakra-sizes-5xl: 64rem;
+        --chakra-sizes-6xl: 72rem;
+        --chakra-sizes-7xl: 80rem;
+        --chakra-sizes-8xl: 90rem;
+        --chakra-sizes-prose: 60ch;
+        --chakra-sizes-container-sm: 640px;
+        --chakra-sizes-container-md: 768px;
+        --chakra-sizes-container-lg: 1024px;
+        --chakra-sizes-container-xl: 1280px;
+        --chakra-zIndices-hide: -1;
+        --chakra-zIndices-auto: auto;
+        --chakra-zIndices-base: 0;
+        --chakra-zIndices-docked: 10;
+        --chakra-zIndices-dropdown: 1000;
+        --chakra-zIndices-sticky: 1100;
+        --chakra-zIndices-banner: 1200;
+        --chakra-zIndices-overlay: 1300;
+        --chakra-zIndices-modal: 1400;
+        --chakra-zIndices-popover: 1500;
+        --chakra-zIndices-skipLink: 1600;
+        --chakra-zIndices-toast: 1700;
+        --chakra-zIndices-tooltip: 1800;
+        --chakra-transition-property-common: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+        --chakra-transition-property-colors: background-color, border-color, color, fill, stroke;
+        --chakra-transition-property-dimensions: width, height;
+        --chakra-transition-property-position: left, right, top, bottom;
+        --chakra-transition-property-background: background-color, background-image, background-position;
+        --chakra-transition-easing-ease-in: cubic-bezier(0.4, 0, 1, 1);
+        --chakra-transition-easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
+        --chakra-transition-easing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+        --chakra-transition-duration-ultra-fast: 50ms;
+        --chakra-transition-duration-faster: 100ms;
+        --chakra-transition-duration-fast: 150ms;
+        --chakra-transition-duration-normal: 200ms;
+        --chakra-transition-duration-slow: 300ms;
+        --chakra-transition-duration-slower: 400ms;
+        --chakra-transition-duration-ultra-slow: 500ms;
+        --chakra-blur-none: 0;
+        --chakra-blur-sm: 4px;
+        --chakra-blur-base: 8px;
+        --chakra-blur-md: 12px;
+        --chakra-blur-lg: 16px;
+        --chakra-blur-xl: 24px;
+        --chakra-blur-2xl: 40px;
+        --chakra-blur-3xl: 64px;
+        --chakra-breakpoints-base: 0em;
+        --chakra-breakpoints-sm: 30em;
+        --chakra-breakpoints-md: 48em;
+        --chakra-breakpoints-lg: 62em;
+        --chakra-breakpoints-xl: 80em;
+        --chakra-breakpoints-2xl: 96em;
+      }
+
+      .chakra-ui-light :host:not([data-theme]),
+      .chakra-ui-light :root:not([data-theme]),
+      .chakra-ui-light [data-theme]:not([data-theme]),
+      [data-theme=light] :host:not([data-theme]),
+      [data-theme=light] :root:not([data-theme]),
+      [data-theme=light] [data-theme]:not([data-theme]),
+      :host[data-theme=light],
+      :root[data-theme=light],
+      [data-theme][data-theme=light] {
+        --chakra-colors-chakra-body-text: var(--chakra-colors-gray-800);
+        --chakra-colors-chakra-body-bg: var(--chakra-colors-white);
+        --chakra-colors-chakra-border-color: var(--chakra-colors-gray-200);
+        --chakra-colors-chakra-subtle-bg: var(--chakra-colors-gray-100);
+        --chakra-colors-chakra-placeholder-color: var(--chakra-colors-gray-500);
+      }
+
+      .chakra-ui-dark :host:not([data-theme]),
+      .chakra-ui-dark :root:not([data-theme]),
+      .chakra-ui-dark [data-theme]:not([data-theme]),
+      [data-theme=dark] :host:not([data-theme]),
+      [data-theme=dark] :root:not([data-theme]),
+      [data-theme=dark] [data-theme]:not([data-theme]),
+      :host[data-theme=dark],
+      :root[data-theme=dark],
+      [data-theme][data-theme=dark] {
+        --chakra-colors-chakra-body-text: var(--chakra-colors-whiteAlpha-900);
+        --chakra-colors-chakra-body-bg: var(--chakra-colors-gray-800);
+        --chakra-colors-chakra-border-color: var(--chakra-colors-whiteAlpha-300);
+        --chakra-colors-chakra-subtle-bg: var(--chakra-colors-gray-700);
+        --chakra-colors-chakra-placeholder-color: var(--chakra-colors-whiteAlpha-400);
+      }
+    </style>
+    <style data-emotion="css-global fubdgu">
+      html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        font-family: system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        -moz-osx-font-smoothing: grayscale;
+        touch-action: manipulation;
+      }
+
+      body {
+        position: relative;
+        min-height: 100%;
+        margin: 0;
+        font-feature-settings: "kern";
+      }
+
+      :where(*, *::before, *::after) {
+        border-width: 0;
+        border-style: solid;
+        box-sizing: border-box;
+        word-wrap: break-word;
+      }
+
+      main {
+        display: block;
+      }
+
+      hr {
+        border-top-width: 1px;
+        box-sizing: content-box;
+        height: 0;
+        overflow: visible;
+      }
+
+      :where(pre, code, kbd, samp) {
+        font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 1em;
+      }
+
+      a {
+        background-color: transparent;
+        color: inherit;
+        -webkit-text-decoration: inherit;
+        text-decoration: inherit;
+      }
+
+      abbr[title] {
+        border-bottom: none;
+        -webkit-text-decoration: underline;
+        text-decoration: underline;
+        -webkit-text-decoration: underline dotted;
+        -webkit-text-decoration: underline dotted;
+        text-decoration: underline dotted;
+      }
+
+      :where(b, strong) {
+        font-weight: bold;
+      }
+
+      small {
+        font-size: 80%;
+      }
+
+      :where(sub, sup) {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+      }
+
+      sub {
+        bottom: -0.25em;
+      }
+
+      sup {
+        top: -0.5em;
+      }
+
+      img {
+        border-style: none;
+      }
+
+      :where(button, input, optgroup, select, textarea) {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+
+      :where(button, input) {
+        overflow: visible;
+      }
+
+      :where(button, select) {
+        text-transform: none;
+      }
+
+      :where(button::-moz-focus-inner,
+        [type="button"]::-moz-focus-inner,
+        [type="reset"]::-moz-focus-inner,
+        [type="submit"]::-moz-focus-inner) {
+        border-style: none;
+        padding: 0;
+      }
+
+      fieldset {
+        padding: 0.35em 0.75em 0.625em;
+      }
+
+      legend {
+        box-sizing: border-box;
+        color: inherit;
+        display: table;
+        max-width: 100%;
+        padding: 0;
+        white-space: normal;
+      }
+
+      progress {
+        vertical-align: baseline;
+      }
+
+      textarea {
+        overflow: auto;
+      }
+
+      :where([type="checkbox"], [type="radio"]) {
+        box-sizing: border-box;
+        padding: 0;
+      }
+
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none !important;
+      }
+
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+
+      input[type="search"] {
+        -webkit-appearance: textfield;
+        outline-offset: -2px;
+      }
+
+      input[type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none !important;
+      }
+
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+      }
+
+      details {
+        display: block;
+      }
+
+      summary {
+        display: -webkit-box;
+        display: -webkit-list-item;
+        display: -ms-list-itembox;
+        display: list-item;
+      }
+
+      template {
+        display: none;
+      }
+
+      [hidden] {
+        display: none !important;
+      }
+
+      :where(blockquote,
+        dl,
+        dd,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        figure,
+        p,
+        pre) {
+        margin: 0;
+      }
+
+      button {
+        background: transparent;
+        padding: 0;
+      }
+
+      fieldset {
+        margin: 0;
+        padding: 0;
+      }
+
+      :where(ol, ul) {
+        margin: 0;
+        padding: 0;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      :where(button, [role="button"]) {
+        cursor: pointer;
+      }
+
+      button::-moz-focus-inner {
+        border: 0 !important;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      :where(h1, h2, h3, h4, h5, h6) {
+        font-size: inherit;
+        font-weight: inherit;
+      }
+
+      :where(button, input, optgroup, select, textarea) {
+        padding: 0;
+        line-height: inherit;
+        color: inherit;
+      }
+
+      :where(img, svg, video, canvas, audio, iframe, embed, object) {
+        display: block;
+      }
+
+      :where(img, video) {
+        max-width: 100%;
+        height: auto;
+      }
+
+      [data-js-focus-visible] :focus:not([data-focus-visible-added]):not([data-focus-visible-disabled]) {
+        outline: none;
+        box-shadow: none;
+      }
+
+      select::-ms-expand {
+        display: none;
+      }
+
+      :root,
+      :host {
+        --chakra-vh: 100vh;
+      }
+
+      @supports (height: -webkit-fill-available) {
+
+        :root,
+        :host {
+          --chakra-vh: -webkit-fill-available;
+        }
+      }
+
+      @supports (height: -moz-fill-available) {
+
+        :root,
+        :host {
+          --chakra-vh: -moz-fill-available;
+        }
+      }
+
+      @supports (height: 100dvh) {
+
+        :root,
+        :host {
+          --chakra-vh: 100dvh;
+        }
+      }
+    </style>
+    <style data-emotion="css-global ohll2m">
+      body {
+        font-family: var(--chakra-fonts-body);
+        color: var(--chakra-colors-chakra-body-text);
+        background: var(--chakra-colors-chakra-body-bg);
+        transition-property: background-color;
+        transition-duration: var(--chakra-transition-duration-normal);
+        line-height: var(--chakra-lineHeights-base);
+      }
+
+      *::-webkit-input-placeholder {
+        color: var(--chakra-colors-chakra-placeholder-color);
+      }
+
+      *::-moz-placeholder {
+        color: var(--chakra-colors-chakra-placeholder-color);
+      }
+
+      *:-ms-input-placeholder {
+        color: var(--chakra-colors-chakra-placeholder-color);
+      }
+
+      *::placeholder {
+        color: var(--chakra-colors-chakra-placeholder-color);
+      }
+
+      *,
+      *::before,
+      ::after {
+        border-color: var(--chakra-colors-chakra-border-color);
+      }
+
+      html,
+      body {
+        background: var(--chakra-colors-black);
+      }
+
+      .chakra-toast__inner {
+        pointer-events: none !important;
+      }
+
+      .chakra-toast__inner .chakra-stack {
+        pointer-events: auto !important;
+      }
+    </style>
+    <style data-emotion="css 17b2ngz">
+      .css-17b2ngz {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+
+      }
+    </style>
+    <div class="css-17b2ngz">
+      <video playsinline autoplay loop muted class="css-zo6k0u">
+        <source src="background_desktop.mp4" type="video/mp4">
+      </video>
+    </div>
+    <style data-emotion="css ep7xq6">
+      .css-ep7xq6 {
+        z-index: 1;
+        position: relative;
+        /* background-color: ; */
+      }
+    </style>
+    <header class="css-ep7xq6">
+      <style data-emotion="css 1a0e5tu">
+        .css-1a0e5tu {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          height: 64px;
+          -webkit-align-items: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+        }
+
+        @media screen and (min-width: 48em) {
+          .css-1a0e5tu {
+            height: 104px;
+          }
+        }
+      </style>
+      <div class="css-1a0e5tu">
+        <style data-emotion="css 11vl7h3">
+          .css-11vl7h3 {
+            width: 100%;
+            -webkit-margin-start: auto;
+            margin-inline-start: auto;
+            -webkit-margin-end: auto;
+            margin-inline-end: auto;
+            -webkit-padding-start: var(--chakra-space-4);
+            padding-inline-start: var(--chakra-space-4);
+            -webkit-padding-end: var(--chakra-space-4);
+            padding-inline-end: var(--chakra-space-4);
+            max-width: var(--chakra-sizes-container-xl);
+          }
+        </style>
+        <div class="chakra-container css-11vl7h3">
+          <style data-emotion="css 1qtrwtv">
+            .css-1qtrwtv {
+              background: transparent;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: justify;
+              -webkit-justify-content: space-between;
+              justify-content: space-between;
+              padding-top: 0px;
+              padding-bottom: 0px;
+            }
+
+            @media screen and (min-width: 48em) {
+              .css-1qtrwtv {
+                padding-top: var(--chakra-space-7);
+                padding-bottom: var(--chakra-space-7);
+              }
+            }
+          </style>
+          <nav class="css-1qtrwtv">
+            <style data-emotion="css 4a6x12">
+              .css-4a6x12 {
+                transition-property: var(--chakra-transition-property-common);
+                transition-duration: var(--chakra-transition-duration-fast);
+                transition-timing-function: var(--chakra-transition-easing-ease-out);
+                cursor: pointer;
+                -webkit-text-decoration: none;
+                text-decoration: none;
+                outline: 2px solid transparent;
+                outline-offset: 2px;
+                color: inherit;
+              }
+
+              .css-4a6x12:focus-visible,
+              .css-4a6x12[data-focus-visible] {
+                box-shadow: var(--chakra-shadows-outline);
+              }
+
+              .css-4a6x12:hover,
+              .css-4a6x12[data-hover] {
+                -webkit-text-decoration: none;
+                text-decoration: none;
+              }
+            </style><a class="chakra-link css-4a6x12" href="index.html">
+              <style data-emotion="css k008qs">
+                .css-k008qs {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                }
+              </style>
+              <div class="css-k008qs">
+                <style data-emotion="css 1cldjo1">
+                  .css-1cldjo1 {
+                    width: 38px;
+                    height: 38px;
+                    z-index: var(--chakra-zIndices-popover);
+                  }
+                </style><img src="assets/pivex-icon-white.png" class="chakra-image css-1cldjo1"
+                  style="animation:spinner 4s infinite;animation-direction:linear;animation-delay:1.4s;transform-origin:center" />
+                <style data-emotion="css rbx6g1">
+                  .css-rbx6g1 {
+                    width: 94px;
+                    height: 38px;
+                    z-index: var(--chakra-zIndices-popover);
+                  }
+                </style><img src="logo.png" class="chakra-image css-rbx6g1" />
+              </div>
+            </a>
+            <style data-emotion="css 1jase7e">
+              .css-1jase7e {
+                display: none;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+              }
+
+              .css-1jase7e>*:not(style)~*:not(style) {
+                margin-top: 0px;
+                -webkit-margin-end: 0px;
+                margin-inline-end: 0px;
+                margin-bottom: 0px;
+                -webkit-margin-start: var(--chakra-space-4);
+                margin-inline-start: var(--chakra-space-4);
+              }
+
+              @media screen and (min-width: 62em) {
+                .css-1jase7e {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                }
+              }
+            </style>
+            <div class="chakra-stack css-1jase7e">
+              <style data-emotion="css l0lr17">
+                .css-l0lr17 {
+                  transition-property: var(--chakra-transition-property-common);
+                  transition-duration: var(--chakra-transition-duration-fast);
+                  transition-timing-function: var(--chakra-transition-easing-ease-out);
+                  cursor: pointer;
+                  -webkit-text-decoration: none;
+                  text-decoration: none;
+                  outline: 2px solid transparent;
+                  outline-offset: 2px;
+                  color: inherit;
+                  -webkit-padding-start: var(--chakra-space-6);
+                  padding-inline-start: var(--chakra-space-6);
+                  -webkit-padding-end: var(--chakra-space-6);
+                  padding-inline-end: var(--chakra-space-6);
+                  font-weight: 600;
+                }
+
+                .css-l0lr17:hover,
+                .css-l0lr17[data-hover] {
+                  -webkit-text-decoration: underline;
+                  text-decoration: underline;
+                }
+
+                .css-l0lr17:focus-visible,
+                .css-l0lr17[data-focus-visible] {
+                  box-shadow: var(--chakra-shadows-outline);
+                }
+              </style><a class="chakra-link css-l0lr17" href="markets.html">Markets</a><a class="chakra-link css-l0lr17"
+                href="faucet.html">Faucet</a><a target="_blank" class="chakra-link css-l0lr17"
+                href="https://docs.Pivex.finance/">Docs</a><a class="chakra-link css-l0lr17" href="faq.html">FAQ</a><a
+                class="chakra-link css-4a6x12" href="dashboard.html">
+                <style data-emotion="css 79sqo7">
+                  .css-79sqo7 {
+                    display: -webkit-inline-box;
+                    display: -webkit-inline-flex;
+                    display: -ms-inline-flexbox;
+                    display: inline-flex;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    -ms-appearance: none;
+                    appearance: none;
+                    -webkit-align-items: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    position: relative;
+                    white-space: nowrap;
+                    vertical-align: middle;
+                    outline: 2px solid transparent;
+                    outline-offset: 2px;
+                    line-height: 1.2;
+                    font-weight: var(--chakra-fontWeights-semibold);
+                    transition-property: var(--chakra-transition-property-common);
+                    transition-duration: var(--chakra-transition-duration-normal);
+                    height: var(--chakra-sizes-10);
+                    font-size: var(--chakra-fontSizes-md);
+                    min-width: 120px;
+                    min-height: 40px;
+                    -webkit-padding-start: 24px;
+                    padding-inline-start: 24px;
+                    -webkit-padding-end: 24px;
+                    padding-inline-end: 24px;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    -webkit-text-decoration: none;
+                    text-decoration: none;
+                    border-color: none;
+                    background-color: var(--chakra-colors-primary);
+                    background-image: linear-gradient(to right, #6153CC, #795EC1);
+                    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.16);
+                    border-width: none;
+                    border-radius: 10px;
+                  }
+
+                  .css-79sqo7:focus-visible,
+                  .css-79sqo7[data-focus-visible] {
+                    box-shadow: var(--chakra-shadows-outline);
+                  }
+
+                  .css-79sqo7:hover,
+                  .css-79sqo7[data-hover] {
+                    -webkit-text-decoration: none;
+                    text-decoration: none;
+                    background-color: rgba(255, 255, 255, 0.04);
+                    box-shadow: 0px 2px 16px rgba(97, 83, 204, 0.48), inset 0px 1px 0px rgba(255, 255, 255, 0.16);
+                  }
+
+                  .css-79sqo7:disabled,
+                  .css-79sqo7[disabled],
+                  .css-79sqo7[aria-disabled=true],
+                  .css-79sqo7[data-disabled] {
+                    background-image: linear-gradient(to right, #272252, #30264D);
+                    color: var(--chakra-colors-text-disabled);
+                    border-color: none;
+                    box-shadow: var(--chakra-shadows-none);
+                  }
+                </style>
+                <span style="display: flex; ">
+                  <p style="color: #ccceff;margin-right: 1rem;">|</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23" viewBox="0,0,256,256"
+                    style="margin-right: 1.5rem;">
+                    <g fill="#cfc3ff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                      stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                      font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                      style="mix-blend-mode: normal">
+                      <g transform="scale(5.12,5.12)">
+                        <path
+                          d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z">
+                        </path>
+                      </g>
+                    </g>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23" viewBox="0,0,256,256"
+                    style="margin-right: 1.5rem;">
+                    <g fill="#ccceff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                      stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                      font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                      style="mix-blend-mode: normal">
+                      <g transform="scale(5.12,5.12)">
+                        <path
+                          d="M46.137,6.552c-0.75,-0.636 -1.928,-0.727 -3.146,-0.238h-0.002c-1.281,0.514 -36.261,15.518 -37.685,16.131c-0.259,0.09 -2.521,0.934 -2.288,2.814c0.208,1.695 2.026,2.397 2.248,2.478l8.893,3.045c0.59,1.964 2.765,9.21 3.246,10.758c0.3,0.965 0.789,2.233 1.646,2.494c0.752,0.29 1.5,0.025 1.984,-0.355l5.437,-5.043l8.777,6.845l0.209,0.125c0.596,0.264 1.167,0.396 1.712,0.396c0.421,0 0.825,-0.079 1.211,-0.237c1.315,-0.54 1.841,-1.793 1.896,-1.935l6.556,-34.077c0.4,-1.82 -0.156,-2.746 -0.694,-3.201zM22,32l-3,8l-3,-10l23,-17z">
+                        </path>
+                      </g>
+                    </g>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256"
+                    style="margin-right: 1.5rem;">
+                    <g fill="#ccceff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                      stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                      font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                      style="mix-blend-mode: normal">
+                      <g transform="scale(5.33333,5.33333)">
+                        <circle cx="14" cy="24" r="12"></circle>
+                        <ellipse cx="34" cy="24" rx="6" ry="11"></ellipse>
+                        <ellipse cx="44" cy="24" rx="2" ry="10"></ellipse>
+                      </g>
+                    </g>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                    <path fill="#ccceff"
+                      d="M10.802 17.77a.703.703 0 1 1-.002 1.406a.703.703 0 0 1 .002-1.406m11.024-4.347a.703.703 0 1 1 .001-1.406a.703.703 0 0 1-.001 1.406m0-2.876a2.176 2.176 0 0 0-2.174 2.174c0 .233.039.465.115.691l-7.181 3.823a2.165 2.165 0 0 0-1.784-.937c-.829 0-1.584.475-1.95 1.216l-6.451-3.402c-.682-.358-1.192-1.48-1.138-2.502c.028-.533.212-.947.493-1.107c.178-.1.392-.092.62.027l.042.023c1.71.9 7.304 3.847 7.54 3.956c.363.169.565.237 1.185-.057l11.564-6.014c.17-.064.368-.227.368-.474c0-.342-.354-.477-.355-.477c-.658-.315-1.669-.788-2.655-1.25c-2.108-.987-4.497-2.105-5.546-2.655c-.906-.474-1.635-.074-1.765.006l-.252.125C7.78 6.048 1.46 9.178 1.1 9.397C.457 9.789.058 10.57.006 11.539c-.08 1.537.703 3.14 1.824 3.727l6.822 3.518a2.175 2.175 0 0 0 2.15 1.862a2.177 2.177 0 0 0 2.173-2.14l7.514-4.073c.38.298.853.461 1.337.461A2.176 2.176 0 0 0 24 12.72a2.176 2.176 0 0 0-2.174-2.174" />
+                  </svg>
+                </span>
+                <style>
+                  svg:hover {
+                    transform: scale(1.5);
+                    transition: all 0.2s ease-in-out;
+                  }
+                </style>
+              </a>
+            </div>
+            <style data-emotion="css 19gw1sx">
+              .css-19gw1sx {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+              }
+
+              .css-19gw1sx>*:not(style)~*:not(style) {
+                margin-top: 0px;
+                -webkit-margin-end: 0px;
+                margin-inline-end: 0px;
+                margin-bottom: 0px;
+                -webkit-margin-start: 12px;
+                margin-inline-start: 12px;
+              }
+
+              @media screen and (min-width: 62em) {
+                .css-19gw1sx {
+                  display: none;
+                }
+              }
+            </style>
+            <div class="chakra-stack css-19gw1sx">
+              <style data-emotion="css johlez">
+                .css-johlez {
+                  display: -webkit-inline-box;
+                  display: -webkit-inline-flex;
+                  display: -ms-inline-flexbox;
+                  display: inline-flex;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  -ms-appearance: none;
+                  appearance: none;
+                  -webkit-align-items: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  -webkit-justify-content: center;
+                  justify-content: center;
+                  -webkit-user-select: none;
+                  -moz-user-select: none;
+                  -ms-user-select: none;
+                  user-select: none;
+                  position: relative;
+                  white-space: nowrap;
+                  vertical-align: middle;
+                  outline: 2px solid transparent;
+                  outline-offset: 2px;
+                  line-height: 1.2;
+                  font-weight: var(--chakra-fontWeights-semibold);
+                  transition-property: var(--chakra-transition-property-common);
+                  transition-duration: var(--chakra-transition-duration-normal);
+                  height: 32px;
+                  min-width: var(--chakra-sizes-8);
+                  font-size: var(--chakra-fontSizes-sm);
+                  -webkit-padding-start: var(--chakra-space-3);
+                  padding-inline-start: var(--chakra-space-3);
+                  -webkit-padding-end: var(--chakra-space-3);
+                  padding-inline-end: var(--chakra-space-3);
+                  background: linear-gradient(118.15deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.02) 100%);
+                  padding: var(--chakra-space-1);
+                  border-radius: 10px;
+                  z-index: var(--chakra-zIndices-popover);
+                  border-width: 1px;
+                }
+
+                .css-johlez:focus-visible,
+                .css-johlez[data-focus-visible] {
+                  box-shadow: var(--chakra-shadows-outline);
+                }
+
+                .css-johlez:disabled,
+                .css-johlez[disabled],
+                .css-johlez[aria-disabled=true],
+                .css-johlez[data-disabled] {
+                  opacity: 0.4;
+                  cursor: not-allowed;
+                  box-shadow: var(--chakra-shadows-none);
+                }
+
+                .css-johlez:active,
+                .css-johlez[data-active] {
+                  background: var(--chakra-colors-gray-300);
+                }
+              </style><button type="button" class="chakra-button css-johlez" aria-label="Open Menu">
+                <style data-emotion="css 2ipw93">
+                  .css-2ipw93 {
+                    width: var(--chakra-sizes-6);
+                    height: var(--chakra-sizes-6);
+                    display: inline-block;
+                    line-height: 1em;
+                    -webkit-flex-shrink: 0;
+                    -ms-flex-negative: 0;
+                    flex-shrink: 0;
+                    color: rgba(255, 255, 255, 0.72);
+                    vertical-align: middle;
+                  }
+                </style><svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-2ipw93" aria-hidden="true">
+                  <path fill="currentColor"
+                    d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z">
+                  </path>
+                </svg>
+              </button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <style data-emotion="css 1m5yebe">
+      .css-1m5yebe {
+        background-color: #000517;
+      }
+    </style>
+    <div class="css-1m5yebe">
+      <style data-emotion="css 8r3z1">
+        .css-8r3z1 {
+          width: 100%;
+          -webkit-margin-start: auto;
+          margin-inline-start: auto;
+          -webkit-margin-end: auto;
+          margin-inline-end: auto;
+          -webkit-padding-start: var(--chakra-space-4);
+          padding-inline-start: var(--chakra-space-4);
+          -webkit-padding-end: var(--chakra-space-4);
+          padding-inline-end: var(--chakra-space-4);
+          height: 100%;
+          max-width: var(--chakra-sizes-container-xl);
+          z-index: 1;
+          position: relative;
+          padding-bottom: 64px;
+        }
+
+        @media screen and (min-width: 48em) {
+          .css-8r3z1 {
+            padding-bottom: 0px;
+          }
+        }
+      </style>
+      <div class="chakra-container css-8r3z1">
+        <style data-emotion="css 1tbem1s">
+          .css-1tbem1s {
+            height: 300px;
+            position: absolute;
+            left: calc(var(--chakra-space-20) * -1);
+          }
+
+          @media screen and (min-width: 48em) {
+            .css-1tbem1s {
+              height: 500px;
+              left: -145px;
+            }
+          }
+
+          @media screen and (min-width: 80em) {
+            .css-1tbem1s {
+              left: -15%;
+            }
+          }
+
+          @media screen and (min-width: 96em) {
+            .css-1tbem1s {
+              height: 650px;
+              left: -22%;
+            }
+          }
+        </style><img src="assets/replace1.webp" class="chakra-image css-1tbem1s replace1" />
+        <style data-emotion="css gqdryg">
+          .css-gqdryg {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            min-height: 120px;
+            padding-top: var(--chakra-space-20);
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+          }
+
+          @media screen and (min-width: 48em) {
+            .css-gqdryg {
+              min-height: 544px;
+              padding-top: 0px;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+            }
+          }
+
+          @media screen and (min-width: 96em) {
+            .css-gqdryg {
+              min-height: 762px;
+            }
+          }
+        </style>
+        <div class="css-gqdryg">
+          <style data-emotion="css 1dcugdz">
+            .css-1dcugdz {
+              font-family: var(--chakra-fonts-heading);
+              font-size: var(--chakra-fontSizes-4xl);
+              max-width: 80%;
+              text-align: center;
+              font-weight: 700;
+              line-height: 48px;
+              margin-bottom: 0px;
+              background-image: linear-gradient(to bottom, #EBEBEB, #CCCCCC);
+              color: transparent;
+              -webkit-background-clip: text;
+              background-clip: text;
+            }
+
+            @media screen and (min-width: 48em) {
+              .css-1dcugdz {
+                font-size: var(--chakra-fontSizes-5xl);
+                max-width: 70%;
+                line-height: 72px;
+              }
+            }
+
+            @media screen and (min-width: 96em) {
+              .css-1dcugdz {
+                font-size: var(--chakra-fontSizes-7xl);
+                line-height: 92px;
+              }
+            }
+          </style>
+          <h2 class="chakra-heading css-1dcugdz">Uncover the Promise of Decentralized Credit</h2>
+          <style data-emotion="css 1yjny5c">
+            .css-1yjny5c {
+              max-width: 580px;
+              margin-top: var(--chakra-space-4);
+            }
+          </style>
+          <div class="css-1yjny5c">
+            <style data-emotion="css laewdu">
+              .css-laewdu {
+                color: rgba(255, 255, 255, 0.72);
+                text-align: center;
+                max-width: 300px;
+              }
+
+              @media screen and (min-width: 48em) {
+                .css-laewdu {
+                  max-width: 500px;
+                }
+              }
+            </style>
+            <p class="chakra-text css-laewdu">Introducing a Safe and Streamlined Lending Platform to Ethereum</p>
+          </div>
+          <style data-emotion="css jqp07l">
+            .css-jqp07l {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              margin-top: var(--chakra-space-10);
+              width: var(--chakra-sizes-full);
+            }
+
+            .css-jqp07l>*:not(style)~*:not(style) {
+              margin-top: var(--chakra-space-4);
+              -webkit-margin-end: 0px;
+              margin-inline-end: 0px;
+              margin-bottom: 0px;
+              -webkit-margin-start: 0px;
+              margin-inline-start: 0px;
+            }
+
+            @media screen and (min-width: 48em) {
+              .css-jqp07l {
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                width: auto;
+              }
+
+              .css-jqp07l>*:not(style)~*:not(style) {
+                margin-top: 0px;
+                -webkit-margin-end: 0px;
+                margin-inline-end: 0px;
+                margin-bottom: 0px;
+                -webkit-margin-start: var(--chakra-space-4);
+                margin-inline-start: var(--chakra-space-4);
+              }
+            }
+          </style>
+          <div class="chakra-stack css-jqp07l">
+            <style data-emotion="css 4a6x12">
+              .css-4a6x12 {
+                transition-property: var(--chakra-transition-property-common);
+                transition-duration: var(--chakra-transition-duration-fast);
+                transition-timing-function: var(--chakra-transition-easing-ease-out);
+                cursor: pointer;
+                -webkit-text-decoration: none;
+                text-decoration: none;
+                outline: 2px solid transparent;
+                outline-offset: 2px;
+                color: inherit;
+              }
+
+              .css-4a6x12:focus-visible,
+              .css-4a6x12[data-focus-visible] {
+                box-shadow: var(--chakra-shadows-outline);
+              }
+
+              .css-4a6x12:hover,
+              .css-4a6x12[data-hover] {
+                -webkit-text-decoration: none;
+                text-decoration: none;
+              }
+            </style><a class="chakra-link css-4a6x12" href="dashboard.html">
+              <style data-emotion="css tq58bm">
+                .css-tq58bm {
+                  display: -webkit-inline-box;
+                  display: -webkit-inline-flex;
+                  display: -ms-inline-flexbox;
+                  display: inline-flex;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  -ms-appearance: none;
+                  appearance: none;
+                  -webkit-align-items: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  -webkit-justify-content: center;
+                  justify-content: center;
+                  -webkit-user-select: none;
+                  -moz-user-select: none;
+                  -ms-user-select: none;
+                  user-select: none;
+                  position: relative;
+                  white-space: nowrap;
+                  vertical-align: middle;
+                  outline: 2px solid transparent;
+                  outline-offset: 2px;
+                  line-height: 1.2;
+                  font-weight: var(--chakra-fontWeights-semibold);
+                  transition-property: var(--chakra-transition-property-common);
+                  transition-duration: var(--chakra-transition-duration-normal);
+                  height: var(--chakra-sizes-10);
+                  font-size: var(--chakra-fontSizes-md);
+                  width: var(--chakra-sizes-full);
+                  min-width: 136px;
+                  min-height: 48px;
+                  -webkit-padding-start: 24px;
+                  padding-inline-start: 24px;
+                  -webkit-padding-end: 24px;
+                  padding-inline-end: 24px;
+                  padding-top: 12px;
+                  padding-bottom: 12px;
+                  -webkit-text-decoration: none;
+                  text-decoration: none;
+                  border-color: none;
+                  background-color: var(--chakra-colors-primary);
+                  background-image: linear-gradient(to right, #6153CC, #795EC1);
+                  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.16);
+                  border-width: none;
+                  border-radius: 10px;
+                }
+
+                .css-tq58bm:focus-visible,
+                .css-tq58bm[data-focus-visible] {
+                  box-shadow: var(--chakra-shadows-outline);
+                }
+
+                @media screen and (min-width: 48em) {
+                  .css-tq58bm {
+                    width: auto;
+                  }
+                }
+
+                .css-tq58bm:hover,
+                .css-tq58bm[data-hover] {
+                  -webkit-text-decoration: none;
+                  text-decoration: none;
+                  background-color: rgba(255, 255, 255, 0.04);
+                  box-shadow: 0px 2px 16px rgba(97, 83, 204, 0.48), inset 0px 1px 0px rgba(255, 255, 255, 0.16);
+                }
+
+                .css-tq58bm:disabled,
+                .css-tq58bm[disabled],
+                .css-tq58bm[aria-disabled=true],
+                .css-tq58bm[data-disabled] {
+                  background-image: linear-gradient(to right, #272252, #30264D);
+                  color: var(--chakra-colors-text-disabled);
+                  border-color: none;
+                  box-shadow: var(--chakra-shadows-none);
+                }
+              </style><button type="button" class="chakra-button css-tq58bm">Launch App
+                <!-- --></button>
+            </a><a class="chakra-link css-4a6x12"
+              href="https://medium.com/@Pivex.Finance/announcing-pivex-finance-28050e2dd4e">
+              <style data-emotion="css u7gqbr">
+                .css-u7gqbr {
+                  display: -webkit-inline-box;
+                  display: -webkit-inline-flex;
+                  display: -ms-inline-flexbox;
+                  display: inline-flex;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  -ms-appearance: none;
+                  appearance: none;
+                  -webkit-align-items: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  -webkit-justify-content: center;
+                  justify-content: center;
+                  -webkit-user-select: none;
+                  -moz-user-select: none;
+                  -ms-user-select: none;
+                  user-select: none;
+                  position: relative;
+                  white-space: nowrap;
+                  vertical-align: middle;
+                  outline: 2px solid transparent;
+                  outline-offset: 2px;
+                  line-height: 1.2;
+                  font-weight: var(--chakra-fontWeights-semibold);
+                  transition-property: var(--chakra-transition-property-common);
+                  transition-duration: var(--chakra-transition-duration-normal);
+                  height: var(--chakra-sizes-10);
+                  font-size: var(--chakra-fontSizes-md);
+                  border: 1px solid;
+                  color: inherit;
+                  width: var(--chakra-sizes-full);
+                  min-width: 136px;
+                  min-height: 48px;
+                  -webkit-padding-start: 24px;
+                  padding-inline-start: 24px;
+                  -webkit-padding-end: 24px;
+                  padding-inline-end: 24px;
+                  padding-top: 12px;
+                  padding-bottom: 12px;
+                  -webkit-text-decoration: none;
+                  text-decoration: none;
+                  border-color: var(--chakra-colors-primary);
+                  background-color: var(--chakra-colors-transparent);
+                  background-image: none;
+                  box-shadow: var(--chakra-shadows-none);
+                  border-width: 2px;
+                  border-radius: 10px;
+                }
+
+                .css-u7gqbr:focus-visible,
+                .css-u7gqbr[data-focus-visible] {
+                  box-shadow: var(--chakra-shadows-outline);
+                }
+
+                .chakra-button__group[data-attached][data-orientation=horizontal]>.css-u7gqbr:not(:last-of-type) {
+                  -webkit-margin-end: -1px;
+                  margin-inline-end: -1px;
+                }
+
+                .chakra-button__group[data-attached][data-orientation=vertical]>.css-u7gqbr:not(:last-of-type) {
+                  margin-bottom: -1px;
+                }
+
+                .css-u7gqbr:active,
+                .css-u7gqbr[data-active] {
+                  background: var(--chakra-colors-gray-200);
+                }
+
+                @media screen and (min-width: 48em) {
+                  .css-u7gqbr {
+                    width: auto;
+                  }
+                }
+
+                .css-u7gqbr:hover,
+                .css-u7gqbr[data-hover] {
+                  -webkit-text-decoration: none;
+                  text-decoration: none;
+                  background-color: rgba(255, 255, 255, 0.04);
+                  box-shadow: var(--chakra-shadows-none);
+                }
+
+                .css-u7gqbr:disabled,
+                .css-u7gqbr[disabled],
+                .css-u7gqbr[aria-disabled=true],
+                .css-u7gqbr[data-disabled] {
+                  background-image: none;
+                  color: var(--chakra-colors-text-disabled);
+                  border-color: #272252;
+                  box-shadow: var(--chakra-shadows-none);
+                }
+              </style>
+            </a>
+          </div>
+        </div>
+      </div>
+      <style data-emotion="css ep7xq6">
+        .css-ep7xq6 {
+          z-index: 1;
+          position: relative;
+        }
+      </style>
+      <div class="css-ep7xq6">
+        <style data-emotion="css aghi5o">
+          .css-aghi5o {
+            width: 100%;
+            -webkit-margin-start: auto;
+            margin-inline-start: auto;
+            -webkit-margin-end: auto;
+            margin-inline-end: auto;
+            -webkit-padding-start: var(--chakra-space-4);
+            padding-inline-start: var(--chakra-space-4);
+            -webkit-padding-end: var(--chakra-space-4);
+            padding-inline-end: var(--chakra-space-4);
+            max-width: var(--chakra-sizes-container-xl);
+            background-image: url('assets/vector-features.svg');
+          }
+        </style>
+        <div class="chakra-container css-aghi5o">
+          <style data-emotion="css 1ivv7yp">
+            .css-1ivv7yp {
+              grid-gap: var(--chakra-space-6);
+              grid-template-rows: repeat(2, 1fr);
+              grid-template-columns: repeat(3, 1fr);
+              display: none;
+            }
+
+            @media screen and (min-width: 48em) {
+              .css-1ivv7yp {
+                display: grid;
+              }
+            }
+          </style>
+          <div class="css-1ivv7yp">
+            <style data-emotion="css 17qetzi">
+              .css-17qetzi {
+                grid-column: span 2/span 2;
+                height: 100%;
+              }
+
+              @media screen and (min-width: 48em) {
+                .css-17qetzi {
+                  height: 420px;
+                }
+              }
+            </style>
+            <div class="css-17qetzi">
+              <style data-emotion="css lwi2ok">
+                .css-lwi2ok {
+                  border-radius: var(--chakra-radii-3xl);
+                  border: 1px solid #FFFFFF12;
+                  -webkit-backdrop-filter: blur(16px);
+                  backdrop-filter: blur(16px);
+                  height: 100%;
+                }
+              </style>
+              <div class="css-lwi2ok">
+                <style data-emotion="css 1q9hk1a">
+                  .css-1q9hk1a {
+                    background-image: url('assets/noise-texture.png');
+                    height: var(--chakra-sizes-full);
+                  }
+                </style>
+                <div class="css-1q9hk1a">
+                  <style data-emotion="css yp5mc9">
+                    .css-yp5mc9 {
+                      border-radius: var(--chakra-radii-3xl);
+                      background-image: linear-gradient(118.15deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.02) 100%);
+                      height: 100%;
+                    }
+                  </style>
+                  <div class="css-yp5mc9">
+                    <style data-emotion="css gnutdw">
+                      .css-gnutdw {
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-align-items: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-box-pack: justify;
+                        -webkit-justify-content: space-between;
+                        justify-content: space-between;
+                        -webkit-flex-direction: column;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        padding: var(--chakra-space-7);
+                        height: 100%;
+                      }
+
+                      .css-gnutdw>*:not(style)~*:not(style) {
+                        margin-top: 0.5rem;
+                        -webkit-margin-end: 0px;
+                        margin-inline-end: 0px;
+                        margin-bottom: 0px;
+                        -webkit-margin-start: 0px;
+                        margin-inline-start: 0px;
+                      }
+
+                      @media screen and (min-width: 48em) {
+                        .css-gnutdw {
+                          padding: var(--chakra-space-10);
+                        }
+                      }
+                    </style>
+                    <div class="chakra-stack css-gnutdw">
+                      <style data-emotion="css owjkmg">
+                        .css-owjkmg {
+                          display: -webkit-box;
+                          display: -webkit-flex;
+                          display: -ms-flexbox;
+                          display: flex;
+                          -webkit-align-items: center;
+                          -webkit-box-align: center;
+                          -ms-flex-align: center;
+                          align-items: center;
+                          -webkit-flex-direction: column;
+                          -ms-flex-direction: column;
+                          flex-direction: column;
+                        }
+
+                        .css-owjkmg>*:not(style)~*:not(style) {
+                          margin-top: 0.5rem;
+                          -webkit-margin-end: 0px;
+                          margin-inline-end: 0px;
+                          margin-bottom: 0px;
+                          -webkit-margin-start: 0px;
+                          margin-inline-start: 0px;
+                        }
+                      </style>
+                      <div class="chakra-stack css-owjkmg">
+                        <style data-emotion="css 3f59yc">
+                          .css-3f59yc {
+                            font-family: var(--chakra-fonts-heading);
+                            font-weight: var(--chakra-fontWeights-bold);
+                            line-height: 1.33;
+                            font-size: var(--chakra-fontSizes-2xl);
+                            text-align: center;
+                          }
+
+                          @media screen and (min-width: 48em) {
+                            .css-3f59yc {
+                              line-height: 1.2;
+                            }
+                          }
+                        </style>
+                        <h2 class="chakra-heading css-3f59yc">Lend and borrow assets with ease</h2>
+                        <style data-emotion="css 1jojit8">
+                          .css-1jojit8 {
+                            color: rgba(255, 255, 255, 0.72);
+                            text-align: center;
+                          }
+                        </style>
+                        <p class="chakra-text css-1jojit8">Find the best opportunities for earning and investing</p>
+                      </div>
+                      <style data-emotion="css 4lei0w">
+                        .css-4lei0w {
+                          padding-top: var(--chakra-space-6);
+                        }
+                      </style><img src="assets/markets-preview.png" class="chakra-image css-4lei0w" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <style data-emotion="css 18h4zzh">
+              .css-18h4zzh {
+                grid-column: span 1/span 1;
+                height: 100%;
+              }
+
+              @media screen and (min-width: 48em) {
+                .css-18h4zzh {
+                  height: 420px;
+                }
+              }
+            </style>
+            <div class="css-18h4zzh">
+              <div class="css-lwi2ok">
+                <div class="css-1q9hk1a">
+                  <div class="css-yp5mc9">
+                    <div class="chakra-stack css-gnutdw">
+                      <style data-emotion="css 1xj1day">
+                        .css-1xj1day {
+                          padding-bottom: var(--chakra-space-3);
+                        }
+
+                        @media screen and (min-width: 48em) {
+                          .css-1xj1day {
+                            padding-bottom: var(--chakra-space-6);
+                          }
+                        }
+                      </style><img src="assets/shield.svg" class="chakra-image css-1xj1day" />
+                      <div class="chakra-stack css-owjkmg">
+                        <h2 class="chakra-heading css-3f59yc">Reliable and secure</h2><a class="chakra-link css-4a6x12"
+                          href="https://medium.com/@Pivex.Finance/pivex-protocol-completes-successful-audit-by-hashex-70b10304031f">
+                          <style data-emotion="css 1fvvy14">
+                            .css-1fvvy14 {
+                              -webkit-transition: 0.5s;
+                              transition: 0.5s;
+                              background-image: linear-gradient(to right, #6153CC, #795EC1);
+                              color: transparent;
+                              -webkit-background-clip: text;
+                              background-clip: text;
+                              text-align: center;
+                              font-weight: 600;
+                              border-bottom: 1px solid;
+                            }
+
+                            .css-1fvvy14:hover,
+                            .css-1fvvy14[data-hover] {
+                              background: linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)), linear-gradient(93.74deg, #6153CC 3.56%, #795EC1 97.35%);
+                              color: transparent;
+                              -webkit-background-clip: text;
+                              background-clip: text;
+                            }
+                          </style>
+
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="css-18h4zzh">
+              <div class="css-lwi2ok">
+                <div class="css-1q9hk1a">
+                  <div class="css-yp5mc9">
+                    <div class="chakra-stack css-gnutdw"><img src="assets/fast.svg" class="chakra-image css-1xj1day" />
+                      <div class="chakra-stack css-owjkmg">
+                        <h2 class="chakra-heading css-3f59yc">Fast and Efficient</h2>
+                        <p class="chakra-text css-1jojit8">Unleashed on Ethereum network</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="css-17qetzi">
+              <div class="css-lwi2ok">
+                <div class="css-1q9hk1a">
+                  <div class="css-yp5mc9">
+                    <div class="chakra-stack css-gnutdw"><img src="assets/lighthouse-preview.png"
+                        class="chakra-image css-1xj1day" />
+                      <div class="chakra-stack css-owjkmg">
+                        <h2 class="chakra-heading css-3f59yc">Streamlined Experience</h2>
+                        <p class="chakra-text css-1jojit8">Navigate your investments with confidence using Lighthouse
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style data-emotion="css 1syakm3">
+            .css-1syakm3 {
+              display: contents;
+              height: 100%;
+            }
+
+            @media screen and (min-width: 48em) {
+              .css-1syakm3 {
+                display: none;
+              }
+            }
+          </style>
+          <div class="css-1syakm3">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="height:auto">
+                  <style data-emotion="css 1xj3g25">
+                    .css-1xj3g25 {
+                      height: 100%;
+                    }
+
+                    @media screen and (min-width: 48em) {
+                      .css-1xj3g25 {
+                        height: 420px;
+                      }
+                    }
+                  </style>
+                  <div class="css-1xj3g25">
+                    <div class="css-lwi2ok">
+                      <div class="css-1q9hk1a">
+                        <div class="css-yp5mc9">
+                          <div class="chakra-stack css-gnutdw"><img src="assets/fast.svg"
+                              class="chakra-image css-1xj1day" />
+                            <div class="chakra-stack css-owjkmg">
+                              <h2 class="chakra-heading css-3f59yc">Fast and Efficient</h2>
+                              <p class="chakra-text css-1jojit8">Unleashed on Ethereum network</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-swiper-slide-index="0" style="height:auto">
+                  <style data-emotion="css 4fzylz">
+                    .css-4fzylz {
+                      border-radius: var(--chakra-radii-3xl);
+                      border: 1px solid #FFFFFF12;
+                      -webkit-backdrop-filter: blur(16px);
+                      backdrop-filter: blur(16px);
+                      height: 100%;
+                      overflow: hidden;
+                    }
+                  </style>
+                  <div class="css-4fzylz">
+                    <div class="css-1q9hk1a">
+                      <div class="css-yp5mc9">
+                        <style data-emotion="css 1s0j0ti">
+                          .css-1s0j0ti {
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-align-items: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            -webkit-box-pack: start;
+                            -ms-flex-pack: start;
+                            -webkit-justify-content: flex-start;
+                            justify-content: flex-start;
+                            -webkit-flex-direction: column;
+                            -ms-flex-direction: column;
+                            flex-direction: column;
+                            padding: var(--chakra-space-7);
+                            height: 100%;
+                            padding-top: var(--chakra-space-7);
+                          }
+
+                          .css-1s0j0ti>*:not(style)~*:not(style) {
+                            margin-top: 0.5rem;
+                            -webkit-margin-end: 0px;
+                            margin-inline-end: 0px;
+                            margin-bottom: 0px;
+                            -webkit-margin-start: 0px;
+                            margin-inline-start: 0px;
+                          }
+
+                          @media screen and (min-width: 48em) {
+                            .css-1s0j0ti {
+                              padding: var(--chakra-space-10);
+                            }
+                          }
+                        </style>
+                        <div class="chakra-stack css-1s0j0ti">
+                          <div class="chakra-stack css-owjkmg">
+                            <h2 class="chakra-heading css-3f59yc">Lend and borrow assets with ease</h2>
+                            <p class="chakra-text css-1jojit8">Find the best opportunities for earning and investing</p>
+                          </div>
+                          <style data-emotion="css 55ulp1">
+                            .css-55ulp1 {
+                              object-fit: fill;
+                              position: absolute;
+                              left: var(--chakra-space-8);
+                              top: var(--chakra-space-40);
+                            }
+                          </style><img src="assets/markets-preview-mobile.png" class="chakra-image css-55ulp1" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-swiper-slide-index="1" style="height:auto">
+                  <div class="css-1xj3g25">
+                    <div class="css-lwi2ok">
+                      <div class="css-1q9hk1a">
+                        <div class="css-yp5mc9">
+                          <div class="chakra-stack css-gnutdw"><img src="assets/shield.svg"
+                              class="chakra-image css-1xj1day" />
+                            <div class="chakra-stack css-owjkmg">
+                              <h2 class="chakra-heading css-3f59yc">Reliable and secure</h2><a
+                                class="chakra-link css-4a6x12"
+                                href="https://medium.com/@Pivex.Finance/pivex-protocol-completes-successful-audit-by-hashex-70b10304031f">
+                                <p class="chakra-text css-1fvvy14"
+                                  style="border-image:linear-gradient(90deg, #6153CC 50%, #795EC1 100%) 1">Audited by
+                                  HashEx</p>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-swiper-slide-index="2" style="height:auto">
+                  <div class="css-4fzylz">
+                    <div class="css-1q9hk1a">
+                      <div class="css-yp5mc9">
+                        <style data-emotion="css 1e1tjkp">
+                          .css-1e1tjkp {
+                            object-fit: cover;
+                            position: relative;
+                            left: var(--chakra-space-8);
+                            top: var(--chakra-space-12);
+                          }
+                        </style><img src="assets/lighthouse-preview-mobile.png" class="chakra-image css-1e1tjkp" />
+                        <style data-emotion="css 1fitz73">
+                          .css-1fitz73 {
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-align-items: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            -webkit-box-pack: start;
+                            -ms-flex-pack: start;
+                            -webkit-justify-content: flex-start;
+                            justify-content: flex-start;
+                            -webkit-flex-direction: column;
+                            -ms-flex-direction: column;
+                            flex-direction: column;
+                            padding: var(--chakra-space-7);
+                            height: 100%;
+                            padding-top: var(--chakra-space-24);
+                          }
+
+                          .css-1fitz73>*:not(style)~*:not(style) {
+                            margin-top: 0.5rem;
+                            -webkit-margin-end: 0px;
+                            margin-inline-end: 0px;
+                            margin-bottom: 0px;
+                            -webkit-margin-start: 0px;
+                            margin-inline-start: 0px;
+                          }
+
+                          @media screen and (min-width: 48em) {
+                            .css-1fitz73 {
+                              padding: var(--chakra-space-10);
+                            }
+                          }
+                        </style>
+                        <div class="chakra-stack css-1fitz73">
+                          <div class="chakra-stack css-owjkmg">
+                            <h2 class="chakra-heading css-3f59yc">Streamlined Experience</h2>
+                            <p class="chakra-text css-1jojit8">Navigate your investments with confidence using
+                              Lighthouse</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-swiper-slide-index="3" style="height:auto">
+                  <div class="css-1xj3g25">
+                    <div class="css-lwi2ok">
+                      <div class="css-1q9hk1a">
+                        <div class="css-yp5mc9">
+                          <div class="chakra-stack css-gnutdw"><img src="assets/fast.svg"
+                              class="chakra-image css-1xj1day" />
+                            <div class="chakra-stack css-owjkmg">
+                              <h2 class="chakra-heading css-3f59yc">Fast and Efficient</h2>
+                              <p class="chakra-text css-1jojit8">Unleashed on Ethereum network</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="height:auto">
+                  <div class="css-4fzylz">
+                    <div class="css-1q9hk1a">
+                      <div class="css-yp5mc9">
+                        <div class="chakra-stack css-1s0j0ti">
+                          <div class="chakra-stack css-owjkmg">
+                            <h2 class="chakra-heading css-3f59yc">Lend and borrow assets with ease</h2>
+                            <p class="chakra-text css-1jojit8">Find the best opportunities for earning and investing</p>
+                          </div><img src="assets/markets-preview-mobile.png" class="chakra-image css-55ulp1" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <style data-emotion="css 11vl7h3">
+          .css-11vl7h3 {
+            width: 100%;
+            -webkit-margin-start: auto;
+            margin-inline-start: auto;
+            -webkit-margin-end: auto;
+            margin-inline-end: auto;
+            -webkit-padding-start: var(--chakra-space-4);
+            padding-inline-start: var(--chakra-space-4);
+            -webkit-padding-end: var(--chakra-space-4);
+            padding-inline-end: var(--chakra-space-4);
+            max-width: var(--chakra-sizes-container-xl);
+          }
+        </style>
+        <div class="chakra-container css-11vl7h3">
+          <style data-emotion="css x81ah">
+            .css-x81ah {
+              font-family: var(--chakra-fonts-heading);
+              text-align: center;
+              font-size: 40px;
+              font-weight: 700;
+              line-height: 48px;
+              margin-bottom: 0px;
+              background-image: linear-gradient(to bottom, #EBEBEB, #CCCCCC);
+              color: transparent;
+              -webkit-background-clip: text;
+              background-clip: text;
+              padding-top: var(--chakra-space-10);
+              padding-bottom: var(--chakra-space-12);
+            }
+
+            @media screen and (min-width: 48em) {
+              .css-x81ah {
+                padding-top: var(--chakra-space-64);
+              }
+            }
+          </style>
+          <h2 class="chakra-heading css-x81ah">Keep Abreast of Developments</h2>
+          <style data-emotion="css 1pr7dmh">
+            .css-1pr7dmh {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              -webkit-justify-content: center;
+              justify-content: center;
+              -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              background-image: url('assets/vector-socials.svg');
+              -webkit-background-size: 70%;
+              background-size: 70%;
+              -webkit-background-position: center;
+              background-position: center;
+            }
+
+            .css-1pr7dmh>*:not(style)~*:not(style) {
+              margin-top: var(--chakra-space-4);
+              -webkit-margin-end: 0px;
+              margin-inline-end: 0px;
+              margin-bottom: 0px;
+              -webkit-margin-start: 0px;
+              margin-inline-start: 0px;
+            }
+
+            @media screen and (min-width: 48em) {
+              .css-1pr7dmh {
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+              }
+
+              .css-1pr7dmh>*:not(style)~*:not(style) {
+                margin-top: 0px;
+                -webkit-margin-end: 0px;
+                margin-inline-end: 0px;
+                margin-bottom: 0px;
+                -webkit-margin-start: var(--chakra-space-4);
+                margin-inline-start: var(--chakra-space-4);
+              }
+            }
+          </style>
+          <div class="chakra-stack css-1pr7dmh">
+            <style data-emotion="css 1ruazt6">
+              .css-1ruazt6 {
+                max-width: 100%;
+                border-radius: var(--chakra-radii-3xl);
+                border: 1px solid #FFFFFF12;
+                -webkit-backdrop-filter: blur(16px);
+                backdrop-filter: blur(16px);
+                min-height: 272px;
+              }
+
+              @media screen and (min-width: 48em) {
+                .css-1ruazt6 {
+                  max-width: 50%;
+                  min-height: 376px;
+                }
+              }
+            </style>
+            <div class="css-1ruazt6">
+              <div class="css-1q9hk1a">
+                <style data-emotion="css cfeopv">
+                  .css-cfeopv {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-align-items: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: justify;
+                    -webkit-justify-content: space-between;
+                    justify-content: space-between;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    border-radius: var(--chakra-radii-3xl);
+                    background-image: linear-gradient(118.15deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.02) 100%);
+                    -webkit-padding-start: var(--chakra-space-10);
+                    padding-inline-start: var(--chakra-space-10);
+                    -webkit-padding-end: var(--chakra-space-10);
+                    padding-inline-end: var(--chakra-space-10);
+                    padding-top: var(--chakra-space-10);
+                    padding-bottom: var(--chakra-space-10);
+                    height: var(--chakra-sizes-full);
+                  }
+
+                  .css-cfeopv>*:not(style)~*:not(style) {
+                    margin-top: 0.5rem;
+                    -webkit-margin-end: 0px;
+                    margin-inline-end: 0px;
+                    margin-bottom: 0px;
+                    -webkit-margin-start: 0px;
+                    margin-inline-start: 0px;
+                  }
+
+                  @media screen and (min-width: 48em) {
+                    .css-cfeopv {
+                      -webkit-padding-start: var(--chakra-space-20);
+                      padding-inline-start: var(--chakra-space-20);
+                      -webkit-padding-end: var(--chakra-space-20);
+                      padding-inline-end: var(--chakra-space-20);
+                      padding-top: var(--chakra-space-16);
+                      padding-bottom: var(--chakra-space-16);
+                    }
+                  }
+                </style>
+                <div class="chakra-stack css-cfeopv">
+                  <style data-emotion="css iknj5n">
+                    .css-iknj5n {
+                      height: var(--chakra-sizes-20);
+                    }
+                  </style><img src="twitter.png" class="chakra-image css-iknj5n" />
+                  <style data-emotion="css lid456">
+                    .css-lid456 {
+                      font-family: var(--chakra-fonts-heading);
+                      font-weight: var(--chakra-fontWeights-bold);
+                      font-size: 24px;
+                      line-height: 32px;
+                      text-align: center;
+                      padding-top: var(--chakra-space-8);
+                      padding-bottom: var(--chakra-space-8);
+                    }
+                  </style>
+                  <h2 class="chakra-heading css-lid456">Stay Connected with Us on Twitter for Recent News and Insights
+                  </h2><a class="chakra-link css-4a6x12" href="https://twitter.com/PivexFinance">
+                    <style data-emotion="css 10f3mfp">
+                      .css-10f3mfp {
+                        display: -webkit-inline-box;
+                        display: -webkit-inline-flex;
+                        display: -ms-inline-flexbox;
+                        display: inline-flex;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        -ms-appearance: none;
+                        appearance: none;
+                        -webkit-align-items: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        -webkit-justify-content: center;
+                        justify-content: center;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        position: relative;
+                        white-space: nowrap;
+                        vertical-align: middle;
+                        outline: 2px solid transparent;
+                        outline-offset: 2px;
+                        line-height: 1.2;
+                        font-weight: var(--chakra-fontWeights-semibold);
+                        transition-property: var(--chakra-transition-property-common);
+                        transition-duration: var(--chakra-transition-duration-normal);
+                        height: var(--chakra-sizes-10);
+                        font-size: var(--chakra-fontSizes-md);
+                        width: 215px;
+                        min-width: 136px;
+                        min-height: 48px;
+                        -webkit-padding-start: 24px;
+                        padding-inline-start: 24px;
+                        -webkit-padding-end: 24px;
+                        padding-inline-end: 24px;
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                        -webkit-text-decoration: none;
+                        text-decoration: none;
+                        border-color: none;
+                        background-color: var(--chakra-colors-primary);
+                        background-image: linear-gradient(to right, #6153CC, #795EC1);
+                        box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.16);
+                        border-width: none;
+                        border-radius: 10px;
+                      }
+
+                      .css-10f3mfp:focus-visible,
+                      .css-10f3mfp[data-focus-visible] {
+                        box-shadow: var(--chakra-shadows-outline);
+                      }
+
+                      .css-10f3mfp:hover,
+                      .css-10f3mfp[data-hover] {
+                        -webkit-text-decoration: none;
+                        text-decoration: none;
+                        background-color: rgba(255, 255, 255, 0.04);
+                        box-shadow: 0px 2px 16px rgba(97, 83, 204, 0.48), inset 0px 1px 0px rgba(255, 255, 255, 0.16);
+                      }
+
+                      .css-10f3mfp:disabled,
+                      .css-10f3mfp[disabled],
+                      .css-10f3mfp[aria-disabled=true],
+                      .css-10f3mfp[data-disabled] {
+                        background-image: linear-gradient(to right, #272252, #30264D);
+                        color: var(--chakra-colors-text-disabled);
+                        border-color: none;
+                        box-shadow: var(--chakra-shadows-none);
+                      }
+                    </style><button type="button" class="chakra-button css-10f3mfp"><svg
+                        xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                        viewBox="0,0,256,256">
+                        <g fill="#cfc3ff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                          stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                          font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                          style="mix-blend-mode: normal">
+                          <g transform="scale(5.12,5.12)">
+                            <path
+                              d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z">
+                            </path>
+                          </g>
+                        </g>
+                      </svg>
+                      <style data-emotion="css 1v4xcoh">
+                        .css-1v4xcoh {
+                          margin-left: var(--chakra-space-2);
+                        }
+                      </style>
+                      <p class="chakra-text css-1v4xcoh">Follow on Twitter</p>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="css-1ruazt6">
+              <div class="css-1q9hk1a">
+                <div class="chakra-stack css-cfeopv"><img src="telegram.png" alt="">
+                  <h2 class="chakra-heading css-lid456">Engage with Our Community and Join the Dialogue.
+                  </h2><a class="chakra-link css-4a6x12" href="https://discord.gg/kfyNmmbvhJ"><button type="button"
+                      class="chakra-button css-10f3mfp"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="23" height="23" viewBox="0,0,256,256">
+                        <g fill="#fff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                          stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                          font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                          style="mix-blend-mode: normal">
+                          <g transform="scale(5.12,5.12)">
+                            <path
+                              d="M46.137,6.552c-0.75,-0.636 -1.928,-0.727 -3.146,-0.238h-0.002c-1.281,0.514 -36.261,15.518 -37.685,16.131c-0.259,0.09 -2.521,0.934 -2.288,2.814c0.208,1.695 2.026,2.397 2.248,2.478l8.893,3.045c0.59,1.964 2.765,9.21 3.246,10.758c0.3,0.965 0.789,2.233 1.646,2.494c0.752,0.29 1.5,0.025 1.984,-0.355l5.437,-5.043l8.777,6.845l0.209,0.125c0.596,0.264 1.167,0.396 1.712,0.396c0.421,0 0.825,-0.079 1.211,-0.237c1.315,-0.54 1.841,-1.793 1.896,-1.935l6.556,-34.077c0.4,-1.82 -0.156,-2.746 -0.694,-3.201zM22,32l-3,8l-3,-10l23,-17z">
+                            </path>
+                          </g>
+                        </g>
+                      </svg>
+                      <p class="chakra-text css-1v4xcoh">Join Telegram</p>
+                    </button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <style data-emotion="css 17ggejm">
+          .css-17ggejm {
+            height: 300px;
+            position: absolute;
+            right: 0px;
+            bottom: 310px;
+            z-index: -1;
+          }
+
+          @media screen and (min-width: 48em) {
+            .css-17ggejm {
+              height: 500px;
+              bottom: 140px;
+            }
+          }
+
+          @media screen and (min-width: 62em) {
+            .css-17ggejm {
+              bottom: 180px;
+            }
+          }
+
+          @media screen and (min-width: 80em) {
+            .css-17ggejm {
+              bottom: 15%;
+            }
+          }
+
+          @media screen and (min-width: 96em) {
+            .css-17ggejm {
+              height: 650px;
+              bottom: 20%;
+            }
+          }
+        </style><img src="assets/replace1.webp" class="replace2 chakra-image css-17ggejm" />
+        <style data-emotion="css sd295i">
+          .css-sd295i {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin-top: var(--chakra-space-56);
+          }
+
+          .css-sd295i>*:not(style)~*:not(style) {
+            margin-top: 0.5rem;
+            -webkit-margin-end: 0px;
+            margin-inline-end: 0px;
+            margin-bottom: 0px;
+            -webkit-margin-start: 0px;
+            margin-inline-start: 0px;
+          }
+
+          @media screen and (min-width: 30em) {
+            .css-sd295i {
+              margin-top: var(--chakra-space-48);
+            }
+          }
+
+          @media screen and (min-width: 48em) {
+            .css-sd295i {
+              margin-top: var(--chakra-space-48);
+            }
+          }
+
+          @media screen and (min-width: 62em) {
+            .css-sd295i {
+              margin-top: var(--chakra-space-10);
+            }
+          }
+
+          @media screen and (min-width: 96em) {
+            .css-sd295i {
+              margin-top: 0px;
+            }
+          }
+        </style>
+        <div class="chakra-stack css-sd295i">
+          <style data-emotion="css 1s5liq8">
+            .css-1s5liq8 {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              -webkit-justify-content: center;
+              justify-content: center;
+              position: absolute;
+              bottom: 190px;
+            }
+
+            @media screen and (min-width: 48em) {
+              .css-1s5liq8 {
+                bottom: 350px;
+              }
+            }
+
+            @media screen and (min-width: 62em) {
+              .css-1s5liq8 {
+                bottom: 15%;
+              }
+            }
+
+            @media screen and (min-width: 80em) {
+              .css-1s5liq8 {
+                bottom: 20%;
+              }
+            }
+
+            @media screen and (min-width: 96em) {
+              .css-1s5liq8 {
+                bottom: 22%;
+              }
+            }
+          </style>
+          <div class="css-1s5liq8">
+            <style data-emotion="css 1urklcj">
+              .css-1urklcj {
+                font-family: var(--chakra-fonts-heading);
+                font-size: var(--chakra-fontSizes-3xl);
+                max-width: 70%;
+                text-align: center;
+                font-weight: 700;
+                line-height: 48px;
+                background-image: linear-gradient(to bottom, #EBEBEB, #CCCCCC);
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                margin-bottom: var(--chakra-space-6);
+              }
+
+              @media screen and (min-width: 30em) {
+                .css-1urklcj {
+                  font-size: var(--chakra-fontSizes-4xl);
+                }
+              }
+
+              @media screen and (min-width: 48em) {
+                .css-1urklcj {
+                  font-size: var(--chakra-fontSizes-5xl);
+                  line-height: 72px;
+                }
+              }
+
+              @media screen and (min-width: 96em) {
+                .css-1urklcj {
+                  font-size: var(--chakra-fontSizes-7xl);
+                }
+              }
+            </style>
+            <h2 class="chakra-heading css-1urklcj">Embrace the Next Era of Finance</h2><a class="chakra-link css-4a6x12"
+              href="dashboard.html">
+              <style data-emotion="css tzaag7">
+                .css-tzaag7 {
+                  display: -webkit-inline-box;
+                  display: -webkit-inline-flex;
+                  display: -ms-inline-flexbox;
+                  display: inline-flex;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  -ms-appearance: none;
+                  appearance: none;
+                  -webkit-align-items: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  -webkit-justify-content: center;
+                  justify-content: center;
+                  -webkit-user-select: none;
+                  -moz-user-select: none;
+                  -ms-user-select: none;
+                  user-select: none;
+                  position: relative;
+                  white-space: nowrap;
+                  vertical-align: middle;
+                  outline: 2px solid transparent;
+                  outline-offset: 2px;
+                  line-height: 1.2;
+                  font-weight: var(--chakra-fontWeights-semibold);
+                  transition-property: var(--chakra-transition-property-common);
+                  transition-duration: var(--chakra-transition-duration-normal);
+                  height: var(--chakra-sizes-10);
+                  font-size: var(--chakra-fontSizes-md);
+                  min-width: 136px;
+                  min-height: 48px;
+                  -webkit-padding-start: 24px;
+                  padding-inline-start: 24px;
+                  -webkit-padding-end: 24px;
+                  padding-inline-end: 24px;
+                  padding-top: 12px;
+                  padding-bottom: 12px;
+                  -webkit-text-decoration: none;
+                  text-decoration: none;
+                  border-color: none;
+                  background-color: var(--chakra-colors-primary);
+                  background-image: linear-gradient(to right, #6153CC, #795EC1);
+                  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.16);
+                  border-width: none;
+                  border-radius: 10px;
+                }
+
+                .css-tzaag7:focus-visible,
+                .css-tzaag7[data-focus-visible] {
+                  box-shadow: var(--chakra-shadows-outline);
+                }
+
+                .css-tzaag7:hover,
+                .css-tzaag7[data-hover] {
+                  -webkit-text-decoration: none;
+                  text-decoration: none;
+                  background-color: rgba(255, 255, 255, 0.04);
+                  box-shadow: 0px 2px 16px rgba(97, 83, 204, 0.48), inset 0px 1px 0px rgba(255, 255, 255, 0.16);
+                }
+
+                .css-tzaag7:disabled,
+                .css-tzaag7[disabled],
+                .css-tzaag7[aria-disabled=true],
+                .css-tzaag7[data-disabled] {
+                  background-image: linear-gradient(to right, #272252, #30264D);
+                  color: var(--chakra-colors-text-disabled);
+                  border-color: none;
+                  box-shadow: var(--chakra-shadows-none);
+                }
+              </style><button type="button" class="chakra-button css-tzaag7">Launch App
+                <!-- --></button>
+            </a>
+          </div>
+          <style data-emotion="css 74u2s4">
+            .css-74u2s4 {
+              object-fit: cover;
+              height: 337px;
+            }
+
+            @media screen and (min-width: 48em) {
+              .css-74u2s4 {
+                height: auto;
+              }
+            }
+          </style><img src="assets/replace2.webp" class="replace3 chakra-image css-74u2s4" />
+        </div>
+      </div>
+    </div>
+    <style data-emotion="css 79elbk">
+      .css-79elbk {
+        position: relative;
+      }
+    </style>
+    <div class="css-79elbk">
+      <style data-emotion="css ba2jx8">
+        .css-ba2jx8 {
+          background-image: url('assets/noise-texture.png');
+          -webkit-background-size: contain;
+          background-size: contain;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          left: 0px;
+          bottom: 0px;
+          -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+        }
+      </style>
+      <div class="css-ba2jx8"></div>
+      <div class="css-79elbk">
+        <style data-emotion="css 1ye62xb">
+          .css-1ye62xb {
+            z-index: 1;
+            width: 100%;
+            background: linear-gradient(118.15deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.02) 100%);
+            border-top: 1px solid #FFFFFF12;
+            position: relative;
+            -webkit-backdrop-filter: blur(16px);
+            backdrop-filter: blur(16px);
+            bottom: 0px;
+            margin-top: calc(var(--chakra-space-2) * -1);
+          }
+
+          @media screen and (min-width: 48em) {
+            .css-1ye62xb {
+              position: absolute;
+            }
+          }
+        </style>
+        <footer class="css-1ye62xb">
+          <style data-emotion="css 11vl7h3">
+            .css-11vl7h3 {
+              width: 100%;
+              -webkit-margin-start: auto;
+              margin-inline-start: auto;
+              -webkit-margin-end: auto;
+              margin-inline-end: auto;
+              -webkit-padding-start: var(--chakra-space-4);
+              padding-inline-start: var(--chakra-space-4);
+              -webkit-padding-end: var(--chakra-space-4);
+              padding-inline-end: var(--chakra-space-4);
+              max-width: var(--chakra-sizes-container-xl);
+            }
+          </style>
+          <div class="chakra-container css-11vl7h3">
+            <style data-emotion="css 308usj">
+              .css-308usj {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                gap: var(--chakra-space-6);
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+                padding-top: var(--chakra-space-5);
+                padding-bottom: var(--chakra-space-5);
+              }
+
+              @media screen and (min-width: 48em) {
+                .css-308usj {
+                  -webkit-flex-direction: row;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                  gap: 0px;
+                }
+              }
+            </style>
+            <div class="css-308usj">
+              <style data-emotion="css v9n9j7">
+                .css-v9n9j7 {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-flex-direction: column;
+                  -ms-flex-direction: column;
+                  flex-direction: column;
+                  -webkit-align-items: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                }
+
+                @media screen and (min-width: 48em) {
+                  .css-v9n9j7 {
+                    -webkit-flex-direction: row;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                  }
+                }
+              </style>
+              <nav class="css-v9n9j7">
+                <style data-emotion="css 1xj2o1i">
+                  .css-1xj2o1i {
+                    transition-property: var(--chakra-transition-property-common);
+                    transition-duration: var(--chakra-transition-duration-fast);
+                    transition-timing-function: var(--chakra-transition-easing-ease-out);
+                    cursor: pointer;
+                    -webkit-text-decoration: none;
+                    text-decoration: none;
+                    outline: 2px solid transparent;
+                    outline-offset: 2px;
+                    color: inherit;
+                    margin-right: 0px;
+                    margin-bottom: var(--chakra-space-6);
+                  }
+
+                  .css-1xj2o1i:focus-visible,
+                  .css-1xj2o1i[data-focus-visible] {
+                    box-shadow: var(--chakra-shadows-outline);
+                  }
+
+                  .css-1xj2o1i:hover,
+                  .css-1xj2o1i[data-hover] {
+                    -webkit-text-decoration: none;
+                    text-decoration: none;
+                  }
+
+                  @media screen and (min-width: 48em) {
+                    .css-1xj2o1i {
+                      margin-right: var(--chakra-space-10);
+                      margin-bottom: 0px;
+                    }
+                  }
+                </style><a class="chakra-link css-1xj2o1i" href="index.html">
+                  <style data-emotion="css v67zxb">
+                    .css-v67zxb {
+                      width: var(--chakra-sizes-8);
+                      height: var(--chakra-sizes-8);
+                    }
+                  </style><img src="assets/pivex-icon-white.png" class="chakra-image css-v67zxb"
+                    style="animation:spinner 4s infinite;animation-direction:linear;animation-delay:1.4s;transform-origin:center" />
+                </a>
+                <style data-emotion="css m3iyma">
+                  .css-m3iyma {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    gap: var(--chakra-space-4);
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    -webkit-align-items: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                  }
+
+                  @media screen and (min-width: 48em) {
+                    .css-m3iyma {
+                      gap: var(--chakra-space-12);
+                      padding-left: var(--chakra-space-4);
+                      -webkit-flex-direction: row;
+                      -ms-flex-direction: row;
+                      flex-direction: row;
+                    }
+                  }
+                </style>
+                <div class="css-m3iyma">
+                  <style data-emotion="css 1epfi38">
+                    .css-1epfi38 {
+                      transition-property: var(--chakra-transition-property-common);
+                      transition-duration: var(--chakra-transition-duration-fast);
+                      transition-timing-function: var(--chakra-transition-easing-ease-out);
+                      cursor: pointer;
+                      -webkit-text-decoration: none;
+                      text-decoration: none;
+                      outline: 2px solid transparent;
+                      outline-offset: 2px;
+                      font-size: var(--chakra-fontSizes-sm);
+                      color: var(--chakra-colors-text-secondary);
+                    }
+
+                    .css-1epfi38:hover,
+                    .css-1epfi38[data-hover] {
+                      -webkit-text-decoration: underline;
+                      text-decoration: underline;
+                    }
+
+                    .css-1epfi38:focus-visible,
+                    .css-1epfi38[data-focus-visible] {
+                      box-shadow: var(--chakra-shadows-outline);
+                    }
+                  </style><a class="chakra-link css-1epfi38" href="markets.html">Markets</a><a
+                    class="chakra-link css-1epfi38" href="faucet.html">Faucet</a><a target="_blank"
+                    class="chakra-link css-1epfi38" href="https://docs.Pivex.finance/">Docs</a><a
+                    class="chakra-link css-1epfi38" href="terms.html">Terms of Service</a><a
+                    class="chakra-link css-1epfi38" href="faq.html">FAQ</a>
+                </div>
+              </nav>
+              <style data-emotion="css 79cy1h">
+                .css-79cy1h {
+                  width: var(--chakra-sizes-full);
+                  height: 1px;
+                  background: var(--chakra-colors-stroke-divider);
+                }
+
+                @media screen and (min-width: 48em) {
+                  .css-79cy1h {
+                    display: none;
+                  }
+                }
+              </style>
+              <div class="css-79cy1h"></div>
+              <style data-emotion="css 15vbgl6">
+                .css-15vbgl6 {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-align-items: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-flex-direction: row;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                }
+
+                .css-15vbgl6>*:not(style)~*:not(style) {
+                  margin-top: 0px;
+                  -webkit-margin-end: 0px;
+                  margin-inline-end: 0px;
+                  margin-bottom: 0px;
+                  -webkit-margin-start: var(--chakra-space-4);
+                  margin-inline-start: var(--chakra-space-4);
+                }
+
+                @media screen and (min-width: 48em) {
+                  .css-15vbgl6>*:not(style)~*:not(style) {
+                    -webkit-margin-start: var(--chakra-space-6);
+                    margin-inline-start: var(--chakra-space-6);
+                  }
+                }
+              </style>
+              <div class="chakra-stack css-15vbgl6"><a href="https://discord.gg/kfyNmmbvhJ" target="_blank"
+                  rel="noreferrer">
+                  <style data-emotion="css 1o4son9">
+                    .css-1o4son9 {
+                      width: var(--chakra-sizes-5);
+                      height: var(--chakra-sizes-5);
+                      display: inline-block;
+                      line-height: 1em;
+                      -webkit-flex-shrink: 0;
+                      -ms-flex-negative: 0;
+                      flex-shrink: 0;
+                      color: var(--chakra-colors-text-secondary);
+                      margin-top: var(--chakra-space-2);
+                    }
+                  </style><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23"
+                    viewBox="0,0,256,256">
+                    <g fill="#ccceff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                      stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                      font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                      style="mix-blend-mode: normal">
+                      <g transform="scale(5.12,5.12)">
+                        <path
+                          d="M46.137,6.552c-0.75,-0.636 -1.928,-0.727 -3.146,-0.238h-0.002c-1.281,0.514 -36.261,15.518 -37.685,16.131c-0.259,0.09 -2.521,0.934 -2.288,2.814c0.208,1.695 2.026,2.397 2.248,2.478l8.893,3.045c0.59,1.964 2.765,9.21 3.246,10.758c0.3,0.965 0.789,2.233 1.646,2.494c0.752,0.29 1.5,0.025 1.984,-0.355l5.437,-5.043l8.777,6.845l0.209,0.125c0.596,0.264 1.167,0.396 1.712,0.396c0.421,0 0.825,-0.079 1.211,-0.237c1.315,-0.54 1.841,-1.793 1.896,-1.935l6.556,-34.077c0.4,-1.82 -0.156,-2.746 -0.694,-3.201zM22,32l-3,8l-3,-10l23,-17z">
+                        </path>
+                      </g>
+                    </g>
+                  </svg>
+                </a><a href="https://twitter.com/PivexFinance" target="_blank" rel="noreferrer"><svg
+                    xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23" viewBox="0,0,256,256">
+                    <g fill="#cfc3ff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                      stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                      font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                      style="mix-blend-mode: normal">
+                      <g transform="scale(5.12,5.12)">
+                        <path
+                          d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z">
+                        </path>
+                      </g>
+                    </g>
+                  </svg></a><a href="https://medium.com/@Pivex.Finance" target="_blank" rel="noreferrer"><svg
+                    stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" focusable="false"
+                    class="chakra-icon css-1o4son9" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M71.5 142.3c.6-5.9-1.7-11.8-6.1-15.8L20.3 72.1V64h140.2l108.4 237.7L364.2 64h133.7v8.1l-38.6 37c-3.3 2.5-5 6.7-4.3 10.8v272c-.7 4.1 1 8.3 4.3 10.8l37.7 37v8.1H307.3v-8.1l39.1-37.9c3.8-3.8 3.8-5 3.8-10.8V171.2L241.5 447.1h-14.7L100.4 171.2v184.9c-1.1 7.8 1.5 15.6 7 21.2l50.8 61.6v8.1h-144v-8L65 377.3c5.4-5.6 7.9-13.5 6.5-21.2V142.3z">
+                    </path>
+                  </svg></a></div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div><span></span><span id="__chakra_env" hidden=""></span>
+  </div>
+  <script id="__NEXT_DATA__" type="application/json">
+    {
+      "props": {
+        "pageProps": {
+          "_nextI18Next": {
+            "initialI18nStore": {
+              "en": {
+                "layout": {
+                  "meta": {
+                    "title": "Pivex Finance",
+                    "description": "Deep liquidity on the most secure and efficient lending platform is coming to Ethereum soon. Pivex Finance will provide decentralized and transparent lending markets to provide passive income."
+                  },
+                  "navigation": {
+                    "markets": "Markets",
+                    "liquidate": "Liquidate",
+                    "docs": "Docs",
+                    "dashboard": "Dashboard",
+                    "terms": "Terms of Service",
+                    "launchApp": "Launch app",
+                    "blog": "Blog",
+                    "connectWallet": "Connect Wallet",
+                    "faq": "FAQ",
+                    "faucet": "Faucet"
+                  },
+                  "blockNumber": "Latest block: {{ blockNumber }}",
+                  "authenticate": "Connect Wallet",
+                  "logout": "Logout",
+                  "switchNetwork": "Switch Network",
+                  "yourNetwork": "Your network",
+                  "notConnectedToNetwork": "{{ unsupportedNetwork }} is not supported. Please change your network to {{ supportedNetwork }}.",
+                  "claimModal": {
+                    "balance": "balance",
+                    "walletBalance": "Wallet Balance",
+                    "unclaimed": "Unclaimed Balance",
+                    "claim": "Claim",
+                    "pivexTokenDefaultSymbol": "DPR",
+                    "pivexTokenName": "Pivex",
+                    "noUnclaimedBalance": "No Unclaimed Balance",
+                    "price": "Price",
+                    "addTokenToWallet": "Add Pivex token to wallet"
+                  },
+                  "notFound": {
+                    "404": "404",
+                    "pageTitle": "Pivex - Page not found",
+                    "body": "If you are looking for the lost city... it's not here."
+                  }
+                },
+                "home": {
+                  "hero": {
+                    "titleA": "Discover the Potential of Decentralized Lending",
+                    "description": "Bringing a Secure and Efficient Lending Platform to Ethereum",
+                    "getStarted": "Get Started",
+                    "learnMore": "Learn More",
+                    "version": "Beta v1.3"
+                  },
+                  "stats": {
+                    "marketsTotal": "Money markets",
+                    "marketSize": "Market size",
+                    "averageApy": "Average APY"
+                  },
+                  "cryptoInvestors": {
+                    "features": {
+                      "lendAndBorrow": {
+                        "title": "Lend and borrow assets with ease",
+                        "description": "Find the best opportunities for earning and investing"
+                      },
+                      "reliable": {
+                        "title": "Reliable and secure",
+                        "description": "Audited by HashEx"
+                      },
+                      "fast": {
+                        "title": "Fast and Efficient",
+                        "description": "Unleashed on Ethereum network"
+                      },
+                      "streamlined": {
+                        "title": "Streamlined Experience",
+                        "description": "Navigate your investments with confidence using Lighthouse"
+                      }
+                    },
+                    "learnMore": "Learn more"
+                  },
+                  "socials": {
+                    "title": "Stay up to date",
+                    "twitter": {
+                      "description": "Stay Connected with Us on Twitter for Recent News and Insights.",
+                      "button": "Follow on Twitter"
+                    },
+                    "discord": {
+                      "description": "Connect with Our Community and Be a Part of the Conversation",
+                      "button": "Join Discord"
+                    }
+                  },
+                  "join": {
+                    "title": "Join the Future of Finance",
+                    "launchApp": "Launch App",
+                    "FAQ": "Go to FAQs"
+                  },
+                  "guides": {
+                    "title": "New to crypto lending platforms?",
+                    "wallet": {
+                      "title": "Setting up a wallet",
+                      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    "lending": {
+                      "title": "Lending guide",
+                      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    "borrowing": {
+                      "title": "Borrowing guide",
+                      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                  }
+                },
+                "toast": {
+                  "dashboard": {
+                    "success": {
+                      "title": "Success!",
+                      "description": "Your transaction was successful.",
+                      "addCToken": "Add cToken to wallet"
+                    },
+                    "failed": {
+                      "title": "Failed.",
+                      "description": "Your transaction failed.",
+                      "networkError": "Network error."
+                    }
+                  },
+                  "faucet": {
+                    "success": {
+                      "title": "Done!",
+                      "description": "You have received your tokens"
+                    },
+                    "ipMissing": {
+                      "title": "Error",
+                      "description": "User IP couldn't be detected"
+                    },
+                    "dailyQuotaReached": {
+                      "title": "Error",
+                      "description": "Daily quota reached"
+                    },
+                    "walletNotConnected": {
+                      "title": "Error",
+                      "description": "Please connect your wallet to continue"
+                    },
+                    "networkNotSupported": {
+                      "title": "Error",
+                      "description": "Network not supported"
+                    },
+                    "captchaNotValid": {
+                      "title": "Error",
+                      "description": "Captcha not valid"
+                    },
+                    "generalError": {
+                      "title": "Error",
+                      "description": "Something went wrong"
+                    }
+                  }
+                },
+                "dashboard": {
+                  "title": "Dashboard",
+                  "lighthouse": {
+                    "title": "Lighthouse",
+                    "supplyBalance": "Supply Balance",
+                    "borrowBalance": "Borrow Balance",
+                    "netApy": "Net APY",
+                    "borrowLimit": "Borrow Limit",
+                    "outlook": "Outlook",
+                    "learnHow": "Learn How",
+                    "tutorial": "View tutorial",
+                    "safetyLabel": "Safety",
+                    "tooltips": {
+                      "title": "Health status of the account. If in risk, it can be liquidated",
+                      "borrowLimit": "Max amount a user can borrow in USD",
+                      "netApy": "Interest earn \u0026 paid, plus Pivex rewards"
+                    },
+                    "safety": {
+                      "highest": {
+                        "title": "Great",
+                        "description": "Time to start your grand journey by enabling collateral and supplying funds."
+                      },
+                      "medium": {
+                        "title": "Great",
+                        "description": "Everything looks clear and calm, shipmate."
+                      },
+                      "low": {
+                        "title": "Cloudy",
+                        "description": "Okay for now cap'n. But watch out for liquidation risk."
+                      },
+                      "critical": {
+                        "title": "Danger",
+                        "description": "Secure your investment and avoid risk of liquidation."
+                      },
+                      "initial": {
+                        "title": "Get Started",
+                        "description": "Start your journey by connecting your wallet and enabling collateral. When you add funds, Lighthouse will act as your investment beacon."
+                      }
+                    }
+                  },
+                  "marketsTable": {
+                    "asset": "Asset",
+                    "apy": "APY",
+                    "apr": "APR",
+                    "earned": "Earned",
+                    "balance": "Balance",
+                    "wallet": "Wallet",
+                    "collateral": "Collateral",
+                    "accrued": "Accrued",
+                    "liquidity": "Liquidity"
+                  },
+                  "supplyMarkets": "Supply Markets",
+                  "supplyingMarkets": "Supplied",
+                  "borrowMarkets": "Borrow Markets",
+                  "borrowingMarkets": "Borrowing",
+                  "borrowLimitUsed": "Borrow Limit Used",
+                  "comptrollerErrors": {
+                    "generic": "Comptroller Rejection",
+                    "noError": "Not a failure",
+                    "unauthorized": "The sender is not authorized to perform this action",
+                    "comptrollerMismatch": "Liquidation cannot be performed in markets with different comptrollers",
+                    "insufficientShortfall": "The account does not have sufficient shortfall to perform this action",
+                    "insufficientLiquidity": "The account does not have sufficient liquidity to perform this action",
+                    "invalidCloseFactor": "The close factor is not valid",
+                    "invalidCollateralFactor": "The collateral factor is not valid",
+                    "invalidLiquidationIncentive": "The liquidation incentive is invalid",
+                    "marketNotEntered": "The market has not been entered by the account",
+                    "marketNotListed": "The market is not currently listed by the comptroller",
+                    "marketAlreadyListed": "An admin tried to list the same market more than once",
+                    "mathError": "A math calculation error occurred",
+                    "nonzeroBorrowBalance": "The action cannot be performed since the account carries a borrow balance",
+                    "priceError": "The comptroller could not obtain a required price of an asset",
+                    "rejection": "The comptroller rejects the action requested by the market",
+                    "snapshotError": "The comptroller could not get the account borrows and exchange rate from the market",
+                    "tooManyAssets": "Attempted to enter more markets than are currently supported",
+                    "tooMuchRepay": "Attempted to repay more than is allowed by the protocol"
+                  },
+                  "cTokenErrors": {
+                    "generic": "CToken Rejection",
+                    "noError": "Not a failure.",
+                    "unauthorized": "The sender is not authorized to perform this action.",
+                    "badInput": "An invalid argument was supplied by the caller.",
+                    "comptrollerRejection": "The action would violate the comptroller policy.",
+                    "comptrollerCalculationError": "An internal calculation has failed in the comptroller.",
+                    "interestRateModelError": "The interest rate model returned an invalid value.",
+                    "invalidAccountPair": "The specified combination of accounts is invalid.",
+                    "invalidCloseAmountRequested": "The amount to liquidate is invalid.",
+                    "invalidCollateralFactor": "The collateral factor is invalid.",
+                    "mathError": "A math calculation error occurred.",
+                    "marketNotFresh": "Interest has not been properly accrued.",
+                    "marketNotListed": "The market is not currently listed by its comptroller.",
+                    "tokenInsufficientAllowance": "ERC-20 contract must allow Money Market contract to call transferFrom. The current allowance is either 0 or less than the requested supply, repayBorrow or liquidate amount.",
+                    "tokenInsufficientBalance": "Caller does not have sufficient balance in the ERC-20 contract to complete the desired action.",
+                    "tokenInsufficientCash": "The market does not have a sufficient cash balance to complete the transaction. You may attempt this transaction again later.",
+                    "tokenTransferInFailed": "Failure in ERC-20 when transfering token into the market.",
+                    "tokenTransferOutFailed": "Failure in ERC-20 when transfering token out of the market."
+                  },
+                  "actionModals": {
+                    "supply": "Supply",
+                    "withdraw": "Withdraw",
+                    "supplyAPY": "Supply APY",
+                    "supplyRates": "Supply Rates",
+                    "distributionRate": "Distribution APY",
+                    "borrowAPR": "Borrow APR",
+                    "borrowRates": "Borrow Rates",
+                    "borrowLimit": "Borrow Limit",
+                    "borrowLimitUsedPercentage": "Borrow Limit Used",
+                    "balance": "Balance",
+                    "borrowBalance": "Borrow Balance",
+                    "approve": "Approve",
+                    "enableDescription": "To Supply or Repay {{ token }} to the Pivex Protocol, you need to enable it first.",
+                    "provideCollateral": "To proceed with borrowing funds, you first need to provide collateral to secure your loan.",
+                    "learnHowProvideCollateral": "Learn how to provide collateral.",
+                    "done": "Done",
+                    "enable": "Enable {{ token }}",
+                    "max": "MAX",
+                    "fullAmount": "Full amount",
+                    "limit": "LIMIT",
+                    "borrow": "Borrow",
+                    "repay": "Repay",
+                    "currentlySupplying": "Currently Supplying",
+                    "currentlyBorrowing": "Currently Borrowing",
+                    "validation": {
+                      "amountRequired": "Token amount is required",
+                      "maxAmountExceeded": "Token amount exceeds limit",
+                      "minAmountNotReached": "Token amount should be greater than 0",
+                      "amountHigherThanLiquidity": "The amount is higher than the market liquidity",
+                      "amountHigherThanBorrowBalance": "The amount is higher than the borrow balance",
+                      "noFunds": "No funds available"
+                    },
+                    "collateral": {
+                      "enable": "Enable as Collateral",
+                      "disable": "Disable as Collateral",
+                      "description": "Each asset used as collateral increases your borrowing limit. Be careful, this can subject the asset to being seized in liquidation.",
+                      "use": "Use {{ token }} as collateral",
+                      "remove": "Remove {{ token }} as collateral"
+                    }
+                  },
+                  "transactionStatus": {
+                    "sign": {
+                      "title": "Confirm the transaction with Metamask"
+                    },
+                    "broadcast": {
+                      "title": "Transaction broadcast"
+                    },
+                    "captcha": {
+                      "title": "Validate captcha to continue"
+                    }
+                  },
+                  "dismiss": "Dismiss",
+                  "pendingTransaction": "Pending transaction",
+                  "captcha": {
+                    "header": "Receive tokens",
+                    "button": "Get tokens"
+                  },
+                  "fetchingError": "There was an error fetching markets data.",
+                  "networkError": "Please change your network to {{ supportedNetwork }}",
+                  "networkDown": {
+                    "banner": "There was a problem retrieving markets data.",
+                    "bannerButton": "Reload",
+                    "description": "There was an error fetching markets data"
+                  }
+                }
+              }
+            },
+            "initialLocale": "en",
+            "userConfig": {
+              "i18n": {
+                "defaultLocale": "en",
+                "locales": ["en"],
+                "localePath": "/home/runner/work/pivex-frontend/pivex-frontend/public/locales"
+              },
+              "defaultNS": "home",
+              "default": {
+                "i18n": {
+                  "defaultLocale": "en",
+                  "locales": ["en"],
+                  "localePath": "/home/runner/work/pivex-frontend/pivex-frontend/public/locales"
+                },
+                "defaultNS": "home"
+              }
+            }
+          }
+        },
+        "__N_SSG": true
+      },
+      "page": "/",
+      "query": {},
+      "buildId": "ynE4MCKD2JmR288LlNsBb",
+      "isFallback": false,
+      "gsp": true,
+      "locale": "en",
+      "locales": ["en"],
+      "defaultLocale": "en",
+      "scriptLoader": []
+    }
+  </script>
+</body>
+
+</html>

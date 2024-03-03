@@ -1,0 +1,18 @@
+.replace1{
+    z-index: -1;
+    transform: translate(-70px, 0px) rotateY(180deg);
+}
+.replace2{
+    transform: scale(0.5);
+    z-index: 10 !important;
+}
+.replace3{
+    padding: 0px 45px;
+    max-height: 80vh;
+    
+    
+    mask-image: linear-gradient(to left, transparent, black, transparent);
+    
+    z-index: -1;
+
+}

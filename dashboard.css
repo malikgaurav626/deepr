@@ -1,0 +1,328 @@
+.background{
+    padding: 3rem;
+    width: 80%;
+    background-color: rgba(192, 192, 192, 0.05);
+    margin-left: 9rem;
+    border-radius: 1.5rem;
+    backdrop-filter: blur(100px);
+    height: fit-content;
+    padding-top: 4rem;
+    margin-bottom: 2rem;
+    border: 1px solid #ffffff20;
+}
+
+
+.lighthouseCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    height: fit-content;
+}
+
+.right{
+    padding-left: 2rem;
+}
+.right h1{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.right p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.72)
+}
+
+.rightheading{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-bottom: 0.5rem;
+}
+
+.rightheading h2{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+span button{
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    height: 3rem;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    background: rgb(100,84,203);
+    background: linear-gradient(180deg, rgba(100,84,203,1) 0%, rgba(119,93,194,1) 100%);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cccccc38;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .content{
+    width: 95%;
+    background-color: rgba(192, 192, 192, 0.05);
+    border-radius: 1.5rem;
+    backdrop-filter: blur(100px);
+    height: fit-content;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.row, .rownew{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #ffffff29;
+    height: 80px;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.rownew{
+  padding-bottom: 15px;
+}
+
+.row:hover{
+    box-shadow: -5px 0px 0 #21d4f3;
+    background-color: rgba(240, 255, 255, 0.059);
+}
+
+.bright .row:hover{
+    box-shadow: -5px 0px 0 #735BC4;
+    background-color: rgba(240, 255, 255, 0.059);
+}
+
+.bottom{
+    width: 82%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 9rem;
+}
+
+.bleft, .bright{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.bleft h1, .bright h1{
+  font-weight: 700;
+  font-size: 24px;
+  list-style: 32px;
+  margin-bottom: 1rem;
+}
+
+.blkname{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.blknamenew{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #ffffff15;
+  padding-bottom: 1rem;
+}
+
+.blkname img, .blknamenew img{
+  height: 25px;
+  width: 25px;
+  margin-right: 0.5rem;
+}
+
+.blkname h2, .blknamenew h2{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.per{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.per img{
+  height: 15px;
+  width: 15px;
+  margin-right: 0.5rem;
+}
+
+.logoper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* .logopershow{
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+
+} */
+
+.show{
+  position: fixed;
+  bottom: 150px;
+  left:550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 430px;
+  background-color: #bbbdff11;
+  border-radius: 12px;
+  height: 450px;
+  display: none;
+  border: 1px solid #ffffff09;
+  padding: 1.5rem;
+  background-blend-mode: multiply;
+}
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+}
+
+body.showing-popup {
+  overflow: hidden;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 9, 40, 0.401);
+  z-index: 9998;  /* Ensure it's below the popup but above everything else */
+  display: none;
+}
+
+.show {
+  /* your existing styles */
+  z-index: 9999; /* Ensure it's above the backdrop */
+  backdrop-filter: blur(25px);
+}
+
+.logoper h4{
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.show .logoper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+}
+
+.final{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.finalbutton{
+  width: 100%;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #735BC4;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+}
+
+.finalbutton:hover{
+  box-shadow: 0 0 15px 2px #7863c0a4;
+  transition: all 0.2s ease;
+}
+
+

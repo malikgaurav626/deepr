@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>Pivex Finance</title>
+    <meta
+      name="description"
+      content="Deep liquidity on the most secure and efficient lending platform is coming to Shimmer soon. Pivex Finance will provide decentralized and transparent lending markets to provide passive income."
+    />
+    <meta property="og:image" content="assets/social-share.png" />
+    <meta property="twitter:image" content="assets/social-share.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pivex Finance" />
+    <meta
+      property="og:description"
+      content="Deep liquidity on the most secure and efficient lending platform is coming to Shimmer soon. Pivex Finance will provide decentralized and transparent lending markets to provide passive income."
+    />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Pivex Finance" />
+    <meta
+      property="twitter:description"
+      content="Deep liquidity on the most secure and efficient lending platform is coming to Shimmer soon. Pivex Finance will provide decentralized and transparent lending markets to provide passive income."
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="static/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="static/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="static/favicon-16x16.png"
+    />
+    <meta name="msapplication-TileImage" content="static/ms-icon-144x144.png" />
+    <meta name="next-head-count" content="16" />
+    <link rel="shortcut icon" href="static/favicon.ico" />
+    <link
+      rel="preload"
+      href="_next/static/css/483c1ffbc4bef7c4.css"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="_next/static/css/483c1ffbc4bef7c4.css"
+      data-n-g=""
+    />
+    <noscript data-n-css=""></noscript>
+    <script
+      defer=""
+      nomodule=""
+      src="_next/static/chunks/polyfills-5cd94c89d3acac5f.js"
+    ></script>
+    <script
+      src="_next/static/chunks/webpack-fc8a54dba915c2d3.js"
+      defer=""
+    ></script>
+    <script
+      src="_next/static/chunks/framework-38f22d267257f62d.js"
+      defer=""
+    ></script>
+    <script
+      src="_next/static/chunks/main-15acc49be2d244e2.js"
+      defer=""
+    ></script>
+    <script
+      src="_next/static/chunks/pages/_app-b4ca06658cc30241.js"
+      defer=""
+    ></script>
+    <script
+      src="_next/static/chunks/pages/terms-07cd9cecd626fb19.js"
+      defer=""
+    ></script>
+    <script
+      src="_next/static/ynE4MCKD2JmR288LlNsBb/_buildManifest.js"
+      defer=""
+    ></script>
+    <script
+      src="_next/static/ynE4MCKD2JmR288LlNsBb/_ssgManifest.js"
+      defer=""
+    ></script>
+    <script
+      src="_next/static/ynE4MCKD2JmR288LlNsBb/_middlewareManifest.js"
+      defer=""
+    ></script>
+  </head>
+  <body>
+    <script id="chakra-script">
+      !(function () {
+        try {
+          var a = function (c) {
+              var v = "(prefers-color-scheme: dark)",
+                h = window.matchMedia(v).matches ? "dark" : "light",
+                r = c === "system" ? h : c,
+                o = document.documentElement,
+                s = document.body,
+                l = "chakra-ui-light",
+                d = "chakra-ui-dark",
+                i = r === "dark";
+              return (
+                s.classList.add(i ? d : l),
+                s.classList.remove(i ? l : d),
+                (o.style.colorScheme = r),
+                (o.dataset.theme = r),
+                r
+              );
+            },
+            n = a,
+            m = "dark",
+            e = "chakra-ui-color-mode",
+            t = localStorage.getItem(e);
+          t ? a(t) : localStorage.setItem(e, a(m));
+        } catch (a) {}
+      })();
+    </script>
+    <div id="__next">
+      <style data-emotion="css-global 1inye7i-#E6E6E8">
+        :host,:root,[data-theme]{--chakra-ring-inset:var(--chakra-empty,/*!*/ /*!*/);--chakra-ring-offset-width:0px;--chakra-ring-offset-color:#fff;--chakra-ring-color:rgba(66, 153, 225, 0.6);--chakra-ring-offset-shadow:0 0 #0000;--chakra-ring-shadow:0 0 #0000;--chakra-space-x-reverse:0;--chakra-space-y-reverse:0;--chakra-colors-transparent:transparent;--chakra-colors-current:currentColor;--chakra-colors-black:#000000;--chakra-colors-white:#FFFFFF;--chakra-colors-whiteAlpha-50:rgba(255, 255, 255, 0.04);--chakra-colors-whiteAlpha-100:rgba(255, 255, 255, 0.06);--chakra-colors-whiteAlpha-200:rgba(255, 255, 255, 0.08);--chakra-colors-whiteAlpha-300:rgba(255, 255, 255, 0.16);--chakra-colors-whiteAlpha-400:rgba(255, 255, 255, 0.24);--chakra-colors-whiteAlpha-500:rgba(255, 255, 255, 0.36);--chakra-colors-whiteAlpha-600:rgba(255, 255, 255, 0.48);--chakra-colors-whiteAlpha-700:rgba(255, 255, 255, 0.64);--chakra-colors-whiteAlpha-800:rgba(255, 255, 255, 0.80);--chakra-colors-whiteAlpha-900:rgba(255, 255, 255, 0.92);--chakra-colors-blackAlpha-50:rgba(0, 0, 0, 0.04);--chakra-colors-blackAlpha-100:rgba(0, 0, 0, 0.06);--chakra-colors-blackAlpha-200:rgba(0, 0, 0, 0.08);--chakra-colors-blackAlpha-300:rgba(0, 0, 0, 0.16);--chakra-colors-blackAlpha-400:rgba(0, 0, 0, 0.24);--chakra-colors-blackAlpha-500:rgba(0, 0, 0, 0.36);--chakra-colors-blackAlpha-600:rgba(0, 0, 0, 0.48);--chakra-colors-blackAlpha-700:rgba(0, 0, 0, 0.64);--chakra-colors-blackAlpha-800:rgba(0, 0, 0, 0.80);--chakra-colors-blackAlpha-900:rgba(0, 0, 0, 0.92);--chakra-colors-gray-50:#F7FAFC;--chakra-colors-gray-100:#EDF2F7;--chakra-colors-gray-200:#E2E8F0;--chakra-colors-gray-300:#CBD5E0;--chakra-colors-gray-400:#A0AEC0;--chakra-colors-gray-500:#718096;--chakra-colors-gray-600:#4A5568;--chakra-colors-gray-700:#2D3748;--chakra-colors-gray-800:#1A202C;--chakra-colors-gray-900:#171923;--chakra-colors-red-50:#FFF5F5;--chakra-colors-red-100:#FED7D7;--chakra-colors-red-200:#FEB2B2;--chakra-colors-red-300:#FC8181;--chakra-colors-red-400:#F56565;--chakra-colors-red-500:#E53E3E;--chakra-colors-red-600:#C53030;--chakra-colors-red-700:#9B2C2C;--chakra-colors-red-800:#822727;--chakra-colors-red-900:#63171B;--chakra-colors-orange-50:#FFFAF0;--chakra-colors-orange-100:#FEEBC8;--chakra-colors-orange-200:#FBD38D;--chakra-colors-orange-300:#F6AD55;--chakra-colors-orange-400:#ED8936;--chakra-colors-orange-500:#DD6B20;--chakra-colors-orange-600:#C05621;--chakra-colors-orange-700:#9C4221;--chakra-colors-orange-800:#7B341E;--chakra-colors-orange-900:#652B19;--chakra-colors-yellow-50:#FFFFF0;--chakra-colors-yellow-100:#FEFCBF;--chakra-colors-yellow-200:#FAF089;--chakra-colors-yellow-300:#F6E05E;--chakra-colors-yellow-400:#ECC94B;--chakra-colors-yellow-500:#D69E2E;--chakra-colors-yellow-600:#B7791F;--chakra-colors-yellow-700:#975A16;--chakra-colors-yellow-800:#744210;--chakra-colors-yellow-900:#5F370E;--chakra-colors-green-50:#F0FFF4;--chakra-colors-green-100:#C6F6D5;--chakra-colors-green-200:#9AE6B4;--chakra-colors-green-300:#68D391;--chakra-colors-green-400:#48BB78;--chakra-colors-green-500:#38A169;--chakra-colors-green-600:#2F855A;--chakra-colors-green-700:#276749;--chakra-colors-green-800:#22543D;--chakra-colors-green-900:#1C4532;--chakra-colors-teal-50:#E6FFFA;--chakra-colors-teal-100:#B2F5EA;--chakra-colors-teal-200:#81E6D9;--chakra-colors-teal-300:#4FD1C5;--chakra-colors-teal-400:#38B2AC;--chakra-colors-teal-500:#319795;--chakra-colors-teal-600:#2C7A7B;--chakra-colors-teal-700:#285E61;--chakra-colors-teal-800:#234E52;--chakra-colors-teal-900:#1D4044;--chakra-colors-blue-50:#ebf8ff;--chakra-colors-blue-100:#bee3f8;--chakra-colors-blue-200:#90cdf4;--chakra-colors-blue-300:#63b3ed;--chakra-colors-blue-400:#4299e1;--chakra-colors-blue-500:#3182ce;--chakra-colors-blue-600:#2b6cb0;--chakra-colors-blue-700:#2c5282;--chakra-colors-blue-800:#2a4365;--chakra-colors-blue-900:#1A365D;--chakra-colors-cyan-50:#EDFDFD;--chakra-colors-cyan-100:#C4F1F9;--chakra-colors-cyan-200:#9DECF9;--chakra-colors-cyan-300:#76E4F7;--chakra-colors-cyan-400:#0BC5EA;--chakra-colors-cyan-500:#00B5D8;--chakra-colors-cyan-600:#00A3C4;--chakra-colors-cyan-700:#0987A0;--chakra-colors-cyan-800:#086F83;--chakra-colors-cyan-900:#065666;--chakra-colors-purple-50:#FAF5FF;--chakra-colors-purple-100:#E9D8FD;--chakra-colors-purple-200:#D6BCFA;--chakra-colors-purple-300:#B794F4;--chakra-colors-purple-400:#9F7AEA;--chakra-colors-purple-500:#805AD5;--chakra-colors-purple-600:#6B46C1;--chakra-colors-purple-700:#553C9A;--chakra-colors-purple-800:#44337A;--chakra-colors-purple-900:#322659;--chakra-colors-pink-50:#FFF5F7;--chakra-colors-pink-100:#FED7E2;--chakra-colors-pink-200:#FBB6CE;--chakra-colors-pink-300:#F687B3;--chakra-colors-pink-400:#ED64A6;--chakra-colors-pink-500:#D53F8C;--chakra-colors-pink-600:#B83280;--chakra-colors-pink-700:#97266D;--chakra-colors-pink-800:#702459;--chakra-colors-pink-900:#521B41;--chakra-colors-linkedin-50:#E8F4F9;--chakra-colors-linkedin-100:#CFEDFB;--chakra-colors-linkedin-200:#9BDAF3;--chakra-colors-linkedin-300:#68C7EC;--chakra-colors-linkedin-400:#34B3E4;--chakra-colors-linkedin-500:#00A0DC;--chakra-colors-linkedin-600:#008CC9;--chakra-colors-linkedin-700:#0077B5;--chakra-colors-linkedin-800:#005E93;--chakra-colors-linkedin-900:#004471;--chakra-colors-facebook-50:#E8F4F9;--chakra-colors-facebook-100:#D9DEE9;--chakra-colors-facebook-200:#B7C2DA;--chakra-colors-facebook-300:#6482C0;--chakra-colors-facebook-400:#4267B2;--chakra-colors-facebook-500:#385898;--chakra-colors-facebook-600:#314E89;--chakra-colors-facebook-700:#29487D;--chakra-colors-facebook-800:#223B67;--chakra-colors-facebook-900:#1E355B;--chakra-colors-messenger-50:#D0E6FF;--chakra-colors-messenger-100:#B9DAFF;--chakra-colors-messenger-200:#A2CDFF;--chakra-colors-messenger-300:#7AB8FF;--chakra-colors-messenger-400:#2E90FF;--chakra-colors-messenger-500:#0078FF;--chakra-colors-messenger-600:#0063D1;--chakra-colors-messenger-700:#0052AC;--chakra-colors-messenger-800:#003C7E;--chakra-colors-messenger-900:#002C5C;--chakra-colors-whatsapp-50:#dffeec;--chakra-colors-whatsapp-100:#b9f5d0;--chakra-colors-whatsapp-200:#90edb3;--chakra-colors-whatsapp-300:#65e495;--chakra-colors-whatsapp-400:#3cdd78;--chakra-colors-whatsapp-500:#22c35e;--chakra-colors-whatsapp-600:#179848;--chakra-colors-whatsapp-700:#0c6c33;--chakra-colors-whatsapp-800:#01421c;--chakra-colors-whatsapp-900:#001803;--chakra-colors-twitter-50:#E5F4FD;--chakra-colors-twitter-100:#C8E9FB;--chakra-colors-twitter-200:#A8DCFA;--chakra-colors-twitter-300:#83CDF7;--chakra-colors-twitter-400:#57BBF5;--chakra-colors-twitter-500:#1DA1F2;--chakra-colors-twitter-600:#1A94DA;--chakra-colors-twitter-700:#1681BF;--chakra-colors-twitter-800:#136B9E;--chakra-colors-twitter-900:#0D4D71;--chakra-colors-telegram-50:#E3F2F9;--chakra-colors-telegram-100:#C5E4F3;--chakra-colors-telegram-200:#A2D4EC;--chakra-colors-telegram-300:#7AC1E4;--chakra-colors-telegram-400:#47A9DA;--chakra-colors-telegram-500:#0088CC;--chakra-colors-telegram-600:#007AB8;--chakra-colors-telegram-700:#006BA1;--chakra-colors-telegram-800:#005885;--chakra-colors-telegram-900:#003F5E;--chakra-colors-primary:#6153CC;--chakra-colors-primaryGradient:linear-gradient(93.74deg, #6153CC 3.56%, #795EC1 97.35%);--chakra-colors-secondary:#56E39F;--chakra-colors-positiveMuted:rgba(134, 177, 156, 0.72);--chakra-colors-negativeMuted:rgba(181, 123, 128, 0.72);--chakra-colors-error:#E84855;--chakra-colors-text-primary:rgba(255, 255, 255, 0.92);--chakra-colors-text-secondary:rgba(255, 255, 255, 0.72);--chakra-colors-text-tertiary:rgba(255, 255, 255, 0.48);--chakra-colors-text-disabled:rgba(255, 255, 255, 0.32);--chakra-colors-text-label:#E6E6E8;--chakra-colors-text-warning:#F3C969;--chakra-colors-stroke-divider:rgba(255, 255, 255, 0.08);--chakra-colors-stroke-closeButtonHover:rgba(255, 255, 255, 0.92);--chakra-colors-background-primary:#000517;--chakra-colors-background-primaryGradient:linear-gradient(0deg, rgba(2,6,25,1) 0%, rgba(0,0,17,1) 100%);--chakra-colors-background-hover:rgba(255, 255, 255, 0.04);--chakra-colors-background-ctaDefault:linear(to-r, #795EC1, #6153CC);--chakra-colors-background-highRisk:#E84855;--chakra-colors-background-box:linear-gradient(118.15deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.02) 100%);--chakra-colors-lighthouseHealth-initial-start:#55df9c;--chakra-colors-lighthouseHealth-initial-end:#55df9c;--chakra-colors-lighthouseHealth-highest-start:#56E39F;--chakra-colors-lighthouseHealth-highest-end:#56E3B6;--chakra-colors-lighthouseHealth-medium-start:#56E39F;--chakra-colors-lighthouseHealth-medium-end:#56C9E3;--chakra-colors-lighthouseHealth-low-start:#E37056;--chakra-colors-lighthouseHealth-low-end:#C9E356;--chakra-colors-lighthouseHealth-critical-start:#DF3E3E;--chakra-colors-lighthouseHealth-critical-end:#DF3E3E;--chakra-borders-none:0;--chakra-borders-1px:1px solid;--chakra-borders-2px:2px solid;--chakra-borders-4px:4px solid;--chakra-borders-8px:8px solid;--chakra-fonts-heading:Manrope,sans-serif;--chakra-fonts-body:Manrope,sans-serif;--chakra-fonts-mono:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--chakra-fontSizes-3xs:0.45rem;--chakra-fontSizes-2xs:0.625rem;--chakra-fontSizes-xs:0.75rem;--chakra-fontSizes-sm:0.875rem;--chakra-fontSizes-md:1rem;--chakra-fontSizes-lg:1.125rem;--chakra-fontSizes-xl:1.25rem;--chakra-fontSizes-2xl:1.5rem;--chakra-fontSizes-3xl:1.875rem;--chakra-fontSizes-4xl:2.25rem;--chakra-fontSizes-5xl:3rem;--chakra-fontSizes-6xl:3.75rem;--chakra-fontSizes-7xl:4.5rem;--chakra-fontSizes-8xl:6rem;--chakra-fontSizes-9xl:8rem;--chakra-fontWeights-hairline:100;--chakra-fontWeights-thin:200;--chakra-fontWeights-light:300;--chakra-fontWeights-normal:400;--chakra-fontWeights-medium:500;--chakra-fontWeights-semibold:600;--chakra-fontWeights-bold:700;--chakra-fontWeights-extrabold:800;--chakra-fontWeights-black:900;--chakra-letterSpacings-tighter:-0.05em;--chakra-letterSpacings-tight:-0.025em;--chakra-letterSpacings-normal:0;--chakra-letterSpacings-wide:0.025em;--chakra-letterSpacings-wider:0.05em;--chakra-letterSpacings-widest:0.1em;--chakra-lineHeights-3:.75rem;--chakra-lineHeights-4:1rem;--chakra-lineHeights-5:1.25rem;--chakra-lineHeights-6:1.5rem;--chakra-lineHeights-7:1.75rem;--chakra-lineHeights-8:2rem;--chakra-lineHeights-9:2.25rem;--chakra-lineHeights-10:2.5rem;--chakra-lineHeights-normal:normal;--chakra-lineHeights-none:1;--chakra-lineHeights-shorter:1.25;--chakra-lineHeights-short:1.375;--chakra-lineHeights-base:1.5;--chakra-lineHeights-tall:1.625;--chakra-lineHeights-taller:2;--chakra-radii-none:0;--chakra-radii-sm:0.125rem;--chakra-radii-base:0.25rem;--chakra-radii-md:0.375rem;--chakra-radii-lg:0.5rem;--chakra-radii-xl:0.75rem;--chakra-radii-2xl:1rem;--chakra-radii-3xl:1.5rem;--chakra-radii-full:9999px;--chakra-space-1:0.25rem;--chakra-space-2:0.5rem;--chakra-space-3:0.75rem;--chakra-space-4:1rem;--chakra-space-5:1.25rem;--chakra-space-6:1.5rem;--chakra-space-7:1.75rem;--chakra-space-8:2rem;--chakra-space-9:2.25rem;--chakra-space-10:2.5rem;--chakra-space-12:3rem;--chakra-space-14:3.5rem;--chakra-space-16:4rem;--chakra-space-20:5rem;--chakra-space-24:6rem;--chakra-space-28:7rem;--chakra-space-32:8rem;--chakra-space-36:9rem;--chakra-space-40:10rem;--chakra-space-44:11rem;--chakra-space-48:12rem;--chakra-space-52:13rem;--chakra-space-56:14rem;--chakra-space-60:15rem;--chakra-space-64:16rem;--chakra-space-72:18rem;--chakra-space-80:20rem;--chakra-space-96:24rem;--chakra-space-px:1px;--chakra-space-0-5:0.125rem;--chakra-space-1-5:0.375rem;--chakra-space-2-5:0.625rem;--chakra-space-3-5:0.875rem;--chakra-shadows-xs:0 0 0 1px rgba(0, 0, 0, 0.05);--chakra-shadows-sm:0 1px 2px 0 rgba(0, 0, 0, 0.05);--chakra-shadows-base:0 1px 3px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.06);--chakra-shadows-md:0 4px 6px -1px rgba(0, 0, 0, 0.1),0 2px 4px -1px rgba(0, 0, 0, 0.06);--chakra-shadows-lg:0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);--chakra-shadows-xl:0 20px 25px -5px rgba(0, 0, 0, 0.1),0 10px 10px -5px rgba(0, 0, 0, 0.04);--chakra-shadows-2xl:0 25px 50px -12px rgba(0, 0, 0, 0.25);--chakra-shadows-outline:0 0 0 3px rgba(66, 153, 225, 0.6);--chakra-shadows-inner:inset 0 2px 4px 0 rgba(0,0,0,0.06);--chakra-shadows-none:none;--chakra-shadows-dark-lg:rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,rgba(0, 0, 0, 0.2) 0px 5px 10px,rgba(0, 0, 0, 0.4) 0px 15px 40px;--chakra-sizes-1:0.25rem;--chakra-sizes-2:0.5rem;--chakra-sizes-3:0.75rem;--chakra-sizes-4:1rem;--chakra-sizes-5:1.25rem;--chakra-sizes-6:1.5rem;--chakra-sizes-7:1.75rem;--chakra-sizes-8:2rem;--chakra-sizes-9:2.25rem;--chakra-sizes-10:2.5rem;--chakra-sizes-12:3rem;--chakra-sizes-14:3.5rem;--chakra-sizes-16:4rem;--chakra-sizes-20:5rem;--chakra-sizes-24:6rem;--chakra-sizes-28:7rem;--chakra-sizes-32:8rem;--chakra-sizes-36:9rem;--chakra-sizes-40:10rem;--chakra-sizes-44:11rem;--chakra-sizes-48:12rem;--chakra-sizes-52:13rem;--chakra-sizes-56:14rem;--chakra-sizes-60:15rem;--chakra-sizes-64:16rem;--chakra-sizes-72:18rem;--chakra-sizes-80:20rem;--chakra-sizes-96:24rem;--chakra-sizes-px:1px;--chakra-sizes-0-5:0.125rem;--chakra-sizes-1-5:0.375rem;--chakra-sizes-2-5:0.625rem;--chakra-sizes-3-5:0.875rem;--chakra-sizes-max:max-content;--chakra-sizes-min:min-content;--chakra-sizes-full:100%;--chakra-sizes-3xs:14rem;--chakra-sizes-2xs:16rem;--chakra-sizes-xs:20rem;--chakra-sizes-sm:24rem;--chakra-sizes-md:28rem;--chakra-sizes-lg:32rem;--chakra-sizes-xl:36rem;--chakra-sizes-2xl:42rem;--chakra-sizes-3xl:48rem;--chakra-sizes-4xl:56rem;--chakra-sizes-5xl:64rem;--chakra-sizes-6xl:72rem;--chakra-sizes-7xl:80rem;--chakra-sizes-8xl:90rem;--chakra-sizes-prose:60ch;--chakra-sizes-container-sm:640px;--chakra-sizes-container-md:768px;--chakra-sizes-container-lg:1024px;--chakra-sizes-container-xl:1280px;--chakra-zIndices-hide:-1;--chakra-zIndices-auto:auto;--chakra-zIndices-base:0;--chakra-zIndices-docked:10;--chakra-zIndices-dropdown:1000;--chakra-zIndices-sticky:1100;--chakra-zIndices-banner:1200;--chakra-zIndices-overlay:1300;--chakra-zIndices-modal:1400;--chakra-zIndices-popover:1500;--chakra-zIndices-skipLink:1600;--chakra-zIndices-toast:1700;--chakra-zIndices-tooltip:1800;--chakra-transition-property-common:background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;--chakra-transition-property-colors:background-color,border-color,color,fill,stroke;--chakra-transition-property-dimensions:width,height;--chakra-transition-property-position:left,right,top,bottom;--chakra-transition-property-background:background-color,background-image,background-position;--chakra-transition-easing-ease-in:cubic-bezier(0.4, 0, 1, 1);--chakra-transition-easing-ease-out:cubic-bezier(0, 0, 0.2, 1);--chakra-transition-easing-ease-in-out:cubic-bezier(0.4, 0, 0.2, 1);--chakra-transition-duration-ultra-fast:50ms;--chakra-transition-duration-faster:100ms;--chakra-transition-duration-fast:150ms;--chakra-transition-duration-normal:200ms;--chakra-transition-duration-slow:300ms;--chakra-transition-duration-slower:400ms;--chakra-transition-duration-ultra-slow:500ms;--chakra-blur-none:0;--chakra-blur-sm:4px;--chakra-blur-base:8px;--chakra-blur-md:12px;--chakra-blur-lg:16px;--chakra-blur-xl:24px;--chakra-blur-2xl:40px;--chakra-blur-3xl:64px;--chakra-breakpoints-base:0em;--chakra-breakpoints-sm:30em;--chakra-breakpoints-md:48em;--chakra-breakpoints-lg:62em;--chakra-breakpoints-xl:80em;--chakra-breakpoints-2xl:96em;}.chakra-ui-light :host:not([data-theme]),.chakra-ui-light :root:not([data-theme]),.chakra-ui-light [data-theme]:not([data-theme]),[data-theme=light] :host:not([data-theme]),[data-theme=light] :root:not([data-theme]),[data-theme=light] [data-theme]:not([data-theme]),:host[data-theme=light],:root[data-theme=light],[data-theme][data-theme=light]{--chakra-colors-chakra-body-text:var(--chakra-colors-gray-800);--chakra-colors-chakra-body-bg:var(--chakra-colors-white);--chakra-colors-chakra-border-color:var(--chakra-colors-gray-200);--chakra-colors-chakra-subtle-bg:var(--chakra-colors-gray-100);--chakra-colors-chakra-placeholder-color:var(--chakra-colors-gray-500);}.chakra-ui-dark :host:not([data-theme]),.chakra-ui-dark :root:not([data-theme]),.chakra-ui-dark [data-theme]:not([data-theme]),[data-theme=dark] :host:not([data-theme]),[data-theme=dark] :root:not([data-theme]),[data-theme=dark] [data-theme]:not([data-theme]),:host[data-theme=dark],:root[data-theme=dark],[data-theme][data-theme=dark]{--chakra-colors-chakra-body-text:var(--chakra-colors-whiteAlpha-900);--chakra-colors-chakra-body-bg:var(--chakra-colors-gray-800);--chakra-colors-chakra-border-color:var(--chakra-colors-whiteAlpha-300);--chakra-colors-chakra-subtle-bg:var(--chakra-colors-gray-700);--chakra-colors-chakra-placeholder-color:var(--chakra-colors-whiteAlpha-400);}</style
+      ><style data-emotion="css-global fubdgu">
+        html {
+          line-height: 1.5;
+          -webkit-text-size-adjust: 100%;
+          font-family: system-ui, sans-serif;
+          -webkit-font-smoothing: antialiased;
+          text-rendering: optimizeLegibility;
+          -moz-osx-font-smoothing: grayscale;
+          touch-action: manipulation;
+        }
+        body {
+          position: relative;
+          min-height: 100%;
+          margin: 0;
+          font-feature-settings: "kern";
+        }
+        :where(*, *::before, *::after) {
+          border-width: 0;
+          border-style: solid;
+          box-sizing: border-box;
+          word-wrap: break-word;
+        }
+        main {
+          display: block;
+        }
+        hr {
+          border-top-width: 1px;
+          box-sizing: content-box;
+          height: 0;
+          overflow: visible;
+        }
+        :where(pre, code, kbd, samp) {
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+          font-size: 1em;
+        }
+        a {
+          background-color: transparent;
+          color: inherit;
+          -webkit-text-decoration: inherit;
+          text-decoration: inherit;
+        }
+        abbr[title] {
+          border-bottom: none;
+          -webkit-text-decoration: underline;
+          text-decoration: underline;
+          -webkit-text-decoration: underline dotted;
+          -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+        }
+        :where(b, strong) {
+          font-weight: bold;
+        }
+        small {
+          font-size: 80%;
+        }
+        :where(sub, sup) {
+          font-size: 75%;
+          line-height: 0;
+          position: relative;
+          vertical-align: baseline;
+        }
+        sub {
+          bottom: -0.25em;
+        }
+        sup {
+          top: -0.5em;
+        }
+        img {
+          border-style: none;
+        }
+        :where(button, input, optgroup, select, textarea) {
+          font-family: inherit;
+          font-size: 100%;
+          line-height: 1.15;
+          margin: 0;
+        }
+        :where(button, input) {
+          overflow: visible;
+        }
+        :where(button, select) {
+          text-transform: none;
+        }
+        :where(
+            button::-moz-focus-inner,
+            [type="button"]::-moz-focus-inner,
+            [type="reset"]::-moz-focus-inner,
+            [type="submit"]::-moz-focus-inner
+          ) {
+          border-style: none;
+          padding: 0;
+        }
+        fieldset {
+          padding: 0.35em 0.75em 0.625em;
+        }
+        legend {
+          box-sizing: border-box;
+          color: inherit;
+          display: table;
+          max-width: 100%;
+          padding: 0;
+          white-space: normal;
+        }
+        progress {
+          vertical-align: baseline;
+        }
+        textarea {
+          overflow: auto;
+        }
+        :where([type="checkbox"], [type="radio"]) {
+          box-sizing: border-box;
+          padding: 0;
+        }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+          -webkit-appearance: none !important;
+        }
+        input[type="number"] {
+          -moz-appearance: textfield;
+        }
+        input[type="search"] {
+          -webkit-appearance: textfield;
+          outline-offset: -2px;
+        }
+        input[type="search"]::-webkit-search-decoration {
+          -webkit-appearance: none !important;
+        }
+        ::-webkit-file-upload-button {
+          -webkit-appearance: button;
+          font: inherit;
+        }
+        details {
+          display: block;
+        }
+        summary {
+          display: -webkit-box;
+          display: -webkit-list-item;
+          display: -ms-list-itembox;
+          display: list-item;
+        }
+        template {
+          display: none;
+        }
+        [hidden] {
+          display: none !important;
+        }
+        :where(blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre) {
+          margin: 0;
+        }
+        button {
+          background: transparent;
+          padding: 0;
+        }
+        fieldset {
+          margin: 0;
+          padding: 0;
+        }
+        :where(ol, ul) {
+          margin: 0;
+          padding: 0;
+        }
+        textarea {
+          resize: vertical;
+        }
+        :where(button, [role="button"]) {
+          cursor: pointer;
+        }
+        button::-moz-focus-inner {
+          border: 0 !important;
+        }
+        table {
+          border-collapse: collapse;
+        }
+        :where(h1, h2, h3, h4, h5, h6) {
+          font-size: inherit;
+          font-weight: inherit;
+        }
+        :where(button, input, optgroup, select, textarea) {
+          padding: 0;
+          line-height: inherit;
+          color: inherit;
+        }
+        :where(img, svg, video, canvas, audio, iframe, embed, object) {
+          display: block;
+        }
+        :where(img, video) {
+          max-width: 100%;
+          height: auto;
+        }
+        [data-js-focus-visible]
+          :focus:not([data-focus-visible-added]):not(
+            [data-focus-visible-disabled]
+          ) {
+          outline: none;
+          box-shadow: none;
+        }
+        select::-ms-expand {
+          display: none;
+        }
+        :root,
+        :host {
+          --chakra-vh: 100vh;
+        }
+        @supports (height: -webkit-fill-available) {
+          :root,
+          :host {
+            --chakra-vh: -webkit-fill-available;
+          }
+        }
+        @supports (height: -moz-fill-available) {
+          :root,
+          :host {
+            --chakra-vh: -moz-fill-available;
+          }
+        }
+        @supports (height: 100dvh) {
+          :root,
+          :host {
+            --chakra-vh: 100dvh;
+          }
+        }</style
+      ><style data-emotion="css-global ohll2m">
+        body {
+          font-family: var(--chakra-fonts-body);
+          color: var(--chakra-colors-chakra-body-text);
+          background: var(--chakra-colors-chakra-body-bg);
+          transition-property: background-color;
+          transition-duration: var(--chakra-transition-duration-normal);
+          line-height: var(--chakra-lineHeights-base);
+        }
+        *::-webkit-input-placeholder {
+          color: var(--chakra-colors-chakra-placeholder-color);
+        }
+        *::-moz-placeholder {
+          color: var(--chakra-colors-chakra-placeholder-color);
+        }
+        *:-ms-input-placeholder {
+          color: var(--chakra-colors-chakra-placeholder-color);
+        }
+        *::placeholder {
+          color: var(--chakra-colors-chakra-placeholder-color);
+        }
+        *,
+        *::before,
+        ::after {
+          border-color: var(--chakra-colors-chakra-border-color);
+        }
+        html,
+        body {
+          background: var(--chakra-colors-black);
+        }
+        .chakra-toast__inner {
+          pointer-events: none !important;
+        }
+        .chakra-toast__inner .chakra-stack {
+          pointer-events: auto !important;
+        }</style
+      ><style data-emotion="css 17b2ngz">
+        .css-17b2ngz {
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          left: 0px;
+          bottom: 0px;
+          background-image: url("assets/particles.png");
+        }
+      </style>
+      <div class="css-17b2ngz"></div>
+      <style data-emotion="css 1138r3q">
+        .css-1138r3q {
+          min-height: 100vh;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          left: 0px;
+          bottom: 0px;
+        }
+      </style>
+      <div class="css-1138r3q">
+        <style data-emotion="css 1a3ecuv">
+          .css-1a3ecuv {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            background: radial-gradient(
+                55.84% 44% at 50% 0%,
+                #081c49 0%,
+                #030a1a 100%
+              ),
+              #030a1a;
+          }
+        </style>
+        <div class="css-1a3ecuv"></div>
+        <style data-emotion="css 17b2ngz">
+          .css-17b2ngz {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            background-image: url("assets/particles.png");
+          }
+        </style>
+        <div class="css-17b2ngz"></div>
+        <style data-emotion="css 1u6adc7">
+          .css-1u6adc7 {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            -webkit-background-size: cover;
+            background-size: cover;
+            max-width: 100vw;
+            height: 100vh;
+            background-image: url("assets/lighting.png");
+          }
+        </style>
+        <div class="css-1u6adc7"></div>
+      </div>
+      <style data-emotion="css ep7xq6">
+        .css-ep7xq6 {
+          z-index: 1;
+          position: relative;
+        }
+      </style>
+      <header class="css-ep7xq6">
+        <style data-emotion="css 1a0e5tu">
+          .css-1a0e5tu {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            height: 64px;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+          }
+          @media screen and (min-width: 48em) {
+            .css-1a0e5tu {
+              height: 104px;
+            }
+          }
+        </style>
+        <div class="css-1a0e5tu">
+          <style data-emotion="css 11vl7h3">
+            .css-11vl7h3 {
+              width: 100%;
+              -webkit-margin-start: auto;
+              margin-inline-start: auto;
+              -webkit-margin-end: auto;
+              margin-inline-end: auto;
+              -webkit-padding-start: var(--chakra-space-4);
+              padding-inline-start: var(--chakra-space-4);
+              -webkit-padding-end: var(--chakra-space-4);
+              padding-inline-end: var(--chakra-space-4);
+              max-width: var(--chakra-sizes-container-xl);
+            }
+          </style>
+          <div class="chakra-container css-11vl7h3">
+            <style data-emotion="css 1qtrwtv">
+              .css-1qtrwtv {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+                padding-top: 0px;
+                padding-bottom: 0px;
+              }
+              @media screen and (min-width: 48em) {
+                .css-1qtrwtv {
+                  padding-top: var(--chakra-space-7);
+                  padding-bottom: var(--chakra-space-7);
+                }
+              }
+            </style>
+            <nav class="css-1qtrwtv">
+              <style data-emotion="css 4a6x12">
+                .css-4a6x12 {
+                  transition-property: var(--chakra-transition-property-common);
+                  transition-duration: var(--chakra-transition-duration-fast);
+                  transition-timing-function: var(
+                    --chakra-transition-easing-ease-out
+                  );
+                  cursor: pointer;
+                  -webkit-text-decoration: none;
+                  text-decoration: none;
+                  outline: 2px solid transparent;
+                  outline-offset: 2px;
+                  color: inherit;
+                }
+                .css-4a6x12:focus-visible,
+                .css-4a6x12[data-focus-visible] {
+                  box-shadow: var(--chakra-shadows-outline);
+                }
+                .css-4a6x12:hover,
+                .css-4a6x12[data-hover] {
+                  -webkit-text-decoration: none;
+                  text-decoration: none;
+                }</style
+              ><a class="chakra-link css-4a6x12" href="index.html"
+                ><style data-emotion="css k008qs">
+                  .css-k008qs {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                  }
+                </style>
+                <div class="css-k008qs">
+                  <style data-emotion="css 1cldjo1">
+                    .css-1cldjo1 {
+                      width: 38px;
+                      height: 38px;
+                      z-index: var(--chakra-zIndices-popover);
+                    }</style
+                  ><img
+                    src="assets/pivex-icon-white.png"
+                    class="chakra-image css-1cldjo1"
+                    style="
+                      animation: spinner 4s infinite;
+                      animation-direction: linear;
+                      animation-delay: 1.4s;
+                      transform-origin: center;
+                    "
+                  /><style data-emotion="css rbx6g1">
+                    .css-rbx6g1 {
+                      width: 94px;
+                      height: 38px;
+                      z-index: var(--chakra-zIndices-popover);
+                    }</style
+                  ><img
+                    src="logo.png"
+                    class="chakra-image css-rbx6g1"
+                  /></div></a
+              ><style data-emotion="css 1jase7e">
+                .css-1jase7e {
+                  display: none;
+                  -webkit-align-items: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-flex-direction: row;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                }
+                .css-1jase7e > *:not(style) ~ *:not(style) {
+                  margin-top: 0px;
+                  -webkit-margin-end: 0px;
+                  margin-inline-end: 0px;
+                  margin-bottom: 0px;
+                  -webkit-margin-start: var(--chakra-space-4);
+                  margin-inline-start: var(--chakra-space-4);
+                }
+                @media screen and (min-width: 62em) {
+                  .css-1jase7e {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                  }
+                }
+              </style>
+              <div class="chakra-stack css-1jase7e">
+                <style data-emotion="css l0lr17">
+                  .css-l0lr17 {
+                    transition-property: var(
+                      --chakra-transition-property-common
+                    );
+                    transition-duration: var(--chakra-transition-duration-fast);
+                    transition-timing-function: var(
+                      --chakra-transition-easing-ease-out
+                    );
+                    cursor: pointer;
+                    -webkit-text-decoration: none;
+                    text-decoration: none;
+                    outline: 2px solid transparent;
+                    outline-offset: 2px;
+                    color: inherit;
+                    -webkit-padding-start: var(--chakra-space-6);
+                    padding-inline-start: var(--chakra-space-6);
+                    -webkit-padding-end: var(--chakra-space-6);
+                    padding-inline-end: var(--chakra-space-6);
+                    font-weight: 600;
+                  }
+                  .css-l0lr17:hover,
+                  .css-l0lr17[data-hover] {
+                    -webkit-text-decoration: underline;
+                    text-decoration: underline;
+                  }
+                  .css-l0lr17:focus-visible,
+                  .css-l0lr17[data-focus-visible] {
+                    box-shadow: var(--chakra-shadows-outline);
+                  }</style
+                ><a class="chakra-link css-l0lr17" href="dashboard.html"
+                  >Dashboard</a
+                ><a class="chakra-link css-l0lr17" href="markets.html"
+                  >Markets</a
+                ><a class="chakra-link css-l0lr17" href="faucet.html">Faucet</a
+                ><a
+                  target="_blank"
+                  class="chakra-link css-l0lr17"
+                  href="https://docs.pivex.finance/"
+                  >Docs</a
+                ><a class="chakra-link css-l0lr17" href="faq.html">FAQ</a>
+              </div>
+              <style data-emotion="css 19gw1sx">
+                .css-19gw1sx {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-align-items: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-flex-direction: row;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                }
+                .css-19gw1sx > *:not(style) ~ *:not(style) {
+                  margin-top: 0px;
+                  -webkit-margin-end: 0px;
+                  margin-inline-end: 0px;
+                  margin-bottom: 0px;
+                  -webkit-margin-start: 12px;
+                  margin-inline-start: 12px;
+                }
+                @media screen and (min-width: 62em) {
+                  .css-19gw1sx {
+                    display: none;
+                  }
+                }
+              </style>
+              <div class="chakra-stack css-19gw1sx">
+                <style data-emotion="css johlez">
+                  .css-johlez {
+                    display: -webkit-inline-box;
+                    display: -webkit-inline-flex;
+                    display: -ms-inline-flexbox;
+                    display: inline-flex;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    -ms-appearance: none;
+                    appearance: none;
+                    -webkit-align-items: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    position: relative;
+                    white-space: nowrap;
+                    vertical-align: middle;
+                    outline: 2px solid transparent;
+                    outline-offset: 2px;
+                    line-height: 1.2;
+                    font-weight: var(--chakra-fontWeights-semibold);
+                    transition-property: var(
+                      --chakra-transition-property-common
+                    );
+                    transition-duration: var(
+                      --chakra-transition-duration-normal
+                    );
+                    height: 32px;
+                    min-width: var(--chakra-sizes-8);
+                    font-size: var(--chakra-fontSizes-sm);
+                    -webkit-padding-start: var(--chakra-space-3);
+                    padding-inline-start: var(--chakra-space-3);
+                    -webkit-padding-end: var(--chakra-space-3);
+                    padding-inline-end: var(--chakra-space-3);
+                    background: linear-gradient(
+                      118.15deg,
+                      rgba(255, 255, 255, 0.04) 0%,
+                      rgba(255, 255, 255, 0.02) 100%
+                    );
+                    padding: var(--chakra-space-1);
+                    border-radius: 10px;
+                    z-index: var(--chakra-zIndices-popover);
+                    border-width: 1px;
+                  }
+                  .css-johlez:focus-visible,
+                  .css-johlez[data-focus-visible] {
+                    box-shadow: var(--chakra-shadows-outline);
+                  }
+                  .css-johlez:disabled,
+                  .css-johlez[disabled],
+                  .css-johlez[aria-disabled="true"],
+                  .css-johlez[data-disabled] {
+                    opacity: 0.4;
+                    cursor: not-allowed;
+                    box-shadow: var(--chakra-shadows-none);
+                  }
+                  .css-johlez:active,
+                  .css-johlez[data-active] {
+                    background: var(--chakra-colors-gray-300);
+                  }</style
+                ><button
+                  type="button"
+                  class="chakra-button css-johlez"
+                  aria-label="Open Menu"
+                >
+                  <style data-emotion="css 2ipw93">
+                    .css-2ipw93 {
+                      width: var(--chakra-sizes-6);
+                      height: var(--chakra-sizes-6);
+                      display: inline-block;
+                      line-height: 1em;
+                      -webkit-flex-shrink: 0;
+                      -ms-flex-negative: 0;
+                      flex-shrink: 0;
+                      color: rgba(255, 255, 255, 0.72);
+                      vertical-align: middle;
+                    }</style
+                  ><svg
+                    viewBox="0 0 24 24"
+                    focusable="false"
+                    class="chakra-icon css-2ipw93"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <style data-emotion="css 1q12cw5">
+        .css-1q12cw5 {
+          min-height: calc(100vh - 104px - 76px);
+          position: relative;
+        }
+      </style>
+      <div class="css-1q12cw5">
+        <style data-emotion="css 1ur8y2w">
+          .css-1ur8y2w {
+            width: 100%;
+            -webkit-margin-start: auto;
+            margin-inline-start: auto;
+            -webkit-margin-end: auto;
+            margin-inline-end: auto;
+            -webkit-padding-start: var(--chakra-space-4);
+            padding-inline-start: var(--chakra-space-4);
+            -webkit-padding-end: var(--chakra-space-4);
+            padding-inline-end: var(--chakra-space-4);
+            max-width: var(--chakra-sizes-container-md);
+            padding-bottom: var(--chakra-space-12);
+            padding-top: 0px;
+          }
+          @media screen and (min-width: 48em) {
+            .css-1ur8y2w {
+              padding-top: 40px;
+            }
+          }
+          @media screen and (min-width: 62em) {
+            .css-1ur8y2w {
+              padding-bottom: var(--chakra-space-16);
+            }
+          }
+        </style>
+        <div class="chakra-container css-1ur8y2w">
+          <style data-emotion="css 5vto2z">
+            .css-5vto2z {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              padding-bottom: var(--chakra-space-16);
+            }
+            .css-5vto2z > *:not(style) ~ *:not(style) {
+              margin-top: var(--chakra-space-8);
+              -webkit-margin-end: 0px;
+              margin-inline-end: 0px;
+              margin-bottom: 0px;
+              -webkit-margin-start: 0px;
+              margin-inline-start: 0px;
+            }
+          </style>
+          <div class="chakra-stack css-5vto2z">
+            <style data-emotion="css 1dklj6k">
+              .css-1dklj6k {
+                font-family: var(--chakra-fonts-heading);
+                font-weight: var(--chakra-fontWeights-bold);
+                font-size: var(--chakra-fontSizes-3xl);
+                line-height: 1.33;
+              }
+              @media screen and (min-width: 48em) {
+                .css-1dklj6k {
+                  font-size: var(--chakra-fontSizes-4xl);
+                  line-height: 1.2;
+                }
+              }
+            </style>
+            <h2 class="chakra-heading css-1dklj6k">Terms of Service</h2>
+            <style data-emotion="css 1h4ws66">
+              .css-1h4ws66 {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: flex-start;
+                -webkit-box-align: flex-start;
+                -ms-flex-align: flex-start;
+                align-items: flex-start;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+              }
+              .css-1h4ws66 > *:not(style) ~ *:not(style) {
+                margin-top: 0.5rem;
+                -webkit-margin-end: 0px;
+                margin-inline-end: 0px;
+                margin-bottom: 0px;
+                -webkit-margin-start: 0px;
+                margin-inline-start: 0px;
+              }
+            </style>
+            <div class="chakra-stack css-1h4ws66">
+              <style data-emotion="css 178jenf">
+                .css-178jenf {
+                  font-family: var(--chakra-fonts-heading);
+                  font-weight: var(--chakra-fontWeights-bold);
+                  font-size: var(--chakra-fontSizes-xl);
+                  line-height: 1.2;
+                  text-align: left;
+                  margin-bottom: var(--chakra-space-4);
+                }
+              </style>
+              <h2 class="chakra-heading css-178jenf">1. Introduction</h2>
+              <style data-emotion="css w00cnv">
+                .css-w00cnv {
+                  white-space: pre-line;
+                }
+              </style>
+              <p class="chakra-text css-w00cnv">
+                These Terms of Service (&quot;Terms&quot;) govern your access to
+                and use of the services provided by Pivex.Finance
+                (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;), a
+                decentralized lending platform. By using our services, you agree
+                to be bound by these Terms. If you do not agree to these Terms,
+                you may not access or use our services.
+              </p>
+            </div>
+            <div class="chakra-stack css-1h4ws66">
+              <h2 class="chakra-heading css-178jenf">2. Elegibility</h2>
+              <p class="chakra-text css-w00cnv">
+                By using our services, you represent and warrant that you are at
+                least 18 years old, have the legal capacity to enter into these
+                Terms, and are not located in or a resident of any country,
+                state, or other jurisdiction where access to or use of our
+                platform is prohibited or restricted by applicable law or
+                regulation. If you are using our services on behalf of an
+                organization, you represent and warrant that you are authorized
+                to bind the organization to these Terms. You acknowledge and
+                agree that it is your sole responsibility to ensure compliance
+                with all laws, rules, and regulations in your jurisdiction,
+                including but not limited to, any restrictions on the use of
+                cryptocurrencies and decentralized finance platforms. We reserve
+                the right to restrict or deny access to our services to users
+                from certain jurisdictions at our sole discretion.
+              </p>
+            </div>
+            <div class="chakra-stack css-1h4ws66">
+              <h2 class="chakra-heading css-178jenf">3. Platform Usage</h2>
+              <p class="chakra-text css-w00cnv">
+                You acknowledge that our platform is built on blockchain
+                technology, and as such, you are responsible for all costs and
+                fees associated with your use of the platform, including but not
+                limited to gas fees and network fees. You also acknowledge that
+                we have no control over the underlying blockchain network and
+                cannot guarantee the availability, functionality, or security of
+                our services.
+              </p>
+            </div>
+            <div class="chakra-stack css-1h4ws66">
+              <h2 class="chakra-heading css-178jenf">
+                4. Promotions, Airdrops, and NFTs
+              </h2>
+              <p class="chakra-text css-w00cnv">
+                We may, from time to time, offer promotions, airdrops, or
+                distribute non-fungible tokens (NFTs) to users of our platform.
+                These promotions, airdrops, and NFTs are subject to the
+                following terms: a. Eligibility: We reserve the right to
+                determine eligibility for any promotions, airdrops, or NFTs at
+                our sole discretion. Participation may be limited to specific
+                users or require the completion of certain actions, such as
+                holding a minimum amount of tokens. b. Disclaimers: We are not
+                responsible for any loss, damage, or harm resulting from your
+                participation in promotions, airdrops, or NFT distributions. You
+                acknowledge that the value of tokens and NFTs may be volatile
+                and can change rapidly. c. Taxes: You are solely responsible for
+                any taxes related to your participation in promotions, airdrops,
+                or NFT distributions.
+              </p>
+            </div>
+            <div class="chakra-stack css-1h4ws66">
+              <h2 class="chakra-heading css-178jenf">
+                5. Risks and Disclaimers
+              </h2>
+              <p class="chakra-text css-w00cnv">
+                You acknowledge and agree that using our platform involves
+                various risks, including but not limited to, the following: a.
+                Technical Risks: You understand that blockchain technology is
+                inherently experimental and may be subject to bugs,
+                vulnerabilities, and unexpected changes. You acknowledge that we
+                are not responsible for any loss or damage resulting from such
+                issues. b. Regulatory Risks: The legal and regulatory landscape
+                surrounding decentralized finance is evolving rapidly. You agree
+                to comply with all applicable laws and regulations, and you
+                acknowledge that we are not responsible for any legal
+                consequences arising from your use of our services. c. Financial
+                Risks: You acknowledge that using our platform involves
+                financial risk, including but not limited to market volatility,
+                liquidity risks, and the risk of losing all or part of your
+                assets. You agree to use our services at your own risk and
+                assume full responsibility for any losses or damages that may
+                result.
+              </p>
+            </div>
+            <div class="chakra-stack css-1h4ws66">
+              <h2 class="chakra-heading css-178jenf">
+                6. Limitation of Liability
+              </h2>
+              <p class="chakra-text css-w00cnv">
+                To the maximum extent permitted by applicable law, we and our
+                affiliates, officers, directors, employees, and agents shall not
+                be liable for any direct, indirect, incidental, special,
+                consequential, or punitive damages, including but not limited to
+                loss of profits, data, or other intangible losses, resulting
+                from your use of our services.
+              </p>
+            </div>
+            <div class="chakra-stack css-1h4ws66">
+              <h2 class="chakra-heading css-178jenf">7. Indemnification</h2>
+              <p class="chakra-text css-w00cnv">
+                You agree to indemnify, defend, and hold harmless Pivex.Finance,
+                its affiliates, officers, directors, employees, and agents from
+                and against any claims, liabilities, damages, losses, or
+                expenses, including reasonable attorneys&#x27; fees, arising out
+                of or in connection with your use of our services or your breach
+                of these Terms.
+              </p>
+            </div>
+            <div class="chakra-stack css-1h4ws66">
+              <h2 class="chakra-heading css-178jenf">
+                8. Governing Law and Dispute Resolution
+              </h2>
+              <p class="chakra-text css-w00cnv">
+                These Terms shall be governed by and construed in accordance
+                with the laws of the British Virgin Islands, without regard to
+                its conflict of law principles. Any disputes arising out of or
+                in connection with these Terms or your use of our services shall
+                be resolved through negotiation, mediation, or arbitration as
+                agreed by the parties.
+              </p>
+            </div>
+            <div class="chakra-stack css-1h4ws66">
+              <h2 class="chakra-heading css-178jenf">
+                9. Amendments and Updates
+              </h2>
+              <p class="chakra-text css-w00cnv">
+                We reserve the right to amend or update these Terms at any time
+                and at our sole discretion. We will notify you of any material
+                changes by posting the updated Terms on our platform or by other
+                means as deemed appropriate. Your continued use of our services
+                after the effective date of any changes constitutes your
+                acceptance of the revised Terms.
+              </p>
+            </div>
+            <div class="chakra-stack css-1h4ws66">
+              <h2 class="chakra-heading css-178jenf">10. Severability</h2>
+              <p class="chakra-text css-w00cnv">
+                If any provision of these Terms is held to be invalid, illegal,
+                or unenforceable by a court of competent jurisdiction, the
+                remaining provisions shall remain in full force and effect, and
+                the invalid, illegal, or unenforceable provision shall be deemed
+                replaced by a valid, legal, and enforceable provision that most
+                closely reflects the original intent of the parties.
+              </p>
+            </div>
+            <div class="chakra-stack css-1h4ws66">
+              <h2 class="chakra-heading css-178jenf">11. No Waiver</h2>
+              <p class="chakra-text css-w00cnv">
+                Our failure to enforce any right or provision of these Terms
+                shall not be deemed a waiver of such right or provision, and no
+                waiver of any term shall be deemed a further or continuing
+                waiver of such term or any other term.
+              </p>
+            </div>
+            <div class="chakra-stack css-1h4ws66">
+              <h2 class="chakra-heading css-178jenf">12. Entire Agreement</h2>
+              <p class="chakra-text css-w00cnv">
+                These Terms, together with any other policies or agreements
+                referenced herein, constitute the entire agreement between you
+                and Pivex.Finance concerning your use of our services and
+                supersede all prior or contemporaneous understandings,
+                agreements, or communications, whether written or oral,
+                regarding the subject matter herein.
+              </p>
+            </div>
+            <div class="chakra-stack css-1h4ws66">
+              <h2 class="chakra-heading css-178jenf">
+                13. Contact Information
+              </h2>
+              <p class="chakra-text css-w00cnv">
+                If you have any questions, concerns, or comments about these
+                Terms or our services, please contact us at
+                contact@pivex.finance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style data-emotion="css 79elbk">
+        .css-79elbk {
+          position: relative;
+        }
+      </style>
+      <div class="css-79elbk">
+        <style data-emotion="css ba2jx8">
+          .css-ba2jx8 {
+            background-image: url("assets/noise-texture.png");
+            -webkit-background-size: contain;
+            background-size: contain;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            -webkit-backdrop-filter: blur(16px);
+            backdrop-filter: blur(16px);
+          }
+        </style>
+        <div class="css-ba2jx8"></div>
+        <div class="css-79elbk">
+          <style data-emotion="css zrio95">
+            .css-zrio95 {
+              z-index: 1;
+              width: 100%;
+              background: linear-gradient(
+                118.15deg,
+                rgba(255, 255, 255, 0.04) 0%,
+                rgba(255, 255, 255, 0.02) 100%
+              );
+              border-top: 1px solid #ffffff12;
+              position: relative;
+              -webkit-backdrop-filter: blur(16px);
+              backdrop-filter: blur(16px);
+              bottom: 0px;
+              margin-top: 0px;
+            }
+            @media screen and (min-width: 48em) {
+              .css-zrio95 {
+                position: relative;
+              }
+            }
+          </style>
+          <footer class="css-zrio95">
+            <style data-emotion="css 11vl7h3">
+              .css-11vl7h3 {
+                width: 100%;
+                -webkit-margin-start: auto;
+                margin-inline-start: auto;
+                -webkit-margin-end: auto;
+                margin-inline-end: auto;
+                -webkit-padding-start: var(--chakra-space-4);
+                padding-inline-start: var(--chakra-space-4);
+                -webkit-padding-end: var(--chakra-space-4);
+                padding-inline-end: var(--chakra-space-4);
+                max-width: var(--chakra-sizes-container-xl);
+              }
+            </style>
+            <div class="chakra-container css-11vl7h3">
+              <style data-emotion="css 308usj">
+                .css-308usj {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-flex-direction: column;
+                  -ms-flex-direction: column;
+                  flex-direction: column;
+                  gap: var(--chakra-space-6);
+                  -webkit-align-items: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-box-pack: justify;
+                  -webkit-justify-content: space-between;
+                  justify-content: space-between;
+                  padding-top: var(--chakra-space-5);
+                  padding-bottom: var(--chakra-space-5);
+                }
+                @media screen and (min-width: 48em) {
+                  .css-308usj {
+                    -webkit-flex-direction: row;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                    gap: 0px;
+                  }
+                }
+              </style>
+              <div class="css-308usj">
+                <style data-emotion="css v9n9j7">
+                  .css-v9n9j7 {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    -webkit-align-items: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                  }
+                  @media screen and (min-width: 48em) {
+                    .css-v9n9j7 {
+                      -webkit-flex-direction: row;
+                      -ms-flex-direction: row;
+                      flex-direction: row;
+                    }
+                  }
+                </style>
+                <nav class="css-v9n9j7">
+                  <style data-emotion="css 1xj2o1i">
+                    .css-1xj2o1i {
+                      transition-property: var(
+                        --chakra-transition-property-common
+                      );
+                      transition-duration: var(
+                        --chakra-transition-duration-fast
+                      );
+                      transition-timing-function: var(
+                        --chakra-transition-easing-ease-out
+                      );
+                      cursor: pointer;
+                      -webkit-text-decoration: none;
+                      text-decoration: none;
+                      outline: 2px solid transparent;
+                      outline-offset: 2px;
+                      color: inherit;
+                      margin-right: 0px;
+                      margin-bottom: var(--chakra-space-6);
+                    }
+                    .css-1xj2o1i:focus-visible,
+                    .css-1xj2o1i[data-focus-visible] {
+                      box-shadow: var(--chakra-shadows-outline);
+                    }
+                    .css-1xj2o1i:hover,
+                    .css-1xj2o1i[data-hover] {
+                      -webkit-text-decoration: none;
+                      text-decoration: none;
+                    }
+                    @media screen and (min-width: 48em) {
+                      .css-1xj2o1i {
+                        margin-right: var(--chakra-space-10);
+                        margin-bottom: 0px;
+                      }
+                    }</style
+                  ><a class="chakra-link css-1xj2o1i" href="index.html"
+                    ><style data-emotion="css v67zxb">
+                      .css-v67zxb {
+                        width: var(--chakra-sizes-8);
+                        height: var(--chakra-sizes-8);
+                      }</style
+                    ><img
+                      src="assets/pivex-icon-white.png"
+                      class="chakra-image css-v67zxb"
+                      style="
+                        animation: spinner 4s infinite;
+                        animation-direction: linear;
+                        animation-delay: 1.4s;
+                        transform-origin: center;
+                      " /></a
+                  ><style data-emotion="css m3iyma">
+                    .css-m3iyma {
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      gap: var(--chakra-space-4);
+                      -webkit-flex-direction: column;
+                      -ms-flex-direction: column;
+                      flex-direction: column;
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                    }
+                    @media screen and (min-width: 48em) {
+                      .css-m3iyma {
+                        gap: var(--chakra-space-12);
+                        padding-left: var(--chakra-space-4);
+                        -webkit-flex-direction: row;
+                        -ms-flex-direction: row;
+                        flex-direction: row;
+                      }
+                    }
+                  </style>
+                  <div class="css-m3iyma">
+                    <style data-emotion="css 1epfi38">
+                      .css-1epfi38 {
+                        transition-property: var(
+                          --chakra-transition-property-common
+                        );
+                        transition-duration: var(
+                          --chakra-transition-duration-fast
+                        );
+                        transition-timing-function: var(
+                          --chakra-transition-easing-ease-out
+                        );
+                        cursor: pointer;
+                        -webkit-text-decoration: none;
+                        text-decoration: none;
+                        outline: 2px solid transparent;
+                        outline-offset: 2px;
+                        font-size: var(--chakra-fontSizes-sm);
+                        color: var(--chakra-colors-text-secondary);
+                      }
+                      .css-1epfi38:hover,
+                      .css-1epfi38[data-hover] {
+                        -webkit-text-decoration: underline;
+                        text-decoration: underline;
+                      }
+                      .css-1epfi38:focus-visible,
+                      .css-1epfi38[data-focus-visible] {
+                        box-shadow: var(--chakra-shadows-outline);
+                      }</style
+                    ><a class="chakra-link css-1epfi38" href="markets.html"
+                      >Markets</a
+                    ><a class="chakra-link css-1epfi38" href="faucet.html"
+                      >Faucet</a
+                    ><a
+                      target="_blank"
+                      class="chakra-link css-1epfi38"
+                      href="https://docs.pivex.finance/"
+                      >Docs</a
+                    ><a class="chakra-link css-1epfi38" href="terms.html"
+                      >Terms of Service</a
+                    ><a class="chakra-link css-1epfi38" href="faq.html">FAQ</a>
+                  </div>
+                </nav>
+                <style data-emotion="css 79cy1h">
+                  .css-79cy1h {
+                    width: var(--chakra-sizes-full);
+                    height: 1px;
+                    background: var(--chakra-colors-stroke-divider);
+                  }
+                  @media screen and (min-width: 48em) {
+                    .css-79cy1h {
+                      display: none;
+                    }
+                  }
+                </style>
+                <div class="css-79cy1h"></div>
+                <style data-emotion="css 15vbgl6">
+                  .css-15vbgl6 {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-align-items: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-flex-direction: row;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                  }
+                  .css-15vbgl6 > *:not(style) ~ *:not(style) {
+                    margin-top: 0px;
+                    -webkit-margin-end: 0px;
+                    margin-inline-end: 0px;
+                    margin-bottom: 0px;
+                    -webkit-margin-start: var(--chakra-space-4);
+                    margin-inline-start: var(--chakra-space-4);
+                  }
+                  @media screen and (min-width: 48em) {
+                    .css-15vbgl6 > *:not(style) ~ *:not(style) {
+                      -webkit-margin-start: var(--chakra-space-6);
+                      margin-inline-start: var(--chakra-space-6);
+                    }
+                  }
+                </style>
+                <div class="chakra-stack css-15vbgl6">
+                  <a
+                    href="https://discord.gg/kfyNmmbvhJ"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><style data-emotion="css 1o4son9">
+                      .css-1o4son9 {
+                        width: var(--chakra-sizes-5);
+                        height: var(--chakra-sizes-5);
+                        display: inline-block;
+                        line-height: 1em;
+                        -webkit-flex-shrink: 0;
+                        -ms-flex-negative: 0;
+                        flex-shrink: 0;
+                        color: var(--chakra-colors-text-secondary);
+                        margin-top: var(--chakra-space-2);
+                      }</style
+                    ><svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 640 512"
+                      focusable="false"
+                      class="chakra-icon css-1o4son9"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"
+                      ></path></svg></a
+                  ><a
+                    href="https://twitter.com/PivexFinance"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      focusable="false"
+                      class="chakra-icon css-1o4son9"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                      ></path></svg></a
+                  ><a
+                    href="https://medium.com/@Pivex.Finance"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      focusable="false"
+                      class="chakra-icon css-1o4son9"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M71.5 142.3c.6-5.9-1.7-11.8-6.1-15.8L20.3 72.1V64h140.2l108.4 237.7L364.2 64h133.7v8.1l-38.6 37c-3.3 2.5-5 6.7-4.3 10.8v272c-.7 4.1 1 8.3 4.3 10.8l37.7 37v8.1H307.3v-8.1l39.1-37.9c3.8-3.8 3.8-5 3.8-10.8V171.2L241.5 447.1h-14.7L100.4 171.2v184.9c-1.1 7.8 1.5 15.6 7 21.2l50.8 61.6v8.1h-144v-8L65 377.3c5.4-5.6 7.9-13.5 6.5-21.2V142.3z"
+                      ></path></svg
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <span></span><span id="__chakra_env" hidden=""></span>
+    </div>
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "props": {
+          "pageProps": {
+            "_nextI18Next": {
+              "initialI18nStore": {
+                "en": {
+                  "layout": {
+                    "meta": {
+                      "title": "Pivex Finance",
+                      "description": "Deep liquidity on the most secure and efficient lending platform is coming to Shimmer soon. Pivex Finance will provide decentralized and transparent lending markets to provide passive income."
+                    },
+                    "navigation": {
+                      "markets": "Markets",
+                      "liquidate": "Liquidate",
+                      "docs": "Docs",
+                      "dashboard": "Dashboard",
+                      "terms": "Terms of Service",
+                      "launchApp": "Launch app",
+                      "blog": "Blog",
+                      "connectWallet": "Connect Wallet",
+                      "faq": "FAQ",
+                      "faucet": "Faucet"
+                    },
+                    "blockNumber": "Latest block: {{ blockNumber }}",
+                    "authenticate": "Connect Wallet",
+                    "logout": "Logout",
+                    "switchNetwork": "Switch Network",
+                    "yourNetwork": "Your network",
+                    "notConnectedToNetwork": "{{ unsupportedNetwork }} is not supported. Please change your network to {{ supportedNetwork }}.",
+                    "claimModal": {
+                      "balance": "balance",
+                      "walletBalance": "Wallet Balance",
+                      "unclaimed": "Unclaimed Balance",
+                      "claim": "Claim",
+                      "pivexTokenDefaultSymbol": "DPR",
+                      "pivexTokenName": "Pivex",
+                      "noUnclaimedBalance": "No Unclaimed Balance",
+                      "price": "Price",
+                      "addTokenToWallet": "Add Pivex token to wallet"
+                    },
+                    "notFound": {
+                      "404": "404",
+                      "pageTitle": "Pivex - Page not found",
+                      "body": "If you are looking for the lost city... it's not here."
+                    }
+                  },
+                  "terms": {
+                    "title": "Terms of Service",
+                    "introduction": {
+                      "title": "1. Introduction",
+                      "body": "These Terms of Service (\"Terms\") govern your access to and use of the services provided by Pivex.Finance (\"we\", \"us\", or \"our\"), a decentralized lending platform. By using our services, you agree to be bound by these Terms. If you do not agree to these Terms, you may not access or use our services."
+                    },
+                    "elegibility": {
+                      "title": "2. Elegibility",
+                      "body": "By using our services, you represent and warrant that you are at least 18 years old, have the legal capacity to enter into these Terms, and are not located in or a resident of any country, state, or other jurisdiction where access to or use of our platform is prohibited or restricted by applicable law or regulation. If you are using our services on behalf of an organization, you represent and warrant that you are authorized to bind the organization to these Terms. \n\nYou acknowledge and agree that it is your sole responsibility to ensure compliance with all laws, rules, and regulations in your jurisdiction, including but not limited to, any restrictions on the use of cryptocurrencies and decentralized finance platforms. We reserve the right to restrict or deny access to our services to users from certain jurisdictions at our sole discretion."
+                    },
+                    "platformUsage": {
+                      "title": "3. Platform Usage",
+                      "body": "You acknowledge that our platform is built on blockchain technology, and as such, you are responsible for all costs and fees associated with your use of the platform, including but not limited to gas fees and network fees. You also acknowledge that we have no control over the underlying blockchain network and cannot guarantee the availability, functionality, or security of our services."
+                    },
+                    "promotions": {
+                      "title": "4. Promotions, Airdrops, and NFTs",
+                      "body": "We may, from time to time, offer promotions, airdrops, or distribute non-fungible tokens (NFTs) to users of our platform. These promotions, airdrops, and NFTs are subject to the following terms:\n\na. Eligibility: We reserve the right to determine eligibility for any promotions, airdrops, or NFTs at our sole discretion. Participation may be limited to specific users or require the completion of certain actions, such as holding a minimum amount of tokens.\n\nb. Disclaimers: We are not responsible for any loss, damage, or harm resulting from your participation in promotions, airdrops, or NFT distributions. You acknowledge that the value of tokens and NFTs may be volatile and can change rapidly.\n\nc. Taxes: You are solely responsible for any taxes related to your participation in promotions, airdrops, or NFT distributions."
+                    },
+                    "risksAndDisclaimers": {
+                      "title": "5. Risks and Disclaimers",
+                      "body": "You acknowledge and agree that using our platform involves various risks, including but not limited to, the following:\n\na. Technical Risks: You understand that blockchain technology is inherently experimental and may be subject to bugs, vulnerabilities, and unexpected changes. You acknowledge that we are not responsible for any loss or damage resulting from such issues.\n\nb. Regulatory Risks: The legal and regulatory landscape surrounding decentralized finance is evolving rapidly. You agree to comply with all applicable laws and regulations, and you acknowledge that we are not responsible for any legal consequences arising from your use of our services.\n\nc. Financial Risks: You acknowledge that using our platform involves financial risk, including but not limited to market volatility, liquidity risks, and the risk of losing all or part of your assets. You agree to use our services at your own risk and assume full responsibility for any losses or damages that may result."
+                    },
+                    "limitationOfLiability": {
+                      "title": "6. Limitation of Liability",
+                      "body": "To the maximum extent permitted by applicable law, we and our affiliates, officers, directors, employees, and agents shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or other intangible losses, resulting from your use of our services."
+                    },
+                    "indemnification": {
+                      "title": "7. Indemnification",
+                      "body": "You agree to indemnify, defend, and hold harmless Pivex.Finance, its affiliates, officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, or expenses, including reasonable attorneys' fees, arising out of or in connection with your use of our services or your breach of these Terms."
+                    },
+                    "governingLaw": {
+                      "title": "8. Governing Law and Dispute Resolution",
+                      "body": "These Terms shall be governed by and construed in accordance with the laws of the British Virgin Islands, without regard to its conflict of law principles. Any disputes arising out of or in connection with these Terms or your use of our services shall be resolved through negotiation, mediation, or arbitration as agreed by the parties."
+                    },
+                    "amendments": {
+                      "title": "9. Amendments and Updates",
+                      "body": "We reserve the right to amend or update these Terms at any time and at our sole discretion. We will notify you of any material changes by posting the updated Terms on our platform or by other means as deemed appropriate. Your continued use of our services after the effective date of any changes constitutes your acceptance of the revised Terms."
+                    },
+                    "severability": {
+                      "title": "10. Severability",
+                      "body": "If any provision of these Terms is held to be invalid, illegal, or unenforceable by a court of competent jurisdiction, the remaining provisions shall remain in full force and effect, and the invalid, illegal, or unenforceable provision shall be deemed replaced by a valid, legal, and enforceable provision that most closely reflects the original intent of the parties."
+                    },
+                    "noWaiver": {
+                      "title": "11. No Waiver",
+                      "body": "Our failure to enforce any right or provision of these Terms shall not be deemed a waiver of such right or provision, and no waiver of any term shall be deemed a further or continuing waiver of such term or any other term."
+                    },
+                    "entireAgreement": {
+                      "title": "12. Entire Agreement",
+                      "body": "These Terms, together with any other policies or agreements referenced herein, constitute the entire agreement between you and Pivex.Finance concerning your use of our services and supersede all prior or contemporaneous understandings, agreements, or communications, whether written or oral, regarding the subject matter herein."
+                    },
+                    "contactInformation": {
+                      "title": "13. Contact Information",
+                      "body": "If you have any questions, concerns, or comments about these Terms or our services, please contact us at contact@pivex.finance."
+                    }
+                  },
+                  "dashboard": {
+                    "title": "Dashboard",
+                    "lighthouse": {
+                      "title": "Lighthouse",
+                      "supplyBalance": "Supply Balance",
+                      "borrowBalance": "Borrow Balance",
+                      "netApy": "Net APY",
+                      "borrowLimit": "Borrow Limit",
+                      "outlook": "Outlook",
+                      "learnHow": "Learn How",
+                      "tutorial": "View tutorial",
+                      "safetyLabel": "Safety",
+                      "tooltips": {
+                        "title": "Health status of the account. If in risk, it can be liquidated",
+                        "borrowLimit": "Max amount a user can borrow in USD",
+                        "netApy": "Interest earn \u0026 paid, plus Pivex rewards"
+                      },
+                      "safety": {
+                        "highest": {
+                          "title": "Great",
+                          "description": "Time to start your grand journey by enabling collateral and supplying funds."
+                        },
+                        "medium": {
+                          "title": "Great",
+                          "description": "Everything looks clear and calm, shipmate."
+                        },
+                        "low": {
+                          "title": "Cloudy",
+                          "description": "Okay for now cap'n. But watch out for liquidation risk."
+                        },
+                        "critical": {
+                          "title": "Danger",
+                          "description": "Secure your investment and avoid risk of liquidation."
+                        },
+                        "initial": {
+                          "title": "Get Started",
+                          "description": "Start your journey by connecting your wallet and enabling collateral. When you add funds, Lighthouse will act as your investment beacon."
+                        }
+                      }
+                    },
+                    "marketsTable": {
+                      "asset": "Asset",
+                      "apy": "APY",
+                      "apr": "APR",
+                      "earned": "Earned",
+                      "balance": "Balance",
+                      "wallet": "Wallet",
+                      "collateral": "Collateral",
+                      "accrued": "Accrued",
+                      "liquidity": "Liquidity"
+                    },
+                    "supplyMarkets": "Supply Markets",
+                    "supplyingMarkets": "Supplied",
+                    "borrowMarkets": "Borrow Markets",
+                    "borrowingMarkets": "Borrowing",
+                    "borrowLimitUsed": "Borrow Limit Used",
+                    "comptrollerErrors": {
+                      "generic": "Comptroller Rejection",
+                      "noError": "Not a failure",
+                      "unauthorized": "The sender is not authorized to perform this action",
+                      "comptrollerMismatch": "Liquidation cannot be performed in markets with different comptrollers",
+                      "insufficientShortfall": "The account does not have sufficient shortfall to perform this action",
+                      "insufficientLiquidity": "The account does not have sufficient liquidity to perform this action",
+                      "invalidCloseFactor": "The close factor is not valid",
+                      "invalidCollateralFactor": "The collateral factor is not valid",
+                      "invalidLiquidationIncentive": "The liquidation incentive is invalid",
+                      "marketNotEntered": "The market has not been entered by the account",
+                      "marketNotListed": "The market is not currently listed by the comptroller",
+                      "marketAlreadyListed": "An admin tried to list the same market more than once",
+                      "mathError": "A math calculation error occurred",
+                      "nonzeroBorrowBalance": "The action cannot be performed since the account carries a borrow balance",
+                      "priceError": "The comptroller could not obtain a required price of an asset",
+                      "rejection": "The comptroller rejects the action requested by the market",
+                      "snapshotError": "The comptroller could not get the account borrows and exchange rate from the market",
+                      "tooManyAssets": "Attempted to enter more markets than are currently supported",
+                      "tooMuchRepay": "Attempted to repay more than is allowed by the protocol"
+                    },
+                    "cTokenErrors": {
+                      "generic": "CToken Rejection",
+                      "noError": "Not a failure.",
+                      "unauthorized": "The sender is not authorized to perform this action.",
+                      "badInput": "An invalid argument was supplied by the caller.",
+                      "comptrollerRejection": "The action would violate the comptroller policy.",
+                      "comptrollerCalculationError": "An internal calculation has failed in the comptroller.",
+                      "interestRateModelError": "The interest rate model returned an invalid value.",
+                      "invalidAccountPair": "The specified combination of accounts is invalid.",
+                      "invalidCloseAmountRequested": "The amount to liquidate is invalid.",
+                      "invalidCollateralFactor": "The collateral factor is invalid.",
+                      "mathError": "A math calculation error occurred.",
+                      "marketNotFresh": "Interest has not been properly accrued.",
+                      "marketNotListed": "The market is not currently listed by its comptroller.",
+                      "tokenInsufficientAllowance": "ERC-20 contract must allow Money Market contract to call transferFrom. The current allowance is either 0 or less than the requested supply, repayBorrow or liquidate amount.",
+                      "tokenInsufficientBalance": "Caller does not have sufficient balance in the ERC-20 contract to complete the desired action.",
+                      "tokenInsufficientCash": "The market does not have a sufficient cash balance to complete the transaction. You may attempt this transaction again later.",
+                      "tokenTransferInFailed": "Failure in ERC-20 when transfering token into the market.",
+                      "tokenTransferOutFailed": "Failure in ERC-20 when transfering token out of the market."
+                    },
+                    "actionModals": {
+                      "supply": "Supply",
+                      "withdraw": "Withdraw",
+                      "supplyAPY": "Supply APY",
+                      "supplyRates": "Supply Rates",
+                      "distributionRate": "Distribution APY",
+                      "borrowAPR": "Borrow APR",
+                      "borrowRates": "Borrow Rates",
+                      "borrowLimit": "Borrow Limit",
+                      "borrowLimitUsedPercentage": "Borrow Limit Used",
+                      "balance": "Balance",
+                      "borrowBalance": "Borrow Balance",
+                      "approve": "Approve",
+                      "enableDescription": "To Supply or Repay {{ token }} to the Pivex Protocol, you need to enable it first.",
+                      "provideCollateral": "To proceed with borrowing funds, you first need to provide collateral to secure your loan.",
+                      "learnHowProvideCollateral": "Learn how to provide collateral.",
+                      "done": "Done",
+                      "enable": "Enable {{ token }}",
+                      "max": "MAX",
+                      "fullAmount": "Full amount",
+                      "limit": "LIMIT",
+                      "borrow": "Borrow",
+                      "repay": "Repay",
+                      "currentlySupplying": "Currently Supplying",
+                      "currentlyBorrowing": "Currently Borrowing",
+                      "validation": {
+                        "amountRequired": "Token amount is required",
+                        "maxAmountExceeded": "Token amount exceeds limit",
+                        "minAmountNotReached": "Token amount should be greater than 0",
+                        "amountHigherThanLiquidity": "The amount is higher than the market liquidity",
+                        "amountHigherThanBorrowBalance": "The amount is higher than the borrow balance",
+                        "noFunds": "No funds available"
+                      },
+                      "collateral": {
+                        "enable": "Enable as Collateral",
+                        "disable": "Disable as Collateral",
+                        "description": "Each asset used as collateral increases your borrowing limit. Be careful, this can subject the asset to being seized in liquidation.",
+                        "use": "Use {{ token }} as collateral",
+                        "remove": "Remove {{ token }} as collateral"
+                      }
+                    },
+                    "transactionStatus": {
+                      "sign": {
+                        "title": "Confirm the transaction with Metamask"
+                      },
+                      "broadcast": { "title": "Transaction broadcast" },
+                      "captcha": { "title": "Validate captcha to continue" }
+                    },
+                    "dismiss": "Dismiss",
+                    "pendingTransaction": "Pending transaction",
+                    "captcha": {
+                      "header": "Receive tokens",
+                      "button": "Get tokens"
+                    },
+                    "fetchingError": "There was an error fetching markets data.",
+                    "networkError": "Please change your network to {{ supportedNetwork }}",
+                    "networkDown": {
+                      "banner": "There was a problem retrieving markets data.",
+                      "bannerButton": "Reload",
+                      "description": "There was an error fetching markets data"
+                    }
+                  }
+                }
+              },
+              "initialLocale": "en",
+              "userConfig": {
+                "i18n": {
+                  "defaultLocale": "en",
+                  "locales": ["en"],
+                  "localePath": "/home/runner/work/pivex-frontend/pivex-frontend/public/locales"
+                },
+                "defaultNS": "home",
+                "default": {
+                  "i18n": {
+                    "defaultLocale": "en",
+                    "locales": ["en"],
+                    "localePath": "/home/runner/work/pivex-frontend/pivex-frontend/public/locales"
+                  },
+                  "defaultNS": "home"
+                }
+              }
+            }
+          },
+          "__N_SSG": true
+        },
+        "page": "/terms",
+        "query": {},
+        "buildId": "ynE4MCKD2JmR288LlNsBb",
+        "isFallback": false,
+        "gsp": true,
+        "locale": "en",
+        "locales": ["en"],
+        "defaultLocale": "en",
+        "scriptLoader": []
+      }
+    </script>
+  </body>
+ 
+</html>
