@@ -20,6 +20,9 @@
     transform: scale(2);
     animation: spinner2 4s infinite linear 1.4s !important;
 }
+.chakra-link{
+    padding: 0px 5px !important;
+}
 
 @keyframes spinner2 {
     0% {
