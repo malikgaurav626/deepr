@@ -3,16 +3,13 @@
     transform: translate(-70px, 0px) rotateY(180deg);
 }
 .replace2{
-    transform: translateX(70px) scale(0.5);
+    transform: translateX(120px) scale(0.5);
     z-index: 10 !important;
 }
 .replace3{
     padding: 0px 45px;
     max-height: 80vh;
-    
-    
     mask-image: linear-gradient(to left, transparent, black, transparent);
-    
     z-index: -1;
 
 }
@@ -20,16 +17,16 @@
     padding-top: 150px !important;
 }
 .replace-logo{
-    transform: scale(1.5);
+    transform: scale(2);
     animation: spinner2 4s infinite linear 1.4s !important;
 }
 
 @keyframes spinner2 {
     0% {
-        transform: rotate(0) scale(1.5);
+        transform: rotate(0) scale(2);
     }
     
     100% {
-        transform: rotate(1turn) scale(1.5);
+        transform: rotate(1turn) scale(2);
     }
 }
