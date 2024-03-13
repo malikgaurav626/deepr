@@ -1,6 +1,6 @@
 .replace1{
     z-index: -1;
-    transform: translate(-70px, 0px) rotateY(180deg);
+    transform: translateX(-100px) rotateY(180deg);
 }
 .replace2{
     transform: translateX(120px) scale(0.5);
@@ -17,8 +17,13 @@
     padding-top: 150px !important;
 }
 .replace-logo{
-    transform: scale(2);
+    transform: scale(1.5);
     animation: spinner2 4s infinite linear 1.4s !important;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.scaleup{
+    animation: spinner3 4s infinite linear 1.4s !important;
 }
 .chakra-link{
     padding: 0px 5px !important;
@@ -26,13 +31,45 @@
 .bottom-panel{
     margin-top: 90px !important;
 }
+.replace-heading{
+    font-size: 42px !important;
+    line-height: 50px !important;
+}
 
 @keyframes spinner2 {
+    0% {
+        transform: rotate(0) scale(1.5);
+    }
+    
+    100% {
+        transform: rotate(1turn) scale(1.5);
+    }
+}
+@keyframes spinner3 {
     0% {
         transform: rotate(0) scale(2);
     }
     
     100% {
         transform: rotate(1turn) scale(2);
+    }
+}
+
+@media (max-width: 992px) {
+    .replace-heading{
+        font-size: 38px !important;
+        line-height: 45px !important;
+    }
+}
+@media (max-width: 768px) {
+    .replace-heading{
+        font-size: 32px !important;
+        line-height: 40px !important;
+    }
+}
+@media (max-width: 576px) {
+    .replace-heading{
+        font-size: 28px !important;
+        line-height: 30px !important;
     }
 }

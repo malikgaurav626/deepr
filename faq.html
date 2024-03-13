@@ -18,12 +18,16 @@
   <meta property="twitter:title" content="Pivex Finance" />
   <meta property="twitter:description"
     content="Deep liquidity on the most secure and efficient lending platform is coming to Shimmer soon. Pivex Finance will provide decentralized and transparent lending markets to provide passive income." />
-  <link rel="apple-touch-icon" sizes="76x76" href="static/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
+  <link rel="manifest" href="/static/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="/static/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/static/android-chrome-512x512.png">
+  <link rel="shortcut icon" href="/static/favicon.ico">
   <meta name="msapplication-TileImage" content="static/ms-icon-144x144.png" />
   <meta name="next-head-count" content="16" />
-  <link rel="shortcut icon" href="static/favicon.ico" />
+
   <link rel="preload" href="_next/static/css/483c1ffbc4bef7c4.css" as="style" />
   <link rel="stylesheet" href="_next/static/css/483c1ffbc4bef7c4.css" data-n-g="" /><noscript data-n-css=""></noscript>
   <script defer="" nomodule="" src="_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script>
@@ -38,30 +42,31 @@
   <script src="_next/static/ynE4MCKD2JmR288LlNsBb/_middlewareManifest.js" defer=""></script>
   <script src="faq.js" defer=""></script>
   <script src="faqapp.js" defer=""></script>
+  <link rel="stylesheet" href="/replace.css">
 </head>
 
 <body>
   <script id="chakra-script">
-    !(function() {
+    !(function () {
       try {
-        var a = function(c) {
-            var v = "(prefers-color-scheme: dark)",
-              h = window.matchMedia(v).matches ? "dark" : "light",
-              r = c === "system" ? h : c,
-              o = document.documentElement,
-              s = document.body,
-              l = "chakra-ui-light",
-              d = "chakra-ui-dark",
-              i = r === "dark";
-            return s.classList.add(i ? d : l), s.classList.remove(i ? l : d), o.style.colorScheme = r, o.dataset
-              .theme = r, r
-          },
+        var a = function (c) {
+          var v = "(prefers-color-scheme: dark)",
+            h = window.matchMedia(v).matches ? "dark" : "light",
+            r = c === "system" ? h : c,
+            o = document.documentElement,
+            s = document.body,
+            l = "chakra-ui-light",
+            d = "chakra-ui-dark",
+            i = r === "dark";
+          return s.classList.add(i ? d : l), s.classList.remove(i ? l : d), o.style.colorScheme = r, o.dataset
+            .theme = r, r
+        },
           n = a,
           m = "dark",
           e = "chakra-ui-color-mode",
           t = localStorage.getItem(e);
         t ? a(t) : localStorage.setItem(e, a(m))
-      } catch (a) {}
+      } catch (a) { }
     })();
   </script>
   <div id="__next">
@@ -1010,7 +1015,7 @@
                     height: 38px;
                     z-index: var(--chakra-zIndices-popover);
                   }
-                </style><img src="assets/pivex-icon-white.png" class="chakra-image css-1cldjo1"
+                </style><img src="assets/replace_logo.png" class="replace-logo chakra-image css-1cldjo1"
                   style="animation:spinner 4s infinite;animation-direction:linear;animation-delay:1.4s;transform-origin:center" />
                 <style data-emotion="css rbx6g1">
                   .css-rbx6g1 {
@@ -1082,8 +1087,7 @@
                 }
               </style><a class="chakra-link css-l0lr17" href="dashboard.html">Dashboard</a><a
                 class="chakra-link css-l0lr17" href="markets.html">Markets</a><a class="chakra-link css-l0lr17"
-                href="faucet.html">Faucet</a><a target="_blank" class="chakra-link css-l0lr17"
-                href="https://docs.pivex.finance/">Docs</a><a class="chakra-link css-l0lr17" href="faq.html">FAQ</a>
+                href="faucet.html">Faucet</a><a class="chakra-link css-l0lr17" href="faq.html">FAQ</a>
             </div>
             <style data-emotion="css 19gw1sx">
               .css-19gw1sx {
@@ -1366,8 +1370,8 @@
                 --tabs-bg: var(--chakra-colors-whiteAlpha-300);
               }
             </style>
-            <button type="button" id="tabs-:R1anlf6:--tab-0" role="tab" tabindex="0" aria-selected="true" 
-            aria-controls="tabs-:R1anlf6:--tabpanel-0" class="chakra-tabs__tab css-52dxnr">
+            <button type="button" id="tabs-:R1anlf6:--tab-0" role="tab" tabindex="0" aria-selected="true"
+              aria-controls="tabs-:R1anlf6:--tabpanel-0" class="chakra-tabs__tab css-52dxnr">
               <style data-emotion="css 1jxpsrt">
                 .css-1jxpsrt {
                   font-family: var(--chakra-fonts-heading);
@@ -1384,10 +1388,10 @@
                 }
               </style>
               <h2 class="chakra-heading css-1jxpsrt">Basics</h2>
-            </button><button type="button" id="tabs-:R1anlf6:--tab-1" role="tab" tabindex="-1" aria-selected="false" 
-            aria-controls="tabs-:R1anlf6:--tabpanel-1" class="chakra-tabs__tab css-52dxnr">Lend/Borrow</h2>
-            </button><button type="button" id="tabs-:R1anlf6:--tab-2" role="tab" tabindex="-1" aria-selected="false" 
-            aria-controls="tabs-:R1anlf6:--tabpanel-2" class="chakra-tabs__tab css-52dxnr">Security</h2>
+            </button><button type="button" id="tabs-:R1anlf6:--tab-1" role="tab" tabindex="-1" aria-selected="false"
+              aria-controls="tabs-:R1anlf6:--tabpanel-1" class="chakra-tabs__tab css-52dxnr">Lend/Borrow</h2>
+            </button><button type="button" id="tabs-:R1anlf6:--tab-2" role="tab" tabindex="-1" aria-selected="false"
+              aria-controls="tabs-:R1anlf6:--tabpanel-2" class="chakra-tabs__tab css-52dxnr">Security</h2>
             </button>
           </div>
           <style data-emotion="css 8atqhb">
@@ -1403,8 +1407,8 @@
                 outline-offset: 2px;
               }
             </style>
-            <div tabindex="0" role="tabpanel" aria-labelledby="tabs-:R1anlf6:--tab-0" id="tabs-:R1anlf6:--tabpanel-0" 
-            class="chakra-tabs__tab-panel css-a5mhaz">
+            <div tabindex="0" role="tabpanel" aria-labelledby="tabs-:R1anlf6:--tab-0" id="tabs-:R1anlf6:--tabpanel-0"
+              class="chakra-tabs__tab-panel css-a5mhaz">
               <div class="chakra-accordion css-0">
                 <style data-emotion="css 1t7rcca">
                   .css-1t7rcca {
@@ -1525,7 +1529,8 @@
                       </svg>
                     </div>
                   </button>
-                  <div class="chakra-collapse" style="overflow:hidden;display:none;opacity:0;height:0px;transition: all 0.3s ease;">
+                  <div class="chakra-collapse"
+                    style="overflow:hidden;display:none;opacity:0;height:0px;transition: all 0.3s ease;">
                     <style data-emotion="css mxa4qn">
                       .css-mxa4qn {
                         padding-top: var(--chakra-space-2);
@@ -1544,7 +1549,11 @@
                           white-space: pre-line;
                         }
                       </style>
-                      <p style="transition: all 0.3s ease;" class="chakra-text css-1b7mwgk">Pivex Finance operates as a Decentralized Finance (DeFi) solution, constructed on the Shimmer EVM framework. It empowers users to lend and borrow digital currencies, bypassing centralized intermediaries. Through Pivex Finance, users can accrue interest on their crypto assets, while borrowers can obtain funds without the constraints of conventional banking systems.</p>
+                      <p style="transition: all 0.3s ease;" class="chakra-text css-1b7mwgk">Pivex Finance operates as a
+                        Decentralized Finance (DeFi) solution, constructed on the Shimmer EVM framework. It empowers
+                        users to lend and borrow digital currencies, bypassing centralized intermediaries. Through Pivex
+                        Finance, users can accrue interest on their crypto assets, while borrowers can obtain funds
+                        without the constraints of conventional banking systems.</p>
                     </div>
                   </div>
                 </div>
@@ -1583,19 +1592,32 @@
                       </style>
                       <ol role="list" class="css-8648gw">
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">Lending and Borrowing Dynamics: Pivex allows its users to accrue interest on their stored crypto while lending out their assets. Simultaneously, users can leverage the assets they've deposited as security to borrow others.</p>
+                          <p class="chakra-text css-1b7mwgk">Lending and Borrowing Dynamics: Pivex allows its users to
+                            accrue interest on their stored crypto while lending out their assets. Simultaneously, users
+                            can leverage the assets they've deposited as security to borrow others.</p>
                         </li>
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">Responsive Interest Rate Model: Pivex operates on a fluid interest rate system, influenced by the prevailing demand and supply of assets on the platform. This ensures that rates adjust in harmony with real-time market conditions.</p>
+                          <p class="chakra-text css-1b7mwgk">Responsive Interest Rate Model: Pivex operates on a fluid
+                            interest rate system, influenced by the prevailing demand and supply of assets on the
+                            platform. This ensures that rates adjust in harmony with real-time market conditions.</p>
                         </li>
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">Overcollateralization Approach: To guarantee the solvency of borrowed amounts, Pivex mandates that borrowers deposit assets exceeding the borrowed value. This is to ensure the loans are well-backed.</p>
+                          <p class="chakra-text css-1b7mwgk">Overcollateralization Approach: To guarantee the solvency
+                            of borrowed amounts, Pivex mandates that borrowers deposit assets exceeding the borrowed
+                            value. This is to ensure the loans are well-backed.</p>
                         </li>
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">Unhindered Accessibility: Pivex upholds a user-friendly approach by not imposing any minimum thresholds for deposits or withdrawals. Users are free to interact with the platform as they please.</p>
+                          <p class="chakra-text css-1b7mwgk">Unhindered Accessibility: Pivex upholds a user-friendly
+                            approach by not imposing any minimum thresholds for deposits or withdrawals. Users are free
+                            to interact with the platform as they please.</p>
                         </li>
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">cToken Representation: For clarity on the amount of assets a user has lent or borrowed, Pivex issues cTokens. These symbolize the real-time balance and interest accumulation.Future Governance Mechanisms: Looking ahead, Pivex plans to democratize its platform management. Owners of PIVEX tokens will soon be empowered to influence the platform's evolution by voting on potential protocol modifications, be it interest rate tweaks or collateral requirements adjustments.</p>
+                          <p class="chakra-text css-1b7mwgk">cToken Representation: For clarity on the amount of assets
+                            a user has lent or borrowed, Pivex issues cTokens. These symbolize the real-time balance and
+                            interest accumulation.Future Governance Mechanisms: Looking ahead, Pivex plans to
+                            democratize its platform management. Owners of PIVEX tokens will soon be empowered to
+                            influence the platform's evolution by voting on potential protocol modifications, be it
+                            interest rate tweaks or collateral requirements adjustments.</p>
                         </li>
                       </ol>
                     </div>
@@ -1615,7 +1637,8 @@
                   <div class="chakra-collapse" style="overflow:hidden;display:none;opacity:0;height:0px">
                     <div role="region" id="accordion-panel-:R1qdbanlf6:" aria-labelledby="accordion-button-:R1qdbanlf6:"
                       class="chakra-accordion__panel css-mxa4qn">
-                      <p class="chakra-text css-1b7mwgk">At the moment, we support MetaMask, but we are actively researching other potential options that might be introduced at launch.</p>
+                      <p class="chakra-text css-1b7mwgk">At the moment, we support MetaMask, but we are actively
+                        researching other potential options that might be introduced at launch.</p>
                     </div>
                   </div>
                 </div>
@@ -1623,7 +1646,8 @@
                     aria-expanded="false" aria-controls="accordion-panel-:R2adbanlf6:"
                     class="chakra-accordion__button css-uttm9k">
                     <div class="chakra-stack css-11n99xp">
-                      <h2 class="chakra-heading css-178jenf">On which smart contract platform was Pivex Finance developed?
+                      <h2 class="chakra-heading css-178jenf">On which smart contract platform was Pivex Finance
+                        developed?
                       </h2><svg viewBox="0 0 24 24" focusable="false"
                         class="chakra-icon chakra-accordion__icon css-186l2rg" aria-hidden="true">
                         <path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
@@ -1633,7 +1657,9 @@
                   <div class="chakra-collapse" style="overflow:hidden;display:none;opacity:0;height:0px">
                     <div role="region" id="accordion-panel-:R2adbanlf6:" aria-labelledby="accordion-button-:R2adbanlf6:"
                       class="chakra-accordion__panel css-mxa4qn">
-                      <p class="chakra-text css-1b7mwgk">Pivex Finance operates on the Shimmer EVM foundation. In the future, we'll consider transitioning to alternative chains if such a move benefits our platform and its key stakeholders, including users, liquidity contributors, investors, and our team.</p>
+                      <p class="chakra-text css-1b7mwgk">Pivex Finance operates on the Shimmer EVM foundation. In the
+                        future, we'll consider transitioning to alternative chains if such a move benefits our platform
+                        and its key stakeholders, including users, liquidity contributors, investors, and our team.</p>
                     </div>
                   </div>
                 </div>
@@ -1651,7 +1677,9 @@
                   <div class="chakra-collapse" style="overflow:hidden;display:none;opacity:0;height:0px">
                     <div role="region" id="accordion-panel-:R2qdbanlf6:" aria-labelledby="accordion-button-:R2qdbanlf6:"
                       class="chakra-accordion__panel css-mxa4qn">
-                      <p class="chakra-text css-1b7mwgk">Assets can be deposited into Pivex Finance. Once deposited, they can serve as collateral in a lending pool, allowing you to earn passive income. Additionally, these assets can be utilized to back an over-collateralized loan.</p>
+                      <p class="chakra-text css-1b7mwgk">Assets can be deposited into Pivex Finance. Once deposited,
+                        they can serve as collateral in a lending pool, allowing you to earn passive income.
+                        Additionally, these assets can be utilized to back an over-collateralized loan.</p>
                     </div>
                   </div>
                 </div>
@@ -1659,8 +1687,8 @@
                     aria-expanded="false" aria-controls="accordion-panel-:R3adbanlf6:"
                     class="chakra-accordion__button css-uttm9k">
                     <div class="chakra-stack css-11n99xp">
-                      <h2 class="chakra-heading css-178jenf">Is there a set limit for deposits or debt positions?</h2><svg
-                        viewBox="0 0 24 24" focusable="false" class="chakra-icon chakra-accordion__icon css-186l2rg"
+                      <h2 class="chakra-heading css-178jenf">Is there a set limit for deposits or debt positions?</h2>
+                      <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon chakra-accordion__icon css-186l2rg"
                         aria-hidden="true">
                         <path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
                       </svg>
@@ -1669,14 +1697,17 @@
                   <div class="chakra-collapse" style="overflow:hidden;display:none;opacity:0;height:0px">
                     <div role="region" id="accordion-panel-:R3adbanlf6:" aria-labelledby="accordion-button-:R3adbanlf6:"
                       class="chakra-accordion__panel css-mxa4qn">
-                      <p class="chakra-text css-1b7mwgk">At the outset, certain limits might be imposed to safeguard the platform's integrity. The seasoned team at Pivex Finance prioritizes risk mitigation for our users. As the ecosystem evolves and assets stabilize with enhanced liquidity, we'll consider revising these constraints.</p>
+                      <p class="chakra-text css-1b7mwgk">At the outset, certain limits might be imposed to safeguard the
+                        platform's integrity. The seasoned team at Pivex Finance prioritizes risk mitigation for our
+                        users. As the ecosystem evolves and assets stabilize with enhanced liquidity, we'll consider
+                        revising these constraints.</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div tabindex="0" role="tabpanel" aria-labelledby="tabs-:R1anlf6:--tab-1" hidden="" 
-     id="tabs-:R1anlf6:--tabpanel-1" class="chakra-tabs__tab-panel css-a5mhaz">
+            <div tabindex="0" role="tabpanel" aria-labelledby="tabs-:R1anlf6:--tab-1" hidden=""
+              id="tabs-:R1anlf6:--tabpanel-1" class="chakra-tabs__tab-panel css-a5mhaz">
               <div class="chakra-accordion css-0">
                 <div class="chakra-accordion__item css-1t7rcca"><button type="button" id="accordion-button-:Rqlbanlf6:"
                     aria-expanded="false" aria-controls="accordion-panel-:Rqlbanlf6:"
@@ -1692,7 +1723,10 @@
                   <div class="chakra-collapse" style="overflow:hidden;display:none;opacity:0;height:0px">
                     <div role="region" id="accordion-panel-:Rqlbanlf6:" aria-labelledby="accordion-button-:Rqlbanlf6:"
                       class="chakra-accordion__panel css-mxa4qn">
-                      <p class="chakra-text css-1b7mwgk">Pivex Finance is committed to endorsing assets characterized by top-tier security, stable pricing, and robust liquidity. To begin, we aim to support SMR, IOTA, USDC, wBTC, wETH, and USDT. However, this selection is subject to reassessment upon the debut of Shimmer EVM.</p>
+                      <p class="chakra-text css-1b7mwgk">Pivex Finance is committed to endorsing assets characterized by
+                        top-tier security, stable pricing, and robust liquidity. To begin, we aim to support SMR, IOTA,
+                        USDC, wBTC, wETH, and USDT. However, this selection is subject to reassessment upon the debut of
+                        Shimmer EVM.</p>
                     </div>
                   </div>
                 </div>
@@ -1700,9 +1734,9 @@
                     aria-expanded="false" aria-controls="accordion-panel-:R1albanlf6:"
                     class="chakra-accordion__button css-uttm9k">
                     <div class="chakra-stack css-11n99xp">
-                      <h2 class="chakra-heading css-178jenf">Can you explain the borrowing process on Pivex Finance?</h2><svg
-                        viewBox="0 0 24 24" focusable="false" class="chakra-icon chakra-accordion__icon css-186l2rg"
-                        aria-hidden="true">
+                      <h2 class="chakra-heading css-178jenf">Can you explain the borrowing process on Pivex Finance?
+                      </h2><svg viewBox="0 0 24 24" focusable="false"
+                        class="chakra-icon chakra-accordion__icon css-186l2rg" aria-hidden="true">
                         <path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
                       </svg>
                     </div>
@@ -1710,7 +1744,10 @@
                   <div class="chakra-collapse" style="overflow:hidden;display:none;opacity:0;height:0px">
                     <div role="region" id="accordion-panel-:R1albanlf6:" aria-labelledby="accordion-button-:R1albanlf6:"
                       class="chakra-accordion__panel css-mxa4qn">
-                      <p class="chakra-text css-10ezkzi">Borrowing on Pivex Finance is anchored in a system of collateralization. This necessitates that before users can access any funds, they must first deposit a certain value of approved crypto assets as security. Here's a step-by-step rundown of the borrowing process on Pivex Finance:</p>
+                      <p class="chakra-text css-10ezkzi">Borrowing on Pivex Finance is anchored in a system of
+                        collateralization. This necessitates that before users can access any funds, they must first
+                        deposit a certain value of approved crypto assets as security. Here's a step-by-step rundown of
+                        the borrowing process on Pivex Finance:</p>
                       <style data-emotion="css 1idrc9q">
                         .css-1idrc9q {
                           list-style-type: decimal;
@@ -1725,19 +1762,32 @@
                       </style>
                       <ol role="list" class="css-1idrc9q">
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">Collateral Deposit: A user begins by depositing an approved asset, which serves as collateral, into Pivex Finance. The collateral's value must surpass the desired loan amount.</p>
+                          <p class="chakra-text css-1b7mwgk">Collateral Deposit: A user begins by depositing an approved
+                            asset, which serves as collateral, into Pivex Finance. The collateral's value must surpass
+                            the desired loan amount.</p>
                         </li>
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">Asset Borrowing: With the collateral in place, users can borrow other assets supported by Pivex Finance. The maximum borrowing limit is contingent on the collateral ratio set by the platform.</p>
+                          <p class="chakra-text css-1b7mwgk">Asset Borrowing: With the collateral in place, users can
+                            borrow other assets supported by Pivex Finance. The maximum borrowing limit is contingent on
+                            the collateral ratio set by the platform.</p>
                         </li>
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">Loan Repayment: Users have the flexibility to settle their loans either partially or in full whenever they choose. Interest accumulates in real-time on the loan's remaining balance and is applied upon repayment.</p>
+                          <p class="chakra-text css-1b7mwgk">Loan Repayment: Users have the flexibility to settle their
+                            loans either partially or in full whenever they choose. Interest accumulates in real-time on
+                            the loan's remaining balance and is applied upon repayment.</p>
                         </li>
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">Collateral Withdrawal: Borrowers have the liberty to retrieve their collateral, provided it adequately backs the over-collateralized debt. Should the collateral's value dip beneath a specified ratio against the debt, borrowers might need to furnish additional collateral or address a portion (or all) of the debt to retain their set collateral ratio and steer clear of potential liquidation.</p>
+                          <p class="chakra-text css-1b7mwgk">Collateral Withdrawal: Borrowers have the liberty to
+                            retrieve their collateral, provided it adequately backs the over-collateralized debt. Should
+                            the collateral's value dip beneath a specified ratio against the debt, borrowers might need
+                            to furnish additional collateral or address a portion (or all) of the debt to retain their
+                            set collateral ratio and steer clear of potential liquidation.</p>
                         </li>
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">Liquidation: A borrower treads on thin ice when their collateral's worth sinks below a certain limit. In such situations, liquidation ensues. During liquidation, the collateral is auctioned off, albeit at a reduced rate, to clear the lingering loan amount.</p>
+                          <p class="chakra-text css-1b7mwgk">Liquidation: A borrower treads on thin ice when their
+                            collateral's worth sinks below a certain limit. In such situations, liquidation ensues.
+                            During liquidation, the collateral is auctioned off, albeit at a reduced rate, to clear the
+                            lingering loan amount.</p>
                         </li>
                       </ol>
                     </div>
@@ -1747,8 +1797,8 @@
                     aria-expanded="false" aria-controls="accordion-panel-:R1qlbanlf6:"
                     class="chakra-accordion__button css-uttm9k">
                     <div class="chakra-stack css-11n99xp">
-                      <h2 class="chakra-heading css-178jenf">How can I ensure the security of my outstanding debt?</h2><svg
-                        viewBox="0 0 24 24" focusable="false" class="chakra-icon chakra-accordion__icon css-186l2rg"
+                      <h2 class="chakra-heading css-178jenf">How can I ensure the security of my outstanding debt?</h2>
+                      <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon chakra-accordion__icon css-186l2rg"
                         aria-hidden="true">
                         <path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
                       </svg>
@@ -1757,7 +1807,14 @@
                   <div class="chakra-collapse" style="overflow:hidden;display:none;opacity:0;height:0px">
                     <div role="region" id="accordion-panel-:R1qlbanlf6:" aria-labelledby="accordion-button-:R1qlbanlf6:"
                       class="chakra-accordion__panel css-mxa4qn">
-                      <p class="chakra-text css-1b7mwgk">It's crucial for users to understand that borrowing on Pivex necessitates vigilant tracking of the ratio between their collateral and debt. Given the often unpredictable nature of cryptocurrency values, and the platform's adaptive collateral criteria in sync with market dynamics, this monitoring is essential. To facilitate this, we've designed an intuitive tool, the "Lighthouse," integrated into the Dashboard. This tool offers a straightforward visual representation, simplifying the tracking process. Additionally, we're in the pipeline to introduce an email alert mechanism that will notify users about shifts in the risk profile of their debt position, should they opt for such notifications.</p>
+                      <p class="chakra-text css-1b7mwgk">It's crucial for users to understand that borrowing on Pivex
+                        necessitates vigilant tracking of the ratio between their collateral and debt. Given the often
+                        unpredictable nature of cryptocurrency values, and the platform's adaptive collateral criteria
+                        in sync with market dynamics, this monitoring is essential. To facilitate this, we've designed
+                        an intuitive tool, the "Lighthouse," integrated into the Dashboard. This tool offers a
+                        straightforward visual representation, simplifying the tracking process. Additionally, we're in
+                        the pipeline to introduce an email alert mechanism that will notify users about shifts in the
+                        risk profile of their debt position, should they opt for such notifications.</p>
                     </div>
                   </div>
                 </div>
@@ -1765,9 +1822,9 @@
                     aria-expanded="false" aria-controls="accordion-panel-:R2albanlf6:"
                     class="chakra-accordion__button css-uttm9k">
                     <div class="chakra-stack css-11n99xp">
-                      <h2 class="chakra-heading css-178jenf">What's the procedure for lending through Pivex Finance?</h2><svg
-                        viewBox="0 0 24 24" focusable="false" class="chakra-icon chakra-accordion__icon css-186l2rg"
-                        aria-hidden="true">
+                      <h2 class="chakra-heading css-178jenf">What's the procedure for lending through Pivex Finance?
+                      </h2><svg viewBox="0 0 24 24" focusable="false"
+                        class="chakra-icon chakra-accordion__icon css-186l2rg" aria-hidden="true">
                         <path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
                       </svg>
                     </div>
@@ -1775,23 +1832,38 @@
                   <div class="chakra-collapse" style="overflow:hidden;display:none;opacity:0;height:0px">
                     <div role="region" id="accordion-panel-:R2albanlf6:" aria-labelledby="accordion-button-:R2albanlf6:"
                       class="chakra-accordion__panel css-mxa4qn">
-                      <p class="chakra-text css-10ezkzi">Lending on Pivex Finance is structured to enable users to contribute their approved crypto assets, thereby earning interest on these deposits. Here’s a systematic overview of the lending process on Pivex Finance:</p>
+                      <p class="chakra-text css-10ezkzi">Lending on Pivex Finance is structured to enable users to
+                        contribute their approved crypto assets, thereby earning interest on these deposits. Here’s a
+                        systematic overview of the lending process on Pivex Finance:</p>
                       <ol role="list" class="css-1idrc9q">
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">Asset Deposit: Users contribute their chosen, supported assets to the platform. Each of these assets possesses its unique interest rate, primarily influenced by its respective demand and supply within the platform.
-                            </p>
+                          <p class="chakra-text css-1b7mwgk">Asset Deposit: Users contribute their chosen, supported
+                            assets to the platform. Each of these assets possesses its unique interest rate, primarily
+                            influenced by its respective demand and supply within the platform.
+                          </p>
                         </li>
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">Acquisition of cTokens: Upon depositing assets into Pivex Finance, users are granted an equivalent sum of cTokens. These cTokens, which bear interest, signify the user’s proportionate claim on the deposited assets. For instance, a deposit of 10 SMR would yield 10 cSMR in return.</p>
+                          <p class="chakra-text css-1b7mwgk">Acquisition of cTokens: Upon depositing assets into Pivex
+                            Finance, users are granted an equivalent sum of cTokens. These cTokens, which bear interest,
+                            signify the user’s proportionate claim on the deposited assets. For instance, a deposit of
+                            10 SMR would yield 10 cSMR in return.</p>
                         </li>
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">Interest Accumulation: Interest accrues on user's cTokens in a real-time manner. The specific interest rate hinges on the particular asset and may fluctuate based on its demand and supply dynamics, known as the utilization rate. </p>
+                          <p class="chakra-text css-1b7mwgk">Interest Accumulation: Interest accrues on user's cTokens
+                            in a real-time manner. The specific interest rate hinges on the particular asset and may
+                            fluctuate based on its demand and supply dynamics, known as the utilization rate. </p>
                         </li>
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">Asset Retrieval: Users have the liberty to reclaim their principal and accumulated interest whenever they desire, by cashing in their cTokens. On doing so, they obtain the original cryptocurrency alongside any interest they've garnered.</p>
+                          <p class="chakra-text css-1b7mwgk">Asset Retrieval: Users have the liberty to reclaim their
+                            principal and accumulated interest whenever they desire, by cashing in their cTokens. On
+                            doing so, they obtain the original cryptocurrency alongside any interest they've garnered.
+                          </p>
                         </li>
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">Reinvestment Option: Users are presented with the choice of plowing their interest back into Pivex Finance by re-depositing their cTokens. This avenue paves the way for compounded returns, given that the interest from cTokens is perpetually reinvested back into the system.</p>
+                          <p class="chakra-text css-1b7mwgk">Reinvestment Option: Users are presented with the choice of
+                            plowing their interest back into Pivex Finance by re-depositing their cTokens. This avenue
+                            paves the way for compounded returns, given that the interest from cTokens is perpetually
+                            reinvested back into the system.</p>
                         </li>
                       </ol>
                     </div>
@@ -1801,9 +1873,9 @@
                     aria-expanded="false" aria-controls="accordion-panel-:R2qlbanlf6:"
                     class="chakra-accordion__button css-uttm9k">
                     <div class="chakra-stack css-11n99xp">
-                      <h2 class="chakra-heading css-178jenf">Are there specific limitations associated with lending or borrowing?</h2><svg
-                        viewBox="0 0 24 24" focusable="false" class="chakra-icon chakra-accordion__icon css-186l2rg"
-                        aria-hidden="true">
+                      <h2 class="chakra-heading css-178jenf">Are there specific limitations associated with lending or
+                        borrowing?</h2><svg viewBox="0 0 24 24" focusable="false"
+                        class="chakra-icon chakra-accordion__icon css-186l2rg" aria-hidden="true">
                         <path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
                       </svg>
                     </div>
@@ -1820,10 +1892,14 @@
                       </style>
                       <ul role="list" class="css-tu0njr">
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">As previously highlighted, in the initial stages of the ecosystem's development, we might impose restrictions on the quantity of collateral or debt positions we accept. This is to ensure risk management, especially as we await the availability of heightened liquidity in certain assets.</p>
+                          <p class="chakra-text css-1b7mwgk">As previously highlighted, in the initial stages of the
+                            ecosystem's development, we might impose restrictions on the quantity of collateral or debt
+                            positions we accept. This is to ensure risk management, especially as we await the
+                            availability of heightened liquidity in certain assets.</p>
                         </li>
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">It's imperative to mention that, as described earlier, all debt positions are mandated to be overcollateralized.</p>
+                          <p class="chakra-text css-1b7mwgk">It's imperative to mention that, as described earlier, all
+                            debt positions are mandated to be overcollateralized.</p>
                         </li>
                       </ul>
                     </div>
@@ -1833,8 +1909,9 @@
                     aria-expanded="false" aria-controls="accordion-panel-:R3albanlf6:"
                     class="chakra-accordion__button css-uttm9k">
                     <div class="chakra-stack css-11n99xp">
-                      <h2 class="chakra-heading css-178jenf">How is the interest rate determined?</h2><svg viewBox="0 0 24 24"
-                        focusable="false" class="chakra-icon chakra-accordion__icon css-186l2rg" aria-hidden="true">
+                      <h2 class="chakra-heading css-178jenf">How is the interest rate determined?</h2><svg
+                        viewBox="0 0 24 24" focusable="false" class="chakra-icon chakra-accordion__icon css-186l2rg"
+                        aria-hidden="true">
                         <path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
                       </svg>
                     </div>
@@ -1842,7 +1919,8 @@
                   <div class="chakra-collapse" style="overflow:hidden;display:none;opacity:0;height:0px">
                     <div role="region" id="accordion-panel-:R3albanlf6:" aria-labelledby="accordion-button-:R3albanlf6:"
                       class="chakra-accordion__panel css-mxa4qn">
-                      <p class="chakra-text css-1b7mwgk">The interest rate is determined by the utilization rate of the lending pool and fluctuates based on the rise or decline in supply and demand.</p>
+                      <p class="chakra-text css-1b7mwgk">The interest rate is determined by the utilization rate of the
+                        lending pool and fluctuates based on the rise or decline in supply and demand.</p>
                     </div>
                   </div>
                 </div>
@@ -1850,7 +1928,8 @@
                     aria-expanded="false" aria-controls="accordion-panel-:R3qlbanlf6:"
                     class="chakra-accordion__button css-uttm9k">
                     <div class="chakra-stack css-11n99xp">
-                      <h2 class="chakra-heading css-178jenf">Are there supplementary charges tied to the lending or borrowing processes?</h2><svg viewBox="0 0 24 24" focusable="false"
+                      <h2 class="chakra-heading css-178jenf">Are there supplementary charges tied to the lending or
+                        borrowing processes?</h2><svg viewBox="0 0 24 24" focusable="false"
                         class="chakra-icon chakra-accordion__icon css-186l2rg" aria-hidden="true">
                         <path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
                       </svg>
@@ -1859,7 +1938,9 @@
                   <div class="chakra-collapse" style="overflow:hidden;display:none;opacity:0;height:0px">
                     <div role="region" id="accordion-panel-:R3qlbanlf6:" aria-labelledby="accordion-button-:R3qlbanlf6:"
                       class="chakra-accordion__panel css-mxa4qn">
-                      <p class="chakra-text css-1b7mwgk">Pivex Finance imposes a fee that differs across lending markets, derived as a percentage from the fees charged to borrowers. In future plans, the team aims to allocate a substantial portion of these fees to those who stake the PIVEX token.</p>
+                      <p class="chakra-text css-1b7mwgk">Pivex Finance imposes a fee that differs across lending
+                        markets, derived as a percentage from the fees charged to borrowers. In future plans, the team
+                        aims to allocate a substantial portion of these fees to those who stake the PIVEX token.</p>
                     </div>
                   </div>
                 </div>
@@ -1867,9 +1948,9 @@
                     aria-expanded="false" aria-controls="accordion-panel-:R4albanlf6:"
                     class="chakra-accordion__button css-uttm9k">
                     <div class="chakra-stack css-11n99xp">
-                      <h2 class="chakra-heading css-178jenf">What's the duration of loans provided by Pivex Finance?</h2><svg
-                        viewBox="0 0 24 24" focusable="false" class="chakra-icon chakra-accordion__icon css-186l2rg"
-                        aria-hidden="true">
+                      <h2 class="chakra-heading css-178jenf">What's the duration of loans provided by Pivex Finance?
+                      </h2><svg viewBox="0 0 24 24" focusable="false"
+                        class="chakra-icon chakra-accordion__icon css-186l2rg" aria-hidden="true">
                         <path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
                       </svg>
                     </div>
@@ -1877,11 +1958,18 @@
                   <div class="chakra-collapse" style="overflow:hidden;display:none;opacity:0;height:0px">
                     <div role="region" id="accordion-panel-:R4albanlf6:" aria-labelledby="accordion-button-:R4albanlf6:"
                       class="chakra-accordion__panel css-mxa4qn">
-                      <p class="chakra-text css-1b7mwgk">Loans on Pivex Finance are characterized by their indefinite nature, meaning they lack a predetermined end date or duration.
+                      <p class="chakra-text css-1b7mwgk">Loans on Pivex Finance are characterized by their indefinite
+                        nature, meaning they lack a predetermined end date or duration.
 
-                        For a borrower on Pivex Finance, it's imperative to adhere to a specific collateralization ratio to evade potential liquidation. This ratio is gauged by comparing the collateral's worth against the loan's value. If the collateral's value plunges beneath an established benchmark, the borrower's holdings could be liquidated to settle the remaining loan amount.
-                        
-                        Borrowers possess the flexibility to settle their loan whenever they wish, with interest continuously accumulating on the loan's residual amount. Consequently, the tenure of a Pivex Finance loan is largely governed by the borrower's actions, especially concerning their repayment decisions and timing.</p>
+                        For a borrower on Pivex Finance, it's imperative to adhere to a specific collateralization ratio
+                        to evade potential liquidation. This ratio is gauged by comparing the collateral's worth against
+                        the loan's value. If the collateral's value plunges beneath an established benchmark, the
+                        borrower's holdings could be liquidated to settle the remaining loan amount.
+
+                        Borrowers possess the flexibility to settle their loan whenever they wish, with interest
+                        continuously accumulating on the loan's residual amount. Consequently, the tenure of a Pivex
+                        Finance loan is largely governed by the borrower's actions, especially concerning their
+                        repayment decisions and timing.</p>
                     </div>
                   </div>
                 </div>
@@ -1889,7 +1977,8 @@
                     aria-expanded="false" aria-controls="accordion-panel-:R4qlbanlf6:"
                     class="chakra-accordion__button css-uttm9k">
                     <div class="chakra-stack css-11n99xp">
-                      <h2 class="chakra-heading css-178jenf">What becomes of my cryptocurrencies when used for lending liquidity?</h2><svg viewBox="0 0 24 24" focusable="false"
+                      <h2 class="chakra-heading css-178jenf">What becomes of my cryptocurrencies when used for lending
+                        liquidity?</h2><svg viewBox="0 0 24 24" focusable="false"
                         class="chakra-icon chakra-accordion__icon css-186l2rg" aria-hidden="true">
                         <path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
                       </svg>
@@ -1898,7 +1987,9 @@
                   <div class="chakra-collapse" style="overflow:hidden;display:none;opacity:0;height:0px">
                     <div role="region" id="accordion-panel-:R4qlbanlf6:" aria-labelledby="accordion-button-:R4qlbanlf6:"
                       class="chakra-accordion__panel css-mxa4qn">
-                      <p class="chakra-text css-1b7mwgk">They accumulate passive income through interest, which is determined by the ever-changing utilization rate and is automatically distributed over a period.</p>
+                      <p class="chakra-text css-1b7mwgk">They accumulate passive income through interest, which is
+                        determined by the ever-changing utilization rate and is automatically distributed over a period.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1916,13 +2007,17 @@
                   <div class="chakra-collapse" style="overflow:hidden;display:none;opacity:0;height:0px">
                     <div role="region" id="accordion-panel-:R5albanlf6:" aria-labelledby="accordion-button-:R5albanlf6:"
                       class="chakra-accordion__panel css-mxa4qn">
-                      <p class="chakra-text css-10ezkzi">Users can withdraw at any moment, except in the rare situation where all funds are engaged by lenders. In such an improbable case, lenders stand to gain considerably since the interest disbursed will be exceptionally elevated, prompting:</p>
+                      <p class="chakra-text css-10ezkzi">Users can withdraw at any moment, except in the rare situation
+                        where all funds are engaged by lenders. In such an improbable case, lenders stand to gain
+                        considerably since the interest disbursed will be exceptionally elevated, prompting:</p>
                       <ul role="list" class="css-tu0njr">
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">Debt holders to settle their positions due to the steep variable interest rates.</p>
+                          <p class="chakra-text css-1b7mwgk">Debt holders to settle their positions due to the steep
+                            variable interest rates.</p>
                         </li>
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">Lenders to be motivated to contribute more assets as liquidity, given the attractive returns they can earn through interest.</p>
+                          <p class="chakra-text css-1b7mwgk">Lenders to be motivated to contribute more assets as
+                            liquidity, given the attractive returns they can earn through interest.</p>
                         </li>
                       </ul>
                     </div>
@@ -1930,14 +2025,15 @@
                 </div>
               </div>
             </div>
-            <div tabindex="0" role="tabpanel" aria-labelledby="tabs-:R1anlf6:--tab-2" hidden="" 
-     id="tabs-:R1anlf6:--tabpanel-2" class="chakra-tabs__tab-panel css-a5mhaz"> 
+            <div tabindex="0" role="tabpanel" aria-labelledby="tabs-:R1anlf6:--tab-2" hidden=""
+              id="tabs-:R1anlf6:--tabpanel-2" class="chakra-tabs__tab-panel css-a5mhaz">
               <div class="chakra-accordion css-0">
                 <div class="chakra-accordion__item css-1t7rcca"><button type="button" id="accordion-button-:Rqtbanlf6:"
                     aria-expanded="false" aria-controls="accordion-panel-:Rqtbanlf6:"
                     class="chakra-accordion__button css-uttm9k">
                     <div class="chakra-stack css-11n99xp">
-                      <h2 class="chakra-heading css-178jenf">Where are my funds stored when I deposit them into Pivex Finance?
+                      <h2 class="chakra-heading css-178jenf">Where are my funds stored when I deposit them into Pivex
+                        Finance?
                       </h2><svg viewBox="0 0 24 24" focusable="false"
                         class="chakra-icon chakra-accordion__icon css-186l2rg" aria-hidden="true">
                         <path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
@@ -1947,7 +2043,12 @@
                   <div class="chakra-collapse" style="overflow:hidden;display:none;opacity:0;height:0px">
                     <div role="region" id="accordion-panel-:Rqtbanlf6:" aria-labelledby="accordion-button-:Rqtbanlf6:"
                       class="chakra-accordion__panel css-mxa4qn">
-                      <p class="chakra-text css-1b7mwgk">Your deposits reside within smart contracts, which have undergone thorough scrutiny by Hashex. Moreover, these smart contracts are derivatives of Compound v2, which has proven its mettle by safeguarding billions of dollars in assets over an extended duration without any financial breaches. As previously highlighted, you can retrieve your funds, inclusive of accumulated interest and earned rewards, at any given time, barring the rare situation previously outlined.</p>
+                      <p class="chakra-text css-1b7mwgk">Your deposits reside within smart contracts, which have
+                        undergone thorough scrutiny by Hashex. Moreover, these smart contracts are derivatives of
+                        Compound v2, which has proven its mettle by safeguarding billions of dollars in assets over an
+                        extended duration without any financial breaches. As previously highlighted, you can retrieve
+                        your funds, inclusive of accumulated interest and earned rewards, at any given time, barring the
+                        rare situation previously outlined.</p>
                     </div>
                   </div>
                 </div>
@@ -1955,9 +2056,9 @@
                     aria-expanded="false" aria-controls="accordion-panel-:R1atbanlf6:"
                     class="chakra-accordion__button css-uttm9k">
                     <div class="chakra-stack css-11n99xp">
-                      <h2 class="chakra-heading css-178jenf">Who holds the access key to our funds within Pivex's liquidity pool?</h2><svg
-                        viewBox="0 0 24 24" focusable="false" class="chakra-icon chakra-accordion__icon css-186l2rg"
-                        aria-hidden="true">
+                      <h2 class="chakra-heading css-178jenf">Who holds the access key to our funds within Pivex's
+                        liquidity pool?</h2><svg viewBox="0 0 24 24" focusable="false"
+                        class="chakra-icon chakra-accordion__icon css-186l2rg" aria-hidden="true">
                         <path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
                       </svg>
                     </div>
@@ -1965,7 +2066,11 @@
                   <div class="chakra-collapse" style="overflow:hidden;display:none;opacity:0;height:0px">
                     <div role="region" id="accordion-panel-:R1atbanlf6:" aria-labelledby="accordion-button-:R1atbanlf6:"
                       class="chakra-accordion__panel css-mxa4qn">
-                      <p class="chakra-text css-1b7mwgk">Users retain full custody and authority over their assets, ensuring total ownership and control. When they provide their tokens, they are given LP tokens in return, representing their staked positions. These LP tokens can be retained indefinitely and can be redeemed whenever the user chooses. Crucially, the Pivex Team lacks access to the lending market smart contracts, meaning they cannot access your assets.</p>
+                      <p class="chakra-text css-1b7mwgk">Users retain full custody and authority over their assets,
+                        ensuring total ownership and control. When they provide their tokens, they are given LP tokens
+                        in return, representing their staked positions. These LP tokens can be retained indefinitely and
+                        can be redeemed whenever the user chooses. Crucially, the Pivex Team lacks access to the lending
+                        market smart contracts, meaning they cannot access your assets.</p>
                     </div>
                   </div>
                 </div>
@@ -1986,7 +2091,8 @@
                       <ul role="list" class="css-tu0njr">
                         <li class="css-0">
                           <p class="chakra-text css-1b7mwgk">
-                            Pivex originates from Compound, a protocol renowned for its stringent security mechanisms and frequent audits.</p>
+                            Pivex originates from Compound, a protocol renowned for its stringent security mechanisms
+                            and frequent audits.</p>
                         </li>
                         <li class="css-0">
                           <style data-emotion="css 134p2gk">
@@ -2069,10 +2175,14 @@
                           </div>
                         </li>
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">With a team that possesses an extensive background in security, Pivex places paramount importance on safeguarding its platform. The team swiftly detects and rectifies any security vulnerabilities or potential risks.</p>
+                          <p class="chakra-text css-1b7mwgk">With a team that possesses an extensive background in
+                            security, Pivex places paramount importance on safeguarding its platform. The team swiftly
+                            detects and rectifies any security vulnerabilities or potential risks.</p>
                         </li>
                         <li class="css-0">
-                          <p class="chakra-text css-1b7mwgk">Furthermore, Pivex conducts real-time surveillance of its smart contracts. As a result, any anomalies or dubious activities are promptly identified and scrutinized.</p>
+                          <p class="chakra-text css-1b7mwgk">Furthermore, Pivex conducts real-time surveillance of its
+                            smart contracts. As a result, any anomalies or dubious activities are promptly identified
+                            and scrutinized.</p>
                         </li>
                       </ul>
                     </div>
@@ -2234,7 +2344,7 @@
                       width: var(--chakra-sizes-8);
                       height: var(--chakra-sizes-8);
                     }
-                  </style><img src="assets/pivex-icon-white.png" class="chakra-image css-v67zxb"
+                  </style><img src="assets/replace_logo.png" class="replace-logo scaleup chakra-image css-v67zxb"
                     style="animation:spinner 4s infinite;animation-direction:linear;animation-delay:1.4s;transform-origin:center" />
                 </a>
                 <style data-emotion="css m3iyma">
@@ -2289,9 +2399,7 @@
                       box-shadow: var(--chakra-shadows-outline);
                     }
                   </style><a class="chakra-link css-1epfi38" href="markets.html">Markets</a><a
-                    class="chakra-link css-1epfi38" href="faucet.html">Faucet</a><a target="_blank"
-                    class="chakra-link css-1epfi38" href="https://docs.pivex.finance/">Docs</a><a
-                    class="chakra-link css-1epfi38" href="terms.html">Terms of Service</a><a
+                    class="chakra-link css-1epfi38" href="faucet.html">Faucet</a><a
                     class="chakra-link css-1epfi38" href="faq.html">FAQ</a>
                 </div>
               </nav>
@@ -2359,18 +2467,82 @@
                       color: var(--chakra-colors-text-secondary);
                       margin-top: var(--chakra-space-2);
                     }
-                  </style><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23" viewBox="0,0,256,256" >
-                      <g fill="#ccceff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M46.137,6.552c-0.75,-0.636 -1.928,-0.727 -3.146,-0.238h-0.002c-1.281,0.514 -36.261,15.518 -37.685,16.131c-0.259,0.09 -2.521,0.934 -2.288,2.814c0.208,1.695 2.026,2.397 2.248,2.478l8.893,3.045c0.59,1.964 2.765,9.21 3.246,10.758c0.3,0.965 0.789,2.233 1.646,2.494c0.752,0.29 1.5,0.025 1.984,-0.355l5.437,-5.043l8.777,6.845l0.209,0.125c0.596,0.264 1.167,0.396 1.712,0.396c0.421,0 0.825,-0.079 1.211,-0.237c1.315,-0.54 1.841,-1.793 1.896,-1.935l6.556,-34.077c0.4,-1.82 -0.156,-2.746 -0.694,-3.201zM22,32l-3,8l-3,-10l23,-17z"></path></g></g>
-                      </svg> 
-                </a><a href="https://twitter.com/PivexFinance" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23" viewBox="0,0,256,256">
-                  <g fill="#cfc3ff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z"></path></g></g>
-                  </svg></a><a href="https://medium.com/@Pivex.Finance" target="_blank" rel="noreferrer"><svg
-                    stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" focusable="false"
-                    class="chakra-icon css-1o4son9" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                  </style><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23"
+                    viewBox="0,0,256,256">
+                    <g fill="#ccceff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                      stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                      font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                      style="mix-blend-mode: normal">
+                      <g transform="scale(5.12,5.12)">
+                        <path
+                          d="M46.137,6.552c-0.75,-0.636 -1.928,-0.727 -3.146,-0.238h-0.002c-1.281,0.514 -36.261,15.518 -37.685,16.131c-0.259,0.09 -2.521,0.934 -2.288,2.814c0.208,1.695 2.026,2.397 2.248,2.478l8.893,3.045c0.59,1.964 2.765,9.21 3.246,10.758c0.3,0.965 0.789,2.233 1.646,2.494c0.752,0.29 1.5,0.025 1.984,-0.355l5.437,-5.043l8.777,6.845l0.209,0.125c0.596,0.264 1.167,0.396 1.712,0.396c0.421,0 0.825,-0.079 1.211,-0.237c1.315,-0.54 1.841,-1.793 1.896,-1.935l6.556,-34.077c0.4,-1.82 -0.156,-2.746 -0.694,-3.201zM22,32l-3,8l-3,-10l23,-17z">
+                        </path>
+                      </g>
+                    </g>
+                  </svg>
+                </a><a href="https://twitter.com/PivexFinance" target="_blank" rel="noreferrer"><svg
+                    xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23" viewBox="0,0,256,256">
+                    <g fill="#cfc3ff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                      stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                      font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                      style="mix-blend-mode: normal">
+                      <g transform="scale(5.12,5.12)">
+                        <path
+                          d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z">
+                        </path>
+                      </g>
+                    </g>
+                  </svg></a><a
+                  href="https://medium.com/@Pivex.Finance"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="25"
+                    height="25"
+                    viewBox="0,0,256,256"
+                  >
+                    <g
+                      fill="#ccceff"
+                      fill-rule="nonzero"
+                      stroke="none"
+                      stroke-width="1"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      stroke-miterlimit="10"
+                      stroke-dasharray=""
+                      stroke-dashoffset="0"
+                      font-family="none"
+                      font-weight="none"
+                      font-size="none"
+                      text-anchor="none"
+                      style="mix-blend-mode: normal"
+                    >
+                      <g transform="scale(5.33333,5.33333)">
+                        <circle cx="14" cy="24" r="12"></circle>
+                        <ellipse cx="34" cy="24" rx="6" ry="11"></ellipse>
+                        <ellipse cx="44" cy="24" rx="2" ry="10"></ellipse>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+                <a href="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 24 24"
+                    style="margin-right: 1.5rem"
+                  >
                     <path
-                      d="M71.5 142.3c.6-5.9-1.7-11.8-6.1-15.8L20.3 72.1V64h140.2l108.4 237.7L364.2 64h133.7v8.1l-38.6 37c-3.3 2.5-5 6.7-4.3 10.8v272c-.7 4.1 1 8.3 4.3 10.8l37.7 37v8.1H307.3v-8.1l39.1-37.9c3.8-3.8 3.8-5 3.8-10.8V171.2L241.5 447.1h-14.7L100.4 171.2v184.9c-1.1 7.8 1.5 15.6 7 21.2l50.8 61.6v8.1h-144v-8L65 377.3c5.4-5.6 7.9-13.5 6.5-21.2V142.3z">
-                    </path>
-                  </svg></a></div>
+                      fill="#ccceff"
+                      d="M10.802 17.77a.703.703 0 1 1-.002 1.406a.703.703 0 0 1 .002-1.406m11.024-4.347a.703.703 0 1 1 .001-1.406a.703.703 0 0 1-.001 1.406m0-2.876a2.176 2.176 0 0 0-2.174 2.174c0 .233.039.465.115.691l-7.181 3.823a2.165 2.165 0 0 0-1.784-.937c-.829 0-1.584.475-1.95 1.216l-6.451-3.402c-.682-.358-1.192-1.48-1.138-2.502c.028-.533.212-.947.493-1.107c.178-.1.392-.092.62.027l.042.023c1.71.9 7.304 3.847 7.54 3.956c.363.169.565.237 1.185-.057l11.564-6.014c.17-.064.368-.227.368-.474c0-.342-.354-.477-.355-.477c-.658-.315-1.669-.788-2.655-1.25c-2.108-.987-4.497-2.105-5.546-2.655c-.906-.474-1.635-.074-1.765.006l-.252.125C7.78 6.048 1.46 9.178 1.1 9.397C.457 9.789.058 10.57.006 11.539c-.08 1.537.703 3.14 1.824 3.727l6.822 3.518a2.175 2.175 0 0 0 2.15 1.862a2.177 2.177 0 0 0 2.173-2.14l7.514-4.073c.38.298.853.461 1.337.461A2.176 2.176 0 0 0 24 12.72a2.176 2.176 0 0 0-2.174-2.174"
+                    ></path>
+                  </svg>
+                </a></div>
             </div>
           </div>
         </footer>

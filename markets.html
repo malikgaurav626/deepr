@@ -24,24 +24,38 @@
     />
     <link
       rel="apple-touch-icon"
-      sizes="76x76"
-      href="static/apple-touch-icon.png"
+      sizes="180x180"
+      href="/static/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="static/favicon-32x32.png"
+      href="/static/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="static/favicon-16x16.png"
+      href="/static/favicon-16x16.png"
     />
+    <link rel="manifest" href="/static/site.webmanifest" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/static/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/static/android-chrome-512x512.png"
+    />
+    <link rel="shortcut icon" href="/static/favicon.ico" />
     <meta name="msapplication-TileImage" content="static/ms-icon-144x144.png" />
     <meta name="next-head-count" content="16" />
-    <link rel="shortcut icon" href="static/favicon.ico" />
+
     <link
       rel="preload"
       href="_next/static/css/483c1ffbc4bef7c4.css"
@@ -91,7 +105,9 @@
       src="_next/static/ynE4MCKD2JmR288LlNsBb/_middlewareManifest.js"
       defer=""
     ></script>
+    <link rel="stylesheet" href="/replace.css" />
   </head>
+
   <body>
     <script id="chakra-script">
       !(function () {
@@ -573,6 +589,7 @@
           --chakra-breakpoints-xl: 80em;
           --chakra-breakpoints-2xl: 96em;
         }
+
         .chakra-ui-light :host:not([data-theme]),
         .chakra-ui-light :root:not([data-theme]),
         .chakra-ui-light [data-theme]:not([data-theme]),
@@ -590,6 +607,7 @@
             --chakra-colors-gray-500
           );
         }
+
         .chakra-ui-dark :host:not([data-theme]),
         .chakra-ui-dark :root:not([data-theme]),
         .chakra-ui-dark [data-theme]:not([data-theme]),
@@ -608,8 +626,9 @@
           --chakra-colors-chakra-placeholder-color: var(
             --chakra-colors-whiteAlpha-400
           );
-        }</style
-      ><style data-emotion="css-global fubdgu">
+        }
+      </style>
+      <style data-emotion="css-global fubdgu">
         html {
           line-height: 1.5;
           -webkit-text-size-adjust: 100%;
@@ -619,37 +638,44 @@
           -moz-osx-font-smoothing: grayscale;
           touch-action: manipulation;
         }
+
         body {
           position: relative;
           min-height: 100%;
           margin: 0;
           font-feature-settings: "kern";
         }
+
         :where(*, *::before, *::after) {
           border-width: 0;
           border-style: solid;
           box-sizing: border-box;
           word-wrap: break-word;
         }
+
         main {
           display: block;
         }
+
         hr {
           border-top-width: 1px;
           box-sizing: content-box;
           height: 0;
           overflow: visible;
         }
+
         :where(pre, code, kbd, samp) {
           font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
           font-size: 1em;
         }
+
         a {
           background-color: transparent;
           color: inherit;
           -webkit-text-decoration: inherit;
           text-decoration: inherit;
         }
+
         abbr[title] {
           border-bottom: none;
           -webkit-text-decoration: underline;
@@ -658,39 +684,49 @@
           -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
         }
+
         :where(b, strong) {
           font-weight: bold;
         }
+
         small {
           font-size: 80%;
         }
+
         :where(sub, sup) {
           font-size: 75%;
           line-height: 0;
           position: relative;
           vertical-align: baseline;
         }
+
         sub {
           bottom: -0.25em;
         }
+
         sup {
           top: -0.5em;
         }
+
         img {
           border-style: none;
         }
+
         :where(button, input, optgroup, select, textarea) {
           font-family: inherit;
           font-size: 100%;
           line-height: 1.15;
           margin: 0;
         }
+
         :where(button, input) {
           overflow: visible;
         }
+
         :where(button, select) {
           text-transform: none;
         }
+
         :where(
             button::-moz-focus-inner,
             [type="button"]::-moz-focus-inner,
@@ -700,9 +736,11 @@
           border-style: none;
           padding: 0;
         }
+
         fieldset {
           padding: 0.35em 0.75em 0.625em;
         }
+
         legend {
           box-sizing: border-box;
           color: inherit;
@@ -711,92 +749,117 @@
           padding: 0;
           white-space: normal;
         }
+
         progress {
           vertical-align: baseline;
         }
+
         textarea {
           overflow: auto;
         }
+
         :where([type="checkbox"], [type="radio"]) {
           box-sizing: border-box;
           padding: 0;
         }
+
         input[type="number"]::-webkit-inner-spin-button,
         input[type="number"]::-webkit-outer-spin-button {
           -webkit-appearance: none !important;
         }
+
         input[type="number"] {
           -moz-appearance: textfield;
         }
+
         input[type="search"] {
           -webkit-appearance: textfield;
           outline-offset: -2px;
         }
+
         input[type="search"]::-webkit-search-decoration {
           -webkit-appearance: none !important;
         }
+
         ::-webkit-file-upload-button {
           -webkit-appearance: button;
           font: inherit;
         }
+
         details {
           display: block;
         }
+
         summary {
           display: -webkit-box;
           display: -webkit-list-item;
           display: -ms-list-itembox;
           display: list-item;
         }
+
         template {
           display: none;
         }
+
         [hidden] {
           display: none !important;
         }
+
         :where(blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre) {
           margin: 0;
         }
+
         button {
           background: transparent;
           padding: 0;
         }
+
         fieldset {
           margin: 0;
           padding: 0;
         }
+
         :where(ol, ul) {
           margin: 0;
           padding: 0;
         }
+
         textarea {
           resize: vertical;
         }
+
         :where(button, [role="button"]) {
           cursor: pointer;
         }
+
         button::-moz-focus-inner {
           border: 0 !important;
         }
+
         table {
           border-collapse: collapse;
         }
+
         :where(h1, h2, h3, h4, h5, h6) {
           font-size: inherit;
           font-weight: inherit;
         }
+
         :where(button, input, optgroup, select, textarea) {
           padding: 0;
           line-height: inherit;
           color: inherit;
         }
+
         :where(img, svg, video, canvas, audio, iframe, embed, object) {
           display: block;
         }
+
         :where(img, video) {
           max-width: 100%;
           height: auto;
         }
+
         [data-js-focus-visible]
           :focus:not([data-focus-visible-added]):not(
             [data-focus-visible-disabled]
@@ -804,32 +867,38 @@
           outline: none;
           box-shadow: none;
         }
+
         select::-ms-expand {
           display: none;
         }
+
         :root,
         :host {
           --chakra-vh: 100vh;
         }
+
         @supports (height: -webkit-fill-available) {
           :root,
           :host {
             --chakra-vh: -webkit-fill-available;
           }
         }
+
         @supports (height: -moz-fill-available) {
           :root,
           :host {
             --chakra-vh: -moz-fill-available;
           }
         }
+
         @supports (height: 100dvh) {
           :root,
           :host {
             --chakra-vh: 100dvh;
           }
-        }</style
-      ><style data-emotion="css-global ohll2m">
+        }
+      </style>
+      <style data-emotion="css-global ohll2m">
         body {
           font-family: var(--chakra-fonts-body);
           color: var(--chakra-colors-chakra-body-text);
@@ -838,34 +907,43 @@
           transition-duration: var(--chakra-transition-duration-normal);
           line-height: var(--chakra-lineHeights-base);
         }
+
         *::-webkit-input-placeholder {
           color: var(--chakra-colors-chakra-placeholder-color);
         }
+
         *::-moz-placeholder {
           color: var(--chakra-colors-chakra-placeholder-color);
         }
+
         *:-ms-input-placeholder {
           color: var(--chakra-colors-chakra-placeholder-color);
         }
+
         *::placeholder {
           color: var(--chakra-colors-chakra-placeholder-color);
         }
+
         *,
         *::before,
         ::after {
           border-color: var(--chakra-colors-chakra-border-color);
         }
+
         html,
         body {
           background: var(--chakra-colors-black);
         }
+
         .chakra-toast__inner {
           pointer-events: none !important;
         }
+
         .chakra-toast__inner .chakra-stack {
           pointer-events: auto !important;
-        }</style
-      ><style data-emotion="css 17b2ngz">
+        }
+      </style>
+      <style data-emotion="css 17b2ngz">
         .css-17b2ngz {
           position: absolute;
           top: 0px;
@@ -948,6 +1026,7 @@
             -ms-flex-align: center;
             align-items: center;
           }
+
           @media screen and (min-width: 48em) {
             .css-1a0e5tu {
               height: 104px;
@@ -986,6 +1065,7 @@
                 padding-top: 0px;
                 padding-bottom: 0px;
               }
+
               @media screen and (min-width: 48em) {
                 .css-1qtrwtv {
                   padding-top: var(--chakra-space-7);
@@ -1008,17 +1088,19 @@
                   outline-offset: 2px;
                   color: inherit;
                 }
+
                 .css-4a6x12:focus-visible,
                 .css-4a6x12[data-focus-visible] {
                   box-shadow: var(--chakra-shadows-outline);
                 }
+
                 .css-4a6x12:hover,
                 .css-4a6x12[data-hover] {
                   -webkit-text-decoration: none;
                   text-decoration: none;
                 }</style
-              ><a class="chakra-link css-4a6x12" href="index.html"
-                ><style data-emotion="css k008qs">
+              ><a class="chakra-link css-4a6x12" href="index.html">
+                <style data-emotion="css k008qs">
                   .css-k008qs {
                     display: -webkit-box;
                     display: -webkit-flex;
@@ -1034,25 +1116,19 @@
                       z-index: var(--chakra-zIndices-popover);
                     }</style
                   ><img
-                    src="assets/pivex-icon-white.png"
-                    class="chakra-image css-1cldjo1"
-                    style="
-                      animation: spinner 4s infinite;
-                      animation-direction: linear;
-                      animation-delay: 1.4s;
-                      transform-origin: center;
-                    "
-                  /><style data-emotion="css rbx6g1">
+                    src="assets/replace_logo.png"
+                    class="chakra-image css-1cldjo1 replace-logo"
+                  />
+                  <style data-emotion="css rbx6g1">
                     .css-rbx6g1 {
                       width: 94px;
                       height: 38px;
                       z-index: var(--chakra-zIndices-popover);
                     }</style
-                  ><img
-                    src="logo.png"
-                    class="chakra-image css-rbx6g1"
-                  /></div></a
-              ><style data-emotion="css 1jase7e">
+                  ><img src="logo.png" class="chakra-image css-rbx6g1" />
+                </div>
+              </a>
+              <style data-emotion="css 1jase7e">
                 .css-1jase7e {
                   display: none;
                   -webkit-align-items: center;
@@ -1063,6 +1139,7 @@
                   -ms-flex-direction: row;
                   flex-direction: row;
                 }
+
                 .css-1jase7e > *:not(style) ~ *:not(style) {
                   margin-top: 0px;
                   -webkit-margin-end: 0px;
@@ -1071,6 +1148,7 @@
                   -webkit-margin-start: var(--chakra-space-4);
                   margin-inline-start: var(--chakra-space-4);
                 }
+
                 @media screen and (min-width: 62em) {
                   .css-1jase7e {
                     display: -webkit-box;
@@ -1102,11 +1180,13 @@
                     padding-inline-end: var(--chakra-space-6);
                     font-weight: 600;
                   }
+
                   .css-l0lr17:hover,
                   .css-l0lr17[data-hover] {
                     -webkit-text-decoration: underline;
                     text-decoration: underline;
                   }
+
                   .css-l0lr17:focus-visible,
                   .css-l0lr17[data-focus-visible] {
                     box-shadow: var(--chakra-shadows-outline);
@@ -1116,11 +1196,6 @@
                 ><a class="chakra-link css-l0lr17" href="markets.html"
                   >Markets</a
                 ><a class="chakra-link css-l0lr17" href="faucet.html">Faucet</a
-                ><a
-                  target="_blank"
-                  class="chakra-link css-l0lr17"
-                  href="https://docs.pivex.finance/"
-                  >Docs</a
                 ><a class="chakra-link css-l0lr17" href="faq.html">FAQ</a>
               </div>
               <style data-emotion="css 19gw1sx">
@@ -1137,6 +1212,7 @@
                   -ms-flex-direction: row;
                   flex-direction: row;
                 }
+
                 .css-19gw1sx > *:not(style) ~ *:not(style) {
                   margin-top: 0px;
                   -webkit-margin-end: 0px;
@@ -1145,6 +1221,7 @@
                   -webkit-margin-start: 12px;
                   margin-inline-start: 12px;
                 }
+
                 @media screen and (min-width: 62em) {
                   .css-19gw1sx {
                     display: none;
@@ -1204,10 +1281,12 @@
                     z-index: var(--chakra-zIndices-popover);
                     border-width: 1px;
                   }
+
                   .css-johlez:focus-visible,
                   .css-johlez[data-focus-visible] {
                     box-shadow: var(--chakra-shadows-outline);
                   }
+
                   .css-johlez:disabled,
                   .css-johlez[disabled],
                   .css-johlez[aria-disabled="true"],
@@ -1216,6 +1295,7 @@
                     cursor: not-allowed;
                     box-shadow: var(--chakra-shadows-none);
                   }
+
                   .css-johlez:active,
                   .css-johlez[data-active] {
                     background: var(--chakra-colors-gray-300);
@@ -1275,6 +1355,7 @@
             max-width: var(--chakra-sizes-container-xl);
             padding-bottom: var(--chakra-space-12);
           }
+
           @media screen and (min-width: 62em) {
             .css-1dfupv {
               padding-bottom: var(--chakra-space-16);
@@ -1295,6 +1376,7 @@
               margin-bottom: var(--chakra-space-8);
               gap: var(--chakra-space-6);
             }
+
             @media screen and (min-width: 62em) {
               .css-1czlhs4 {
                 -webkit-flex-direction: row;
@@ -1350,6 +1432,7 @@
                     border-radius: var(--chakra-radii-2xl);
                     padding: 30px 26.5px 30.5px 25.5px;
                   }
+
                   @media screen and (min-width: 48em) {
                     .css-ehe6je {
                       padding: var(--chakra-space-6);
@@ -1363,6 +1446,7 @@
                       font-size: var(--chakra-fontSizes-xs);
                       color: var(--chakra-colors-text-secondary);
                     }
+
                     @media screen and (min-width: 48em) {
                       .css-1khusht {
                         font-size: var(--chakra-fontSizes-sm);
@@ -1399,16 +1483,19 @@
                         border-color: var(--skeleton-start-color);
                         background: var(--skeleton-start-color);
                       }
+
                       to {
                         border-color: var(--skeleton-end-color);
                         background: var(--skeleton-end-color);
                       }
                     }
+
                     @keyframes animation-14pkoxc {
                       from {
                         border-color: var(--skeleton-start-color);
                         background: var(--skeleton-start-color);
                       }
+
                       to {
                         border-color: var(--skeleton-end-color);
                         background: var(--skeleton-end-color);
@@ -1440,11 +1527,13 @@
                           color: var(--chakra-colors-text-primary);
                           font-variant: tabular-nums;
                         }
+
                         @media screen and (min-width: 30em) {
                           .css-vm80z5 {
                             font-size: var(--chakra-fontSizes-4xl);
                           }
                         }
+
                         @media screen and (min-width: 48em) {
                           .css-vm80z5 {
                             line-height: 1.2;
@@ -1452,7 +1541,7 @@
                         }
                       </style>
                       <h2 class="chakra-heading css-vm80z5">
-                        $1,341,943,908.28
+                        $10,532.16
                         <span
                           style="
                             font-weight: 700;
@@ -1475,11 +1564,13 @@
                           color: var(--chakra-colors-green-400);
                           font-variant: tabular-nums;
                         }
+
                         @media screen and (min-width: 30em) {
                           .css-m8o6jr {
                             font-size: var(--chakra-fontSizes-xl);
                           }
                         }
+
                         @media screen and (min-width: 48em) {
                           .css-m8o6jr {
                             line-height: 1.2;
@@ -1524,6 +1615,7 @@
                         width: var(--chakra-sizes-full);
                         border-radius: var(--chakra-radii-md);
                       }
+
                       /* .chakra-ui-dark .css-10uc710:not([data-theme]),
                       [data-theme="dark"] .css-10uc710:not([data-theme]),
                       .css-10uc710[data-theme="dark"] {
@@ -1540,16 +1632,19 @@
                           border-color: var(--skeleton-start-color);
                           background: var(--skeleton-start-color);
                         }
+
                         to {
                           border-color: var(--skeleton-end-color);
                           background: var(--skeleton-end-color);
                         }
                       }
+
                       @keyframes animation-14pkoxc {
                         from {
                           border-color: var(--skeleton-start-color);
                           background: var(--skeleton-start-color);
                         }
+
                         to {
                           border-color: var(--skeleton-end-color);
                           background: var(--skeleton-end-color);
@@ -1655,6 +1750,7 @@
                       flex-direction: column;
                       gap: var(--chakra-space-2);
                     }
+
                     .css-87qygf > *:not(style) ~ *:not(style) {
                       margin-top: 0.5rem;
                       -webkit-margin-end: 0px;
@@ -1690,6 +1786,7 @@
                         width: var(--chakra-sizes-full);
                         border-radius: var(--chakra-radii-md);
                       }
+
                       /* .chakra-ui-dark .css-17bu78y:not([data-theme]),
                       [data-theme="dark"] .css-17bu78y:not([data-theme]),
                       .css-17bu78y[data-theme="dark"] {
@@ -1706,16 +1803,19 @@
                           border-color: var(--skeleton-start-color);
                           background: var(--skeleton-start-color);
                         }
+
                         to {
                           border-color: var(--skeleton-end-color);
                           background: var(--skeleton-end-color);
                         }
                       }
+
                       @keyframes animation-14pkoxc {
                         from {
                           border-color: var(--skeleton-start-color);
                           background: var(--skeleton-start-color);
                         }
+
                         to {
                           border-color: var(--skeleton-end-color);
                           background: var(--skeleton-end-color);
@@ -1723,7 +1823,7 @@
                       }
                     </style>
                     <div class="chakra-skeleton css-17bu78y">
-                      <p>fBTC</p>
+                      <p>fETH</p>
                       <div class="bar" style="margin-left: 22px">
                         <div class="barcolor"></div>
                       </div>
@@ -1731,20 +1831,21 @@
                     </div>
                     <div class="chakra-skeleton css-17bu78y">
                       <p>fUSDT</p>
-                      <div class="bar" style="margin-left: 5px" >
-                        <div class="barcolor" style="width: 0.56%;"></div>
+                      <div class="bar" style="margin-left: 5px">
+                        <div class="barcolor" style="width: 0.56%"></div>
                       </div>
                       <p><strong>0.56%</strong></p>
-                    </div><div class="chakra-skeleton css-17bu78y">
+                    </div>
+                    <div class="chakra-skeleton css-17bu78y">
                       <p>fUSDC</p>
                       <div class="bar">
-                        <div class="barcolor" style="width: 0.51%;"></div>
+                        <div class="barcolor" style="width: 0.51%"></div>
                       </div>
                       <p><strong>0.51%</strong></p>
                     </div>
                   </div>
                   <style>
-                    .css-17bu78y{
+                    .css-17bu78y {
                       display: flex;
                       flex-direction: row;
                       justify-content: space-between;
@@ -1753,20 +1854,20 @@
                       margin-bottom: 0.4rem;
                     }
 
-                    .css-17bu78y p{
+                    .css-17bu78y p {
                       font-weight: 400;
                       font-size: 14px;
                       line-height: 16px;
                     }
-                    .bar{
+
+                    .bar {
                       height: 5px;
                       width: 75%;
                       border-radius: 12px;
                       background-color: rgba(128, 128, 128, 0.168);
-                      
                     }
 
-                    .barcolor{
+                    .barcolor {
                       width: 97%;
                       height: 100%;
                       background-color: #56e39f;
@@ -1827,6 +1928,7 @@
                             color: var(--chakra-colors-text-secondary);
                             text-align: left;
                           }
+
                           @media screen and (min-width: 48em) {
                             .css-182fk7p {
                               font-size: var(--chakra-fontSizes-sm);
@@ -1859,6 +1961,7 @@
                               line-height: 24px;
                               font-variant: tabular-nums;
                             }
+
                             @media screen and (min-width: 48em) {
                               .css-1gzh8kb {
                                 font-size: var(--chakra-fontSizes-2xl);
@@ -1866,7 +1969,9 @@
                               }
                             }
                           </style>
-                          <dd class="chakra-stat__number css-1gzh8kb">$4,030,423,139</dd>
+                          <dd class="chakra-stat__number css-1gzh8kb">
+                            $4,030,423,139
+                          </dd>
                         </div>
                       </dl>
                     </div>
@@ -1898,6 +2003,7 @@
                             color: var(--chakra-colors-text-secondary);
                             text-align: right;
                           }
+
                           @media screen and (min-width: 48em) {
                             .css-1wehjdn {
                               font-size: var(--chakra-fontSizes-sm);
@@ -1921,6 +2027,7 @@
                               line-height: 24px;
                               font-variant: tabular-nums;
                             }
+
                             @media screen and (min-width: 48em) {
                               .css-1iiany8 {
                                 font-size: var(--chakra-fontSizes-2xl);
@@ -1943,7 +2050,7 @@
                   <p class="chakra-text css-1khusht">Total borrow</p>
                   <div class="chakra-skeleton css-umv5iy">
                     <div class="css-pad8mx">
-                      <h2 class="chakra-heading css-vm80z5">$24,513,414.17</h2>
+                      <h2 class="chakra-heading css-vm80z5">$4,387.54</h2>
                       <h2 class="chakra-heading css-m8o6jr">+0.71%</h2>
                     </div>
                   </div>
@@ -2040,23 +2147,22 @@
                     <div class="chakra-skeleton css-17bu78y">
                       <p>fUSDT</p>
                       <div class="bar" style="margin-left: 22px">
-                        <div class="barcolor" style="width: 30.01%; background-color: #695dcf;"></div>
+                        <div
+                          class="barcolor"
+                          style="width: 30.01%; background-color: #695dcf"
+                        ></div>
                       </div>
                       <p><strong>30.01%</strong></p>
                     </div>
                     <div class="chakra-skeleton css-17bu78y">
                       <p>fUSDC</p>
                       <div class="bar" style="margin-left: 22px">
-                        <div class="barcolor" style="width: 27.53%; background-color: #695dcf;"></div>
+                        <div
+                          class="barcolor"
+                          style="width: 27.53%; background-color: #695dcf"
+                        ></div>
                       </div>
                       <p><strong>27.53%</strong></p>
-                    </div>
-                    <div class="chakra-skeleton css-17bu78y">
-                      <p>fMIOTA</p>
-                      <div class="bar" style="margin-left: 10px">
-                        <div class="barcolor" style="width: 17.12%; background-color: #695dcf;"></div>
-                      </div>
-                      <p><strong>17.12%</strong></p>
                     </div>
                   </div>
                   <div class="css-1a03s4o"></div>
@@ -2067,7 +2173,9 @@
                           24 hour volume
                         </dt>
                         <div class="chakra-skeleton css-azx346">
-                          <dd class="chakra-stat__number css-1gzh8kb">$94,718,212</dd>
+                          <dd class="chakra-stat__number css-1gzh8kb">
+                            $94,718,212
+                          </dd>
                         </div>
                       </dl>
                     </div>
@@ -2145,6 +2253,7 @@
                           font-size: var(--chakra-fontSizes-sm);
                           padding-right: var(--chakra-space-2);
                         }
+
                         @media screen and (min-width: 30em) {
                           .css-198joda {
                             padding-right: var(--chakra-space-3-5);
@@ -2191,6 +2300,7 @@
                           font-size: var(--chakra-fontSizes-sm);
                           padding-left: var(--chakra-space-2);
                         }
+
                         @media screen and (min-width: 30em) {
                           .css-1uznv7o {
                             padding-left: var(--chakra-space-3-5);
@@ -2205,6 +2315,7 @@
                       .css-r6o5ra {
                         border-bottom: 1px solid #ffffff12;
                       }
+
                       .css-r6o5ra:last-of-type {
                         border-bottom: var(--chakra-borders-none);
                       }
@@ -2268,6 +2379,7 @@
                               width: var(--chakra-sizes-10);
                               height: var(--chakra-sizes-10);
                             }
+
                             /* .chakra-ui-dark .css-1wnjkes:not([data-theme]),
                             [data-theme="dark"] .css-1wnjkes:not([data-theme]),
                             .css-1wnjkes[data-theme="dark"] {
@@ -2288,16 +2400,19 @@
                                 border-color: var(--skeleton-start-color);
                                 background: var(--skeleton-start-color);
                               }
+
                               to {
                                 border-color: var(--skeleton-end-color);
                                 background: var(--skeleton-end-color);
                               }
                             }
+
                             @keyframes animation-14pkoxc {
                               from {
                                 border-color: var(--skeleton-start-color);
                                 background: var(--skeleton-start-color);
                               }
+
                               to {
                                 border-color: var(--skeleton-end-color);
                                 background: var(--skeleton-end-color);
@@ -2305,7 +2420,7 @@
                             }
                           </style>
                           <div class="chakra-skeleton css-1wnjkes">
-                            <img src="ETH.png" alt="">
+                            <img src="ETH.png" alt="" />
                           </div>
                           <style data-emotion="css 1aczdg8">
                             .css-1aczdg8 {
@@ -2344,6 +2459,7 @@
                                 width: 100%;
                                 height: var(--chakra-sizes-3);
                               }
+
                               /* .chakra-ui-dark .css-766hg7:not([data-theme]),
                               [data-theme="dark"] .css-766hg7:not([data-theme]),
                               .css-766hg7[data-theme="dark"] {
@@ -2364,23 +2480,28 @@
                                   border-color: var(--skeleton-start-color);
                                   background: var(--skeleton-start-color);
                                 }
+
                                 to {
                                   border-color: var(--skeleton-end-color);
                                   background: var(--skeleton-end-color);
                                 }
                               }
+
                               @keyframes animation-14pkoxc {
                                 from {
                                   border-color: var(--skeleton-start-color);
                                   background: var(--skeleton-start-color);
                                 }
+
                                 to {
                                   border-color: var(--skeleton-end-color);
                                   background: var(--skeleton-end-color);
                                 }
                               }
                             </style>
-                            <div class="chakra-skeleton css-766hg7"><strong>fETH</strong></div>
+                            <div class="chakra-skeleton css-766hg7">
+                              <strong>fETH</strong>
+                            </div>
                             <style data-emotion="css rs0ua8 animation-14pkoxc">
                               .css-rs0ua8 {
                                 --skeleton-start-color: var(
@@ -2411,6 +2532,7 @@
                                 width: 80%;
                                 height: var(--chakra-sizes-3);
                               }
+
                               /* .chakra-ui-dark .css-rs0ua8:not([data-theme]),
                               [data-theme="dark"] .css-rs0ua8:not([data-theme]),
                               .css-rs0ua8[data-theme="dark"] {
@@ -2431,16 +2553,19 @@
                                   border-color: var(--skeleton-start-color);
                                   background: var(--skeleton-start-color);
                                 }
+
                                 to {
                                   border-color: var(--skeleton-end-color);
                                   background: var(--skeleton-end-color);
                                 }
                               }
+
                               @keyframes animation-14pkoxc {
                                 from {
                                   border-color: var(--skeleton-start-color);
                                   background: var(--skeleton-start-color);
                                 }
+
                                 to {
                                   border-color: var(--skeleton-end-color);
                                   background: var(--skeleton-end-color);
@@ -2513,6 +2638,7 @@
                                 width: 100%;
                                 height: 0.5rem;
                               }
+
                               /* .chakra-ui-dark .css-ctcxab:not([data-theme]),
                               [data-theme="dark"] .css-ctcxab:not([data-theme]),
                               .css-ctcxab[data-theme="dark"] {
@@ -2533,16 +2659,19 @@
                                   border-color: var(--skeleton-start-color);
                                   background: var(--skeleton-start-color);
                                 }
+
                                 to {
                                   border-color: var(--skeleton-end-color);
                                   background: var(--skeleton-end-color);
                                 }
                               }
+
                               @keyframes animation-14pkoxc {
                                 from {
                                   border-color: var(--skeleton-start-color);
                                   background: var(--skeleton-start-color);
                                 }
+
                                 to {
                                   border-color: var(--skeleton-end-color);
                                   background: var(--skeleton-end-color);
@@ -2586,31 +2715,41 @@
                                   border-color: var(--skeleton-start-color);
                                   background: var(--skeleton-start-color);
                                 }
+
                                 to {
                                   border-color: var(--skeleton-end-color);
                                   background: var(--skeleton-end-color);
                                 }
                               }
+
                               @keyframes animation-14pkoxc {
                                 from {
                                   border-color: var(--skeleton-start-color);
                                   background: var(--skeleton-start-color);
                                 }
+
                                 to {
                                   border-color: var(--skeleton-end-color);
                                   background: var(--skeleton-end-color);
                                 }
                               }
                             </style>
-                            <div class="chakra-skeleton css-12r9lpq">+0.16%</div>
+                            <div class="chakra-skeleton css-12r9lpq">
+                              +0.16%
+                            </div>
                           </div>
                         </div>
                       </td>
                       <td class="css-1vmvwla">
                         <div class="css-1bvc4cc">
                           <div class="chakra-skeleton__group css-cecur6">
-                            <div class="chakra-skeleton css-ctcxab">8.70%</div>
-                            <div class="chakra-skeleton css-12r9lpq" style="color: rgba(181, 123, 128, 0.72);">-0.01%</div>
+                            <div class="chakra-skeleton css-ctcxab">44.00%</div>
+                            <div
+                              class="chakra-skeleton css-12r9lpq"
+                              style="color: rgba(181, 123, 128, 0.72)"
+                            >
+                              -0.01%
+                            </div>
                           </div>
                         </div>
                       </td>
@@ -2618,15 +2757,22 @@
                         <div class="css-1bvc4cc">
                           <div class="chakra-skeleton__group css-cecur6">
                             <div class="chakra-skeleton css-ctcxab">$2.34M</div>
-                            <div class="chakra-skeleton css-12r9lpq">+0.15%</div>
+                            <div class="chakra-skeleton css-12r9lpq">
+                              +0.15%
+                            </div>
                           </div>
                         </div>
                       </td>
                       <td class="css-1vmvwla">
                         <div class="css-1bvc4cc">
                           <div class="chakra-skeleton__group css-cecur6">
-                            <div class="chakra-skeleton css-ctcxab">17.76%</div>
-                            <div class="chakra-skeleton css-12r9lpq" style="color: rgba(181, 123, 128, 0.72);">-0.01%</div>
+                            <div class="chakra-skeleton css-ctcxab">39.00%</div>
+                            <div
+                              class="chakra-skeleton css-12r9lpq"
+                              style="color: rgba(181, 123, 128, 0.72)"
+                            >
+                              -0.01%
+                            </div>
                           </div>
                         </div>
                       </td>
@@ -2634,9 +2780,13 @@
                     <tr class="css-r6o5ra">
                       <td class="css-1pqi6y6">
                         <div class="css-ja3hi2">
-                          <div class="chakra-skeleton css-1wnjkes"><img src="usdc.png" alt=""></div>
+                          <div class="chakra-skeleton css-1wnjkes">
+                            <img src="usdc.png" alt="" />
+                          </div>
                           <div class="chakra-skeleton__group css-1aczdg8">
-                            <div class="chakra-skeleton css-766hg7"><strong>fUSDC</strong></div>
+                            <div class="chakra-skeleton css-766hg7">
+                              <strong>fUSDC</strong>
+                            </div>
                             <div class="chakra-skeleton css-rs0ua8">fUSDC</div>
                           </div>
                         </div>
@@ -2645,15 +2795,22 @@
                         <div class="css-1bvc4cc">
                           <div class="chakra-skeleton__group css-cecur6">
                             <div class="chakra-skeleton css-ctcxab">$6.85M</div>
-                            <div class="chakra-skeleton css-12r9lpq">+0.04%</div>
+                            <div class="chakra-skeleton css-12r9lpq">
+                              +0.04%
+                            </div>
                           </div>
                         </div>
                       </td>
                       <td class="css-1vmvwla">
                         <div class="css-1bvc4cc">
                           <div class="chakra-skeleton__group css-cecur6">
-                            <div class="chakra-skeleton css-ctcxab">19.78%</div>
-                            <div class="chakra-skeleton css-12r9lpq" style="color: rgba(181, 123, 128, 0.72);">-0.12%</div>
+                            <div class="chakra-skeleton css-ctcxab">42.00%</div>
+                            <div
+                              class="chakra-skeleton css-12r9lpq"
+                              style="color: rgba(181, 123, 128, 0.72)"
+                            >
+                              -0.12%
+                            </div>
                           </div>
                         </div>
                       </td>
@@ -2661,15 +2818,22 @@
                         <div class="css-1bvc4cc">
                           <div class="chakra-skeleton__group css-cecur6">
                             <div class="chakra-skeleton css-ctcxab">$6.76M</div>
-                            <div class="chakra-skeleton css-12r9lpq">+0.02%</div>
+                            <div class="chakra-skeleton css-12r9lpq">
+                              +0.02%
+                            </div>
                           </div>
                         </div>
                       </td>
                       <td class="css-1vmvwla">
                         <div class="css-1bvc4cc">
                           <div class="chakra-skeleton__group css-cecur6">
-                            <div class="chakra-skeleton css-ctcxab">27.61%</div>
-                            <div class="chakra-skeleton css-12r9lpq" style="color: rgba(181, 123, 128, 0.72);">-0.10%</div>
+                            <div class="chakra-skeleton css-ctcxab">37.00%</div>
+                            <div
+                              class="chakra-skeleton css-12r9lpq"
+                              style="color: rgba(181, 123, 128, 0.72)"
+                            >
+                              -0.10%
+                            </div>
                           </div>
                         </div>
                       </td>
@@ -2677,9 +2841,13 @@
                     <tr class="css-r6o5ra">
                       <td class="css-1pqi6y6">
                         <div class="css-ja3hi2">
-                          <div class="chakra-skeleton css-1wnjkes"><img src="usdt.png" alt=""></div>
+                          <div class="chakra-skeleton css-1wnjkes">
+                            <img src="usdt.png" alt="" />
+                          </div>
                           <div class="chakra-skeleton__group css-1aczdg8">
-                            <div class="chakra-skeleton css-766hg7"><strong>fUSDT</strong></div>
+                            <div class="chakra-skeleton css-766hg7">
+                              <strong>fUSDT</strong>
+                            </div>
                             <div class="chakra-skeleton css-rs0ua8">fUSDT</div>
                           </div>
                         </div>
@@ -2688,15 +2856,22 @@
                         <div class="css-1bvc4cc">
                           <div class="chakra-skeleton__group css-cecur6">
                             <div class="chakra-skeleton css-ctcxab">$7.47M</div>
-                            <div class="chakra-skeleton css-12r9lpq">+0.02%</div>
+                            <div class="chakra-skeleton css-12r9lpq">
+                              +0.02%
+                            </div>
                           </div>
                         </div>
                       </td>
                       <td class="css-1vmvwla">
                         <div class="css-1bvc4cc">
                           <div class="chakra-skeleton__group css-cecur6">
-                            <div class="chakra-skeleton css-ctcxab">12.09%</div>
-                            <div class="chakra-skeleton css-12r9lpq" style="color: rgba(181, 123, 128, 0.72);">-0.19%</div>
+                            <div class="chakra-skeleton css-ctcxab">48.00%</div>
+                            <div
+                              class="chakra-skeleton css-12r9lpq"
+                              style="color: rgba(181, 123, 128, 0.72)"
+                            >
+                              -0.19%
+                            </div>
                           </div>
                         </div>
                       </td>
@@ -2711,8 +2886,13 @@
                       <td class="css-1vmvwla">
                         <div class="css-1bvc4cc">
                           <div class="chakra-skeleton__group css-cecur6">
-                            <div class="chakra-skeleton css-ctcxab">15.57%</div>
-                            <div class="chakra-skeleton css-12r9lpq" style="color: rgba(181, 123, 128, 0.72);">-0.17%</div>
+                            <div class="chakra-skeleton css-ctcxab">43.00%</div>
+                            <div
+                              class="chakra-skeleton css-12r9lpq"
+                              style="color: rgba(181, 123, 128, 0.72)"
+                            >
+                              -0.17%
+                            </div>
                           </div>
                         </div>
                       </td>
@@ -2720,9 +2900,13 @@
                     <tr class="css-r6o5ra">
                       <td class="css-1pqi6y6">
                         <div class="css-ja3hi2">
-                          <div class="chakra-skeleton css-1wnjkes"><img src="btc.png" alt=""></div>
+                          <div class="chakra-skeleton css-1wnjkes">
+                            <img src="btc.png" alt="" />
+                          </div>
                           <div class="chakra-skeleton__group css-1aczdg8">
-                            <div class="chakra-skeleton css-766hg7"><strong>fBTC</strong></div>
+                            <div class="chakra-skeleton css-766hg7">
+                              <strong>fBTC</strong>
+                            </div>
                             <div class="chakra-skeleton css-rs0ua8">fBTC</div>
                           </div>
                         </div>
@@ -2731,74 +2915,42 @@
                         <div class="css-1bvc4cc">
                           <div class="chakra-skeleton__group css-cecur6">
                             <div class="chakra-skeleton css-ctcxab">$1.32B</div>
-                            <div class="chakra-skeleton css-12r9lpq">+0.61%</div>
+                            <div class="chakra-skeleton css-12r9lpq">
+                              +0.61%
+                            </div>
                           </div>
                         </div>
                       </td>
                       <td class="css-1vmvwla">
                         <div class="css-1bvc4cc">
                           <div class="chakra-skeleton__group css-cecur6">
-                            <div class="chakra-skeleton css-ctcxab">0.00%</div>
-                            <div class="chakra-skeleton css-12r9lpq" style="color: rgba(181, 123, 128, 0.72);">-0.25%</div>
+                            <div class="chakra-skeleton css-ctcxab">43.75%</div>
+                            <div
+                              class="chakra-skeleton css-12r9lpq"
+                              style="color: rgba(181, 123, 128, 0.72)"
+                            >
+                              -0.25%
+                            </div>
                           </div>
                         </div>
                       </td>
                       <td class="css-1vmvwla">
                         <div class="css-1bvc4cc">
                           <div class="chakra-skeleton__group css-cecur6">
-                            <div class="chakra-skeleton css-ctcxab">$826.88K</div>
-                            <div class="chakra-skeleton css-12r9lpq">+0.36%</div>
+                            <div class="chakra-skeleton css-ctcxab">
+                              $826.88K
+                            </div>
+                            <div class="chakra-skeleton css-12r9lpq">
+                              +0.36%
+                            </div>
                           </div>
                         </div>
                       </td>
                       <td class="css-1vmvwla">
                         <div class="css-1bvc4cc">
                           <div class="chakra-skeleton__group css-cecur6">
-                            <div class="chakra-skeleton css-ctcxab">5.17%</div>
+                            <div class="chakra-skeleton css-ctcxab">38.75%</div>
                             <div class="chakra-skeleton css-12r9lpq">-</div>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class="css-r6o5ra">
-                      <td class="css-1pqi6y6">
-                        <div class="css-ja3hi2">
-                          <div class="chakra-skeleton css-1wnjkes"><img src="miota.png" alt=""></div>
-                          <div class="chakra-skeleton__group css-1aczdg8">
-                            <div class="chakra-skeleton css-766hg7"><strong>fMIOTA</strong></div>
-                            <div class="chakra-skeleton css-rs0ua8">fMoita</div>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="css-1vmvwla">
-                        <div class="css-1bvc4cc">
-                          <div class="chakra-skeleton__group css-cecur6">
-                            <div class="chakra-skeleton css-ctcxab">$5.08m</div>
-                            <div class="chakra-skeleton css-12r9lpq" style="color: rgba(181, 123, 128, 0.72);">-0.74%</div>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="css-1vmvwla">
-                        <div class="css-1bvc4cc">
-                          <div class="chakra-skeleton__group css-cecur6">
-                            <div class="chakra-skeleton css-ctcxab">93.11%</div>
-                            <div class="chakra-skeleton css-12r9lpq">+0.26%</div>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="css-1vmvwla">
-                        <div class="css-1bvc4cc">
-                          <div class="chakra-skeleton__group css-cecur6">
-                            <div class="chakra-skeleton css-ctcxab">$4.21m</div>
-                            <div class="chakra-skeleton css-12r9lpq" style="color: rgba(181, 123, 128, 0.72);">-0.68%</div>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="css-1vmvwla">
-                        <div class="css-1bvc4cc">
-                          <div class="chakra-skeleton__group css-cecur6">
-                            <div class="chakra-skeleton css-ctcxab">210.78%</div>
-                            <div class="chakra-skeleton css-12r9lpq">+0.21%</div>
                           </div>
                         </div>
                       </td>
@@ -2811,7 +2963,7 @@
         </div>
       </div>
       <style>
-        .css-12r9lpq{
+        .css-12r9lpq {
           padding-top: 0.3rem;
           font-size: 14px;
           font-weight: 400;
@@ -2857,6 +3009,7 @@
               bottom: 0px;
               margin-top: 0px;
             }
+
             @media screen and (min-width: 48em) {
               .css-zrio95 {
                 position: relative;
@@ -2899,6 +3052,7 @@
                   padding-top: var(--chakra-space-5);
                   padding-bottom: var(--chakra-space-5);
                 }
+
                 @media screen and (min-width: 48em) {
                   .css-308usj {
                     -webkit-flex-direction: row;
@@ -2923,6 +3077,7 @@
                     -ms-flex-align: center;
                     align-items: center;
                   }
+
                   @media screen and (min-width: 48em) {
                     .css-v9n9j7 {
                       -webkit-flex-direction: row;
@@ -2952,37 +3107,36 @@
                       margin-right: 0px;
                       margin-bottom: var(--chakra-space-6);
                     }
+
                     .css-1xj2o1i:focus-visible,
                     .css-1xj2o1i[data-focus-visible] {
                       box-shadow: var(--chakra-shadows-outline);
                     }
+
                     .css-1xj2o1i:hover,
                     .css-1xj2o1i[data-hover] {
                       -webkit-text-decoration: none;
                       text-decoration: none;
                     }
+
                     @media screen and (min-width: 48em) {
                       .css-1xj2o1i {
                         margin-right: var(--chakra-space-10);
                         margin-bottom: 0px;
                       }
                     }</style
-                  ><a class="chakra-link css-1xj2o1i" href="index.html"
-                    ><style data-emotion="css v67zxb">
+                  ><a class="chakra-link css-1xj2o1i" href="index.html">
+                    <style data-emotion="css v67zxb">
                       .css-v67zxb {
                         width: var(--chakra-sizes-8);
                         height: var(--chakra-sizes-8);
                       }</style
-                    ><img
-                      src="assets/pivex-icon-white.png"
-                      class="chakra-image css-v67zxb"
-                      style="
-                        animation: spinner 4s infinite;
-                        animation-direction: linear;
-                        animation-delay: 1.4s;
-                        transform-origin: center;
-                      " /></a
-                  ><style data-emotion="css m3iyma">
+                    ><img src="assets/replace_logo - Copy.png""
+                    class="chakra-image css-v67zxb" style=" animation: spinner
+                    4s infinite; animation-direction: linear; animation-delay:
+                    1.4s; transform-origin: center; " />
+                  </a>
+                  <style data-emotion="css m3iyma">
                     .css-m3iyma {
                       display: -webkit-box;
                       display: -webkit-flex;
@@ -2997,6 +3151,7 @@
                       -ms-flex-align: center;
                       align-items: center;
                     }
+
                     @media screen and (min-width: 48em) {
                       .css-m3iyma {
                         gap: var(--chakra-space-12);
@@ -3027,11 +3182,13 @@
                         font-size: var(--chakra-fontSizes-sm);
                         color: var(--chakra-colors-text-secondary);
                       }
+
                       .css-1epfi38:hover,
                       .css-1epfi38[data-hover] {
                         -webkit-text-decoration: underline;
                         text-decoration: underline;
                       }
+
                       .css-1epfi38:focus-visible,
                       .css-1epfi38[data-focus-visible] {
                         box-shadow: var(--chakra-shadows-outline);
@@ -3040,13 +3197,6 @@
                       >Markets</a
                     ><a class="chakra-link css-1epfi38" href="faucet.html"
                       >Faucet</a
-                    ><a
-                      target="_blank"
-                      class="chakra-link css-1epfi38"
-                      href="https://docs.Pivex.finance/"
-                      >Docs</a
-                    ><a class="chakra-link css-1epfi38" href="terms.html"
-                      >Terms of Service</a
                     ><a class="chakra-link css-1epfi38" href="faq.html">FAQ</a>
                   </div>
                 </nav>
@@ -3056,6 +3206,7 @@
                     height: 1px;
                     background: var(--chakra-colors-stroke-divider);
                   }
+
                   @media screen and (min-width: 48em) {
                     .css-79cy1h {
                       display: none;
@@ -3077,6 +3228,7 @@
                     -ms-flex-direction: row;
                     flex-direction: row;
                   }
+
                   .css-15vbgl6 > *:not(style) ~ *:not(style) {
                     margin-top: 0px;
                     -webkit-margin-end: 0px;
@@ -3085,6 +3237,7 @@
                     -webkit-margin-start: var(--chakra-space-4);
                     margin-inline-start: var(--chakra-space-4);
                   }
+
                   @media screen and (min-width: 48em) {
                     .css-15vbgl6 > *:not(style) ~ *:not(style) {
                       -webkit-margin-start: var(--chakra-space-6);
@@ -3097,7 +3250,8 @@
                     href="https://discord.gg/kfyNmmbvhJ"
                     target="_blank"
                     rel="noreferrer"
-                    ><style data-emotion="css 1o4son9">
+                  >
+                    <style data-emotion="css 1o4son9">
                       .css-1o4son9 {
                         width: var(--chakra-sizes-5);
                         height: var(--chakra-sizes-5);
@@ -3138,33 +3292,93 @@
                             d="M46.137,6.552c-0.75,-0.636 -1.928,-0.727 -3.146,-0.238h-0.002c-1.281,0.514 -36.261,15.518 -37.685,16.131c-0.259,0.09 -2.521,0.934 -2.288,2.814c0.208,1.695 2.026,2.397 2.248,2.478l8.893,3.045c0.59,1.964 2.765,9.21 3.246,10.758c0.3,0.965 0.789,2.233 1.646,2.494c0.752,0.29 1.5,0.025 1.984,-0.355l5.437,-5.043l8.777,6.845l0.209,0.125c0.596,0.264 1.167,0.396 1.712,0.396c0.421,0 0.825,-0.079 1.211,-0.237c1.315,-0.54 1.841,-1.793 1.896,-1.935l6.556,-34.077c0.4,-1.82 -0.156,-2.746 -0.694,-3.201zM22,32l-3,8l-3,-10l23,-17z"
                           ></path>
                         </g>
-                      </g></svg></a
+                      </g>
+                    </svg> </a
                   ><a
                     href="https://twitter.com/PivexFinance"
                     target="_blank"
                     rel="noreferrer"
-                    ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23" viewBox="0,0,256,256">
-<g fill="#cfc3ff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z"></path></g></g>
-</svg></a
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="23"
+                      height="23"
+                      viewBox="0,0,256,256"
+                    >
+                      <g
+                        fill="#cfc3ff"
+                        fill-rule="nonzero"
+                        stroke="none"
+                        stroke-width="1"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="10"
+                        stroke-dasharray=""
+                        stroke-dashoffset="0"
+                        font-family="none"
+                        font-weight="none"
+                        font-size="none"
+                        text-anchor="none"
+                        style="mix-blend-mode: normal"
+                      >
+                        <g transform="scale(5.12,5.12)">
+                          <path
+                            d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z"
+                          ></path>
+                        </g>
+                      </g></svg></a
                   ><a
                     href="https://medium.com/@Pivex.Finance"
                     target="_blank"
                     rel="noreferrer"
-                    ><svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 512 512"
-                      focusable="false"
-                      class="chakra-icon css-1o4son9"
-                      height="1em"
-                      width="1em"
+                  >
+                    <svg
                       xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="25"
+                      height="25"
+                      viewBox="0,0,256,256"
+                    >
+                      <g
+                        fill="#ccceff"
+                        fill-rule="nonzero"
+                        stroke="none"
+                        stroke-width="1"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="10"
+                        stroke-dasharray=""
+                        stroke-dashoffset="0"
+                        font-family="none"
+                        font-weight="none"
+                        font-size="none"
+                        text-anchor="none"
+                        style="mix-blend-mode: normal"
+                      >
+                        <g transform="scale(5.33333,5.33333)">
+                          <circle cx="14" cy="24" r="12"></circle>
+                          <ellipse cx="34" cy="24" rx="6" ry="11"></ellipse>
+                          <ellipse cx="44" cy="24" rx="2" ry="10"></ellipse>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 24 24"
+                      style="margin-right: 1.5rem"
                     >
                       <path
-                        d="M71.5 142.3c.6-5.9-1.7-11.8-6.1-15.8L20.3 72.1V64h140.2l108.4 237.7L364.2 64h133.7v8.1l-38.6 37c-3.3 2.5-5 6.7-4.3 10.8v272c-.7 4.1 1 8.3 4.3 10.8l37.7 37v8.1H307.3v-8.1l39.1-37.9c3.8-3.8 3.8-5 3.8-10.8V171.2L241.5 447.1h-14.7L100.4 171.2v184.9c-1.1 7.8 1.5 15.6 7 21.2l50.8 61.6v8.1h-144v-8L65 377.3c5.4-5.6 7.9-13.5 6.5-21.2V142.3z"
-                      ></path></svg
-                  ></a>
+                        fill="#ccceff"
+                        d="M10.802 17.77a.703.703 0 1 1-.002 1.406a.703.703 0 0 1 .002-1.406m11.024-4.347a.703.703 0 1 1 .001-1.406a.703.703 0 0 1-.001 1.406m0-2.876a2.176 2.176 0 0 0-2.174 2.174c0 .233.039.465.115.691l-7.181 3.823a2.165 2.165 0 0 0-1.784-.937c-.829 0-1.584.475-1.95 1.216l-6.451-3.402c-.682-.358-1.192-1.48-1.138-2.502c.028-.533.212-.947.493-1.107c.178-.1.392-.092.62.027l.042.023c1.71.9 7.304 3.847 7.54 3.956c.363.169.565.237 1.185-.057l11.564-6.014c.17-.064.368-.227.368-.474c0-.342-.354-.477-.355-.477c-.658-.315-1.669-.788-2.655-1.25c-2.108-.987-4.497-2.105-5.546-2.655c-.906-.474-1.635-.074-1.765.006l-.252.125C7.78 6.048 1.46 9.178 1.1 9.397C.457 9.789.058 10.57.006 11.539c-.08 1.537.703 3.14 1.824 3.727l6.822 3.518a2.175 2.175 0 0 0 2.15 1.862a2.177 2.177 0 0 0 2.173-2.14l7.514-4.073c.38.298.853.461 1.337.461A2.176 2.176 0 0 0 24 12.72a2.176 2.176 0 0 0-2.174-2.174"
+                      ></path>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>

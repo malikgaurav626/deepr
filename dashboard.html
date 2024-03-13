@@ -1,934 +1,912 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <link rel="stylesheet" href="dashboard.css">
-    <meta name="viewport" content="width=device-width" />
-    <meta charset="utf-8" />
-    <title>Pivex Finance</title>
-    <meta
-      name="description"
-      content="Deep liquidity on the most secure and efficient lending platform is coming to Shimmer soon. Pivex Finance will provide decentralized and transparent lending markets to provide passive income."
-    />
-    <meta property="og:image" content="assets/social-share.png" />
-    <meta property="twitter:image" content="assets/social-share.png" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Pivex Finance" />
-    <meta
-      property="og:description"
-      content="Deep liquidity on the most secure and efficient lending platform is coming to Shimmer soon. Pivex Finance will provide decentralized and transparent lending markets to provide passive income."
-    />
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="Pivex Finance" />
-    <meta
-      property="twitter:description"
-      content="Deep liquidity on the most secure and efficient lending platform is coming to Shimmer soon. Pivex Finance will provide decentralized and transparent lending markets to provide passive income."
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="static/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="static/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="static/favicon-16x16.png"
-    />
-    <meta name="msapplication-TileImage" content="static/ms-icon-144x144.png" />
-    <meta name="next-head-count" content="16" />
-    <link rel="shortcut icon" href="static/favicon.ico" />
-    <link
-      rel="preload"
-      href="_next/static/css/483c1ffbc4bef7c4.css"
-      as="style"
-    />
-    <link
-      rel="stylesheet"
-      href="_next/static/css/483c1ffbc4bef7c4.css"
-      data-n-g=""
-    />
-    <noscript data-n-css=""></noscript>
-    <script
-      defer=""
-      nomodule=""
-      src="_next/static/chunks/polyfills-5cd94c89d3acac5f.js"
-    ></script>
-    <script
-      src="_next/static/chunks/webpack-fc8a54dba915c2d3.js"
-      defer=""
-    ></script>
-    <script
-      src="_next/static/chunks/framework-38f22d267257f62d.js"
-      defer=""
-    ></script>
-    <script
-      src="_next/static/chunks/main-15acc49be2d244e2.js"
-      defer=""
-    ></script>
-</script>
-    <script src="_next/static/chunks/350-7ce584cc7a2277c0.js" defer=""></script>
-    <script src="_next/static/chunks/182-c3ef6a3d70ef8a22.js" defer=""></script>
-    <script src="_next/static/chunks/495-3b53d57a62890a36.js" defer=""></script>
-    <script
-      src="_next/static/chunks/pages/dashboard-1ec950400d855e1d.js"
-      defer=""
-    ></script>
-    <script
-      src="_next/static/ynE4MCKD2JmR288LlNsBb/_buildManifest.js"
-      defer=""
-    ></script>
-    <script
-      src="_next/static/ynE4MCKD2JmR288LlNsBb/_ssgManifest.js"
-      defer=""
-    ></script>
-    <script
-      src="_next/static/ynE4MCKD2JmR288LlNsBb/_middlewareManifest.js"
-      defer=""
-    ></script>
-  </head>
+<head>
+  <link rel="stylesheet" href="dashboard.css">
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <title>Pivex Finance</title>
+  <meta name="description"
+    content="Deep liquidity on the most secure and efficient lending platform is coming to Shimmer soon. Pivex Finance will provide decentralized and transparent lending markets to provide passive income." />
+  <meta property="og:image" content="assets/social-share.png" />
+  <meta property="twitter:image" content="assets/social-share.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pivex Finance" />
+  <meta property="og:description"
+    content="Deep liquidity on the most secure and efficient lending platform is coming to Shimmer soon. Pivex Finance will provide decentralized and transparent lending markets to provide passive income." />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Pivex Finance" />
+  <meta property="twitter:description"
+    content="Deep liquidity on the most secure and efficient lending platform is coming to Shimmer soon. Pivex Finance will provide decentralized and transparent lending markets to provide passive income." />
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
+  <link rel="manifest" href="/static/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="/static/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/static/android-chrome-512x512.png">
+  <link rel="shortcut icon" href="/static/favicon.ico">
+  <meta name="msapplication-TileImage" content="static/ms-icon-144x144.png" />
+  <meta name="next-head-count" content="16" />
 
-  <body>
-    <script id="chakra-script">
-      !(function () {
-        try {
-          var a = function (c) {
-              var v = "(prefers-color-scheme: dark)",
-                h = window.matchMedia(v).matches ? "dark" : "light",
-                r = c === "system" ? h : c,
-                o = document.documentElement,
-                s = document.body,
-                l = "chakra-ui-light",
-                d = "chakra-ui-dark",
-                i = r === "dark";
-              return (
-                s.classList.add(i ? d : l),
-                s.classList.remove(i ? l : d),
-                (o.style.colorScheme = r),
-                (o.dataset.theme = r),
-                r
-              );
-            },
-            n = a,
-            m = "dark",
-            e = "chakra-ui-color-mode",
-            t = localStorage.getItem(e);
-          t ? a(t) : localStorage.setItem(e, a(m));
-        } catch (a) {}
-      })();
-    </script>
-    <div id="__next">
-      <style data-emotion="css-global 1inye7i-#E6E6E8">
-        :host,
-        :root,
-        [data-theme] {
-          --chakra-ring-inset: var(--chakra-empty, /*!*/ /*!*/);
-          --chakra-ring-offset-width: 0px;
-          --chakra-ring-offset-color: #fff;
-          --chakra-ring-color: rgba(66, 153, 225, 0.6);
-          --chakra-ring-offset-shadow: 0 0 #0000;
-          --chakra-ring-shadow: 0 0 #0000;
-          --chakra-space-x-reverse: 0;
-          --chakra-space-y-reverse: 0;
-          --chakra-colors-transparent: transparent;
-          --chakra-colors-current: currentColor;
-          --chakra-colors-black: #000000;
-          --chakra-colors-white: #ffffff;
-          --chakra-colors-whiteAlpha-50: rgba(255, 255, 255, 0.04);
-          --chakra-colors-whiteAlpha-100: rgba(255, 255, 255, 0.06);
-          --chakra-colors-whiteAlpha-200: rgba(255, 255, 255, 0.08);
-          --chakra-colors-whiteAlpha-300: rgba(255, 255, 255, 0.16);
-          --chakra-colors-whiteAlpha-400: rgba(255, 255, 255, 0.24);
-          --chakra-colors-whiteAlpha-500: rgba(255, 255, 255, 0.36);
-          --chakra-colors-whiteAlpha-600: rgba(255, 255, 255, 0.48);
-          --chakra-colors-whiteAlpha-700: rgba(255, 255, 255, 0.64);
-          --chakra-colors-whiteAlpha-800: rgba(255, 255, 255, 0.8);
-          --chakra-colors-whiteAlpha-900: rgba(255, 255, 255, 0.92);
-          --chakra-colors-blackAlpha-50: rgba(0, 0, 0, 0.04);
-          --chakra-colors-blackAlpha-100: rgba(0, 0, 0, 0.06);
-          --chakra-colors-blackAlpha-200: rgba(0, 0, 0, 0.08);
-          --chakra-colors-blackAlpha-300: rgba(0, 0, 0, 0.16);
-          --chakra-colors-blackAlpha-400: rgba(0, 0, 0, 0.24);
-          --chakra-colors-blackAlpha-500: rgba(0, 0, 0, 0.36);
-          --chakra-colors-blackAlpha-600: rgba(0, 0, 0, 0.48);
-          --chakra-colors-blackAlpha-700: rgba(0, 0, 0, 0.64);
-          --chakra-colors-blackAlpha-800: rgba(0, 0, 0, 0.8);
-          --chakra-colors-blackAlpha-900: rgba(0, 0, 0, 0.92);
-          --chakra-colors-gray-50: #f7fafc;
-          --chakra-colors-gray-100: #edf2f7;
-          --chakra-colors-gray-200: #e2e8f0;
-          --chakra-colors-gray-300: #cbd5e0;
-          --chakra-colors-gray-400: #a0aec0;
-          --chakra-colors-gray-500: #718096;
-          --chakra-colors-gray-600: #4a5568;
-          --chakra-colors-gray-700: #2d3748;
-          --chakra-colors-gray-800: #1a202c;
-          --chakra-colors-gray-900: #171923;
-          --chakra-colors-red-50: #fff5f5;
-          --chakra-colors-red-100: #fed7d7;
-          --chakra-colors-red-200: #feb2b2;
-          --chakra-colors-red-300: #fc8181;
-          --chakra-colors-red-400: #f56565;
-          --chakra-colors-red-500: #e53e3e;
-          --chakra-colors-red-600: #c53030;
-          --chakra-colors-red-700: #9b2c2c;
-          --chakra-colors-red-800: #822727;
-          --chakra-colors-red-900: #63171b;
-          --chakra-colors-orange-50: #fffaf0;
-          --chakra-colors-orange-100: #feebc8;
-          --chakra-colors-orange-200: #fbd38d;
-          --chakra-colors-orange-300: #f6ad55;
-          --chakra-colors-orange-400: #ed8936;
-          --chakra-colors-orange-500: #dd6b20;
-          --chakra-colors-orange-600: #c05621;
-          --chakra-colors-orange-700: #9c4221;
-          --chakra-colors-orange-800: #7b341e;
-          --chakra-colors-orange-900: #652b19;
-          --chakra-colors-yellow-50: #fffff0;
-          --chakra-colors-yellow-100: #fefcbf;
-          --chakra-colors-yellow-200: #faf089;
-          --chakra-colors-yellow-300: #f6e05e;
-          --chakra-colors-yellow-400: #ecc94b;
-          --chakra-colors-yellow-500: #d69e2e;
-          --chakra-colors-yellow-600: #b7791f;
-          --chakra-colors-yellow-700: #975a16;
-          --chakra-colors-yellow-800: #744210;
-          --chakra-colors-yellow-900: #5f370e;
-          --chakra-colors-green-50: #f0fff4;
-          --chakra-colors-green-100: #c6f6d5;
-          --chakra-colors-green-200: #9ae6b4;
-          --chakra-colors-green-300: #68d391;
-          --chakra-colors-green-400: #48bb78;
-          --chakra-colors-green-500: #38a169;
-          --chakra-colors-green-600: #2f855a;
-          --chakra-colors-green-700: #276749;
-          --chakra-colors-green-800: #22543d;
-          --chakra-colors-green-900: #1c4532;
-          --chakra-colors-teal-50: #e6fffa;
-          --chakra-colors-teal-100: #b2f5ea;
-          --chakra-colors-teal-200: #81e6d9;
-          --chakra-colors-teal-300: #4fd1c5;
-          --chakra-colors-teal-400: #38b2ac;
-          --chakra-colors-teal-500: #319795;
-          --chakra-colors-teal-600: #2c7a7b;
-          --chakra-colors-teal-700: #285e61;
-          --chakra-colors-teal-800: #234e52;
-          --chakra-colors-teal-900: #1d4044;
-          --chakra-colors-blue-50: #ebf8ff;
-          --chakra-colors-blue-100: #bee3f8;
-          --chakra-colors-blue-200: #90cdf4;
-          --chakra-colors-blue-300: #63b3ed;
-          --chakra-colors-blue-400: #4299e1;
-          --chakra-colors-blue-500: #3182ce;
-          --chakra-colors-blue-600: #2b6cb0;
-          --chakra-colors-blue-700: #2c5282;
-          --chakra-colors-blue-800: #2a4365;
-          --chakra-colors-blue-900: #1a365d;
-          --chakra-colors-cyan-50: #edfdfd;
-          --chakra-colors-cyan-100: #c4f1f9;
-          --chakra-colors-cyan-200: #9decf9;
-          --chakra-colors-cyan-300: #76e4f7;
-          --chakra-colors-cyan-400: #0bc5ea;
-          --chakra-colors-cyan-500: #00b5d8;
-          --chakra-colors-cyan-600: #00a3c4;
-          --chakra-colors-cyan-700: #0987a0;
-          --chakra-colors-cyan-800: #086f83;
-          --chakra-colors-cyan-900: #065666;
-          --chakra-colors-purple-50: #faf5ff;
-          --chakra-colors-purple-100: #e9d8fd;
-          --chakra-colors-purple-200: #d6bcfa;
-          --chakra-colors-purple-300: #b794f4;
-          --chakra-colors-purple-400: #9f7aea;
-          --chakra-colors-purple-500: #805ad5;
-          --chakra-colors-purple-600: #6b46c1;
-          --chakra-colors-purple-700: #553c9a;
-          --chakra-colors-purple-800: #44337a;
-          --chakra-colors-purple-900: #322659;
-          --chakra-colors-pink-50: #fff5f7;
-          --chakra-colors-pink-100: #fed7e2;
-          --chakra-colors-pink-200: #fbb6ce;
-          --chakra-colors-pink-300: #f687b3;
-          --chakra-colors-pink-400: #ed64a6;
-          --chakra-colors-pink-500: #d53f8c;
-          --chakra-colors-pink-600: #b83280;
-          --chakra-colors-pink-700: #97266d;
-          --chakra-colors-pink-800: #702459;
-          --chakra-colors-pink-900: #521b41;
-          --chakra-colors-linkedin-50: #e8f4f9;
-          --chakra-colors-linkedin-100: #cfedfb;
-          --chakra-colors-linkedin-200: #9bdaf3;
-          --chakra-colors-linkedin-300: #68c7ec;
-          --chakra-colors-linkedin-400: #34b3e4;
-          --chakra-colors-linkedin-500: #00a0dc;
-          --chakra-colors-linkedin-600: #008cc9;
-          --chakra-colors-linkedin-700: #0077b5;
-          --chakra-colors-linkedin-800: #005e93;
-          --chakra-colors-linkedin-900: #004471;
-          --chakra-colors-facebook-50: #e8f4f9;
-          --chakra-colors-facebook-100: #d9dee9;
-          --chakra-colors-facebook-200: #b7c2da;
-          --chakra-colors-facebook-300: #6482c0;
-          --chakra-colors-facebook-400: #4267b2;
-          --chakra-colors-facebook-500: #385898;
-          --chakra-colors-facebook-600: #314e89;
-          --chakra-colors-facebook-700: #29487d;
-          --chakra-colors-facebook-800: #223b67;
-          --chakra-colors-facebook-900: #1e355b;
-          --chakra-colors-messenger-50: #d0e6ff;
-          --chakra-colors-messenger-100: #b9daff;
-          --chakra-colors-messenger-200: #a2cdff;
-          --chakra-colors-messenger-300: #7ab8ff;
-          --chakra-colors-messenger-400: #2e90ff;
-          --chakra-colors-messenger-500: #0078ff;
-          --chakra-colors-messenger-600: #0063d1;
-          --chakra-colors-messenger-700: #0052ac;
-          --chakra-colors-messenger-800: #003c7e;
-          --chakra-colors-messenger-900: #002c5c;
-          --chakra-colors-whatsapp-50: #dffeec;
-          --chakra-colors-whatsapp-100: #b9f5d0;
-          --chakra-colors-whatsapp-200: #90edb3;
-          --chakra-colors-whatsapp-300: #65e495;
-          --chakra-colors-whatsapp-400: #3cdd78;
-          --chakra-colors-whatsapp-500: #22c35e;
-          --chakra-colors-whatsapp-600: #179848;
-          --chakra-colors-whatsapp-700: #0c6c33;
-          --chakra-colors-whatsapp-800: #01421c;
-          --chakra-colors-whatsapp-900: #001803;
-          --chakra-colors-twitter-50: #e5f4fd;
-          --chakra-colors-twitter-100: #c8e9fb;
-          --chakra-colors-twitter-200: #a8dcfa;
-          --chakra-colors-twitter-300: #83cdf7;
-          --chakra-colors-twitter-400: #57bbf5;
-          --chakra-colors-twitter-500: #1da1f2;
-          --chakra-colors-twitter-600: #1a94da;
-          --chakra-colors-twitter-700: #1681bf;
-          --chakra-colors-twitter-800: #136b9e;
-          --chakra-colors-twitter-900: #0d4d71;
-          --chakra-colors-telegram-50: #e3f2f9;
-          --chakra-colors-telegram-100: #c5e4f3;
-          --chakra-colors-telegram-200: #a2d4ec;
-          --chakra-colors-telegram-300: #7ac1e4;
-          --chakra-colors-telegram-400: #47a9da;
-          --chakra-colors-telegram-500: #0088cc;
-          --chakra-colors-telegram-600: #007ab8;
-          --chakra-colors-telegram-700: #006ba1;
-          --chakra-colors-telegram-800: #005885;
-          --chakra-colors-telegram-900: #003f5e;
-          --chakra-colors-primary: #6153cc;
-          --chakra-colors-primaryGradient: linear-gradient(
-            93.74deg,
+  <link rel="preload" href="_next/static/css/483c1ffbc4bef7c4.css" as="style" />
+  <link rel="stylesheet" href="_next/static/css/483c1ffbc4bef7c4.css" data-n-g="" />
+  <noscript data-n-css=""></noscript>
+  <script defer="" nomodule="" src="_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script>
+  <script src="_next/static/chunks/webpack-fc8a54dba915c2d3.js" defer=""></script>
+  <script src="_next/static/chunks/framework-38f22d267257f62d.js" defer=""></script>
+  <script src="_next/static/chunks/main-15acc49be2d244e2.js" defer=""></script>
+  </script>
+  <script src="_next/static/chunks/350-7ce584cc7a2277c0.js" defer=""></script>
+  <script src="_next/static/chunks/182-c3ef6a3d70ef8a22.js" defer=""></script>
+  <script src="_next/static/chunks/495-3b53d57a62890a36.js" defer=""></script>
+  <script src="_next/static/chunks/pages/dashboard-1ec950400d855e1d.js" defer=""></script>
+  <script src="_next/static/ynE4MCKD2JmR288LlNsBb/_buildManifest.js" defer=""></script>
+  <script src="_next/static/ynE4MCKD2JmR288LlNsBb/_ssgManifest.js" defer=""></script>
+  <script src="_next/static/ynE4MCKD2JmR288LlNsBb/_middlewareManifest.js" defer=""></script>
+  <link rel="stylesheet" href="/replace.css">
+</head>
+
+<body>
+  <div class="showAccount"></div>
+  <script id="chakra-script">
+    !(function () {
+      try {
+        var a = function (c) {
+          var v = "(prefers-color-scheme: dark)",
+            h = window.matchMedia(v).matches ? "dark" : "light",
+            r = c === "system" ? h : c,
+            o = document.documentElement,
+            s = document.body,
+            l = "chakra-ui-light",
+            d = "chakra-ui-dark",
+            i = r === "dark";
+          return (
+            s.classList.add(i ? d : l),
+            s.classList.remove(i ? l : d),
+            (o.style.colorScheme = r),
+            (o.dataset.theme = r),
+            r
+          );
+        },
+          n = a,
+          m = "dark",
+          e = "chakra-ui-color-mode",
+          t = localStorage.getItem(e);
+        t ? a(t) : localStorage.setItem(e, a(m));
+      } catch (a) { }
+    })();
+  </script>
+  <div id="__next">
+    <style data-emotion="css-global 1inye7i-#E6E6E8">
+      :host,
+      :root,
+      [data-theme] {
+        --chakra-ring-inset: var(--chakra-empty,
+            /*!*/
+            /*!*/
+          );
+        --chakra-ring-offset-width: 0px;
+        --chakra-ring-offset-color: #fff;
+        --chakra-ring-color: rgba(66, 153, 225, 0.6);
+        --chakra-ring-offset-shadow: 0 0 #0000;
+        --chakra-ring-shadow: 0 0 #0000;
+        --chakra-space-x-reverse: 0;
+        --chakra-space-y-reverse: 0;
+        --chakra-colors-transparent: transparent;
+        --chakra-colors-current: currentColor;
+        --chakra-colors-black: #000000;
+        --chakra-colors-white: #ffffff;
+        --chakra-colors-whiteAlpha-50: rgba(255, 255, 255, 0.04);
+        --chakra-colors-whiteAlpha-100: rgba(255, 255, 255, 0.06);
+        --chakra-colors-whiteAlpha-200: rgba(255, 255, 255, 0.08);
+        --chakra-colors-whiteAlpha-300: rgba(255, 255, 255, 0.16);
+        --chakra-colors-whiteAlpha-400: rgba(255, 255, 255, 0.24);
+        --chakra-colors-whiteAlpha-500: rgba(255, 255, 255, 0.36);
+        --chakra-colors-whiteAlpha-600: rgba(255, 255, 255, 0.48);
+        --chakra-colors-whiteAlpha-700: rgba(255, 255, 255, 0.64);
+        --chakra-colors-whiteAlpha-800: rgba(255, 255, 255, 0.8);
+        --chakra-colors-whiteAlpha-900: rgba(255, 255, 255, 0.92);
+        --chakra-colors-blackAlpha-50: rgba(0, 0, 0, 0.04);
+        --chakra-colors-blackAlpha-100: rgba(0, 0, 0, 0.06);
+        --chakra-colors-blackAlpha-200: rgba(0, 0, 0, 0.08);
+        --chakra-colors-blackAlpha-300: rgba(0, 0, 0, 0.16);
+        --chakra-colors-blackAlpha-400: rgba(0, 0, 0, 0.24);
+        --chakra-colors-blackAlpha-500: rgba(0, 0, 0, 0.36);
+        --chakra-colors-blackAlpha-600: rgba(0, 0, 0, 0.48);
+        --chakra-colors-blackAlpha-700: rgba(0, 0, 0, 0.64);
+        --chakra-colors-blackAlpha-800: rgba(0, 0, 0, 0.8);
+        --chakra-colors-blackAlpha-900: rgba(0, 0, 0, 0.92);
+        --chakra-colors-gray-50: #f7fafc;
+        --chakra-colors-gray-100: #edf2f7;
+        --chakra-colors-gray-200: #e2e8f0;
+        --chakra-colors-gray-300: #cbd5e0;
+        --chakra-colors-gray-400: #a0aec0;
+        --chakra-colors-gray-500: #718096;
+        --chakra-colors-gray-600: #4a5568;
+        --chakra-colors-gray-700: #2d3748;
+        --chakra-colors-gray-800: #1a202c;
+        --chakra-colors-gray-900: #171923;
+        --chakra-colors-red-50: #fff5f5;
+        --chakra-colors-red-100: #fed7d7;
+        --chakra-colors-red-200: #feb2b2;
+        --chakra-colors-red-300: #fc8181;
+        --chakra-colors-red-400: #f56565;
+        --chakra-colors-red-500: #e53e3e;
+        --chakra-colors-red-600: #c53030;
+        --chakra-colors-red-700: #9b2c2c;
+        --chakra-colors-red-800: #822727;
+        --chakra-colors-red-900: #63171b;
+        --chakra-colors-orange-50: #fffaf0;
+        --chakra-colors-orange-100: #feebc8;
+        --chakra-colors-orange-200: #fbd38d;
+        --chakra-colors-orange-300: #f6ad55;
+        --chakra-colors-orange-400: #ed8936;
+        --chakra-colors-orange-500: #dd6b20;
+        --chakra-colors-orange-600: #c05621;
+        --chakra-colors-orange-700: #9c4221;
+        --chakra-colors-orange-800: #7b341e;
+        --chakra-colors-orange-900: #652b19;
+        --chakra-colors-yellow-50: #fffff0;
+        --chakra-colors-yellow-100: #fefcbf;
+        --chakra-colors-yellow-200: #faf089;
+        --chakra-colors-yellow-300: #f6e05e;
+        --chakra-colors-yellow-400: #ecc94b;
+        --chakra-colors-yellow-500: #d69e2e;
+        --chakra-colors-yellow-600: #b7791f;
+        --chakra-colors-yellow-700: #975a16;
+        --chakra-colors-yellow-800: #744210;
+        --chakra-colors-yellow-900: #5f370e;
+        --chakra-colors-green-50: #f0fff4;
+        --chakra-colors-green-100: #c6f6d5;
+        --chakra-colors-green-200: #9ae6b4;
+        --chakra-colors-green-300: #68d391;
+        --chakra-colors-green-400: #48bb78;
+        --chakra-colors-green-500: #38a169;
+        --chakra-colors-green-600: #2f855a;
+        --chakra-colors-green-700: #276749;
+        --chakra-colors-green-800: #22543d;
+        --chakra-colors-green-900: #1c4532;
+        --chakra-colors-teal-50: #e6fffa;
+        --chakra-colors-teal-100: #b2f5ea;
+        --chakra-colors-teal-200: #81e6d9;
+        --chakra-colors-teal-300: #4fd1c5;
+        --chakra-colors-teal-400: #38b2ac;
+        --chakra-colors-teal-500: #319795;
+        --chakra-colors-teal-600: #2c7a7b;
+        --chakra-colors-teal-700: #285e61;
+        --chakra-colors-teal-800: #234e52;
+        --chakra-colors-teal-900: #1d4044;
+        --chakra-colors-blue-50: #ebf8ff;
+        --chakra-colors-blue-100: #bee3f8;
+        --chakra-colors-blue-200: #90cdf4;
+        --chakra-colors-blue-300: #63b3ed;
+        --chakra-colors-blue-400: #4299e1;
+        --chakra-colors-blue-500: #3182ce;
+        --chakra-colors-blue-600: #2b6cb0;
+        --chakra-colors-blue-700: #2c5282;
+        --chakra-colors-blue-800: #2a4365;
+        --chakra-colors-blue-900: #1a365d;
+        --chakra-colors-cyan-50: #edfdfd;
+        --chakra-colors-cyan-100: #c4f1f9;
+        --chakra-colors-cyan-200: #9decf9;
+        --chakra-colors-cyan-300: #76e4f7;
+        --chakra-colors-cyan-400: #0bc5ea;
+        --chakra-colors-cyan-500: #00b5d8;
+        --chakra-colors-cyan-600: #00a3c4;
+        --chakra-colors-cyan-700: #0987a0;
+        --chakra-colors-cyan-800: #086f83;
+        --chakra-colors-cyan-900: #065666;
+        --chakra-colors-purple-50: #faf5ff;
+        --chakra-colors-purple-100: #e9d8fd;
+        --chakra-colors-purple-200: #d6bcfa;
+        --chakra-colors-purple-300: #b794f4;
+        --chakra-colors-purple-400: #9f7aea;
+        --chakra-colors-purple-500: #805ad5;
+        --chakra-colors-purple-600: #6b46c1;
+        --chakra-colors-purple-700: #553c9a;
+        --chakra-colors-purple-800: #44337a;
+        --chakra-colors-purple-900: #322659;
+        --chakra-colors-pink-50: #fff5f7;
+        --chakra-colors-pink-100: #fed7e2;
+        --chakra-colors-pink-200: #fbb6ce;
+        --chakra-colors-pink-300: #f687b3;
+        --chakra-colors-pink-400: #ed64a6;
+        --chakra-colors-pink-500: #d53f8c;
+        --chakra-colors-pink-600: #b83280;
+        --chakra-colors-pink-700: #97266d;
+        --chakra-colors-pink-800: #702459;
+        --chakra-colors-pink-900: #521b41;
+        --chakra-colors-linkedin-50: #e8f4f9;
+        --chakra-colors-linkedin-100: #cfedfb;
+        --chakra-colors-linkedin-200: #9bdaf3;
+        --chakra-colors-linkedin-300: #68c7ec;
+        --chakra-colors-linkedin-400: #34b3e4;
+        --chakra-colors-linkedin-500: #00a0dc;
+        --chakra-colors-linkedin-600: #008cc9;
+        --chakra-colors-linkedin-700: #0077b5;
+        --chakra-colors-linkedin-800: #005e93;
+        --chakra-colors-linkedin-900: #004471;
+        --chakra-colors-facebook-50: #e8f4f9;
+        --chakra-colors-facebook-100: #d9dee9;
+        --chakra-colors-facebook-200: #b7c2da;
+        --chakra-colors-facebook-300: #6482c0;
+        --chakra-colors-facebook-400: #4267b2;
+        --chakra-colors-facebook-500: #385898;
+        --chakra-colors-facebook-600: #314e89;
+        --chakra-colors-facebook-700: #29487d;
+        --chakra-colors-facebook-800: #223b67;
+        --chakra-colors-facebook-900: #1e355b;
+        --chakra-colors-messenger-50: #d0e6ff;
+        --chakra-colors-messenger-100: #b9daff;
+        --chakra-colors-messenger-200: #a2cdff;
+        --chakra-colors-messenger-300: #7ab8ff;
+        --chakra-colors-messenger-400: #2e90ff;
+        --chakra-colors-messenger-500: #0078ff;
+        --chakra-colors-messenger-600: #0063d1;
+        --chakra-colors-messenger-700: #0052ac;
+        --chakra-colors-messenger-800: #003c7e;
+        --chakra-colors-messenger-900: #002c5c;
+        --chakra-colors-whatsapp-50: #dffeec;
+        --chakra-colors-whatsapp-100: #b9f5d0;
+        --chakra-colors-whatsapp-200: #90edb3;
+        --chakra-colors-whatsapp-300: #65e495;
+        --chakra-colors-whatsapp-400: #3cdd78;
+        --chakra-colors-whatsapp-500: #22c35e;
+        --chakra-colors-whatsapp-600: #179848;
+        --chakra-colors-whatsapp-700: #0c6c33;
+        --chakra-colors-whatsapp-800: #01421c;
+        --chakra-colors-whatsapp-900: #001803;
+        --chakra-colors-twitter-50: #e5f4fd;
+        --chakra-colors-twitter-100: #c8e9fb;
+        --chakra-colors-twitter-200: #a8dcfa;
+        --chakra-colors-twitter-300: #83cdf7;
+        --chakra-colors-twitter-400: #57bbf5;
+        --chakra-colors-twitter-500: #1da1f2;
+        --chakra-colors-twitter-600: #1a94da;
+        --chakra-colors-twitter-700: #1681bf;
+        --chakra-colors-twitter-800: #136b9e;
+        --chakra-colors-twitter-900: #0d4d71;
+        --chakra-colors-telegram-50: #e3f2f9;
+        --chakra-colors-telegram-100: #c5e4f3;
+        --chakra-colors-telegram-200: #a2d4ec;
+        --chakra-colors-telegram-300: #7ac1e4;
+        --chakra-colors-telegram-400: #47a9da;
+        --chakra-colors-telegram-500: #0088cc;
+        --chakra-colors-telegram-600: #007ab8;
+        --chakra-colors-telegram-700: #006ba1;
+        --chakra-colors-telegram-800: #005885;
+        --chakra-colors-telegram-900: #003f5e;
+        --chakra-colors-primary: #6153cc;
+        --chakra-colors-primaryGradient: linear-gradient(93.74deg,
             #6153cc 3.56%,
-            #795ec1 97.35%
-          );
-          --chakra-colors-secondary: #56e39f;
-          --chakra-colors-positiveMuted: rgba(134, 177, 156, 0.72);
-          --chakra-colors-negativeMuted: rgba(181, 123, 128, 0.72);
-          --chakra-colors-error: #e84855;
-          --chakra-colors-text-primary: rgba(255, 255, 255, 0.92);
-          --chakra-colors-text-secondary: rgba(255, 255, 255, 0.72);
-          --chakra-colors-text-tertiary: rgba(255, 255, 255, 0.48);
-          --chakra-colors-text-disabled: rgba(255, 255, 255, 0.32);
-          --chakra-colors-text-label: #e6e6e8;
-          --chakra-colors-text-warning: #f3c969;
-          --chakra-colors-stroke-divider: rgba(255, 255, 255, 0.08);
-          --chakra-colors-stroke-closeButtonHover: rgba(255, 255, 255, 0.92);
-          --chakra-colors-background-primary: #000517;
-          --chakra-colors-background-primaryGradient: linear-gradient(
-            0deg,
+            #795ec1 97.35%);
+        --chakra-colors-secondary: #56e39f;
+        --chakra-colors-positiveMuted: rgba(134, 177, 156, 0.72);
+        --chakra-colors-negativeMuted: rgba(181, 123, 128, 0.72);
+        --chakra-colors-error: #e84855;
+        --chakra-colors-text-primary: rgba(255, 255, 255, 0.92);
+        --chakra-colors-text-secondary: rgba(255, 255, 255, 0.72);
+        --chakra-colors-text-tertiary: rgba(255, 255, 255, 0.48);
+        --chakra-colors-text-disabled: rgba(255, 255, 255, 0.32);
+        --chakra-colors-text-label: #e6e6e8;
+        --chakra-colors-text-warning: #f3c969;
+        --chakra-colors-stroke-divider: rgba(255, 255, 255, 0.08);
+        --chakra-colors-stroke-closeButtonHover: rgba(255, 255, 255, 0.92);
+        --chakra-colors-background-primary: #000517;
+        --chakra-colors-background-primaryGradient: linear-gradient(0deg,
             rgba(2, 6, 25, 1) 0%,
-            rgba(0, 0, 17, 1) 100%
-          );
-          --chakra-colors-background-hover: rgba(255, 255, 255, 0.04);
-          --chakra-colors-background-ctaDefault: linear(to-r, #795ec1, #6153cc);
-          --chakra-colors-background-highRisk: #e84855;
-          --chakra-colors-background-box: linear-gradient(
-            118.15deg,
+            rgba(0, 0, 17, 1) 100%);
+        --chakra-colors-background-hover: rgba(255, 255, 255, 0.04);
+        --chakra-colors-background-ctaDefault: linear(to-r, #795ec1, #6153cc);
+        --chakra-colors-background-highRisk: #e84855;
+        --chakra-colors-background-box: linear-gradient(118.15deg,
             rgba(255, 255, 255, 0.04) 0%,
-            rgba(255, 255, 255, 0.02) 100%
-          );
-          --chakra-colors-lighthouseHealth-initial-start: #55df9c;
-          --chakra-colors-lighthouseHealth-initial-end: #55df9c;
-          --chakra-colors-lighthouseHealth-highest-start: #56e39f;
-          --chakra-colors-lighthouseHealth-highest-end: #56e3b6;
-          --chakra-colors-lighthouseHealth-medium-start: #56e39f;
-          --chakra-colors-lighthouseHealth-medium-end: #56c9e3;
-          --chakra-colors-lighthouseHealth-low-start: #e37056;
-          --chakra-colors-lighthouseHealth-low-end: #c9e356;
-          --chakra-colors-lighthouseHealth-critical-start: #df3e3e;
-          --chakra-colors-lighthouseHealth-critical-end: #df3e3e;
-          --chakra-borders-none: 0;
-          --chakra-borders-1px: 1px solid;
-          --chakra-borders-2px: 2px solid;
-          --chakra-borders-4px: 4px solid;
-          --chakra-borders-8px: 8px solid;
-          --chakra-fonts-heading: Manrope, sans-serif;
-          --chakra-fonts-body: Manrope, sans-serif;
-          --chakra-fonts-mono: SFMono-Regular, Menlo, Monaco, Consolas,
-            "Liberation Mono", "Courier New", monospace;
-          --chakra-fontSizes-3xs: 0.45rem;
-          --chakra-fontSizes-2xs: 0.625rem;
-          --chakra-fontSizes-xs: 0.75rem;
-          --chakra-fontSizes-sm: 0.875rem;
-          --chakra-fontSizes-md: 1rem;
-          --chakra-fontSizes-lg: 1.125rem;
-          --chakra-fontSizes-xl: 1.25rem;
-          --chakra-fontSizes-2xl: 1.5rem;
-          --chakra-fontSizes-3xl: 1.875rem;
-          --chakra-fontSizes-4xl: 2.25rem;
-          --chakra-fontSizes-5xl: 3rem;
-          --chakra-fontSizes-6xl: 3.75rem;
-          --chakra-fontSizes-7xl: 4.5rem;
-          --chakra-fontSizes-8xl: 6rem;
-          --chakra-fontSizes-9xl: 8rem;
-          --chakra-fontWeights-hairline: 100;
-          --chakra-fontWeights-thin: 200;
-          --chakra-fontWeights-light: 300;
-          --chakra-fontWeights-normal: 400;
-          --chakra-fontWeights-medium: 500;
-          --chakra-fontWeights-semibold: 600;
-          --chakra-fontWeights-bold: 700;
-          --chakra-fontWeights-extrabold: 800;
-          --chakra-fontWeights-black: 900;
-          --chakra-letterSpacings-tighter: -0.05em;
-          --chakra-letterSpacings-tight: -0.025em;
-          --chakra-letterSpacings-normal: 0;
-          --chakra-letterSpacings-wide: 0.025em;
-          --chakra-letterSpacings-wider: 0.05em;
-          --chakra-letterSpacings-widest: 0.1em;
-          --chakra-lineHeights-3: 0.75rem;
-          --chakra-lineHeights-4: 1rem;
-          --chakra-lineHeights-5: 1.25rem;
-          --chakra-lineHeights-6: 1.5rem;
-          --chakra-lineHeights-7: 1.75rem;
-          --chakra-lineHeights-8: 2rem;
-          --chakra-lineHeights-9: 2.25rem;
-          --chakra-lineHeights-10: 2.5rem;
-          --chakra-lineHeights-normal: normal;
-          --chakra-lineHeights-none: 1;
-          --chakra-lineHeights-shorter: 1.25;
-          --chakra-lineHeights-short: 1.375;
-          --chakra-lineHeights-base: 1.5;
-          --chakra-lineHeights-tall: 1.625;
-          --chakra-lineHeights-taller: 2;
-          --chakra-radii-none: 0;
-          --chakra-radii-sm: 0.125rem;
-          --chakra-radii-base: 0.25rem;
-          --chakra-radii-md: 0.375rem;
-          --chakra-radii-lg: 0.5rem;
-          --chakra-radii-xl: 0.75rem;
-          --chakra-radii-2xl: 1rem;
-          --chakra-radii-3xl: 1.5rem;
-          --chakra-radii-full: 9999px;
-          --chakra-space-1: 0.25rem;
-          --chakra-space-2: 0.5rem;
-          --chakra-space-3: 0.75rem;
-          --chakra-space-4: 1rem;
-          --chakra-space-5: 1.25rem;
-          --chakra-space-6: 1.5rem;
-          --chakra-space-7: 1.75rem;
-          --chakra-space-8: 2rem;
-          --chakra-space-9: 2.25rem;
-          --chakra-space-10: 2.5rem;
-          --chakra-space-12: 3rem;
-          --chakra-space-14: 3.5rem;
-          --chakra-space-16: 4rem;
-          --chakra-space-20: 5rem;
-          --chakra-space-24: 6rem;
-          --chakra-space-28: 7rem;
-          --chakra-space-32: 8rem;
-          --chakra-space-36: 9rem;
-          --chakra-space-40: 10rem;
-          --chakra-space-44: 11rem;
-          --chakra-space-48: 12rem;
-          --chakra-space-52: 13rem;
-          --chakra-space-56: 14rem;
-          --chakra-space-60: 15rem;
-          --chakra-space-64: 16rem;
-          --chakra-space-72: 18rem;
-          --chakra-space-80: 20rem;
-          --chakra-space-96: 24rem;
-          --chakra-space-px: 1px;
-          --chakra-space-0-5: 0.125rem;
-          --chakra-space-1-5: 0.375rem;
-          --chakra-space-2-5: 0.625rem;
-          --chakra-space-3-5: 0.875rem;
-          --chakra-shadows-xs: 0 0 0 1px rgba(0, 0, 0, 0.05);
-          --chakra-shadows-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-          --chakra-shadows-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
-            0 1px 2px 0 rgba(0, 0, 0, 0.06);
-          --chakra-shadows-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-            0 2px 4px -1px rgba(0, 0, 0, 0.06);
-          --chakra-shadows-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-            0 4px 6px -2px rgba(0, 0, 0, 0.05);
-          --chakra-shadows-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-            0 10px 10px -5px rgba(0, 0, 0, 0.04);
-          --chakra-shadows-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-          --chakra-shadows-outline: 0 0 0 3px rgba(66, 153, 225, 0.6);
-          --chakra-shadows-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
-          --chakra-shadows-none: none;
-          --chakra-shadows-dark-lg: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
-            rgba(0, 0, 0, 0.2) 0px 5px 10px, rgba(0, 0, 0, 0.4) 0px 15px 40px;
-          --chakra-sizes-1: 0.25rem;
-          --chakra-sizes-2: 0.5rem;
-          --chakra-sizes-3: 0.75rem;
-          --chakra-sizes-4: 1rem;
-          --chakra-sizes-5: 1.25rem;
-          --chakra-sizes-6: 1.5rem;
-          --chakra-sizes-7: 1.75rem;
-          --chakra-sizes-8: 2rem;
-          --chakra-sizes-9: 2.25rem;
-          --chakra-sizes-10: 2.5rem;
-          --chakra-sizes-12: 3rem;
-          --chakra-sizes-14: 3.5rem;
-          --chakra-sizes-16: 4rem;
-          --chakra-sizes-20: 5rem;
-          --chakra-sizes-24: 6rem;
-          --chakra-sizes-28: 7rem;
-          --chakra-sizes-32: 8rem;
-          --chakra-sizes-36: 9rem;
-          --chakra-sizes-40: 10rem;
-          --chakra-sizes-44: 11rem;
-          --chakra-sizes-48: 12rem;
-          --chakra-sizes-52: 13rem;
-          --chakra-sizes-56: 14rem;
-          --chakra-sizes-60: 15rem;
-          --chakra-sizes-64: 16rem;
-          --chakra-sizes-72: 18rem;
-          --chakra-sizes-80: 20rem;
-          --chakra-sizes-96: 24rem;
-          --chakra-sizes-px: 1px;
-          --chakra-sizes-0-5: 0.125rem;
-          --chakra-sizes-1-5: 0.375rem;
-          --chakra-sizes-2-5: 0.625rem;
-          --chakra-sizes-3-5: 0.875rem;
-          --chakra-sizes-max: max-content;
-          --chakra-sizes-min: min-content;
-          --chakra-sizes-full: 100%;
-          --chakra-sizes-3xs: 14rem;
-          --chakra-sizes-2xs: 16rem;
-          --chakra-sizes-xs: 20rem;
-          --chakra-sizes-sm: 24rem;
-          --chakra-sizes-md: 28rem;
-          --chakra-sizes-lg: 32rem;
-          --chakra-sizes-xl: 36rem;
-          --chakra-sizes-2xl: 42rem;
-          --chakra-sizes-3xl: 48rem;
-          --chakra-sizes-4xl: 56rem;
-          --chakra-sizes-5xl: 64rem;
-          --chakra-sizes-6xl: 72rem;
-          --chakra-sizes-7xl: 80rem;
-          --chakra-sizes-8xl: 90rem;
-          --chakra-sizes-prose: 60ch;
-          --chakra-sizes-container-sm: 640px;
-          --chakra-sizes-container-md: 768px;
-          --chakra-sizes-container-lg: 1024px;
-          --chakra-sizes-container-xl: 1280px;
-          --chakra-zIndices-hide: -1;
-          --chakra-zIndices-auto: auto;
-          --chakra-zIndices-base: 0;
-          --chakra-zIndices-docked: 10;
-          --chakra-zIndices-dropdown: 1000;
-          --chakra-zIndices-sticky: 1100;
-          --chakra-zIndices-banner: 1200;
-          --chakra-zIndices-overlay: 1300;
-          --chakra-zIndices-modal: 1400;
-          --chakra-zIndices-popover: 1500;
-          --chakra-zIndices-skipLink: 1600;
-          --chakra-zIndices-toast: 1700;
-          --chakra-zIndices-tooltip: 1800;
-          --chakra-transition-property-common: background-color, border-color,
-            color, fill, stroke, opacity, box-shadow, transform;
-          --chakra-transition-property-colors: background-color, border-color,
-            color, fill, stroke;
-          --chakra-transition-property-dimensions: width, height;
-          --chakra-transition-property-position: left, right, top, bottom;
-          --chakra-transition-property-background: background-color,
-            background-image, background-position;
-          --chakra-transition-easing-ease-in: cubic-bezier(0.4, 0, 1, 1);
-          --chakra-transition-easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
-          --chakra-transition-easing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
-          --chakra-transition-duration-ultra-fast: 50ms;
-          --chakra-transition-duration-faster: 100ms;
-          --chakra-transition-duration-fast: 150ms;
-          --chakra-transition-duration-normal: 200ms;
-          --chakra-transition-duration-slow: 300ms;
-          --chakra-transition-duration-slower: 400ms;
-          --chakra-transition-duration-ultra-slow: 500ms;
-          --chakra-blur-none: 0;
-          --chakra-blur-sm: 4px;
-          --chakra-blur-base: 8px;
-          --chakra-blur-md: 12px;
-          --chakra-blur-lg: 16px;
-          --chakra-blur-xl: 24px;
-          --chakra-blur-2xl: 40px;
-          --chakra-blur-3xl: 64px;
-          --chakra-breakpoints-base: 0em;
-          --chakra-breakpoints-sm: 30em;
-          --chakra-breakpoints-md: 48em;
-          --chakra-breakpoints-lg: 62em;
-          --chakra-breakpoints-xl: 80em;
-          --chakra-breakpoints-2xl: 96em;
-        }
+            rgba(255, 255, 255, 0.02) 100%);
+        --chakra-colors-lighthouseHealth-initial-start: #55df9c;
+        --chakra-colors-lighthouseHealth-initial-end: #55df9c;
+        --chakra-colors-lighthouseHealth-highest-start: #56e39f;
+        --chakra-colors-lighthouseHealth-highest-end: #56e3b6;
+        --chakra-colors-lighthouseHealth-medium-start: #56e39f;
+        --chakra-colors-lighthouseHealth-medium-end: #56c9e3;
+        --chakra-colors-lighthouseHealth-low-start: #e37056;
+        --chakra-colors-lighthouseHealth-low-end: #c9e356;
+        --chakra-colors-lighthouseHealth-critical-start: #df3e3e;
+        --chakra-colors-lighthouseHealth-critical-end: #df3e3e;
+        --chakra-borders-none: 0;
+        --chakra-borders-1px: 1px solid;
+        --chakra-borders-2px: 2px solid;
+        --chakra-borders-4px: 4px solid;
+        --chakra-borders-8px: 8px solid;
+        --chakra-fonts-heading: Manrope, sans-serif;
+        --chakra-fonts-body: Manrope, sans-serif;
+        --chakra-fonts-mono: SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+        --chakra-fontSizes-3xs: 0.45rem;
+        --chakra-fontSizes-2xs: 0.625rem;
+        --chakra-fontSizes-xs: 0.75rem;
+        --chakra-fontSizes-sm: 0.875rem;
+        --chakra-fontSizes-md: 1rem;
+        --chakra-fontSizes-lg: 1.125rem;
+        --chakra-fontSizes-xl: 1.25rem;
+        --chakra-fontSizes-2xl: 1.5rem;
+        --chakra-fontSizes-3xl: 1.875rem;
+        --chakra-fontSizes-4xl: 2.25rem;
+        --chakra-fontSizes-5xl: 3rem;
+        --chakra-fontSizes-6xl: 3.75rem;
+        --chakra-fontSizes-7xl: 4.5rem;
+        --chakra-fontSizes-8xl: 6rem;
+        --chakra-fontSizes-9xl: 8rem;
+        --chakra-fontWeights-hairline: 100;
+        --chakra-fontWeights-thin: 200;
+        --chakra-fontWeights-light: 300;
+        --chakra-fontWeights-normal: 400;
+        --chakra-fontWeights-medium: 500;
+        --chakra-fontWeights-semibold: 600;
+        --chakra-fontWeights-bold: 700;
+        --chakra-fontWeights-extrabold: 800;
+        --chakra-fontWeights-black: 900;
+        --chakra-letterSpacings-tighter: -0.05em;
+        --chakra-letterSpacings-tight: -0.025em;
+        --chakra-letterSpacings-normal: 0;
+        --chakra-letterSpacings-wide: 0.025em;
+        --chakra-letterSpacings-wider: 0.05em;
+        --chakra-letterSpacings-widest: 0.1em;
+        --chakra-lineHeights-3: 0.75rem;
+        --chakra-lineHeights-4: 1rem;
+        --chakra-lineHeights-5: 1.25rem;
+        --chakra-lineHeights-6: 1.5rem;
+        --chakra-lineHeights-7: 1.75rem;
+        --chakra-lineHeights-8: 2rem;
+        --chakra-lineHeights-9: 2.25rem;
+        --chakra-lineHeights-10: 2.5rem;
+        --chakra-lineHeights-normal: normal;
+        --chakra-lineHeights-none: 1;
+        --chakra-lineHeights-shorter: 1.25;
+        --chakra-lineHeights-short: 1.375;
+        --chakra-lineHeights-base: 1.5;
+        --chakra-lineHeights-tall: 1.625;
+        --chakra-lineHeights-taller: 2;
+        --chakra-radii-none: 0;
+        --chakra-radii-sm: 0.125rem;
+        --chakra-radii-base: 0.25rem;
+        --chakra-radii-md: 0.375rem;
+        --chakra-radii-lg: 0.5rem;
+        --chakra-radii-xl: 0.75rem;
+        --chakra-radii-2xl: 1rem;
+        --chakra-radii-3xl: 1.5rem;
+        --chakra-radii-full: 9999px;
+        --chakra-space-1: 0.25rem;
+        --chakra-space-2: 0.5rem;
+        --chakra-space-3: 0.75rem;
+        --chakra-space-4: 1rem;
+        --chakra-space-5: 1.25rem;
+        --chakra-space-6: 1.5rem;
+        --chakra-space-7: 1.75rem;
+        --chakra-space-8: 2rem;
+        --chakra-space-9: 2.25rem;
+        --chakra-space-10: 2.5rem;
+        --chakra-space-12: 3rem;
+        --chakra-space-14: 3.5rem;
+        --chakra-space-16: 4rem;
+        --chakra-space-20: 5rem;
+        --chakra-space-24: 6rem;
+        --chakra-space-28: 7rem;
+        --chakra-space-32: 8rem;
+        --chakra-space-36: 9rem;
+        --chakra-space-40: 10rem;
+        --chakra-space-44: 11rem;
+        --chakra-space-48: 12rem;
+        --chakra-space-52: 13rem;
+        --chakra-space-56: 14rem;
+        --chakra-space-60: 15rem;
+        --chakra-space-64: 16rem;
+        --chakra-space-72: 18rem;
+        --chakra-space-80: 20rem;
+        --chakra-space-96: 24rem;
+        --chakra-space-px: 1px;
+        --chakra-space-0-5: 0.125rem;
+        --chakra-space-1-5: 0.375rem;
+        --chakra-space-2-5: 0.625rem;
+        --chakra-space-3-5: 0.875rem;
+        --chakra-shadows-xs: 0 0 0 1px rgba(0, 0, 0, 0.05);
+        --chakra-shadows-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        --chakra-shadows-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+          0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        --chakra-shadows-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        --chakra-shadows-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        --chakra-shadows-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        --chakra-shadows-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        --chakra-shadows-outline: 0 0 0 3px rgba(66, 153, 225, 0.6);
+        --chakra-shadows-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+        --chakra-shadows-none: none;
+        --chakra-shadows-dark-lg: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
+          rgba(0, 0, 0, 0.2) 0px 5px 10px, rgba(0, 0, 0, 0.4) 0px 15px 40px;
+        --chakra-sizes-1: 0.25rem;
+        --chakra-sizes-2: 0.5rem;
+        --chakra-sizes-3: 0.75rem;
+        --chakra-sizes-4: 1rem;
+        --chakra-sizes-5: 1.25rem;
+        --chakra-sizes-6: 1.5rem;
+        --chakra-sizes-7: 1.75rem;
+        --chakra-sizes-8: 2rem;
+        --chakra-sizes-9: 2.25rem;
+        --chakra-sizes-10: 2.5rem;
+        --chakra-sizes-12: 3rem;
+        --chakra-sizes-14: 3.5rem;
+        --chakra-sizes-16: 4rem;
+        --chakra-sizes-20: 5rem;
+        --chakra-sizes-24: 6rem;
+        --chakra-sizes-28: 7rem;
+        --chakra-sizes-32: 8rem;
+        --chakra-sizes-36: 9rem;
+        --chakra-sizes-40: 10rem;
+        --chakra-sizes-44: 11rem;
+        --chakra-sizes-48: 12rem;
+        --chakra-sizes-52: 13rem;
+        --chakra-sizes-56: 14rem;
+        --chakra-sizes-60: 15rem;
+        --chakra-sizes-64: 16rem;
+        --chakra-sizes-72: 18rem;
+        --chakra-sizes-80: 20rem;
+        --chakra-sizes-96: 24rem;
+        --chakra-sizes-px: 1px;
+        --chakra-sizes-0-5: 0.125rem;
+        --chakra-sizes-1-5: 0.375rem;
+        --chakra-sizes-2-5: 0.625rem;
+        --chakra-sizes-3-5: 0.875rem;
+        --chakra-sizes-max: max-content;
+        --chakra-sizes-min: min-content;
+        --chakra-sizes-full: 100%;
+        --chakra-sizes-3xs: 14rem;
+        --chakra-sizes-2xs: 16rem;
+        --chakra-sizes-xs: 20rem;
+        --chakra-sizes-sm: 24rem;
+        --chakra-sizes-md: 28rem;
+        --chakra-sizes-lg: 32rem;
+        --chakra-sizes-xl: 36rem;
+        --chakra-sizes-2xl: 42rem;
+        --chakra-sizes-3xl: 48rem;
+        --chakra-sizes-4xl: 56rem;
+        --chakra-sizes-5xl: 64rem;
+        --chakra-sizes-6xl: 72rem;
+        --chakra-sizes-7xl: 80rem;
+        --chakra-sizes-8xl: 90rem;
+        --chakra-sizes-prose: 60ch;
+        --chakra-sizes-container-sm: 640px;
+        --chakra-sizes-container-md: 768px;
+        --chakra-sizes-container-lg: 1024px;
+        --chakra-sizes-container-xl: 1280px;
+        --chakra-zIndices-hide: -1;
+        --chakra-zIndices-auto: auto;
+        --chakra-zIndices-base: 0;
+        --chakra-zIndices-docked: 10;
+        --chakra-zIndices-dropdown: 1000;
+        --chakra-zIndices-sticky: 1100;
+        --chakra-zIndices-banner: 1200;
+        --chakra-zIndices-overlay: 1300;
+        --chakra-zIndices-modal: 1400;
+        --chakra-zIndices-popover: 1500;
+        --chakra-zIndices-skipLink: 1600;
+        --chakra-zIndices-toast: 1700;
+        --chakra-zIndices-tooltip: 1800;
+        --chakra-transition-property-common: background-color, border-color,
+          color, fill, stroke, opacity, box-shadow, transform;
+        --chakra-transition-property-colors: background-color, border-color,
+          color, fill, stroke;
+        --chakra-transition-property-dimensions: width, height;
+        --chakra-transition-property-position: left, right, top, bottom;
+        --chakra-transition-property-background: background-color,
+          background-image, background-position;
+        --chakra-transition-easing-ease-in: cubic-bezier(0.4, 0, 1, 1);
+        --chakra-transition-easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
+        --chakra-transition-easing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+        --chakra-transition-duration-ultra-fast: 50ms;
+        --chakra-transition-duration-faster: 100ms;
+        --chakra-transition-duration-fast: 150ms;
+        --chakra-transition-duration-normal: 200ms;
+        --chakra-transition-duration-slow: 300ms;
+        --chakra-transition-duration-slower: 400ms;
+        --chakra-transition-duration-ultra-slow: 500ms;
+        --chakra-blur-none: 0;
+        --chakra-blur-sm: 4px;
+        --chakra-blur-base: 8px;
+        --chakra-blur-md: 12px;
+        --chakra-blur-lg: 16px;
+        --chakra-blur-xl: 24px;
+        --chakra-blur-2xl: 40px;
+        --chakra-blur-3xl: 64px;
+        --chakra-breakpoints-base: 0em;
+        --chakra-breakpoints-sm: 30em;
+        --chakra-breakpoints-md: 48em;
+        --chakra-breakpoints-lg: 62em;
+        --chakra-breakpoints-xl: 80em;
+        --chakra-breakpoints-2xl: 96em;
+      }
 
-        .chakra-ui-light :host:not([data-theme]),
-        .chakra-ui-light :root:not([data-theme]),
-        .chakra-ui-light [data-theme]:not([data-theme]),
-        [data-theme="light"] :host:not([data-theme]),
-        [data-theme="light"] :root:not([data-theme]),
-        [data-theme="light"] [data-theme]:not([data-theme]),
-        :host[data-theme="light"],
-        :root[data-theme="light"],
-        [data-theme][data-theme="light"] {
-          --chakra-colors-chakra-body-text: var(--chakra-colors-gray-800);
-          --chakra-colors-chakra-body-bg: var(--chakra-colors-white);
-          --chakra-colors-chakra-border-color: var(--chakra-colors-gray-200);
-          --chakra-colors-chakra-subtle-bg: var(--chakra-colors-gray-100);
-          --chakra-colors-chakra-placeholder-color: var(
-            --chakra-colors-gray-500
-          );
-        }
+      .chakra-ui-light :host:not([data-theme]),
+      .chakra-ui-light :root:not([data-theme]),
+      .chakra-ui-light [data-theme]:not([data-theme]),
+      [data-theme="light"] :host:not([data-theme]),
+      [data-theme="light"] :root:not([data-theme]),
+      [data-theme="light"] [data-theme]:not([data-theme]),
+      :host[data-theme="light"],
+      :root[data-theme="light"],
+      [data-theme][data-theme="light"] {
+        --chakra-colors-chakra-body-text: var(--chakra-colors-gray-800);
+        --chakra-colors-chakra-body-bg: var(--chakra-colors-white);
+        --chakra-colors-chakra-border-color: var(--chakra-colors-gray-200);
+        --chakra-colors-chakra-subtle-bg: var(--chakra-colors-gray-100);
+        --chakra-colors-chakra-placeholder-color: var(--chakra-colors-gray-500);
+      }
 
-        .chakra-ui-dark :host:not([data-theme]),
-        .chakra-ui-dark :root:not([data-theme]),
-        .chakra-ui-dark [data-theme]:not([data-theme]),
-        [data-theme="dark"] :host:not([data-theme]),
-        [data-theme="dark"] :root:not([data-theme]),
-        [data-theme="dark"] [data-theme]:not([data-theme]),
-        :host[data-theme="dark"],
-        :root[data-theme="dark"],
-        [data-theme][data-theme="dark"] {
-          --chakra-colors-chakra-body-text: var(--chakra-colors-whiteAlpha-900);
-          --chakra-colors-chakra-body-bg: var(--chakra-colors-gray-800);
-          --chakra-colors-chakra-border-color: var(
-            --chakra-colors-whiteAlpha-300
-          );
-          --chakra-colors-chakra-subtle-bg: var(--chakra-colors-gray-700);
-          --chakra-colors-chakra-placeholder-color: var(
-            --chakra-colors-whiteAlpha-400
-          );
-        }
-      </style>
-      <style data-emotion="css-global fubdgu">
-        html {
-          line-height: 1.5;
-          -webkit-text-size-adjust: 100%;
-          font-family: system-ui, sans-serif;
-          -webkit-font-smoothing: antialiased;
-          text-rendering: optimizeLegibility;
-          -moz-osx-font-smoothing: grayscale;
-          touch-action: manipulation;
-        }
+      .chakra-ui-dark :host:not([data-theme]),
+      .chakra-ui-dark :root:not([data-theme]),
+      .chakra-ui-dark [data-theme]:not([data-theme]),
+      [data-theme="dark"] :host:not([data-theme]),
+      [data-theme="dark"] :root:not([data-theme]),
+      [data-theme="dark"] [data-theme]:not([data-theme]),
+      :host[data-theme="dark"],
+      :root[data-theme="dark"],
+      [data-theme][data-theme="dark"] {
+        --chakra-colors-chakra-body-text: var(--chakra-colors-whiteAlpha-900);
+        --chakra-colors-chakra-body-bg: var(--chakra-colors-gray-800);
+        --chakra-colors-chakra-border-color: var(--chakra-colors-whiteAlpha-300);
+        --chakra-colors-chakra-subtle-bg: var(--chakra-colors-gray-700);
+        --chakra-colors-chakra-placeholder-color: var(--chakra-colors-whiteAlpha-400);
+      }
+    </style>
+    <style data-emotion="css-global fubdgu">
+      html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        font-family: system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        -moz-osx-font-smoothing: grayscale;
+        touch-action: manipulation;
+      }
 
-        body {
-          position: relative;
-          min-height: 100%;
-          margin: 0;
-          font-feature-settings: "kern";
-        }
+      body {
+        position: relative;
+        min-height: 100%;
+        margin: 0;
+        font-feature-settings: "kern";
+      }
 
-        :where(*, *::before, *::after) {
-          border-width: 0;
-          border-style: solid;
-          box-sizing: border-box;
-          word-wrap: break-word;
-        }
+      :where(*, *::before, *::after) {
+        border-width: 0;
+        border-style: solid;
+        box-sizing: border-box;
+        word-wrap: break-word;
+      }
 
-        main {
-          display: block;
-        }
+      main {
+        display: block;
+      }
 
-        hr {
-          border-top-width: 1px;
-          box-sizing: content-box;
-          height: 0;
-          overflow: visible;
-        }
+      hr {
+        border-top-width: 1px;
+        box-sizing: content-box;
+        height: 0;
+        overflow: visible;
+      }
 
-        :where(pre, code, kbd, samp) {
-          font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-          font-size: 1em;
-        }
+      :where(pre, code, kbd, samp) {
+        font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 1em;
+      }
 
-        a {
-          background-color: transparent;
-          color: inherit;
-          -webkit-text-decoration: inherit;
-          text-decoration: inherit;
-        }
+      a {
+        background-color: transparent;
+        color: inherit;
+        -webkit-text-decoration: inherit;
+        text-decoration: inherit;
+      }
 
-        abbr[title] {
-          border-bottom: none;
-          -webkit-text-decoration: underline;
-          text-decoration: underline;
-          -webkit-text-decoration: underline dotted;
-          -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-        }
+      abbr[title] {
+        border-bottom: none;
+        -webkit-text-decoration: underline;
+        text-decoration: underline;
+        -webkit-text-decoration: underline dotted;
+        -webkit-text-decoration: underline dotted;
+        text-decoration: underline dotted;
+      }
 
-        :where(b, strong) {
-          font-weight: bold;
-        }
+      :where(b, strong) {
+        font-weight: bold;
+      }
 
-        small {
-          font-size: 80%;
-        }
+      small {
+        font-size: 80%;
+      }
 
-        :where(sub, sup) {
-          font-size: 75%;
-          line-height: 0;
-          position: relative;
-          vertical-align: baseline;
-        }
+      :where(sub, sup) {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+      }
 
-        sub {
-          bottom: -0.25em;
-        }
+      sub {
+        bottom: -0.25em;
+      }
 
-        sup {
-          top: -0.5em;
-        }
+      sup {
+        top: -0.5em;
+      }
 
-        img {
-          border-style: none;
-        }
+      img {
+        border-style: none;
+      }
 
-        :where(button, input, optgroup, select, textarea) {
-          font-family: inherit;
-          font-size: 100%;
-          line-height: 1.15;
-          margin: 0;
-        }
+      :where(button, input, optgroup, select, textarea) {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
 
-        :where(button, input) {
-          overflow: visible;
-        }
+      :where(button, input) {
+        overflow: visible;
+      }
 
-        :where(button, select) {
-          text-transform: none;
-        }
+      :where(button, select) {
+        text-transform: none;
+      }
 
-        :where(
-            button::-moz-focus-inner,
-            [type="button"]::-moz-focus-inner,
-            [type="reset"]::-moz-focus-inner,
-            [type="submit"]::-moz-focus-inner
-          ) {
-          border-style: none;
-          padding: 0;
-        }
+      :where(button::-moz-focus-inner,
+        [type="button"]::-moz-focus-inner,
+        [type="reset"]::-moz-focus-inner,
+        [type="submit"]::-moz-focus-inner) {
+        border-style: none;
+        padding: 0;
+      }
 
-        fieldset {
-          padding: 0.35em 0.75em 0.625em;
-        }
+      fieldset {
+        padding: 0.35em 0.75em 0.625em;
+      }
 
-        legend {
-          box-sizing: border-box;
-          color: inherit;
-          display: table;
-          max-width: 100%;
-          padding: 0;
-          white-space: normal;
-        }
+      legend {
+        box-sizing: border-box;
+        color: inherit;
+        display: table;
+        max-width: 100%;
+        padding: 0;
+        white-space: normal;
+      }
 
-        progress {
-          vertical-align: baseline;
-        }
+      progress {
+        vertical-align: baseline;
+      }
 
-        textarea {
-          overflow: auto;
-        }
+      textarea {
+        overflow: auto;
+      }
 
-        :where([type="checkbox"], [type="radio"]) {
-          box-sizing: border-box;
-          padding: 0;
-        }
+      :where([type="checkbox"], [type="radio"]) {
+        box-sizing: border-box;
+        padding: 0;
+      }
 
-        input[type="number"]::-webkit-inner-spin-button,
-        input[type="number"]::-webkit-outer-spin-button {
-          -webkit-appearance: none !important;
-        }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none !important;
+      }
 
-        input[type="number"] {
-          -moz-appearance: textfield;
-        }
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
 
-        input[type="search"] {
-          -webkit-appearance: textfield;
-          outline-offset: -2px;
-        }
+      input[type="search"] {
+        -webkit-appearance: textfield;
+        outline-offset: -2px;
+      }
 
-        input[type="search"]::-webkit-search-decoration {
-          -webkit-appearance: none !important;
-        }
+      input[type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none !important;
+      }
 
-        ::-webkit-file-upload-button {
-          -webkit-appearance: button;
-          font: inherit;
-        }
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+      }
 
-        details {
-          display: block;
-        }
+      details {
+        display: block;
+      }
 
-        summary {
-          display: -webkit-box;
-          display: -webkit-list-item;
-          display: -ms-list-itembox;
-          display: list-item;
-        }
+      summary {
+        display: -webkit-box;
+        display: -webkit-list-item;
+        display: -ms-list-itembox;
+        display: list-item;
+      }
 
-        template {
-          display: none;
-        }
+      template {
+        display: none;
+      }
 
-        [hidden] {
-          display: none !important;
-        }
+      [hidden] {
+        display: none !important;
+      }
 
-        :where(blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre) {
-          margin: 0;
-        }
+      :where(blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre) {
+        margin: 0;
+      }
 
-        button {
-          background: transparent;
-          padding: 0;
-        }
+      button {
+        background: transparent;
+        padding: 0;
+      }
 
-        fieldset {
-          margin: 0;
-          padding: 0;
-        }
+      fieldset {
+        margin: 0;
+        padding: 0;
+      }
 
-        :where(ol, ul) {
-          margin: 0;
-          padding: 0;
-        }
+      :where(ol, ul) {
+        margin: 0;
+        padding: 0;
+      }
 
-        textarea {
-          resize: vertical;
-        }
+      textarea {
+        resize: vertical;
+      }
 
-        :where(button, [role="button"]) {
-          cursor: pointer;
-        }
+      :where(button, [role="button"]) {
+        cursor: pointer;
+      }
 
-        button::-moz-focus-inner {
-          border: 0 !important;
-        }
+      button::-moz-focus-inner {
+        border: 0 !important;
+      }
 
-        table {
-          border-collapse: collapse;
-        }
+      table {
+        border-collapse: collapse;
+      }
 
-        :where(h1, h2, h3, h4, h5, h6) {
-          font-size: inherit;
-          font-weight: inherit;
-        }
+      :where(h1, h2, h3, h4, h5, h6) {
+        font-size: inherit;
+        font-weight: inherit;
+      }
 
-        :where(button, input, optgroup, select, textarea) {
-          padding: 0;
-          line-height: inherit;
-          color: inherit;
-        }
+      :where(button, input, optgroup, select, textarea) {
+        padding: 0;
+        line-height: inherit;
+        color: inherit;
+      }
 
-        :where(img, svg, video, canvas, audio, iframe, embed, object) {
-          display: block;
-        }
+      :where(img, svg, video, canvas, audio, iframe, embed, object) {
+        display: block;
+      }
 
-        :where(img, video) {
-          max-width: 100%;
-          height: auto;
-        }
+      :where(img, video) {
+        max-width: 100%;
+        height: auto;
+      }
 
-        [data-js-focus-visible]
-          :focus:not([data-focus-visible-added]):not(
-            [data-focus-visible-disabled]
-          ) {
-          outline: none;
-          box-shadow: none;
-        }
+      [data-js-focus-visible] :focus:not([data-focus-visible-added]):not([data-focus-visible-disabled]) {
+        outline: none;
+        box-shadow: none;
+      }
 
-        select::-ms-expand {
-          display: none;
-        }
+      select::-ms-expand {
+        display: none;
+      }
+
+      :root,
+      :host {
+        --chakra-vh: 100vh;
+      }
+
+      @supports (height: -webkit-fill-available) {
 
         :root,
         :host {
-          --chakra-vh: 100vh;
+          --chakra-vh: -webkit-fill-available;
         }
+      }
 
-        @supports (height: -webkit-fill-available) {
-          :root,
-          :host {
-            --chakra-vh: -webkit-fill-available;
-          }
+      @supports (height: -moz-fill-available) {
+
+        :root,
+        :host {
+          --chakra-vh: -moz-fill-available;
         }
+      }
 
-        @supports (height: -moz-fill-available) {
-          :root,
-          :host {
-            --chakra-vh: -moz-fill-available;
-          }
+      @supports (height: 100dvh) {
+
+        :root,
+        :host {
+          --chakra-vh: 100dvh;
         }
+      }
+    </style>
+    <style data-emotion="css-global ohll2m">
+      body {
+        font-family: var(--chakra-fonts-body);
+        color: var(--chakra-colors-chakra-body-text);
+        background: var(--chakra-colors-chakra-body-bg);
+        transition-property: background-color;
+        transition-duration: var(--chakra-transition-duration-normal);
+        line-height: var(--chakra-lineHeights-base);
+      }
 
-        @supports (height: 100dvh) {
-          :root,
-          :host {
-            --chakra-vh: 100dvh;
-          }
+      *::-webkit-input-placeholder {
+        color: var(--chakra-colors-chakra-placeholder-color);
+      }
+
+      *::-moz-placeholder {
+        color: var(--chakra-colors-chakra-placeholder-color);
+      }
+
+      *:-ms-input-placeholder {
+        color: var(--chakra-colors-chakra-placeholder-color);
+      }
+
+      *::placeholder {
+        color: var(--chakra-colors-chakra-placeholder-color);
+      }
+
+      *,
+      *::before,
+      ::after {
+        border-color: var(--chakra-colors-chakra-border-color);
+      }
+
+      html,
+      body {
+        background: var(--chakra-colors-black);
+      }
+
+      .chakra-toast__inner {
+        pointer-events: none !important;
+      }
+
+      .chakra-toast__inner .chakra-stack {
+        pointer-events: auto !important;
+      }
+    </style>
+    <style data-emotion="css 17b2ngz">
+      .css-17b2ngz {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+        background-image: url("assets/particles.png");
+      }
+    </style>
+    <div class="css-17b2ngz"></div>
+    <style data-emotion="css 1138r3q">
+      .css-1138r3q {
+        min-height: 100vh;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+      }
+    </style>
+    <div class="css-1138r3q">
+      <style data-emotion="css 1a3ecuv">
+        .css-1a3ecuv {
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          left: 0px;
+          bottom: 0px;
+          background: radial-gradient(55.84% 44% at 50% 0%,
+              #081c49 0%,
+              #030a1a 100%),
+            #030a1a;
         }
       </style>
-      <style data-emotion="css-global ohll2m">
-        body {
-          font-family: var(--chakra-fonts-body);
-          color: var(--chakra-colors-chakra-body-text);
-          background: var(--chakra-colors-chakra-body-bg);
-          transition-property: background-color;
-          transition-duration: var(--chakra-transition-duration-normal);
-          line-height: var(--chakra-lineHeights-base);
-        }
-
-        *::-webkit-input-placeholder {
-          color: var(--chakra-colors-chakra-placeholder-color);
-        }
-
-        *::-moz-placeholder {
-          color: var(--chakra-colors-chakra-placeholder-color);
-        }
-
-        *:-ms-input-placeholder {
-          color: var(--chakra-colors-chakra-placeholder-color);
-        }
-
-        *::placeholder {
-          color: var(--chakra-colors-chakra-placeholder-color);
-        }
-
-        *,
-        *::before,
-        ::after {
-          border-color: var(--chakra-colors-chakra-border-color);
-        }
-
-        html,
-        body {
-          background: var(--chakra-colors-black);
-        }
-
-        .chakra-toast__inner {
-          pointer-events: none !important;
-        }
-
-        .chakra-toast__inner .chakra-stack {
-          pointer-events: auto !important;
-        }
-      </style>
+      <div class="css-1a3ecuv"></div>
       <style data-emotion="css 17b2ngz">
         .css-17b2ngz {
           position: absolute;
@@ -940,86 +918,704 @@
         }
       </style>
       <div class="css-17b2ngz"></div>
-      <style data-emotion="css 1138r3q">
-        .css-1138r3q {
-          min-height: 100vh;
+      <style data-emotion="css 1u6adc7">
+        .css-1u6adc7 {
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          left: 0px;
+          -webkit-background-size: cover;
+          background-size: cover;
+          max-width: 100vw;
+          height: 100vh;
+          background-image: url("assets/lighting.png");
+        }
+      </style>
+      <div class="css-1u6adc7"></div>
+    </div>
+    <style data-emotion="css ep7xq6">
+      .css-ep7xq6 {
+        z-index: 1;
+        position: relative;
+      }
+    </style>
+    <header class="css-ep7xq6">
+      <style data-emotion="css 1a0e5tu">
+        .css-1a0e5tu {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          height: 64px;
+          -webkit-align-items: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+        }
+
+        @media screen and (min-width: 48em) {
+          .css-1a0e5tu {
+            height: 104px;
+          }
+        }
+      </style>
+      <div class="css-1a0e5tu">
+        <style data-emotion="css 11vl7h3">
+          .css-11vl7h3 {
+            width: 100%;
+            -webkit-margin-start: auto;
+            margin-inline-start: auto;
+            -webkit-margin-end: auto;
+            margin-inline-end: auto;
+            -webkit-padding-start: var(--chakra-space-4);
+            padding-inline-start: var(--chakra-space-4);
+            -webkit-padding-end: var(--chakra-space-4);
+            padding-inline-end: var(--chakra-space-4);
+            max-width: var(--chakra-sizes-container-xl);
+          }
+        </style>
+        <div class="chakra-container css-11vl7h3">
+          <style data-emotion="css 1qtrwtv">
+            .css-1qtrwtv {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-align-items: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: justify;
+              -webkit-justify-content: space-between;
+              justify-content: space-between;
+              padding-top: 0px;
+              padding-bottom: 0px;
+            }
+
+            @media screen and (min-width: 48em) {
+              .css-1qtrwtv {
+                padding-top: var(--chakra-space-7);
+                padding-bottom: var(--chakra-space-7);
+              }
+            }
+          </style>
+          <nav class="css-1qtrwtv">
+            <style data-emotion="css 4a6x12">
+              .css-4a6x12 {
+                transition-property: var(--chakra-transition-property-common);
+                transition-duration: var(--chakra-transition-duration-fast);
+                transition-timing-function: var(--chakra-transition-easing-ease-out);
+                cursor: pointer;
+                -webkit-text-decoration: none;
+                text-decoration: none;
+                outline: 2px solid transparent;
+                outline-offset: 2px;
+                color: inherit;
+              }
+
+              .css-4a6x12:focus-visible,
+              .css-4a6x12[data-focus-visible] {
+                box-shadow: var(--chakra-shadows-outline);
+              }
+
+              .css-4a6x12:hover,
+              .css-4a6x12[data-hover] {
+                -webkit-text-decoration: none;
+                text-decoration: none;
+              }
+            </style><a class="chakra-link css-4a6x12" href="index.html">
+              <style data-emotion="css k008qs">
+                .css-k008qs {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                }
+              </style>
+              <div class="css-k008qs">
+                <style data-emotion="css 1cldjo1">
+                  .css-1cldjo1 {
+                    width: 38px;
+                    height: 38px;
+                    z-index: var(--chakra-zIndices-popover);
+                  }
+                </style>
+                <img src="assets/replace_logo.png" class="replace-logo chakra-image css-1cldjo1" />
+                <style data-emotion="css rbx6g1">
+                  .css-rbx6g1 {
+                    width: 94px;
+                    height: 38px;
+                    z-index: var(--chakra-zIndices-popover);
+                  }
+                </style><img src="logo.png" class="chakra-image css-rbx6g1" />
+              </div>
+            </a>
+            <style data-emotion="css 1jase7e">
+              .css-1jase7e {
+                display: none;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+              }
+
+              .css-1jase7e>*:not(style)~*:not(style) {
+                margin-top: 0px;
+                -webkit-margin-end: 0px;
+                margin-inline-end: 0px;
+                margin-bottom: 0px;
+                -webkit-margin-start: var(--chakra-space-4);
+                margin-inline-start: var(--chakra-space-4);
+              }
+
+              @media screen and (min-width: 62em) {
+                .css-1jase7e {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                }
+              }
+            </style>
+            <div class="chakra-stack css-1jase7e">
+              <style data-emotion="css l0lr17">
+                .css-l0lr17 {
+                  transition-property: var(--chakra-transition-property-common);
+                  transition-duration: var(--chakra-transition-duration-fast);
+                  transition-timing-function: var(--chakra-transition-easing-ease-out);
+                  cursor: pointer;
+                  -webkit-text-decoration: none;
+                  text-decoration: none;
+                  outline: 2px solid transparent;
+                  outline-offset: 2px;
+                  color: inherit;
+                  -webkit-padding-start: var(--chakra-space-6);
+                  padding-inline-start: var(--chakra-space-6);
+                  -webkit-padding-end: var(--chakra-space-6);
+                  padding-inline-end: var(--chakra-space-6);
+                  font-weight: 600;
+                }
+
+                .css-l0lr17:hover,
+                .css-l0lr17[data-hover] {
+                  -webkit-text-decoration: underline;
+                  text-decoration: underline;
+                }
+
+                .css-l0lr17:focus-visible,
+                .css-l0lr17[data-focus-visible] {
+                  box-shadow: var(--chakra-shadows-outline);
+                }
+              </style><a class="chakra-link css-l0lr17" href="dashboard.html">Dashboard</a><a
+                class="chakra-link css-l0lr17" href="markets.html">Markets</a><a class="chakra-link css-l0lr17"
+                href="faucet.html">Faucet</a><a class="chakra-link css-l0lr17" href="faq.html">FAQ</a>
+            </div>
+            <style data-emotion="css 19gw1sx">
+              .css-19gw1sx {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+              }
+
+              .css-19gw1sx>*:not(style)~*:not(style) {
+                margin-top: 0px;
+                -webkit-margin-end: 0px;
+                margin-inline-end: 0px;
+                margin-bottom: 0px;
+                -webkit-margin-start: 12px;
+                margin-inline-start: 12px;
+              }
+
+              @media screen and (min-width: 62em) {
+                .css-19gw1sx {
+                  display: none;
+                }
+              }
+            </style>
+            <div class="chakra-stack css-19gw1sx">
+              <style data-emotion="css johlez">
+                .css-johlez {
+                  display: -webkit-inline-box;
+                  display: -webkit-inline-flex;
+                  display: -ms-inline-flexbox;
+                  display: inline-flex;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  -ms-appearance: none;
+                  appearance: none;
+                  -webkit-align-items: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  -webkit-justify-content: center;
+                  justify-content: center;
+                  -webkit-user-select: none;
+                  -moz-user-select: none;
+                  -ms-user-select: none;
+                  user-select: none;
+                  position: relative;
+                  white-space: nowrap;
+                  vertical-align: middle;
+                  outline: 2px solid transparent;
+                  outline-offset: 2px;
+                  line-height: 1.2;
+                  font-weight: var(--chakra-fontWeights-semibold);
+                  transition-property: var(--chakra-transition-property-common);
+                  transition-duration: var(--chakra-transition-duration-normal);
+                  height: 32px;
+                  min-width: var(--chakra-sizes-8);
+                  font-size: var(--chakra-fontSizes-sm);
+                  -webkit-padding-start: var(--chakra-space-3);
+                  padding-inline-start: var(--chakra-space-3);
+                  -webkit-padding-end: var(--chakra-space-3);
+                  padding-inline-end: var(--chakra-space-3);
+                  background: linear-gradient(118.15deg,
+                      rgba(255, 255, 255, 0.04) 0%,
+                      rgba(255, 255, 255, 0.02) 100%);
+                  padding: var(--chakra-space-1);
+                  border-radius: 10px;
+                  z-index: var(--chakra-zIndices-popover);
+                  border-width: 1px;
+                }
+
+                .css-johlez:focus-visible,
+                .css-johlez[data-focus-visible] {
+                  box-shadow: var(--chakra-shadows-outline);
+                }
+
+                .css-johlez:disabled,
+                .css-johlez[disabled],
+                .css-johlez[aria-disabled="true"],
+                .css-johlez[data-disabled] {
+                  opacity: 0.4;
+                  cursor: not-allowed;
+                  box-shadow: var(--chakra-shadows-none);
+                }
+
+                .css-johlez:active,
+                .css-johlez[data-active] {
+                  background: var(--chakra-colors-gray-300);
+                }
+              </style><button type="button" class="chakra-button css-johlez" aria-label="Open Menu">
+                <style data-emotion="css 2ipw93">
+                  .css-2ipw93 {
+                    width: var(--chakra-sizes-6);
+                    height: var(--chakra-sizes-6);
+                    display: inline-block;
+                    line-height: 1em;
+                    -webkit-flex-shrink: 0;
+                    -ms-flex-negative: 0;
+                    flex-shrink: 0;
+                    color: rgba(255, 255, 255, 0.72);
+                    vertical-align: middle;
+                  }
+                </style><svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-2ipw93" aria-hidden="true">
+                  <path fill="currentColor"
+                    d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z">
+                  </path>
+                </svg>
+              </button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <style data-emotion="css 1q12cw5">
+      .css-1q12cw5 {
+        min-height: calc(100vh - 104px - 76px);
+        position: relative;
+      }
+    </style>
+    <div class="css-1q12cw5">
+      <div class="background">
+        <div class="lighthouseCard">
+          <div class="left">
+            <svg style="width: 226px; height: 226px; transform: rotate(-90deg)">
+              <circle opacity="0.4" cx="113" cy="113" fill="transparent" r="91" stroke="black" stroke-width="22">
+              </circle>
+              <circle cx="113" cy="113" fill="transparent" r="80.08" stroke="#AAA" stroke-width="1" opacity="0.12">
+              </circle>
+              <circle cx="113" cy="113" fill="transparent" r="80.08" stroke="url('#progressGradient')" stroke-width="1"
+                stroke-dasharray="569.9642739124371" stroke-dashoffset="537.4636711761418" stroke-linecap="round"
+                filter="url(#reflection)" class="animated" style="
+                    animation: 4s linear 0s infinite normal none running spinner;
+                    transform-origin: center center;
+                  "></circle>
+              <circle cx="113" cy="113" fill="transparent" r="101.92000000000002" stroke="#AAA" stroke-width="1"
+                opacity="0.12"></circle>
+              <circle cx="113" cy="113" fill="transparent" r="101.92000000000002" stroke="url('#progressGradient')"
+                stroke-width="1" stroke-dasharray="575.8866059666065" stroke-dashoffset="535.8561028675392"
+                stroke-linecap="round" filter="url(#reflection)" class="animated" style="
+                    animation: 4s linear 0s infinite normal none running spinner;
+                    transform-origin: center center;
+                  "></circle>
+              <circle cx="113" cy="113" fill="transparent" r="91" stroke="url('#progressGradient')" stroke-width="8"
+                stroke-dasharray="571.7698629533423" stroke-dashoffset="537.4636711761418" stroke-linecap="round"
+                class="animated" style="
+                    animation: 4s linear 0s infinite normal none running spinner;
+                    transform-origin: center center;
+                  "></circle>
+              <circle cx="113" cy="113" fill="transparent" r="91" stroke="url('#progressGradient')" stroke-width="8"
+                stroke-dasharray="571.7698629533423" stroke-dashoffset="537.4636711761418" stroke-linecap="round"
+                filter="url(#blur)" class="animated" opacity="0.4" style="
+                    animation: 4s linear 0s infinite normal none running spinner;
+                    transform-origin: center center;
+                  "></circle>
+              <defs>
+                <linearGradient id="progressGradient" gradientTransform="rotate(90)">
+                  <stop offset="0%" stop-color="#55df9c"></stop>
+                  <stop offset="100%" stop-color="#55df9c"></stop>
+                </linearGradient>
+                <filter id="blur">
+                  <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+                </filter>
+                <filter id="reflection">
+                  <feGaussianBlur stdDeviation="4"></feGaussianBlur>
+                  <feComposite operator="in" in="SourceGraphic"></feComposite>
+                </filter>
+              </defs>
+            </svg>
+          </div>
+
+          <div class="right">
+            <div class="rightheading">
+              <img src="lighthouse.svg" alt="">
+              <h2>&nbspLighthouse</h2>
+            </div>
+            <h1>Begin Now</h1>
+            <p style="margin-top: 0.5rem;margin-bottom: 1.5rem;">Initiate your journey by linking your wallet and
+              activating collateral. As you deposit funds, Lighthouse will guide your investment path.</p>
+            <span><button class="enableEthereumButton">Connect Wallet</button><button style="background: none; border: 2px solid #6454CB;">View
+                tutorial</button></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="bleft">
+          <h1>Supply Markets</h1>
+          <div class="content">
+            <div class="rownew"
+              style="height: 25px; font-family: 500;font-size: 14px;line-height: 16px; color: #ffffffa8">
+              <p>Asset</p>
+              <p style="margin-left: 5rem;">APY</p>
+              <p>Wallet</>
+              <p>Collateral</p>
+            </div>
+
+
+            <style>
+              .nohover:hover {
+                background-color: #bbbdff11;
+                outline: none;
+              }
+            </style>
+
+
+            <div class="row" data-popup-id="popup1">
+              <div class="blkname">
+                <img src="ETH.png" alt="">
+                <h2>fETH</h2>
+              </div>
+              <div class="per">
+                <h3>44.00%</h3>
+                <div class="logoper">
+                  <img src="some.png" alt="" class="some">
+                  <h4> 19.59% APY</h4>
+
+                </div>
+              </div>
+              <p>0 fETH</p>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+            
+            
+            <div class="row" data-popup-id="popup4">
+              <div class="blkname">
+                <img src="usdc.png" alt="">
+                <h2>fUSDC</h2>
+              </div>
+              <div class="per">
+                <h3>19.86%</h3>
+                <div class="logoper">
+                  <img src="some.png" alt="" class="some">
+                  <h4> 8.39% APY</h4>
+
+                </div>
+              </div>
+              <p>0 FUSDC</p>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <div class="row" data-popup-id="popup5">
+              <div class="blkname">
+                <img src="btc.png" alt="">
+                <h2>fBTC</h2>
+              </div>
+              <div class="per">
+                <h3>38.75%</h3>
+                <div class="logoper">
+                  <img src="some.png" alt="" class="some">
+                  <h4> 0.05% APY</h4>
+
+                </div>
+              </div>
+              <p>0 fBTC</p>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+
+          </div>
+        </div>
+        <div class="bright">
+          <h1>Borrow Markets</h1>
+          <div class="content">
+            <div class="rownew"
+              style="height: 25px; font-family: 500;font-size: 14px;line-height: 16px; color: #ffffffa8">
+              <p>Asset</p>
+              <p style="margin-left: 5rem;">APY</p>
+              <p>Wallet</p>
+              <p>Liquidity</p>
+            </div>
+
+            <div class="row" data-popup-id="popup1">
+              <div class="blkname">
+                <img src="ETH.png" alt="">
+                <h2>fETH</h2>
+              </div>
+              <div class="per">
+                <h3>39.00%</h3>
+                <div class="logoper">
+                  <img src="some.png" alt="" class="some">
+                  <h4> 19.59% APY</h4>
+
+                </div>
+              </div>
+              <p>0 fETH</p>
+              <p>$1M</p>
+            </div>
+            
+            
+            <div class="row" data-popup-id="popup4">
+              <div class="blkname">
+                <img src="usdc.png" alt="">
+                <h2>fUSDC</h2>
+              </div>
+              <div class="per">
+                <h3>19.86%</h3>
+                <div class="logoper">
+                  <img src="some.png" alt="" class="some">
+                  <h4> 8.39% APY</h4>
+
+                </div>
+              </div>
+              <p>0 FUSDC</p>
+              <P>$97K</P>
+            </div>
+            <div class="row" data-popup-id="popup5">
+              <div class="blkname">
+                <img src="btc.png" alt="">
+                <h2>fBTC</h2>
+              </div>
+              <div class="per">
+                <h3>43.75%</h3>
+                <div class="logoper">
+                  <img src="some.png" alt="" class="some">
+                  <h4> 0.05% APY</h4>
+
+                </div>
+              </div>
+              <p>0 fBTC</p>
+              <P>$1B</P>
+            </div>
+
+          </div>
+        </div>
+        <!-- Add this before or after your .show div -->
+        <div class="backdrop"></div>
+        <div class="show" id="popup1">
+          <div class="blknamenew" style="margin-bottom: 1rem;">
+            <span class="close-btn" id="closePopupBtn">&times;</span>
+            <img src="ETH.png" alt="">
+            <h2>fETH</h2>
+          </div>
+          <img src="ETH.png" alt="" style="height: 60px; width: 60px;margin-bottom: 1rem;margin-left: 10rem;">
+          <p style="text-align: center;margin-bottom: 1.5rem; border-bottom: 1px solid #ffffff15;padding-bottom: 1rem;">
+            To Supply or Repay fETH to the Pivex Protocol, you need to enable it first.</p>
+          <div style="margin-bottom: 1rem; ">
+            <h2 style="margin-bottom: 1.5rem; font-weight: 700;font-size: 16px; line-height: 24px;">Supply rates</h2>
+            <div class="logoper">
+              <div class="final" style="margin-bottom: 1.5rem;">
+                <img src="some.png" alt="" class="some" style="height: 18px; width: 18px;">
+                <h4>&nbspSupply APY
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0.05%
+                </h4>
+              </div>
+              <div class="final" style="margin-top: -20px;">
+                <img src="some.png" alt="" class="some" style="height: 18px; width: 18px;">
+                <h4>&nbspDistribution APY
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4.27%
+                </h4>
+              </div>
+            </div>
+            <button class="finalbutton">Connect Wallet</button>
+          </div>
+
+        </div>
+        
+        <div class="show" id="popup3">
+          <div class="blknamenew" style="margin-bottom: 1rem;">
+            <span class="close-btn" id="closePopupBtn">&times;</span>
+            <img src="miota.png" alt="">
+            <h2>fMOITA</h2>
+          </div>
+          <img src="miota.png" alt="" style="height: 60px; width: 60px;margin-bottom: 1rem;margin-left: 10rem;">
+          <p style="text-align: center;margin-bottom: 1.5rem; border-bottom: 1px solid #ffffff15;padding-bottom: 1rem;">
+            To Supply or Repay fMOITA to the Pivex Protocol, you need to enable it first.</p>
+          <div style="margin-bottom: 1rem; ">
+            <h2 style="margin-bottom: 1.5rem; font-weight: 700;font-size: 16px; line-height: 24px;">Supply rates</h2>
+            <div class="logoper">
+              <div class="final" style="margin-bottom: 1.5rem;">
+                <img src="some.png" alt="" class="some" style="height: 18px; width: 18px;">
+                <h4>&nbspSupply APY
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0.05%
+                </h4>
+              </div>
+              <div class="final" style="margin-top: -20px;">
+                <img src="some.png" alt="" class="some" style="height: 18px; width: 18px;">
+                <h4>&nbspDistribution APY
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4.27%
+                </h4>
+              </div>
+            </div>
+            <button class="finalbutton">Connect Wallet</button>
+          </div>
+
+        </div>
+        <div class="show" id="popup4">
+          <div class="blknamenew" style="margin-bottom: 1rem;">
+            <span class="close-btn" id="closePopupBtn">&times;</span>
+            <img src="usdc.png" alt="">
+            <h2>fUSDC</h2>
+          </div>
+          <img src="usdc.png" alt="" style="height: 60px; width: 60px;margin-bottom: 1rem;margin-left: 10rem;">
+          <p style="text-align: center;margin-bottom: 1.5rem; border-bottom: 1px solid #ffffff15;padding-bottom: 1rem;">
+            To Supply or Repay fUSDC to the Pivex Protocol, you need to enable it first.</p>
+          <div style="margin-bottom: 1rem; ">
+            <h2 style="margin-bottom: 1.5rem; font-weight: 700;font-size: 16px; line-height: 24px;">Supply rates</h2>
+            <div class="logoper">
+              <div class="final" style="margin-bottom: 1.5rem;">
+                <img src="some.png" alt="" class="some" style="height: 18px; width: 18px;">
+                <h4>&nbspSupply APY
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0.05%
+                </h4>
+              </div>
+              <div class="final" style="margin-top: -20px;">
+                <img src="some.png" alt="" class="some" style="height: 18px; width: 18px;">
+                <h4>&nbspDistribution APY
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4.27%
+                </h4>
+              </div>
+            </div>
+            <button class="finalbutton">Connect Wallet</button>
+          </div>
+
+        </div>
+        <div class="show" id="popup5">
+          <div class="blknamenew" style="margin-bottom: 1rem;">
+            <span class="close-btn" id="closePopupBtn">&times;</span>
+            <img src="btc.png" alt="">
+            <h2>fBTC</h2>
+          </div>
+          <img src="btc.png" alt="" style="height: 60px; width: 60px;margin-bottom: 1rem;margin-left: 10rem;">
+          <p style="text-align: center;margin-bottom: 1.5rem; border-bottom: 1px solid #ffffff15;padding-bottom: 1rem;">
+            To Supply or Repay fBTC to the Pivex Protocol, you need to enable it first.</p>
+          <div style="margin-bottom: 1rem; ">
+            <h2 style="margin-bottom: 1.5rem; font-weight: 700;font-size: 16px; line-height: 24px;">Supply rates</h2>
+            <div class="logoper">
+              <div class="final" style="margin-bottom: 1.5rem;">
+                <img src="some.png" alt="" class="some" style="height: 18px; width: 18px;">
+                <h4>&nbspSupply APY
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0.05%
+                </h4>
+              </div>
+              <div class="final" style="margin-top: -20px;">
+                <img src="some.png" alt="" class="some" style="height: 18px; width: 18px;">
+                <h4>&nbspDistribution APY
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4.27%
+                </h4>
+              </div>
+            </div>
+            <button class="finalbutton">Connect Wallet</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <style data-emotion="css 79elbk">
+      .css-79elbk {
+        position: relative;
+      }
+    </style>
+    <div class="css-79elbk">
+      <style data-emotion="css ba2jx8">
+        .css-ba2jx8 {
+          background-image: url("assets/noise-texture.png");
+          -webkit-background-size: contain;
+          background-size: contain;
           position: absolute;
           top: 0px;
           right: 0px;
           left: 0px;
           bottom: 0px;
+          -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
         }
       </style>
-      <div class="css-1138r3q">
-        <style data-emotion="css 1a3ecuv">
-          .css-1a3ecuv {
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            left: 0px;
+      <div class="css-ba2jx8"></div>
+      <div class="css-79elbk">
+        <style data-emotion="css zrio95">
+          .css-zrio95 {
+            z-index: 1;
+            width: 100%;
+            background: linear-gradient(118.15deg,
+                rgba(255, 255, 255, 0.04) 0%,
+                rgba(255, 255, 255, 0.02) 100%);
+            border-top: 1px solid #ffffff12;
+            position: relative;
+            -webkit-backdrop-filter: blur(16px);
+            backdrop-filter: blur(16px);
             bottom: 0px;
-            background: radial-gradient(
-                55.84% 44% at 50% 0%,
-                #081c49 0%,
-                #030a1a 100%
-              ),
-              #030a1a;
-          }
-        </style>
-        <div class="css-1a3ecuv"></div>
-        <style data-emotion="css 17b2ngz">
-          .css-17b2ngz {
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            left: 0px;
-            bottom: 0px;
-            background-image: url("assets/particles.png");
-          }
-        </style>
-        <div class="css-17b2ngz"></div>
-        <style data-emotion="css 1u6adc7">
-          .css-1u6adc7 {
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            left: 0px;
-            -webkit-background-size: cover;
-            background-size: cover;
-            max-width: 100vw;
-            height: 100vh;
-            background-image: url("assets/lighting.png");
-          }
-        </style>
-        <div class="css-1u6adc7"></div>
-      </div>
-      <style data-emotion="css ep7xq6">
-        .css-ep7xq6 {
-          z-index: 1;
-          position: relative;
-        }
-      </style>
-      <header class="css-ep7xq6">
-        <style data-emotion="css 1a0e5tu">
-          .css-1a0e5tu {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            height: 64px;
-            -webkit-align-items: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
+            margin-top: 0px;
           }
 
           @media screen and (min-width: 48em) {
-            .css-1a0e5tu {
-              height: 104px;
+            .css-zrio95 {
+              position: relative;
             }
           }
         </style>
-        <div class="css-1a0e5tu">
+        <footer class="css-zrio95">
           <style data-emotion="css 11vl7h3">
             .css-11vl7h3 {
               width: 100%;
@@ -1035,12 +1631,16 @@
             }
           </style>
           <div class="chakra-container css-11vl7h3">
-            <style data-emotion="css 1qtrwtv">
-              .css-1qtrwtv {
+            <style data-emotion="css 308usj">
+              .css-308usj {
                 display: -webkit-box;
                 display: -webkit-flex;
                 display: -ms-flexbox;
                 display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                gap: var(--chakra-space-6);
                 -webkit-align-items: center;
                 -webkit-box-align: center;
                 -ms-flex-align: center;
@@ -1048,825 +1648,22 @@
                 -webkit-box-pack: justify;
                 -webkit-justify-content: space-between;
                 justify-content: space-between;
-                padding-top: 0px;
-                padding-bottom: 0px;
+                padding-top: var(--chakra-space-5);
+                padding-bottom: var(--chakra-space-5);
               }
 
               @media screen and (min-width: 48em) {
-                .css-1qtrwtv {
-                  padding-top: var(--chakra-space-7);
-                  padding-bottom: var(--chakra-space-7);
-                }
-              }
-            </style>
-            <nav class="css-1qtrwtv">
-              <style data-emotion="css 4a6x12">
-                .css-4a6x12 {
-                  transition-property: var(--chakra-transition-property-common);
-                  transition-duration: var(--chakra-transition-duration-fast);
-                  transition-timing-function: var(
-                    --chakra-transition-easing-ease-out
-                  );
-                  cursor: pointer;
-                  -webkit-text-decoration: none;
-                  text-decoration: none;
-                  outline: 2px solid transparent;
-                  outline-offset: 2px;
-                  color: inherit;
-                }
-
-                .css-4a6x12:focus-visible,
-                .css-4a6x12[data-focus-visible] {
-                  box-shadow: var(--chakra-shadows-outline);
-                }
-
-                .css-4a6x12:hover,
-                .css-4a6x12[data-hover] {
-                  -webkit-text-decoration: none;
-                  text-decoration: none;
-                }</style
-              ><a class="chakra-link css-4a6x12" href="index.html">
-                <style data-emotion="css k008qs">
-                  .css-k008qs {
-                    display: -webkit-box;
-                    display: -webkit-flex;
-                    display: -ms-flexbox;
-                    display: flex;
-                  }
-                </style>
-                <div class="css-k008qs">
-                  <style data-emotion="css 1cldjo1">
-                    .css-1cldjo1 {
-                      width: 38px;
-                      height: 38px;
-                      z-index: var(--chakra-zIndices-popover);
-                    }</style
-                  > 
-                  <img
-                    src="assets/pivex-icon-white.png"
-                    class="chakra-image css-1cldjo1"
-                    style="
-                      animation: spinner 4s infinite;
-                      animation-direction: linear;
-                      animation-delay: 1.4s;
-                      transform-origin: center;
-                    "
-                  />
-                  <style data-emotion="css rbx6g1">
-                    .css-rbx6g1 {
-                      width: 94px;
-                      height: 38px;
-                      z-index: var(--chakra-zIndices-popover);
-                    }</style
-                  ><img
-                    src="logo.png"
-                    class="chakra-image css-rbx6g1"
-                  />
-                </div>
-              </a>
-              <style data-emotion="css 1jase7e">
-                .css-1jase7e {
-                  display: none;
-                  -webkit-align-items: center;
-                  -webkit-box-align: center;
-                  -ms-flex-align: center;
-                  align-items: center;
-                  -webkit-flex-direction: row;
-                  -ms-flex-direction: row;
-                  flex-direction: row;
-                }
-
-                .css-1jase7e > *:not(style) ~ *:not(style) {
-                  margin-top: 0px;
-                  -webkit-margin-end: 0px;
-                  margin-inline-end: 0px;
-                  margin-bottom: 0px;
-                  -webkit-margin-start: var(--chakra-space-4);
-                  margin-inline-start: var(--chakra-space-4);
-                }
-
-                @media screen and (min-width: 62em) {
-                  .css-1jase7e {
-                    display: -webkit-box;
-                    display: -webkit-flex;
-                    display: -ms-flexbox;
-                    display: flex;
-                  }
-                }
-              </style>
-              <div class="chakra-stack css-1jase7e">
-                <style data-emotion="css l0lr17">
-                  .css-l0lr17 {
-                    transition-property: var(
-                      --chakra-transition-property-common
-                    );
-                    transition-duration: var(--chakra-transition-duration-fast);
-                    transition-timing-function: var(
-                      --chakra-transition-easing-ease-out
-                    );
-                    cursor: pointer;
-                    -webkit-text-decoration: none;
-                    text-decoration: none;
-                    outline: 2px solid transparent;
-                    outline-offset: 2px;
-                    color: inherit;
-                    -webkit-padding-start: var(--chakra-space-6);
-                    padding-inline-start: var(--chakra-space-6);
-                    -webkit-padding-end: var(--chakra-space-6);
-                    padding-inline-end: var(--chakra-space-6);
-                    font-weight: 600;
-                  }
-
-                  .css-l0lr17:hover,
-                  .css-l0lr17[data-hover] {
-                    -webkit-text-decoration: underline;
-                    text-decoration: underline;
-                  }
-
-                  .css-l0lr17:focus-visible,
-                  .css-l0lr17[data-focus-visible] {
-                    box-shadow: var(--chakra-shadows-outline);
-                  }</style
-                ><a class="chakra-link css-l0lr17" href="dashboard.html"
-                  >Dashboard</a
-                ><a class="chakra-link css-l0lr17" href="markets.html"
-                  >Markets</a
-                ><a class="chakra-link css-l0lr17" href="faucet.html">Faucet</a
-                ><a
-                  target="_blank"
-                  class="chakra-link css-l0lr17"
-                  href="https://docs.Pivex.finance/"
-                  >Docs</a
-                ><a class="chakra-link css-l0lr17" href="faq.html">FAQ</a>
-              </div>
-              <style data-emotion="css 19gw1sx">
-                .css-19gw1sx {
-                  display: -webkit-box;
-                  display: -webkit-flex;
-                  display: -ms-flexbox;
-                  display: flex;
-                  -webkit-align-items: center;
-                  -webkit-box-align: center;
-                  -ms-flex-align: center;
-                  align-items: center;
-                  -webkit-flex-direction: row;
-                  -ms-flex-direction: row;
-                  flex-direction: row;
-                }
-
-                .css-19gw1sx > *:not(style) ~ *:not(style) {
-                  margin-top: 0px;
-                  -webkit-margin-end: 0px;
-                  margin-inline-end: 0px;
-                  margin-bottom: 0px;
-                  -webkit-margin-start: 12px;
-                  margin-inline-start: 12px;
-                }
-
-                @media screen and (min-width: 62em) {
-                  .css-19gw1sx {
-                    display: none;
-                  }
-                }
-              </style>
-              <div class="chakra-stack css-19gw1sx">
-                <style data-emotion="css johlez">
-                  .css-johlez {
-                    display: -webkit-inline-box;
-                    display: -webkit-inline-flex;
-                    display: -ms-inline-flexbox;
-                    display: inline-flex;
-                    -webkit-appearance: none;
-                    -moz-appearance: none;
-                    -ms-appearance: none;
-                    appearance: none;
-                    -webkit-align-items: center;
-                    -webkit-box-align: center;
-                    -ms-flex-align: center;
-                    align-items: center;
-                    -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                    -webkit-justify-content: center;
-                    justify-content: center;
-                    -webkit-user-select: none;
-                    -moz-user-select: none;
-                    -ms-user-select: none;
-                    user-select: none;
-                    position: relative;
-                    white-space: nowrap;
-                    vertical-align: middle;
-                    outline: 2px solid transparent;
-                    outline-offset: 2px;
-                    line-height: 1.2;
-                    font-weight: var(--chakra-fontWeights-semibold);
-                    transition-property: var(
-                      --chakra-transition-property-common
-                    );
-                    transition-duration: var(
-                      --chakra-transition-duration-normal
-                    );
-                    height: 32px;
-                    min-width: var(--chakra-sizes-8);
-                    font-size: var(--chakra-fontSizes-sm);
-                    -webkit-padding-start: var(--chakra-space-3);
-                    padding-inline-start: var(--chakra-space-3);
-                    -webkit-padding-end: var(--chakra-space-3);
-                    padding-inline-end: var(--chakra-space-3);
-                    background: linear-gradient(
-                      118.15deg,
-                      rgba(255, 255, 255, 0.04) 0%,
-                      rgba(255, 255, 255, 0.02) 100%
-                    );
-                    padding: var(--chakra-space-1);
-                    border-radius: 10px;
-                    z-index: var(--chakra-zIndices-popover);
-                    border-width: 1px;
-                  }
-
-                  .css-johlez:focus-visible,
-                  .css-johlez[data-focus-visible] {
-                    box-shadow: var(--chakra-shadows-outline);
-                  }
-
-                  .css-johlez:disabled,
-                  .css-johlez[disabled],
-                  .css-johlez[aria-disabled="true"],
-                  .css-johlez[data-disabled] {
-                    opacity: 0.4;
-                    cursor: not-allowed;
-                    box-shadow: var(--chakra-shadows-none);
-                  }
-
-                  .css-johlez:active,
-                  .css-johlez[data-active] {
-                    background: var(--chakra-colors-gray-300);
-                  }</style
-                ><button
-                  type="button"
-                  class="chakra-button css-johlez"
-                  aria-label="Open Menu"
-                >
-                  <style data-emotion="css 2ipw93">
-                    .css-2ipw93 {
-                      width: var(--chakra-sizes-6);
-                      height: var(--chakra-sizes-6);
-                      display: inline-block;
-                      line-height: 1em;
-                      -webkit-flex-shrink: 0;
-                      -ms-flex-negative: 0;
-                      flex-shrink: 0;
-                      color: rgba(255, 255, 255, 0.72);
-                      vertical-align: middle;
-                    }</style
-                  ><svg
-                    viewBox="0 0 24 24"
-                    focusable="false"
-                    class="chakra-icon css-2ipw93"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </header>
-      <style data-emotion="css 1q12cw5">
-        .css-1q12cw5 {
-          min-height: calc(100vh - 104px - 76px);
-          position: relative;
-        }
-      </style>
-      <div class="css-1q12cw5">
-        <div class="background">
-          <div class="lighthouseCard">
-            <div class="left">
-              <svg style="width: 226px; height: 226px; transform: rotate(-90deg)">
-                <circle
-                  opacity="0.4"
-                  cx="113"
-                  cy="113"
-                  fill="transparent"
-                  r="91"
-                  stroke="black"
-                  stroke-width="22"
-                ></circle>
-                <circle
-                  cx="113"
-                  cy="113"
-                  fill="transparent"
-                  r="80.08"
-                  stroke="#AAA"
-                  stroke-width="1"
-                  opacity="0.12"
-                ></circle>
-                <circle
-                  cx="113"
-                  cy="113"
-                  fill="transparent"
-                  r="80.08"
-                  stroke="url('#progressGradient')"
-                  stroke-width="1"
-                  stroke-dasharray="569.9642739124371"
-                  stroke-dashoffset="537.4636711761418"
-                  stroke-linecap="round"
-                  filter="url(#reflection)"
-                  class="animated"
-                  style="
-                    animation: 4s linear 0s infinite normal none running spinner;
-                    transform-origin: center center;
-                  "
-                ></circle>
-                <circle
-                  cx="113"
-                  cy="113"
-                  fill="transparent"
-                  r="101.92000000000002"
-                  stroke="#AAA"
-                  stroke-width="1"
-                  opacity="0.12"
-                ></circle>
-                <circle
-                  cx="113"
-                  cy="113"
-                  fill="transparent"
-                  r="101.92000000000002"
-                  stroke="url('#progressGradient')"
-                  stroke-width="1"
-                  stroke-dasharray="575.8866059666065"
-                  stroke-dashoffset="535.8561028675392"
-                  stroke-linecap="round"
-                  filter="url(#reflection)"
-                  class="animated"
-                  style="
-                    animation: 4s linear 0s infinite normal none running spinner;
-                    transform-origin: center center;
-                  "
-                ></circle>
-                <circle
-                  cx="113"
-                  cy="113"
-                  fill="transparent"
-                  r="91"
-                  stroke="url('#progressGradient')"
-                  stroke-width="8"
-                  stroke-dasharray="571.7698629533423"
-                  stroke-dashoffset="537.4636711761418"
-                  stroke-linecap="round"
-                  class="animated"
-                  style="
-                    animation: 4s linear 0s infinite normal none running spinner;
-                    transform-origin: center center;
-                  "
-                ></circle>
-                <circle
-                  cx="113"
-                  cy="113"
-                  fill="transparent"
-                  r="91"
-                  stroke="url('#progressGradient')"
-                  stroke-width="8"
-                  stroke-dasharray="571.7698629533423"
-                  stroke-dashoffset="537.4636711761418"
-                  stroke-linecap="round"
-                  filter="url(#blur)"
-                  class="animated"
-                  opacity="0.4"
-                  style="
-                    animation: 4s linear 0s infinite normal none running spinner;
-                    transform-origin: center center;
-                  "
-                ></circle>
-                <defs>
-                  <linearGradient
-                    id="progressGradient"
-                    gradientTransform="rotate(90)"
-                  >
-                    <stop offset="0%" stop-color="#55df9c"></stop>
-                    <stop offset="100%" stop-color="#55df9c"></stop>
-                  </linearGradient>
-                  <filter id="blur">
-                    <feGaussianBlur stdDeviation="3"></feGaussianBlur>
-                  </filter>
-                  <filter id="reflection">
-                    <feGaussianBlur stdDeviation="4"></feGaussianBlur>
-                    <feComposite operator="in" in="SourceGraphic"></feComposite>
-                  </filter>
-                </defs>
-              </svg>
-            </div>
-
-            <div class="right">
-                <div class="rightheading">
-                  <img src="lighthouse.svg" alt="">
-                  <h2>&nbspLighthouse</h2>
-                </div>
-                <h1>Begin Now</h1>
-                <p style="margin-top: 0.5rem;margin-bottom: 1.5rem;">Initiate your journey by linking your wallet and activating collateral. As you deposit funds, Lighthouse will guide your investment path.</p>
-                <span><button>Connect Wallet</button><button style="background: none; border: 2px solid #6454CB;">View tutorial</button></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="bottom">
-          <div class="bleft">
-            <h1>Supply Markets</h1>
-            <div class="content">
-              <div class="rownew" style="height: 25px; font-family: 500;font-size: 14px;line-height: 16px; color: #ffffffa8">
-                <p>Asset</p>
-                <p style="margin-left: 5rem;">APY</p>
-                <p>Wallet</>
-                <p>Collateral</p>
-              </div>
-
-
-              <style>
-                .nohover:hover{
-                  background-color: #bbbdff11;
-                  outline: none;
-                }
-              </style>
-
-              
-              <div class="row" data-popup-id="popup1">
-                <div class="blkname">
-                  <img src="ETH.png" alt="">
-                  <h2>fETH</h2>
-                </div>
-                <div class="per">
-                  <h3 >8.72%</h3>
-                  <div class="logoper">
-                    <img src="some.png" alt="" class="some">
-                    <h4> 19.59% APY</h4>
-                    
-                  </div>
-                </div>
-                <p>0 fETH</p>
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider round"></span>
-                </label>
-              </div>
-              <div class="row" data-popup-id="popup2">
-                <div class="blkname">
-                  <img src="smr.png" alt="">
-                  <h2>SMR</h2>
-                </div>
-                <div class="per">
-                  <h3 >545.14%</h3>
-                  <div class="logoper">
-                    <img src="some.png" alt="" class="some">
-                    <h4> 22.14% APY</h4>
-                  </div>
-                </div>
-                <p>0 SMR</p>
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider round"></span>
-                </label>
-              </div>
-              <div class="row" data-popup-id="popup3">
-                <div class="blkname">
-                  <img src="miota.png" alt="">
-                  <h2>fMOITA</h2>
-                </div>
-                <div class="per">
-                  <h3 >1.6.64%</h3>
-                  <div class="logoper">
-                    <img src="some.png" alt="" class="some">
-                    <h4> 11.30% APY</h4>
-                  </div>
-                </div>
-                <p>0 fMOITA</p>
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider round"></span>
-                </label>
-              </div>
-              <div class="row" data-popup-id="popup4">
-                <div class="blkname">
-                  <img src="usdc.png" alt="">
-                  <h2>fUSDC</h2>
-                </div>
-                <div class="per">
-                  <h3 >19.86%</h3>
-                  <div class="logoper">
-                    <img src="some.png" alt="" class="some">
-                    <h4> 8.39% APY</h4>
-                    
-                  </div>
-                </div>
-                <p>0 FUSDC</p>
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider round"></span>
-                </label>
-              </div>
-              <div class="row" data-popup-id="popup5">
-                <div class="blkname">
-                  <img src="btc.png" alt="">
-                  <h2>fBTC</h2>
-                </div>
-                <div class="per">
-                  <h3 >0.00%</h3>
-                  <div class="logoper">
-                    <img src="some.png" alt="" class="some">
-                    <h4> 0.05% APY</h4>
-                    
-                  </div>
-                </div>
-                <p>0 fBTC</p>
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider round"></span>
-                </label>
-              </div>
-              
-            </div>
-          </div>
-          <div class="bright">
-            <h1>Borrow Markets</h1>
-            <div class="content">
-              <div class="rownew" style="height: 25px; font-family: 500;font-size: 14px;line-height: 16px; color: #ffffffa8">
-                <p>Asset</p>
-                <p style="margin-left: 5rem;">APY</p>
-                <p>Wallet</p>
-                <p>Liquidity</p>
-              </div>
-              
-              <div class="row" data-popup-id="popup1">
-                <div class="blkname">
-                  <img src="ETH.png" alt="">
-                  <h2>fETH</h2>
-                </div>
-                <div class="per">
-                  <h3 >8.72%</h3>
-                  <div class="logoper">
-                    <img src="some.png" alt="" class="some">
-                    <h4> 19.59% APY</h4>
-                    
-                  </div>
-                </div>
-                <p>0 fETH</p>
-                <p>$1M</p>
-              </div>
-              <div class="row" data-popup-id="popup2">
-                <div class="blkname">
-                  <img src="smr.png" alt="">
-                  <h2>SMR</h2>
-                </div>
-                <div class="per">
-                  <h3 >545.14%</h3>
-                  <div class="logoper">
-                    <img src="some.png" alt="" class="some">
-                    <h4> 22.14% APY</h4>
-                  </div>
-                </div>
-                <p>0 SMR</p>
-                <P>$17K</P>
-              </div>
-              <div class="row" data-popup-id="popup3">
-                <div class="blkname">
-                  <img src="miota.png" alt="">
-                  <h2>fMOITA</h2>
-                </div>
-                <div class="per">
-                  <h3 >1.6.64%</h3>
-                  <div class="logoper">
-                    <img src="some.png" alt="" class="some">
-                    <h4> 11.30% APY</h4>
-                  </div>
-                </div>
-                <p>0 fMOITA</p>
-                <P>$806K</P>
-              </div>
-              <div class="row" data-popup-id="popup4">
-                <div class="blkname">
-                  <img src="usdc.png" alt="">
-                  <h2>fUSDC</h2>
-                </div>
-                <div class="per">
-                  <h3 >19.86%</h3>
-                  <div class="logoper">
-                    <img src="some.png" alt="" class="some">
-                    <h4> 8.39% APY</h4>
-                    
-                  </div>
-                </div>
-                <p>0 FUSDC</p>
-                <P>$97K</P>
-              </div>
-              <div class="row" data-popup-id="popup5">
-                <div class="blkname">
-                  <img src="btc.png" alt="">
-                  <h2>fBTC</h2>
-                </div>
-                <div class="per">
-                  <h3 >0.00%</h3>
-                  <div class="logoper">
-                    <img src="some.png" alt="" class="some">
-                    <h4> 0.05% APY</h4>
-                    
-                  </div>
-                </div>
-                <p>0 fBTC</p>
-                <P>$1B</P>
-              </div>
-              
-            </div>
-          </div>
-           <!-- Add this before or after your .show div -->
-          <div class="backdrop"></div>
-          <div class="show" id="popup1">
-            <div class="blknamenew" style="margin-bottom: 1rem;">
-              <span class="close-btn" id="closePopupBtn">&times;</span>
-              <img src="ETH.png" alt="" >
-              <h2>fETH</h2>
-            </div>
-            <img src="ETH.png" alt="" style="height: 60px; width: 60px;margin-bottom: 1rem;margin-left: 10rem;">
-            <p style="text-align: center;margin-bottom: 1.5rem; border-bottom: 1px solid #ffffff15;padding-bottom: 1rem;">To Supply or Repay fETH to the Pivex Protocol, you need to enable it first.</p>
-            <div style="margin-bottom: 1rem; " >
-            <h2 style="margin-bottom: 1.5rem; font-weight: 700;font-size: 16px; line-height: 24px;" >Supply rates</h2>
-            <div class="logoper">
-                <div class="final" style="margin-bottom: 1.5rem;">
-                  <img src="some.png" alt="" class="some" style="height: 18px; width: 18px;">
-                  <h4>&nbspSupply APY &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0.05% </h4>
-                </div>
-                <div class="final" style="margin-top: -20px;">
-                  <img src="some.png" alt="" class="some" style="height: 18px; width: 18px;">
-              <h4>&nbspDistribution APY &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4.27%</h4>
-                </div>
-               </div>
-            <button class="finalbutton">Connect Wallet</button>
-          </div>
-          
-          </div>
-          <div class="show" id="popup2">
-            <div class="blknamenew" style="margin-bottom: 1rem;">
-              <span class="close-btn" id="closePopupBtn">&times;</span>
-              <img src="smr.png" alt="" >
-              <h2>SMR</h2>
-            </div>
-            <img src="smr.png" alt="" style="height: 60px; width: 60px;margin-bottom: 1rem;margin-left: 10rem;">
-            <p style="text-align: center;margin-bottom: 1.5rem; border-bottom: 1px solid #ffffff15;padding-bottom: 1rem;">To Supply or Repay SMR to the Pivex Protocol, you need to enable it first.</p>
-            <div style="margin-bottom: 1rem; " >
-            <h2 style="margin-bottom: 1.5rem; font-weight: 700;font-size: 16px; line-height: 24px;" >Supply rates</h2>
-            <div class="logoper">
-                <div class="final" style="margin-bottom: 1.5rem;">
-                  <img src="some.png" alt="" class="some" style="height: 18px; width: 18px;">
-                  <h4>&nbspSupply APY &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0.05% </h4>
-                </div>
-                <div class="final" style="margin-top: -20px;">
-                  <img src="some.png" alt="" class="some" style="height: 18px; width: 18px;">
-              <h4>&nbspDistribution APY &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4.27%</h4>
-                </div>
-               </div>
-            <button class="finalbutton">Connect Wallet</button>
-          </div>
-          
-          </div>
-          <div class="show" id="popup3">
-            <div class="blknamenew" style="margin-bottom: 1rem;">
-              <span class="close-btn" id="closePopupBtn">&times;</span>
-              <img src="miota.png" alt="" >
-              <h2>fMOITA</h2>
-            </div>
-            <img src="miota.png" alt="" style="height: 60px; width: 60px;margin-bottom: 1rem;margin-left: 10rem;">
-            <p style="text-align: center;margin-bottom: 1.5rem; border-bottom: 1px solid #ffffff15;padding-bottom: 1rem;">To Supply or Repay fMOITA to the Pivex Protocol, you need to enable it first.</p>
-            <div style="margin-bottom: 1rem; " >
-            <h2 style="margin-bottom: 1.5rem; font-weight: 700;font-size: 16px; line-height: 24px;" >Supply rates</h2>
-            <div class="logoper">
-                <div class="final" style="margin-bottom: 1.5rem;">
-                  <img src="some.png" alt="" class="some" style="height: 18px; width: 18px;">
-                  <h4>&nbspSupply APY &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0.05% </h4>
-                </div>
-                <div class="final" style="margin-top: -20px;">
-                  <img src="some.png" alt="" class="some" style="height: 18px; width: 18px;">
-              <h4>&nbspDistribution APY &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4.27%</h4>
-                </div>
-               </div>
-            <button class="finalbutton">Connect Wallet</button>
-          </div>
-          
-          </div>
-          <div class="show" id="popup4">
-            <div class="blknamenew" style="margin-bottom: 1rem;">
-              <span class="close-btn" id="closePopupBtn">&times;</span>
-              <img src="usdc.png" alt="" >
-              <h2>fUSDC</h2>
-            </div>
-            <img src="usdc.png" alt="" style="height: 60px; width: 60px;margin-bottom: 1rem;margin-left: 10rem;">
-            <p style="text-align: center;margin-bottom: 1.5rem; border-bottom: 1px solid #ffffff15;padding-bottom: 1rem;">To Supply or Repay fUSDC to the Pivex Protocol, you need to enable it first.</p>
-            <div style="margin-bottom: 1rem; " >
-            <h2 style="margin-bottom: 1.5rem; font-weight: 700;font-size: 16px; line-height: 24px;" >Supply rates</h2>
-            <div class="logoper">
-                <div class="final" style="margin-bottom: 1.5rem;">
-                  <img src="some.png" alt="" class="some" style="height: 18px; width: 18px;">
-                  <h4>&nbspSupply APY &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0.05% </h4>
-                </div>
-                <div class="final" style="margin-top: -20px;">
-                  <img src="some.png" alt="" class="some" style="height: 18px; width: 18px;">
-              <h4>&nbspDistribution APY &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4.27%</h4>
-                </div>
-               </div>
-            <button class="finalbutton">Connect Wallet</button>
-          </div>
-          
-          </div>
-          <div class="show" id="popup5">
-            <div class="blknamenew" style="margin-bottom: 1rem;">
-              <span class="close-btn" id="closePopupBtn">&times;</span>
-              <img src="btc.png" alt="" >
-              <h2>fBTC</h2>
-            </div>
-            <img src="btc.png" alt="" style="height: 60px; width: 60px;margin-bottom: 1rem;margin-left: 10rem;">
-            <p style="text-align: center;margin-bottom: 1.5rem; border-bottom: 1px solid #ffffff15;padding-bottom: 1rem;">To Supply or Repay fBTC to the Pivex Protocol, you need to enable it first.</p>
-            <div style="margin-bottom: 1rem; " >
-            <h2 style="margin-bottom: 1.5rem; font-weight: 700;font-size: 16px; line-height: 24px;" >Supply rates</h2>
-            <div class="logoper">
-                <div class="final" style="margin-bottom: 1.5rem;">
-                  <img src="some.png" alt="" class="some" style="height: 18px; width: 18px;">
-                  <h4>&nbspSupply APY &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0.05% </h4>
-                </div>
-                <div class="final" style="margin-top: -20px;">
-                  <img src="some.png" alt="" class="some" style="height: 18px; width: 18px;">
-              <h4>&nbspDistribution APY &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4.27%</h4>
-                </div>
-               </div>
-            <button class="finalbutton">Connect Wallet</button>
-          </div>
-          
-          </div>
-        </div>
-      </div>
-      <style data-emotion="css 79elbk">
-        .css-79elbk {
-          position: relative;
-        }
-
-      </style>
-      <div class="css-79elbk">
-        <style data-emotion="css ba2jx8">
-          .css-ba2jx8 {
-            background-image: url("assets/noise-texture.png");
-            -webkit-background-size: contain;
-            background-size: contain;
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            left: 0px;
-            bottom: 0px;
-            -webkit-backdrop-filter: blur(16px);
-            backdrop-filter: blur(16px);
-          }
-        </style>
-        <div class="css-ba2jx8"></div>
-        <div class="css-79elbk">
-          <style data-emotion="css zrio95">
-            .css-zrio95 {
-              z-index: 1;
-              width: 100%;
-              background: linear-gradient(
-                118.15deg,
-                rgba(255, 255, 255, 0.04) 0%,
-                rgba(255, 255, 255, 0.02) 100%
-              );
-              border-top: 1px solid #ffffff12;
-              position: relative;
-              -webkit-backdrop-filter: blur(16px);
-              backdrop-filter: blur(16px);
-              bottom: 0px;
-              margin-top: 0px;
-            }
-
-            @media screen and (min-width: 48em) {
-              .css-zrio95 {
-                position: relative;
-              }
-            }
-          </style>
-          <footer class="css-zrio95">
-            <style data-emotion="css 11vl7h3">
-              .css-11vl7h3 {
-                width: 100%;
-                -webkit-margin-start: auto;
-                margin-inline-start: auto;
-                -webkit-margin-end: auto;
-                margin-inline-end: auto;
-                -webkit-padding-start: var(--chakra-space-4);
-                padding-inline-start: var(--chakra-space-4);
-                -webkit-padding-end: var(--chakra-space-4);
-                padding-inline-end: var(--chakra-space-4);
-                max-width: var(--chakra-sizes-container-xl);
-              }
-            </style>
-            <div class="chakra-container css-11vl7h3">
-              <style data-emotion="css 308usj">
                 .css-308usj {
+                  -webkit-flex-direction: row;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                  gap: 0px;
+                }
+              }
+            </style>
+            <div class="css-308usj">
+              <style data-emotion="css v9n9j7">
+                .css-v9n9j7 {
                   display: -webkit-box;
                   display: -webkit-flex;
                   display: -ms-flexbox;
@@ -1874,34 +1671,73 @@
                   -webkit-flex-direction: column;
                   -ms-flex-direction: column;
                   flex-direction: column;
-                  gap: var(--chakra-space-6);
                   -webkit-align-items: center;
                   -webkit-box-align: center;
                   -ms-flex-align: center;
                   align-items: center;
-                  -webkit-box-pack: justify;
-                  -webkit-justify-content: space-between;
-                  justify-content: space-between;
-                  padding-top: var(--chakra-space-5);
-                  padding-bottom: var(--chakra-space-5);
                 }
 
                 @media screen and (min-width: 48em) {
-                  .css-308usj {
+                  .css-v9n9j7 {
                     -webkit-flex-direction: row;
                     -ms-flex-direction: row;
                     flex-direction: row;
-                    gap: 0px;
                   }
                 }
               </style>
-              <div class="css-308usj">
-                <style data-emotion="css v9n9j7">
-                  .css-v9n9j7 {
+              <nav class="css-v9n9j7">
+                <style data-emotion="css 1xj2o1i">
+                  .css-1xj2o1i {
+                    transition-property: var(--chakra-transition-property-common);
+                    transition-duration: var(--chakra-transition-duration-fast);
+                    transition-timing-function: var(--chakra-transition-easing-ease-out);
+                    cursor: pointer;
+                    -webkit-text-decoration: none;
+                    text-decoration: none;
+                    outline: 2px solid transparent;
+                    outline-offset: 2px;
+                    color: inherit;
+                    margin-right: 0px;
+                    margin-bottom: var(--chakra-space-6);
+                  }
+
+                  .css-1xj2o1i:focus-visible,
+                  .css-1xj2o1i[data-focus-visible] {
+                    box-shadow: var(--chakra-shadows-outline);
+                  }
+
+                  .css-1xj2o1i:hover,
+                  .css-1xj2o1i[data-hover] {
+                    -webkit-text-decoration: none;
+                    text-decoration: none;
+                  }
+
+                  @media screen and (min-width: 48em) {
+                    .css-1xj2o1i {
+                      margin-right: var(--chakra-space-10);
+                      margin-bottom: 0px;
+                    }
+                  }
+                </style><a class="chakra-link css-1xj2o1i" href="index.html">
+                  <style data-emotion="css v67zxb">
+                    .css-v67zxb {
+                      width: var(--chakra-sizes-8);
+                      height: var(--chakra-sizes-8);
+                    }
+                  </style><img src="assets/replace_logo.png" class="replace-logo chakra-image css-v67zxb" style="
+                        animation: spinner 4s infinite;
+                        animation-direction: linear;
+                        animation-delay: 1.4s;
+                        transform-origin: center;
+                      " />
+                </a>
+                <style data-emotion="css m3iyma">
+                  .css-m3iyma {
                     display: -webkit-box;
                     display: -webkit-flex;
                     display: -ms-flexbox;
                     display: flex;
+                    gap: var(--chakra-space-4);
                     -webkit-flex-direction: column;
                     -ms-flex-direction: column;
                     flex-direction: column;
@@ -1912,242 +1748,190 @@
                   }
 
                   @media screen and (min-width: 48em) {
-                    .css-v9n9j7 {
+                    .css-m3iyma {
+                      gap: var(--chakra-space-12);
+                      padding-left: var(--chakra-space-4);
                       -webkit-flex-direction: row;
                       -ms-flex-direction: row;
                       flex-direction: row;
                     }
                   }
                 </style>
-                <nav class="css-v9n9j7">
-                  <style data-emotion="css 1xj2o1i">
-                    .css-1xj2o1i {
-                      transition-property: var(
-                        --chakra-transition-property-common
-                      );
-                      transition-duration: var(
-                        --chakra-transition-duration-fast
-                      );
-                      transition-timing-function: var(
-                        --chakra-transition-easing-ease-out
-                      );
+                <div class="css-m3iyma">
+                  <style data-emotion="css 1epfi38">
+                    .css-1epfi38 {
+                      transition-property: var(--chakra-transition-property-common);
+                      transition-duration: var(--chakra-transition-duration-fast);
+                      transition-timing-function: var(--chakra-transition-easing-ease-out);
                       cursor: pointer;
                       -webkit-text-decoration: none;
                       text-decoration: none;
                       outline: 2px solid transparent;
                       outline-offset: 2px;
-                      color: inherit;
-                      margin-right: 0px;
-                      margin-bottom: var(--chakra-space-6);
+                      font-size: var(--chakra-fontSizes-sm);
+                      color: var(--chakra-colors-text-secondary);
                     }
 
-                    .css-1xj2o1i:focus-visible,
-                    .css-1xj2o1i[data-focus-visible] {
+                    .css-1epfi38:hover,
+                    .css-1epfi38[data-hover] {
+                      -webkit-text-decoration: underline;
+                      text-decoration: underline;
+                    }
+
+                    .css-1epfi38:focus-visible,
+                    .css-1epfi38[data-focus-visible] {
                       box-shadow: var(--chakra-shadows-outline);
                     }
+                  </style><a class="chakra-link css-1epfi38" href="markets.html">Markets</a><a
+                    class="chakra-link css-1epfi38" href="faucet.html">Faucet</a><a class="chakra-link css-1epfi38" href="faq.html">FAQ</a>
+                </div>
+              </nav>
+              <style data-emotion="css 79cy1h">
+                .css-79cy1h {
+                  width: var(--chakra-sizes-full);
+                  height: 1px;
+                  background: var(--chakra-colors-stroke-divider);
+                }
 
-                    .css-1xj2o1i:hover,
-                    .css-1xj2o1i[data-hover] {
-                      -webkit-text-decoration: none;
-                      text-decoration: none;
-                    }
-
-                    @media screen and (min-width: 48em) {
-                      .css-1xj2o1i {
-                        margin-right: var(--chakra-space-10);
-                        margin-bottom: 0px;
-                      }
-                    }</style
-                  ><a class="chakra-link css-1xj2o1i" href="index.html">
-                    <style data-emotion="css v67zxb">
-                      .css-v67zxb {
-                        width: var(--chakra-sizes-8);
-                        height: var(--chakra-sizes-8);
-                      }</style
-                    ><img
-                      src="assets/pivex-icon-white.png"
-                      class="chakra-image css-v67zxb"
-                      style="
-                        animation: spinner 4s infinite;
-                        animation-direction: linear;
-                        animation-delay: 1.4s;
-                        transform-origin: center;
-                      "
-                    />
-                  </a>
-                  <style data-emotion="css m3iyma">
-                    .css-m3iyma {
-                      display: -webkit-box;
-                      display: -webkit-flex;
-                      display: -ms-flexbox;
-                      display: flex;
-                      gap: var(--chakra-space-4);
-                      -webkit-flex-direction: column;
-                      -ms-flex-direction: column;
-                      flex-direction: column;
-                      -webkit-align-items: center;
-                      -webkit-box-align: center;
-                      -ms-flex-align: center;
-                      align-items: center;
-                    }
-
-                    @media screen and (min-width: 48em) {
-                      .css-m3iyma {
-                        gap: var(--chakra-space-12);
-                        padding-left: var(--chakra-space-4);
-                        -webkit-flex-direction: row;
-                        -ms-flex-direction: row;
-                        flex-direction: row;
-                      }
-                    }
-                  </style>
-                  <div class="css-m3iyma">
-                    <style data-emotion="css 1epfi38">
-                      .css-1epfi38 {
-                        transition-property: var(
-                          --chakra-transition-property-common
-                        );
-                        transition-duration: var(
-                          --chakra-transition-duration-fast
-                        );
-                        transition-timing-function: var(
-                          --chakra-transition-easing-ease-out
-                        );
-                        cursor: pointer;
-                        -webkit-text-decoration: none;
-                        text-decoration: none;
-                        outline: 2px solid transparent;
-                        outline-offset: 2px;
-                        font-size: var(--chakra-fontSizes-sm);
-                        color: var(--chakra-colors-text-secondary);
-                      }
-
-                      .css-1epfi38:hover,
-                      .css-1epfi38[data-hover] {
-                        -webkit-text-decoration: underline;
-                        text-decoration: underline;
-                      }
-
-                      .css-1epfi38:focus-visible,
-                      .css-1epfi38[data-focus-visible] {
-                        box-shadow: var(--chakra-shadows-outline);
-                      }</style
-                    ><a class="chakra-link css-1epfi38" href="markets.html"
-                      >Markets</a
-                    ><a class="chakra-link css-1epfi38" href="faucet.html"
-                      >Faucet</a
-                    ><a
-                      target="_blank"
-                      class="chakra-link css-1epfi38"
-                      href="https://docs.Pivex.finance/"
-                      >Docs</a
-                    ><a class="chakra-link css-1epfi38" href="terms.html"
-                      >Terms of Service</a
-                    ><a class="chakra-link css-1epfi38" href="faq.html">FAQ</a>
-                  </div>
-                </nav>
-                <style data-emotion="css 79cy1h">
+                @media screen and (min-width: 48em) {
                   .css-79cy1h {
-                    width: var(--chakra-sizes-full);
-                    height: 1px;
-                    background: var(--chakra-colors-stroke-divider);
+                    display: none;
                   }
+                }
+              </style>
+              <div class="css-79cy1h"></div>
+              <style data-emotion="css 15vbgl6">
+                .css-15vbgl6 {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-align-items: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-flex-direction: row;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                }
 
-                  @media screen and (min-width: 48em) {
-                    .css-79cy1h {
-                      display: none;
+                .css-15vbgl6>*:not(style)~*:not(style) {
+                  margin-top: 0px;
+                  -webkit-margin-end: 0px;
+                  margin-inline-end: 0px;
+                  margin-bottom: 0px;
+                  -webkit-margin-start: var(--chakra-space-4);
+                  margin-inline-start: var(--chakra-space-4);
+                }
+
+                @media screen and (min-width: 48em) {
+                  .css-15vbgl6>*:not(style)~*:not(style) {
+                    -webkit-margin-start: var(--chakra-space-6);
+                    margin-inline-start: var(--chakra-space-6);
+                  }
+                }
+              </style>
+              <div class="chakra-stack css-15vbgl6">
+                <a href="https://discord.gg/kfyNmmbvhJ" target="_blank" rel="noreferrer">
+                  <style data-emotion="css 1o4son9">
+                    .css-1o4son9 {
+                      width: var(--chakra-sizes-5);
+                      height: var(--chakra-sizes-5);
+                      display: inline-block;
+                      line-height: 1em;
+                      -webkit-flex-shrink: 0;
+                      -ms-flex-negative: 0;
+                      flex-shrink: 0;
+                      color: var(--chakra-colors-text-secondary);
+                      margin-top: var(--chakra-space-2);
                     }
-                  }
-                </style>
-                <div class="css-79cy1h"></div>
-                <style data-emotion="css 15vbgl6">
-                  .css-15vbgl6 {
-                    display: -webkit-box;
-                    display: -webkit-flex;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-align-items: center;
-                    -webkit-box-align: center;
-                    -ms-flex-align: center;
-                    align-items: center;
-                    -webkit-flex-direction: row;
-                    -ms-flex-direction: row;
-                    flex-direction: row;
-                  }
-
-                  .css-15vbgl6 > *:not(style) ~ *:not(style) {
-                    margin-top: 0px;
-                    -webkit-margin-end: 0px;
-                    margin-inline-end: 0px;
-                    margin-bottom: 0px;
-                    -webkit-margin-start: var(--chakra-space-4);
-                    margin-inline-start: var(--chakra-space-4);
-                  }
-
-                  @media screen and (min-width: 48em) {
-                    .css-15vbgl6 > *:not(style) ~ *:not(style) {
-                      -webkit-margin-start: var(--chakra-space-6);
-                      margin-inline-start: var(--chakra-space-6);
-                    }
-                  }
-                </style>
-                <div class="chakra-stack css-15vbgl6">
+                  </style><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23"
+                    viewBox="0,0,256,256">
+                    <g fill="#ccceff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                      stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                      font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                      style="mix-blend-mode: normal">
+                      <g transform="scale(5.12,5.12)">
+                        <path
+                          d="M46.137,6.552c-0.75,-0.636 -1.928,-0.727 -3.146,-0.238h-0.002c-1.281,0.514 -36.261,15.518 -37.685,16.131c-0.259,0.09 -2.521,0.934 -2.288,2.814c0.208,1.695 2.026,2.397 2.248,2.478l8.893,3.045c0.59,1.964 2.765,9.21 3.246,10.758c0.3,0.965 0.789,2.233 1.646,2.494c0.752,0.29 1.5,0.025 1.984,-0.355l5.437,-5.043l8.777,6.845l0.209,0.125c0.596,0.264 1.167,0.396 1.712,0.396c0.421,0 0.825,-0.079 1.211,-0.237c1.315,-0.54 1.841,-1.793 1.896,-1.935l6.556,-34.077c0.4,-1.82 -0.156,-2.746 -0.694,-3.201zM22,32l-3,8l-3,-10l23,-17z">
+                        </path>
+                      </g>
+                    </g>
+                  </svg>
+                </a><a href="https://twitter.com/PivexFinance" target="_blank" rel="noreferrer"><svg
+                    xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23" viewBox="0,0,256,256">
+                    <g fill="#cfc3ff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                      stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                      font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                      style="mix-blend-mode: normal">
+                      <g transform="scale(5.12,5.12)">
+                        <path
+                          d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z">
+                        </path>
+                      </g>
+                    </g>
+                  </svg></a>
                   <a
-                    href="https://discord.gg/kfyNmmbvhJ"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <style data-emotion="css 1o4son9">
-                      .css-1o4son9 {
-                        width: var(--chakra-sizes-5);
-                        height: var(--chakra-sizes-5);
-                        display: inline-block;
-                        line-height: 1em;
-                        -webkit-flex-shrink: 0;
-                        -ms-flex-negative: 0;
-                        flex-shrink: 0;
-                        color: var(--chakra-colors-text-secondary);
-                        margin-top: var(--chakra-space-2);
-                      }</style
-                    ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23" viewBox="0,0,256,256" >
-                      <g fill="#ccceff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M46.137,6.552c-0.75,-0.636 -1.928,-0.727 -3.146,-0.238h-0.002c-1.281,0.514 -36.261,15.518 -37.685,16.131c-0.259,0.09 -2.521,0.934 -2.288,2.814c0.208,1.695 2.026,2.397 2.248,2.478l8.893,3.045c0.59,1.964 2.765,9.21 3.246,10.758c0.3,0.965 0.789,2.233 1.646,2.494c0.752,0.29 1.5,0.025 1.984,-0.355l5.437,-5.043l8.777,6.845l0.209,0.125c0.596,0.264 1.167,0.396 1.712,0.396c0.421,0 0.825,-0.079 1.211,-0.237c1.315,-0.54 1.841,-1.793 1.896,-1.935l6.556,-34.077c0.4,-1.82 -0.156,-2.746 -0.694,-3.201zM22,32l-3,8l-3,-10l23,-17z"></path></g></g>
-                      </svg> </a
-                  ><a
-                    href="https://twitter.com/PivexFinance"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23" height="23" viewBox="0,0,256,256">
-<g fill="#cfc3ff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z"></path></g></g>
-</svg></a
-                  ><a
                     href="https://medium.com/@Pivex.Finance"
                     target="_blank"
                     rel="noreferrer"
-                    ><svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 512 512"
-                      focusable="false"
-                      class="chakra-icon css-1o4son9"
-                      height="1em"
-                      width="1em"
+                  >
+                    <svg
                       xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="25"
+                      height="25"
+                      viewBox="0,0,256,256"
+                    >
+                      <g
+                        fill="#ccceff"
+                        fill-rule="nonzero"
+                        stroke="none"
+                        stroke-width="1"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="10"
+                        stroke-dasharray=""
+                        stroke-dashoffset="0"
+                        font-family="none"
+                        font-weight="none"
+                        font-size="none"
+                        text-anchor="none"
+                        style="mix-blend-mode: normal"
+                      >
+                        <g transform="scale(5.33333,5.33333)">
+                          <circle cx="14" cy="24" r="12"></circle>
+                          <ellipse cx="34" cy="24" rx="6" ry="11"></ellipse>
+                          <ellipse cx="44" cy="24" rx="2" ry="10"></ellipse>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 24 24"
+                      style="margin-right: 1.5rem"
                     >
                       <path
-                        d="M71.5 142.3c.6-5.9-1.7-11.8-6.1-15.8L20.3 72.1V64h140.2l108.4 237.7L364.2 64h133.7v8.1l-38.6 37c-3.3 2.5-5 6.7-4.3 10.8v272c-.7 4.1 1 8.3 4.3 10.8l37.7 37v8.1H307.3v-8.1l39.1-37.9c3.8-3.8 3.8-5 3.8-10.8V171.2L241.5 447.1h-14.7L100.4 171.2v184.9c-1.1 7.8 1.5 15.6 7 21.2l50.8 61.6v8.1h-144v-8L65 377.3c5.4-5.6 7.9-13.5 6.5-21.2V142.3z"
-                      ></path></svg
-                  ></a>
-                </div>
+                        fill="#ccceff"
+                        d="M10.802 17.77a.703.703 0 1 1-.002 1.406a.703.703 0 0 1 .002-1.406m11.024-4.347a.703.703 0 1 1 .001-1.406a.703.703 0 0 1-.001 1.406m0-2.876a2.176 2.176 0 0 0-2.174 2.174c0 .233.039.465.115.691l-7.181 3.823a2.165 2.165 0 0 0-1.784-.937c-.829 0-1.584.475-1.95 1.216l-6.451-3.402c-.682-.358-1.192-1.48-1.138-2.502c.028-.533.212-.947.493-1.107c.178-.1.392-.092.62.027l.042.023c1.71.9 7.304 3.847 7.54 3.956c.363.169.565.237 1.185-.057l11.564-6.014c.17-.064.368-.227.368-.474c0-.342-.354-.477-.355-.477c-.658-.315-1.669-.788-2.655-1.25c-2.108-.987-4.497-2.105-5.546-2.655c-.906-.474-1.635-.074-1.765.006l-.252.125C7.78 6.048 1.46 9.178 1.1 9.397C.457 9.789.058 10.57.006 11.539c-.08 1.537.703 3.14 1.824 3.727l6.822 3.518a2.175 2.175 0 0 0 2.15 1.862a2.177 2.177 0 0 0 2.173-2.14l7.514-4.073c.38.298.853.461 1.337.461A2.176 2.176 0 0 0 24 12.72a2.176 2.176 0 0 0-2.174-2.174"
+                      ></path>
+                    </svg>
+                  </a>
               </div>
             </div>
-          </footer>
-        </div>
+          </div>
+        </footer>
       </div>
-      <span></span><span id="__chakra_env" hidden=""></span>
     </div>
-    <script src="script.js"></script>
-    <script id="__NEXT_DATA__" type="application/json">
+    <span></span><span id="__chakra_env" hidden=""></span>
+  </div>
+  <script src="script.js"></script>
+  <script id="__NEXT_DATA__" type="application/json">
       {
         "props": {
           "pageProps": {
@@ -2435,6 +2219,10 @@
         "scriptLoader": []
       }
     </script>
-    
+
+<script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+<script src="https://unpkg.com/@metamask/detect-provider"></script>
+<script type="module" src="/dashboard.js"></script>
   </body>
+
 </html>
