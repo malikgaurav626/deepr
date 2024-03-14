@@ -1,3 +1,6 @@
+/* specifiy a variable */
+
+
 .background{
     padding: 3rem;
     width: 80%;
@@ -25,6 +28,342 @@
   z-index: 1000000;
   transform: translate(-50%, -50%);
   opacity: 0;
+}
+.overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.7);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.452);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0;
+  transition: 0.2s all;
+  backdrop-filter: blur(15px);
+  display: flex;
+}
+
+.overlay.showw {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  transition: 0.2s all;
+  pointer-events: auto;
+  user-select: auto;
+  z-index: 9999;
+}
+.account-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.7);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.452);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0;
+  transition: 0.2s all;
+  backdrop-filter: blur(15px);
+  display: flex;
+}
+
+.account-overlay.showw {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  transition: 0.2s all;
+  pointer-events: auto;
+  user-select: auto;
+  z-index: 9999;
+}
+.cwc{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 450px;
+  background-color: rgba(255, 255, 255, 0.019);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 40px 2px rgba(0, 0, 0, 0.479);
+  padding: 30px;
+}
+.cw-header{
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cw-header path{
+  fill: rgb(166, 166, 166) !important;
+}
+.knowMore{
+  border-radius: 50%;
+  background-color: rgba(107, 107, 107, 0.143);
+  display: flex;
+  padding: 7px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.closeBtn{
+  border-radius: 50%;
+  background-color: rgba(107, 107, 107, 0.143);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  padding-left: 12px;
+  padding-right: 12px;
+  cursor: pointer;
+}
+.closeBtn svg{
+  
+  stroke: rgb(166, 166, 166) !important;;
+}
+.disconnect-btn{
+  padding: 10px 20px;
+  width: 100%;
+  color: #fff;
+  background-color: #6454d3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 15px;
+  transition: 0.2s all;
+  text-align: center;
+  gap: 8px;
+  opacity: 1;
+}
+.disconnect-btn svg{
+  transform: translateY(1px);
+}
+.disconnect-btn:hover{
+  background-color: #6454d350;
+  transition: 0.2s all;
+}
+.account-closeBtn{
+  cursor: pointer;
+}
+.ac-number{
+  font-family: 'Manrope', sans-serif;
+  font-weight:600;
+  font-size: 19px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.ac-balance{
+  margin-bottom: 25px;
+}
+.ao-body{
+  justify-content: center;
+  height: fit-content;
+}
+.acwc{
+  height: fit-content;
+}
+.copy-ac-number{
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.2s all;
+}
+.copy-ac-number:hover{
+  opacity: 1;
+  transition: 0.2s all;
+}
+.copy-ac-number {
+  transform: translateY(5px);
+}
+.ac-balance{
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+}
+.ac-logo{
+  margin-top: 15px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, orange, yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ac-number-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cw-body{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.cw-footer{
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cw-footer svg{
+  transform: translateY(2px);
+}
+.healthStatus{
+  position: relative;
+}
+.showAfterConnect{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  font-size: 15px;
+  color: #ffffffeb;
+  opacity: 1;
+  
+  transition: 0.2s all;
+}
+.color-green{
+  color: #51da98;
+  font-weight: 900;
+}
+.roww{
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.ct{
+  color: #a0aec0;
+  font-size: 14px;
+}
+.cv{
+  font-size: 24px;
+  font-weight: 700;
+}
+.cv-bf{
+  color: white;
+}
+.cv-af{
+  color: rgba(255, 255, 255, 0.441);
+}
+.account-details{
+  display: none;
+  background-color: transparent;
+  gap: 15px;
+  margin-left: 15px;
+}
+.balance-container{
+  padding: 5px 10px;
+  background-color: rgba(181, 181, 181, 0.14);
+  border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.161);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+}
+.css-1bz3mis{
+  font-size: 45px;
+  font-weight: 700;
+}
+.balance-container{
+  cursor: pointer;
+  transition: 0.2s all;
+}
+.balance-container:hover{
+  background-color: rgba(255, 255, 255, 0.172);
+  transition: 0.2s all;
+}
+.enableEthereumButton {
+  padding: 10px 20px;
+  width: 100%;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 15px;
+  transition: 0.2s all;
+  --ck-family-brand: #1A88F8;
+    --ck-brand-walletConnect: #3B99FC;
+    --ck-brand-coinbaseWallet: #0052FF;
+    --ck-brand-metamask: #f6851b;
+    --ck-brand-metamask-01: #F6851B;
+    --ck-brand-metamask-02: #E2761B;
+    --ck-brand-metamask-03: #CD6116;
+    --ck-brand-metamask-04: #161616;
+    --ck-brand-metamask-05: #763D16;
+    --ck-brand-metamask-06: #D7C1B3;
+    --ck-brand-metamask-07: #C0AD9E;
+    --ck-brand-metamask-08: #E4761B;
+    --ck-brand-metamask-09: #233447;
+    --ck-brand-metamask-10: #E4751F;
+    --ck-brand-metamask-11: #FEF5E7;
+    --ck-brand-metamask-12: #E3C8AB;
+    --ck-brand-trust-01: #3375BB;
+    --ck-brand-trust-02: #ffffff;
+    --ck-brand-trust-01b: #ffffff;
+    --ck-brand-trust-02b: #3375BB;
+    --ck-brand-argent: #f36a3d;
+    --ck-brand-imtoken-01: #11C4D1;
+    --ck-brand-imtoken-02: #0062AD;
+    --ck-brand-gnosisSafe: #12FF80;
+    --ck-brand-dawn: #000000;
+    --ck-ens-01-start: #FF453A;
+    --ck-ens-01-stop: #FF9F0A;
+    --ck-ens-02-start: #FF9F0A;
+    --ck-ens-02-stop: #FFD60A;
+    --ck-ens-03-start: #FFD60A;
+    --ck-ens-03-stop: #32D74B;
+    --ck-ens-04-start: #32D74B;
+    --ck-ens-04-stop: #64D2FF;
+    --ck-ens-05-start: #64D2FF;
+    --ck-ens-05-stop: #0A84FF;
+    --ck-ens-06-start: #0A84FF;
+    --ck-ens-06-stop: #5E5CE6;
+    --ck-ens-07-start: #5E5CE6;
+    --ck-ens-07-stop: #BF5AF2;
+    --ck-ens-08-start: #BF5AF2;
+    --ck-ens-08-stop: #FF2D55;
+    --ck-graphic-wave-stop-01: #E8F17D;
+    --ck-graphic-wave-stop-02: #A8ECDE;
+    --ck-graphic-wave-stop-03: #7AA1F2;
+    --ck-graphic-wave-stop-04: #DEA1E8;
+    --ck-graphic-wave-stop-05: #F46D98;
+    --ck-graphic-scaniconwithlogos-01: #AFAFAF;
+    --ck-graphic-scaniconwithlogos-02: #696969;
+    --ck-graphic-scaniconwithlogos-03: #F8D74A;
+    --ck-graphic-scaniconwithlogos-04: #3D3D3D;
+}
+.enableEthereumButton:hover{
+  background-color: rgba(255, 255, 255, 0.03);
+  transition: 0.2s all;
+
 }
 .lighthouseCard{
     display: flex;
